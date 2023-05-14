@@ -1,0 +1,4 @@
+# GET http://localhost:5000/api/search?search=first&cat=subtopic&page=1&limit=4
+
+
+GET http://localhost:5000/api/profile/notifications/5

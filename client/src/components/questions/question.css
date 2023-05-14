@@ -1,0 +1,17 @@
+.ques-body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.ques-body::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.ques-body::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.ques-body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: #5bc376ba;
+}

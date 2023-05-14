@@ -1,0 +1,140 @@
+body {
+    font-family: Manrope;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.3;
+    text-rendering: geometricPrecision;
+    margin: 0;
+    padding: 0;
+}
+
+.Header_wrapper__7bI8Z {
+    background-color: #fff;
+    box-shadow: 1px 0px 5px #7b8f981f;
+    height: 54px;
+    z-index: 4;
+}
+
+.Header_sticky__c__ol {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.Header_contentWrapper__sjvbL, .Header_headerContainer__WY2xn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Header_headerContainer__WY2xn {
+    height: 100%;
+}
+
+.Header_contentWrapper__sjvbL {
+    align-items: center;
+    align-self: center;
+    max-width: 1170px;
+}
+
+.Header_askLogo__mpo42 {
+    background-position: -118px -3px;
+    height: 40px;
+    margin-left: -15px;
+    min-width: 158px;
+    transform: scale(.8);
+    width: 158px;
+    background-image: url("https://d3ij1nwy8h49c3.cloudfront.net/images/Sprites/header-sprites-new1.png");
+}
+
+.Header_navLinksContainer__JMdLd {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.Header_active__bEWTQ {
+    background-color: #f1f0f3;
+    border-radius: 8px;
+}
+
+.Header_navLink__ZD9YK {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 12px;
+    padding: 5px 12px;
+}
+
+.Header_loginSignupContainer__vwKSJ {
+    margin: 0 12px;
+}
+
+.Header_expandContainer__YG5qr {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+}
+
+.LoginSignUp_root__E1vCX {
+    min-width: 60px;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.LoginSignUp_root__E1vCX {
+    align-items: center;
+    display: flex;
+}
+
+.LoginSignUp_root__E1vCX .LoginSignUp_btn__PLc7M {
+    background-color: #7ed321;
+    color: #fff;
+    font-size: 12px;
+    height: 36px;
+    letter-spacing: -.6px;
+    margin-left: 0;
+    width: 110px;
+}
+
+.LoginSignUp_root__E1vCX .LoginSignUp_btn__PLc7M {
+    background-color: initial;
+    border: 1px solid #7ed321;
+    border-radius: 23px;
+    box-shadow: none;
+    color: #7ed321;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 800;
+    height: 32px;
+    letter-spacing: -.39px;
+    line-height: 16px;
+    margin-left: 8px;
+    text-transform: none;
+    white-space: nowrap;
+    width: 72px;
+}
+
+.Button_green-default__Lm_DZ {
+    background: #7ed321;
+    transition: background .1s ease;
+}
+
+.Button_button__ffAJx {
+    align-items: center;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
