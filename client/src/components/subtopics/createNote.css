@@ -1,0 +1,20 @@
+.createNote .tox-tinymce {
+    border: 0 !important;
+}
+
+.createNote .tox-editor-header {
+    box-shadow: none !important;
+}
+
+.tox-editor-header .tox-toolbar__primary .tox-toolbar__group * {
+    cursor: pointer !important;
+}
+
+.createNote .tox-statusbar {
+    padding: 0 25px !important;
+    z-index: 10 !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    left: 0 !important;
+}

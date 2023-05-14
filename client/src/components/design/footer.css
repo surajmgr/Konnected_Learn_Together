@@ -1,0 +1,151 @@
+.footer{
+    border: 1px solid beige;
+}
+
+.footer-top {
+    padding-top: 60px;
+    position: relative;
+    z-index: 9;
+    font-size: 14px;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.footer-widget .footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-widget .footer-logo img {
+    width: 350px;
+    max-width: 100%;
+    vertical-align: middle;
+    margin-left: -20px;
+}
+
+.footer-top .footer-about-content {
+    max-width: 315px;
+}
+
+.footer-widget .footer-about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-widget .footer-about-content p {
+    color: #000;
+}
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.footer-title {
+    color: #0a142f;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-widget.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-menu ul li a {
+    color: #000;
+    transition: all .4s ease 0s;
+    cursor: pointer;
+}
+
+.footer-menu ul li a:hover {
+    color: #ef5f30;
+}
+
+.footer-contact-info {
+    color: #26292c;
+    margin-top: 10px;
+}
+
+.footer-contact-info .footer-address {
+    margin-bottom: 10px;
+}
+
+.footer-contact-info .footer-address {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact-info img {
+    margin-right: 12px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-contact-info .footer-address p {
+    margin-bottom: 0;
+}
+
+.footer-contact-info img {
+    margin-right: 12px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    position: relative;
+    z-index: 9;
+}
+
+.footer-bottom .copyright {
+    padding: 40px 0;
+}
+
+.footer-bottom .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.privacy-policy ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.privacy-policy ul li:first-child {
+    padding-left: 0;
+}
+
+.privacy-policy ul li {
+    padding: 0 10px;
+    border-right: 1px solid #b2b1fc;
+    list-style: none;
+}
+
+.footer-bottom .copyright-text p {
+    color: #000;
+    text-align: right;
+}

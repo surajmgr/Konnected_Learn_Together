@@ -1,0 +1,98 @@
+nav.navbar{
+    box-shadow: rgba(123, 143, 152, 0.12) 15px 20px 30px !important;
+}
+.course-content .textbooks_title__vCKfs {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.course-content .textbooks_title__vCKfs .textbooks_webClass__EvZDP {
+    align-items: center;
+    display: flex;
+    float: right;
+    height: 40px;
+}
+
+.course-content .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    font-size: 16px;
+}
+
+.course-content .g-2, .gx-2 {
+    --bs-gutter-x: 0.5rem;
+}
+
+.course-content .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.show-filter .search-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.show-filter .search-group i {
+    position: absolute;
+    left: 9px;
+    color: #2e9efb;
+}
+
+.feather-search:before {
+    content: "\e9c1";
+}
+
+.add-course-info .form-control {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    min-height: 40px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.book-title, .book-subtitle, .book-level{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.book-title{
+    -webkit-line-clamp: 2;
+}
+
+.book-subtitle, .book-level{
+    -webkit-line-clamp: 1;
+}
+
+.book-title{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -.4px;
+    line-height: 21px;
+}
+
+.book-subtitle, .book-level{
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.add-meta{
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: space-between;
+    line-height: 21px;
+    width: 100%;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+      background-color: #2e9efb !important;
+   }

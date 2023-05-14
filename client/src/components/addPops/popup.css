@@ -1,0 +1,119 @@
+.popup-outer{
+    right: 50px;
+      position: fixed;
+      top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.2);
+    transition: opacity 0.2s 0s ease-in-out,  
+                transform 0.2s 0s ease-in-out;
+  }
+  .active.popup-outer{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  .popup-box{
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
+  }
+  .popup-box .close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #b4b4b4;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .popup-box .close:hover{
+    color: #333;
+  }
+  .popup-box .profile-text{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .popup-box .profile-text .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .profile-text .text .name{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .profile-text .text .profession{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -4px;
+  }
+  .popup-box img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .popup-box textarea{
+    min-height: 140px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 10px 10px 14px;
+    font-weight: 400;
+    background: #f3f3f3;
+  }
+
+  .textarea-w-count .char-count{
+    right: 1px;
+    position: absolute;
+    bottom: 1px;
+    font-size: 11px;
+    color: gray;
+  }
+
+  .popup-box .button{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .popup-box .button button{
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .popup-box .warning-heading-text{
+    padding-bottom: 10px;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+  }
+
+  .select-value-name{
+    max-width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }

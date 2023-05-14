@@ -1,0 +1,9 @@
+.view-info::after {
+    font-size: 10px;
+    content: "\f054";
+    font-weight: 600;
+    line-height: 2.4;
+    font-family: "font awesome 5 free";
+    float: left;
+    padding-left: 5px;
+  }
