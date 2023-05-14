@@ -24,23 +24,23 @@ CREATE TABLE levels (
         sl_name VARCHAR(255) NOT NULL,
         is_verified VARCHAR(1)
         );
-INSERT INTO levels (id, name, is_verified) 
-        VALUES (1, 'Grade 1', '1'),
-        (2, 'Grade 2', '1'),
-        (3, 'Grade 3', '2'),
-        (4, 'Grade 4', '1'),
-        (5, 'Grade 5', '1'),
-        (6, 'Grade 6', '1'),
-        (7, 'Grade 7', '1'),
-        (8, 'Grade 8', '1'),
-        (9, 'Grade 9', '1'),
-        (10, 'Grade 10', '1'),
-        (11, 'Grade 11 - Science', '1'),
-        (12, 'Grade 12 - Science', '1'),
-        (13, 'Grade 11 - Humanities', '1'),
-        (14, 'Grade 12 - Humanities', '1'),
-        (15, 'Grade 11 - Management', '1'),
-        (16, 'Grade 12 - Management', '1')
+INSERT INTO levels (id, name, sl_name, is_verified) 
+        VALUES (1, 'Grade 1', 'grade-1', '1'),
+        (2, 'Grade 2', 'grade-2', '1'),
+        (3, 'Grade 3', 'grade-3', '2'),
+        (4, 'Grade 4', 'grade-4', '1'),
+        (5, 'Grade 5', 'grade-5', '1'),
+        (6, 'Grade 6', 'grade-6', '1'),
+        (7, 'Grade 7', 'grade-7', '1'),
+        (8, 'Grade 8', 'grade-8', '1'),
+        (9, 'Grade 9', 'grade-9', '1'),
+        (10, 'Grade 10', 'grade-10', '1'),
+        (11, 'Grade 11 - Science', 'grade-11-science', '1'),
+        (12, 'Grade 12 - Science', 'grade-12-science', '1'),
+        (13, 'Grade 11 - Humanities', 'grade-11-humanities', '1'),
+        (14, 'Grade 12 - Humanities', 'grade-12-humanities', '1'),
+        (15, 'Grade 11 - Management', 'grade-11-management', '1'),
+        (16, 'Grade 12 - Management', 'grade-12-management', '1')
         ON CONFLICT DO NOTHING;
 
 -- Create Users table
@@ -83,7 +83,7 @@ CREATE TABLE books (
         cover VARCHAR(300) NOT NULL,
         author VARCHAR(50),
         is_verified VARCHAR(1),
-        upload_date DATE(),
+        upload_date DATE,
         uid INT,
         verify_token VARCHAR(10),
         CONSTRAINT fk_user

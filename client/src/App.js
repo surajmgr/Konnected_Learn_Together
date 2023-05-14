@@ -134,7 +134,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/auth/activate-account",
-        element: <ActivateAccount />
+        element: <>
+        <DesignNavbar />
+        <ActivateAccount />
+        </>
       },
       {
         path: "/auth/reset-password",
