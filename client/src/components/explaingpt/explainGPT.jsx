@@ -222,26 +222,26 @@ function ExplainGPT(props) {
             : "popup-outer z-10"
         }
       >
-        <div class="popup-box min-h-[290px] max-h-[400px] max-w-[500px]">
+        <div className="popup-box min-h-[290px] max-h-[400px] max-w-[500px]">
           <i
             id="close"
-            class="fa fa-close close"
+            className="fa fa-close close"
             onClick={() => setPopRes(0)}
           ></i>
-          <div class="warning-heading-text border-b">Brief Explaination</div>
+          <div className="warning-heading-text border-b">Brief Explaination</div>
           <div className="warning-body-text text-sm border-2 rounded-lg overflow-y-scroll overflow-x-scroll min-h-[150px] max-h-[250px] p-[15px]">
             {isTyping ? <div className="mt-[30px]"><LargeLoading /></div> : text}
           </div>
-          <div class="button">
+          <div className="button">
             <button
               onClick={removeMessages}
-              class="send mt-[12px] bg-[#f082ac] hover:bg-[#ec5f95]"
+              className="send mt-[12px] bg-[#f082ac] hover:bg-[#ec5f95]"
             >
               Delete History
             </button>
             <button
               id="close"
-              class="cancel mt-[12px] bg-[#6f93f6] hover:bg-[#275df1]"
+              className="cancel mt-[12px] bg-[#6f93f6] hover:bg-[#275df1]"
               onClick={(e) => setPopRes(0)}
             >
               Close

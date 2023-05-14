@@ -228,7 +228,7 @@ function Search() {
     <>
       <Breadcrum path="Search" />
       <section className="topicInf ">
-        <div class="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
+        <div className="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
           <div className="title-heading fos-animate-me fadeIn delay-0_1">
             <div className="title-heading-name">Search Results</div>
           </div>
@@ -305,7 +305,7 @@ function Search() {
               <>
                 {topics.length > 0 ? (
                   <>
-                    <div class="card-body">
+                    <div className="card-body">
                       <div className="tp-title fos-animate-me fadeIn delay-0_1">
                         List of Topics
                       </div>
@@ -365,11 +365,11 @@ function Search() {
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                    <div class="mt-[200px] pb-[20px] flex justify-around">
-                      <div class="flex items-center justify-start">
-                        <div class="text-left ml-[10px]">
-                          <div class="text-gray-500">
-                            <div class="text-sm">No topics matched...!</div>
+                    <div className="mt-[200px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">No topics matched...!</div>
                           </div>
                         </div>
                       </div>
@@ -393,7 +393,7 @@ function Search() {
               <>
                 {subtopics.length > 0 ? (
                   <>
-                    <div class="card-body">
+                    <div className="card-body">
                       <div className="tp-title fos-animate-me fadeIn delay-0_1">
                         List of Lessons
                       </div>
@@ -455,11 +455,11 @@ function Search() {
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                    <div class="mt-[200px] pb-[20px] flex justify-around">
-                      <div class="flex items-center justify-start">
-                        <div class="text-left ml-[10px]">
-                          <div class="text-gray-500">
-                            <div class="text-sm">No lessons matched...!</div>
+                    <div className="mt-[200px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">No lessons matched...!</div>
                           </div>
                         </div>
                       </div>
@@ -546,11 +546,11 @@ function Search() {
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                    <div class="mt-[200px] pb-[20px] flex justify-around">
-                      <div class="flex items-center justify-start">
-                        <div class="text-left ml-[10px]">
-                          <div class="text-gray-500">
-                            <div class="text-sm">No books matched...!</div>
+                    <div className="mt-[200px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">No books matched...!</div>
                             <div
                               onClick={() => showState(0)}
                               className="text-sm add-book-no-res cursor-pointer text-blue-500 flex justify-around"

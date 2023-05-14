@@ -216,10 +216,10 @@ function AddBook(props) {
           (entering == 1 ? " bounceIn delay-0_1" : " bounceOut delay-0_1")
         }
       >
-        <div class="popup-box -mt-[200px] min-h-[531px]">
+        <div className="popup-box -mt-[200px] min-h-[531px]">
           <i
             id="close"
-            class="fa fa-close close"
+            className="fa fa-close close"
             onClick={() => {
               setEntering(0);
               setTimeout(() => {
@@ -227,15 +227,15 @@ function AddBook(props) {
               }, 700);
             }}
           ></i>
-          <div class="flex mb-[20px] items-center">
+          <div className="flex mb-[20px] items-center">
             <img
               className="mt-[2px] !h-[50px] !w-[50px] object-cover !rounded-[0]"
               src={icon_add}
               alt=""
             />
-            <div class="ml-2 -mt-[4px] text-adds">
-              <span class="text-[20px] name font-[700]">Add Your Book</span>
-              <div class="text-[12px] font-[500] -mt-[4px] profession leading-[1]">
+            <div className="ml-2 -mt-[4px] text-adds">
+              <span className="text-[20px] name font-[700]">Add Your Book</span>
+              <div className="text-[12px] font-[500] -mt-[4px] profession leading-[1]">
                 Book needs 24hrs to verify.
               </div>
             </div>
@@ -280,7 +280,7 @@ function AddBook(props) {
                 className="!block px-4 py-2 w-full text-sm text-gray-900 border bg-[#f3f3f3] border rounded-md cursor-pointer bg-gray-50"
                 onChange={(e) => setCover(e.target.files[0])}
               /> */}
-              <div class="textarea-w-count relative">
+              <div className="textarea-w-count relative">
                 <textarea
                   name="bdescription"
                   onChange={handleChange}
@@ -288,7 +288,7 @@ function AddBook(props) {
                   placeholder="Enter description of the Book"
                   className="text-sm block px-4 py-2 my-3 w-full mt-2 bg-[#f3f3f3] border rounded-md focus:border-blue-500"
                 />
-                <span class="char-count leading-[1] p-1 bg-[#f3f3f3] border-t border-l rounded">
+                <span className="char-count leading-[1] p-1 bg-[#f3f3f3] border-t border-l rounded">
                   {bookInputs.bdescription.length} / 550 Characters
                 </span>
               </div>
@@ -303,10 +303,10 @@ function AddBook(props) {
                 className="text-sm block px-4 py-2 my-3 w-full mt-2 bg-[#f3f3f3] border rounded-md focus:border-blue-500"
               />
 
-              <div class="button">
+              <div className="button">
                 <button
                   id="close"
-                  class="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
                   onClick={(e) => {
                     e.preventDefault();
                     setEntering(0);
@@ -319,7 +319,7 @@ function AddBook(props) {
                 </button>
                 <button
                   onClick={addBook}
-                  class="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
                 >
                   Add Book
                 </button>

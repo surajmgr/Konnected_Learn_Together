@@ -305,11 +305,11 @@ function Book() {
                             ))}
                           </ul>
                           <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                            <div class="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
-                              <div class="flex items-center justify-start">
-                                <div class="text-left ml-[10px]">
-                                  <div class="text-gray-500">
-                                    <div class="text-sm">
+                            <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
+                              <div className="flex items-center justify-start">
+                                <div className="text-left ml-[10px]">
+                                  <div className="text-gray-500">
+                                    <div className="text-sm">
                                       Can't find the topic...?
                                     </div>
                                     <div
@@ -332,11 +332,11 @@ function Book() {
                         </>
                       ) : (
                         <div className="no-result-info fos-animate-me bounceInUp delay-0_1">
-                          <div class="mt-[100px] mb-[200px] pb-[20px] flex justify-around">
-                            <div class="flex items-center justify-start">
-                              <div class="text-left ml-[10px]">
-                                <div class="text-gray-500">
-                                  <div class="text-sm">
+                          <div className="mt-[100px] mb-[200px] pb-[20px] flex justify-around">
+                            <div className="flex items-center justify-start">
+                              <div className="text-left ml-[10px]">
+                                <div className="text-gray-500">
+                                  <div className="text-sm">
                                     No topics are here...!
                                   </div>
                                   <div

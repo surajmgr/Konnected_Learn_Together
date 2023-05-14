@@ -279,12 +279,12 @@ function Question() {
           <div className="list-heading fos-animate-me fadeIn delay-0_1">
             <div className="flex justify-between text-[20px]">Question</div>
           </div>
-          <div class="mt-[5px] fos-animate-me fadeIn delay-0_1">
-            <div class="flex items-center justify-start flex-wrap text-[18px]">
+          <div className="mt-[5px] fos-animate-me fadeIn delay-0_1">
+            <div className="flex items-center justify-start flex-wrap text-[18px]">
               <span>{question?.qtitle}</span>
             </div>
           </div>
-          <div class="ques-body border-b rounded-lg pb-[5px] text-[#999] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll fos-animate-me fadeIn delay-0_1">
+          <div className="ques-body border-b rounded-lg pb-[5px] text-[#999] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll fos-animate-me fadeIn delay-0_1">
             {question.qbody != "" ? parse("" + question.qbody) : ""}
             <div
               onClick={() => {
@@ -327,15 +327,15 @@ function Question() {
                                     `${index + 1}`}
                               </div>
                               <div className="-mt-[1px] answer-side leading-[19.12px] overflow-scroll w-full">
-                                <div class="solution-title">
-                                  <div class="flex items-center justify-between flex-wrap text-[18px]">
+                                <div className="solution-title">
+                                  <div className="flex items-center justify-between flex-wrap text-[18px]">
                                     <span>Solution</span>
                                     <Link to={`/user/${answer.username}`}><span className="text-sm text-[#999]">
                                       @{answer.username}
                                     </span></Link> 
                                   </div>
                                 </div>
-                                <div class="ques-body rounded-lg pb-[10px] pt-[7px] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll">
+                                <div className="ques-body rounded-lg pb-[10px] pt-[7px] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll">
                                   {answer.abody != ""
                                     ? parse("" + answer.abody)
                                     : question.tname}
@@ -531,11 +531,11 @@ function Question() {
               </div>
             ) : (
               <div className="no-result-info">
-                <div class="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
-                  <div class="flex items-center justify-start">
-                    <div class="text-left ml-[10px]">
-                      <div class="text-gray-500">
-                        <div class="text-sm">No answers are here...!</div>
+                <div className="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
+                  <div className="flex items-center justify-start">
+                    <div className="text-left ml-[10px]">
+                      <div className="text-gray-500">
+                        <div className="text-sm">No answers are here...!</div>
                         <div
                           onClick={() => {
                             if (currentUser) {
@@ -578,21 +578,21 @@ function Question() {
                   : "active popup-outer z-10"
               }
             >
-              <div class="popup-box leading-[25px]">
+              <div className="popup-box leading-[25px]">
                 <i
                   id="close"
-                  class="fa fa-close close"
+                  className="fa fa-close close"
                   onClick={() => setShowDelWarning({ state: 1, aid: 0 })}
                 ></i>
-                <div class="warning-heading-text border-b">Are you sure?</div>
+                <div className="warning-heading-text border-b">Are you sure?</div>
                 <div className="warning-body-text text-sm">
                   Do you really want to delete these records? This process
                   cannot be undone.
                 </div>
-                <div class="button">
+                <div className="button">
                   <button
                     id="close"
-                    class="cancel bg-[#6f93f6] hover:bg-[#275df1]"
+                    className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
                     onClick={(e) => {
                       e.preventDefault();
                       setShowDelWarning({ state: 1, aid: 0 });
@@ -605,7 +605,7 @@ function Question() {
                       e.preventDefault();
                       handleDelete(showDelWarning.aid);
                     }}
-                    class="send bg-[#f082ac] hover:bg-[#ec5f95]"
+                    className="send bg-[#f082ac] hover:bg-[#ec5f95]"
                   >
                     Delete
                   </button>
@@ -614,11 +614,11 @@ function Question() {
             </div>
             {answers.length > 0 && (
               <div className="no-result-info">
-                <div class="my-[10px] pb-[20px] flex justify-around">
-                  <div class="flex items-center justify-start">
-                    <div class="text-left ml-[10px]">
-                      <div class="text-gray-500">
-                        <div class="text-sm">
+                <div className="my-[10px] pb-[20px] flex justify-around">
+                  <div className="flex items-center justify-start">
+                    <div className="text-left ml-[10px]">
+                      <div className="text-gray-500">
+                        <div className="text-sm">
                           Can't find the correct answer...?
                         </div>
                         <div

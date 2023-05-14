@@ -492,11 +492,11 @@ function Profile() {
 
   return (
     <div className="profile-box">
-      <div class="header__wrapper">
+      <div className="header__wrapper">
         <div className="header-img"></div>
-        <div class="cols__container">
-          <div class="left__col">
-            <div class="img__container">
+        <div className="cols__container">
+          <div className="left__col">
+            <div className="img__container">
               <img
                 src={
                   user.avatar
@@ -511,7 +511,7 @@ function Profile() {
             <p>{"@" + user.username + " - " + user.rank}</p>
             <p>{user.email}</p>
 
-            <ul class="about w-[350px] fos-animate-me fadeIn delay-0_1">
+            <ul className="about w-[350px] fos-animate-me fadeIn delay-0_1">
               <li>
                 <span>
                   {followers.length.toLocaleString() +
@@ -559,7 +559,7 @@ function Profile() {
               </li>
             </ul>
 
-            <div class="content fos-animate-me fadeIn delay-0_1">
+            <div className="content fos-animate-me fadeIn delay-0_1">
               {user.bio ? (
                 <p>{user.bio}</p>
               ) : (
@@ -572,15 +572,15 @@ function Profile() {
 
               <ul>
                 <li>
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </li>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-dribbble"></i>
+                <i className="fab fa-pinterest"></i>
+                <i className="fab fa-facebook"></i>
+                <i className="fab fa-dribbble"></i>
               </ul>
             </div>
           </div>
-          <div class="right__col fos-animate-me fadeIn delay-0_1">
+          <div className="right__col fos-animate-me fadeIn delay-0_1">
             <nav>
               <div className="tabs-profile-container">
                 <div className="tabs-profile-item">
@@ -662,15 +662,15 @@ function Profile() {
               <div className="side-container">
                 <div className="follow-container w-full">
                   <div
-                    class="max-h-[293px] z-50 h-full border my-4 pb-[10px] text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow  font-poppins "
+                    className="max-h-[293px] z-50 h-full border my-4 pb-[10px] text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow  font-poppins "
                     id="user-dropdown"
                   >
-                    <div class="px-4 py-3">
-                      <span class="block text-lg font-semibold text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                    <div className="px-4 py-3">
+                      <span className="block text-lg font-semibold text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                         Latest Feeds
                       </span>
                       <div className="span-below">
-                        <span class="text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                        <span className="text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                           Includes activity
                         </span>
                         {currentUser &&
@@ -681,7 +681,7 @@ function Profile() {
                                 updateReadFeed("readAll");
                                 setHasUnread(0);
                               }}
-                              class="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem]"
+                              className="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem]"
                             >
                               Mark all as read
                             </span>
@@ -691,7 +691,7 @@ function Profile() {
                                 updateReadFeed("unreadAll");
                                 setHasUnread(1);
                               }}
-                              class="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem]"
+                              className="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem]"
                             >
                               Unread All
                             </span>
@@ -721,7 +721,7 @@ function Profile() {
                                 </span>
                               </div>
                               <div className="content-notif items-center">
-                                <span class="text-gray-900 items-centeroverflow-hidden text-ellipsis line-clamp-2 text-[14px] leading-[1.25rem]">
+                                <span className="text-gray-900 items-centeroverflow-hidden text-ellipsis line-clamp-2 text-[14px] leading-[1.25rem]">
                                   <span>{feed.content}</span>
                                 </span>
                               </div>
@@ -730,10 +730,10 @@ function Profile() {
                         ))
                       ) : (
                         <div className="follow-item border-b p-[20px]">
-                          <div class="flex items-center justify-start">
-                            <div class="text-left ml-[10px]">
-                              <div class="text-gray-500">
-                                <div class="text-sm">
+                          <div className="flex items-center justify-start">
+                            <div className="text-left ml-[10px]">
+                              <div className="text-gray-500">
+                                <div className="text-sm">
                                   The feed is deserted at the moment...!
                                 </div>
                               </div>
@@ -775,9 +775,9 @@ function Profile() {
                               (index + 1)
                             }
                           >
-                            <div class="flex items-center justify-start">
+                            <div className="flex items-center justify-start">
                               <img
-                                class="w-12 h-12 rounded-full"
+                                className="w-12 h-12 rounded-full"
                                 src={
                                   user.avatar
                                     ? user.avatar
@@ -785,18 +785,18 @@ function Profile() {
                                 }
                                 alt={user.uname}
                               />
-                              <div class="text-left ml-[10px]">
-                                <div class="text-gray-500">
-                                  <div class="text-sm">
+                              <div className="text-left ml-[10px]">
+                                <div className="text-gray-500">
+                                  <div className="text-sm">
                                     <Link
                                       to={`/user/${user.username}`}
-                                      class="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
+                                      className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
                                     >
                                       {user.uname}{" "}
                                     </Link>
                                     <Link
                                       href={`/user/${user.username}`}
-                                      class="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
+                                      className="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
                                     >
                                       @{user.username}
                                     </Link>
@@ -809,10 +809,10 @@ function Profile() {
                         ))
                       ) : (
                         <div className="follow-item border-b p-[20px]">
-                          <div class="flex items-center justify-start">
-                            <div class="text-left ml-[10px]">
-                              <div class="text-gray-500">
-                                <div class="text-sm">
+                          <div className="flex items-center justify-start">
+                            <div className="text-left ml-[10px]">
+                              <div className="text-gray-500">
+                                <div className="text-sm">
                                   Not following anyone at the moment...!
                                 </div>
                               </div>
@@ -842,9 +842,9 @@ function Profile() {
                               (index + 1)
                             }
                           >
-                            <div class="flex items-center justify-start">
+                            <div className="flex items-center justify-start">
                               <img
-                                class="w-12 h-12 rounded-full"
+                                className="w-12 h-12 rounded-full"
                                 src={
                                   user.avatar
                                     ? user.avatar
@@ -852,18 +852,18 @@ function Profile() {
                                 }
                                 alt={user.uname}
                               />
-                              <div class="text-left ml-[10px]">
-                                <div class="text-gray-500">
-                                  <div class="text-sm">
+                              <div className="text-left ml-[10px]">
+                                <div className="text-gray-500">
+                                  <div className="text-sm">
                                     <Link
                                       to={`/user/${user.username}`}
-                                      class="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
+                                      className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
                                     >
                                       {user.uname}{" "}
                                     </Link>
                                     <Link
                                       to={`/user/${user.username}`}
-                                      class="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
+                                      className="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
                                     >
                                       @{user.username}
                                     </Link>
@@ -876,10 +876,10 @@ function Profile() {
                         ))
                       ) : (
                         <div className="follow-item border-b p-[20px]">
-                          <div class="flex items-center justify-start">
-                            <div class="text-left ml-[10px]">
-                              <div class="text-gray-500">
-                                <div class="text-sm">
+                          <div className="flex items-center justify-start">
+                            <div className="text-left ml-[10px]">
+                              <div className="text-gray-500">
+                                <div className="text-sm">
                                   No followers at the moment...!
                                 </div>
                               </div>
@@ -898,25 +898,25 @@ function Profile() {
       {editProfile == 0 && (
         <>
           <div className="active popup-outer z-10 !fixed">
-            <div class="popup-box -mt-[200px] min-h-[365px]">
+            <div className="popup-box -mt-[200px] min-h-[365px]">
               <i
                 id="close"
-                class="fa fa-close close"
+                className="fa fa-close close"
                 onClick={() => {
                   showEditProfile(1);
                 }}
               ></i>
-              <div class="flex mb-[20px] items-center">
+              <div className="flex mb-[20px] items-center">
                 <img
                   className="mt-[2px] !h-[50px] !w-[50px] object-cover !rounded-[0]"
                   src={edit_profile}
                   alt=""
                 />
-                <div class="ml-2 -mt-[4px] text-adds">
-                  <span class="text-[20px] name font-[700]">
+                <div className="ml-2 -mt-[4px] text-adds">
+                  <span className="text-[20px] name font-[700]">
                     Edit Profile Details
                   </span>
-                  <div class="text-[12px] font-[500] -mt-[4px] profession leading-[1]">
+                  <div className="text-[12px] font-[500] -mt-[4px] profession leading-[1]">
                     Don't close without saving.
                   </div>
                 </div>
@@ -970,7 +970,7 @@ function Profile() {
                       Remove
                     </span>
                   )}
-                  <div class="textarea-w-count relative">
+                  <div className="textarea-w-count relative">
                     <textarea
                       name="bio"
                       onChange={handleChange}
@@ -978,7 +978,7 @@ function Profile() {
                       placeholder="Enter your bio here..."
                       className="text-sm block px-4 py-2 my-3 w-full mt-2 bg-[#f3f3f3] border rounded-md focus:border-blue-500"
                     />
-                    <span class="char-count leading-[1] p-1 bg-[#f3f3f3] border-t border-l rounded">
+                    <span className="char-count leading-[1] p-1 bg-[#f3f3f3] border-t border-l rounded">
                       {userInputs.bio.length} / 255 Characters
                     </span>
                   </div>
@@ -1011,10 +1011,10 @@ function Profile() {
                     />
                   </div>
 
-                  <div class="button">
+                  <div className="button">
                     <button
                       id="close"
-                      class="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
+                      className="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
                       onClick={(e) => {
                         e.preventDefault();
                         showEditProfile(1);
@@ -1024,7 +1024,7 @@ function Profile() {
                     </button>
                     <button
                       onClick={updateUser}
-                      class="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
+                      className="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
                     >
                       Save
                     </button>

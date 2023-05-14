@@ -28,7 +28,7 @@ function ActivateAccount() {
           {err && <p className="text-xl text-center text-red-700">{err}</p>}
           {suc ? (
             <>
-              <p class="text-xl text-center text-blue-700">{suc}</p>
+              <p className="text-xl text-center text-blue-700">{suc}</p>
               <button
                 onClick={() => {
                   navigate("/login");

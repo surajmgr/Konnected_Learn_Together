@@ -451,7 +451,7 @@ function Subtopic() {
         path={subtopic.stname}
       />
       <section className="subtopicInf ">
-        <div class="max-w-[986px] w-full mx-auto px-[4rem] textsubtopics_title__vCKfs">
+        <div className="max-w-[986px] w-full mx-auto px-[4rem] textsubtopics_title__vCKfs">
           <div className="title-heading fos-animate-me fadeIn delay-0_1">
             <div className="title-heading-name">{(subtopic.stname) ? subtopic.stname : "Title"} </div>
           </div>
@@ -554,13 +554,13 @@ function Subtopic() {
                                 : "active popup-outer z-10"
                             }
                           >
-                            <div class="popup-box">
+                            <div className="popup-box">
                               <i
                                 id="close"
-                                class="fa fa-close close"
+                                className="fa fa-close close"
                                 onClick={() => setShowDonation(1)}
                               ></i>
-                              <div class="profile-text">
+                              <div className="profile-text">
                                 <img
                                   src={
                                     displayNote["0"].avatar
@@ -569,11 +569,11 @@ function Subtopic() {
                                   }
                                   alt={displayNote["0"].byname}
                                 />
-                                <div class="text">
-                                  <span class="name">
+                                <div className="text">
+                                  <span className="name">
                                     {displayNote["0"]?.byname}
                                   </span>
-                                  <span class="profession">
+                                  <span className="profession">
                                     Top Contributor
                                   </span>
                                 </div>
@@ -590,10 +590,10 @@ function Subtopic() {
                                 placeholder="Enter the amount"
                                 className="block px-4 py-2 w-full mt-2 text-purple-700 bg-[#f3f3f3] border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                               />
-                              <div class="button">
+                              <div className="button">
                                 <button
                                   id="close"
-                                  class="cancel bg-[#f082ac] hover:bg-[#ec5f95]"
+                                  className="cancel bg-[#f082ac] hover:bg-[#ec5f95]"
                                   onClick={(e) => {
                                     e.preventDefault();
                                     setShowDonation(1);
@@ -605,7 +605,7 @@ function Subtopic() {
                                   onClick={() => {
                                     checkout.show({ amount: amount });
                                   }}
-                                  class="send bg-[#6f93f6] hover:bg-[#275df1]"
+                                  className="send bg-[#6f93f6] hover:bg-[#275df1]"
                                 >
                                   Send
                                 </button>
@@ -619,25 +619,25 @@ function Subtopic() {
                                 : "active popup-outer z-10"
                             }
                           >
-                            <div class="popup-box">
+                            <div className="popup-box">
                               <i
                                 id="close"
-                                class="fa fa-close close"
+                                className="fa fa-close close"
                                 onClick={() =>
                                   setShowNoteDelWarning({ state: 1, nid: 0 })
                                 }
                               ></i>
-                              <div class="warning-heading-text border-b">
+                              <div className="warning-heading-text border-b">
                                 Are you sure?
                               </div>
                               <div className="warning-body-text text-sm">
                                 Do you really want to delete these records? This
                                 process cannot be undone.
                               </div>
-                              <div class="button">
+                              <div className="button">
                                 <button
                                   id="close"
-                                  class="cancel bg-[#6f93f6] hover:bg-[#275df1]"
+                                  className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
                                   onClick={(e) => {
                                     e.preventDefault();
                                     setShowNoteDelWarning({ state: 1, nid: 0 });
@@ -651,7 +651,7 @@ function Subtopic() {
                                       handleNoteDelete(showNoteDelWarning.nid);
                                     }
                                   }
-                                  class="send bg-[#f082ac] hover:bg-[#ec5f95]"
+                                  className="send bg-[#f082ac] hover:bg-[#ec5f95]"
                                 >
                                   Delete
                                 </button>
@@ -659,13 +659,13 @@ function Subtopic() {
                             </div>
                           </div>
                           {/* {displayNote["0"]?.phone && <button>Donate</button>} */}
-                          <div class="flex items-center justify-between">
-                            <div class="text-left">
-                              <div class="text-gray-500">
-                                <div class="text-sm">
+                          <div className="flex items-center justify-between">
+                            <div className="text-left">
+                              <div className="text-gray-500">
+                                <div className="text-sm">
                                   <Link
                                     to={`/user/${displayNote["0"]?.username}`}
-                                    class="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
+                                    className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
                                   >
                                     {displayNote["0"]?.byname}{" "}
                                   </Link>
@@ -686,7 +686,7 @@ function Subtopic() {
                               </div>
                             </div>
                             <img
-                              class="w-12 h-12 rounded-full"
+                              className="w-12 h-12 rounded-full"
                               src={
                                 displayNote["0"].avatar
                                   ? displayNote["0"].avatar
@@ -701,9 +701,9 @@ function Subtopic() {
                       <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeInUp delay-0_1">
                         <img src={add} alt="" className="mr-[25px]" />
                         <div className="add-meta">
-                          <div class="">Note is not available!</div>
+                          <div className="">Note is not available!</div>
                           <div
-                            class="text-[#249efb] cursor-pointer p-[12px]"
+                            className="text-[#249efb] cursor-pointer p-[12px]"
                             onClick={() => {
                               currentUser
                                 ? navigate(
@@ -804,7 +804,7 @@ function Subtopic() {
                           <div className="add-note-button">
                             <button
                               type="button"
-                              class="border hover:text-blue-600 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 mt-2"
+                              className="border hover:text-blue-600 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 mt-2"
                               onClick={() => {
                                 currentUser
                                   ? navigate(
@@ -836,7 +836,7 @@ function Subtopic() {
                 <>
                   {questions.length > 0 ? (
                     <>
-                      <div class="card-body">
+                      <div className="card-body">
                         <div className="tp-title">List of Questions</div>
                         <ul className="flex flex-wrap">
                           {getUnique(questions, "qid").map(
@@ -926,11 +926,11 @@ function Subtopic() {
                         />
                       )}
                       <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                        <div class="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
-                          <div class="flex items-center justify-start">
-                            <div class="text-left ml-[10px]">
-                              <div class="text-gray-500">
-                                <div class="text-sm">
+                        <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
+                          <div className="flex items-center justify-start">
+                            <div className="text-left ml-[10px]">
+                              <div className="text-gray-500">
+                                <div className="text-sm">
                                   Cant find the question...?
                                 </div>
                                 <div
@@ -953,11 +953,11 @@ function Subtopic() {
                     </>
                   ) : (
                     <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                      <div class="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
-                        <div class="flex items-center justify-start">
-                          <div class="text-left ml-[10px]">
-                            <div class="text-gray-500">
-                              <div class="text-sm">
+                      <div className="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
+                        <div className="flex items-center justify-start">
+                          <div className="text-left ml-[10px]">
+                            <div className="text-gray-500">
+                              <div className="text-sm">
                                 No questions are here...!
                               </div>
                               <div
@@ -994,21 +994,21 @@ function Subtopic() {
                     : "active popup-outer z-10"
                 }
               >
-                <div class="popup-box">
+                <div className="popup-box">
                   <i
                     id="close"
-                    class="fa fa-close close"
+                    className="fa fa-close close"
                     onClick={() => setShowDelWarning({ state: 1, qid: 0 })}
                   ></i>
-                  <div class="warning-heading-text border-b">Are you sure?</div>
+                  <div className="warning-heading-text border-b">Are you sure?</div>
                   <div className="warning-body-text text-sm">
                     Do you really want to delete these records? This process
                     cannot be undone.
                   </div>
-                  <div class="button">
+                  <div className="button">
                     <button
                       id="close"
-                      class="cancel bg-[#6f93f6] hover:bg-[#275df1]"
+                      className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
                       onClick={(e) => {
                         e.preventDefault();
                         setShowDelWarning({ state: 1, qid: 0 });
@@ -1021,7 +1021,7 @@ function Subtopic() {
                         e.preventDefault();
                         handleDelete(showDelWarning.qid);
                       }}
-                      class="send bg-[#f082ac] hover:bg-[#ec5f95]"
+                      className="send bg-[#f082ac] hover:bg-[#ec5f95]"
                     >
                       Delete
                     </button>
