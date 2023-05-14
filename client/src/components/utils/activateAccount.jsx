@@ -24,26 +24,50 @@ function ActivateAccount() {
   return (
     <>
       {token ? (
-        <div>
+        <div className="h-[100vh] w-full flex items-center justify-around">
           {err && <p className="text-xl text-center text-red-700">{err}</p>}
           {suc ? (
             <>
-              <p className="text-xl text-center text-blue-700">{suc}</p>
-              <button
-                onClick={() => {
-                  navigate("/login");
-                }}
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
+              <div className="success-tick-container -mt-[200px]">
+                <div id="card" className="animated fadeIn shadow">
+                  <div id="upper-side">
+                    <svg
+                      className="checkmark"
+                      id="checkmark"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 52 52"
+                    >
+                      <circle
+                        className="checkmark__circle"
+                        cx="26"
+                        cy="26"
+                        r="25"
+                        fill="none"
+                      />
+                      <path
+                        className="checkmark__check"
+                        fill="none"
+                        d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                      />
+                    </svg>
+                    <h3 id="status">Success</h3>
+                  </div>
+                  <div id="lower-side">
+                    <p id="message">
+                      Congratulations. Your account has been activated and from now on you can access to all the benefits of KonnectEd.
+                    </p>
+                    <a href="/login" id="contBtn">
                 Login
-              </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </>
           ) : (
             <button
               onClick={handleSubmit}
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Activate Account
             </button>

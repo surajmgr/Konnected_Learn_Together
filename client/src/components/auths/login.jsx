@@ -81,7 +81,7 @@ function Login() {
         <>
           <section className="bg-gray-50 h-screen flex items-center justify-around">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
-              <div className="w-full bg-white rounded-lg shadow md:mt-0 w-[400px] xl:p-0 fos-animate-me bounceIn delay-0_3">
+              <div className="bg-white rounded-lg shadow md:mt-0 w-[400px] xl:p-0 fos-animate-me bounceIn delay-0_3">
                 <i onClick={() => (state) ? navigate(state.path) : navigate("/")} className="close fa fa-close float-right p-[10px] cursor-pointer"></i>
                 {loading ? 
                 <div className="large-loading my-[180px]">
