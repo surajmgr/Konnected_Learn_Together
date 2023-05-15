@@ -174,7 +174,7 @@ function AddQuestion(props) {
                       "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
                     toolbar_mode: "sliding",
                     images_upload_url: "/upload",
-                    images_upload_base_path: "/",
+                    images_upload_base_path: "",
                     fontsize_formats: "8pt 10pt 12pt 14pt 18pt 24pt 36pt",
                     content_style: `
                     body {

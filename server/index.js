@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs')
+const imgbbUploader = require("imgbb-uploader");
 const app = express();
 app.use(express.json());
 
@@ -21,16 +23,21 @@ app.use(session({
 
 // Storage through Multer
 const multer = require('multer');
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, '../client/public/upload/files')
-    },
-    filename: function (req, file, cb) {
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random()) + '-' + file.originalname
-        cb(null, file.fieldname + '-' + uniqueSuffix)
-    }
-})
-const upload = multer({ storage: storage })
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//         console.log("File is Here!")
+//         console.log(req)
+//         console.log("File is Here!")
+//         console.log(file)
+//         cb(null, '../client/public/upload/files')
+//     },
+//     filename: function (req, file, cb) {
+//         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random()) + '-' + file.originalname
+//         cb(null, file.fieldname + '-' + uniqueSuffix)
+//     }
+// })
+// const upload = multer({ storage: storage })
+const upload = multer({ dest: "./uploads/" });
 
 // Routes
 const auth_route = require('./routes/authRoute');
@@ -45,40 +52,49 @@ const search_route = require('./routes/searchRoute');
 const count_route = require('./routes/countRoute');
 const question_route = require('./routes/questionRoute');
 
-app.post('/api/upload', upload.single('file'), function (req,res) {
+app.post('/api/upload', upload.single('file'), async function (req, res) {
     const file = req.file;
-    console.log(file)
-    res.status(200).json({location:`/upload/files/${file.filename.replaceAll(" ","%20")}`});
-  })
+    imgbbUploader(process.env.imgbb, file.path)
+        .then((response) => {
+            fs.unlink(file.path, (err) => {
+                if (err) {
+                    console.error(err)
+                    return
+                }
+            });
+            return res.status(200).json({ location: response.image.url });
+        })
+        .catch((error) => { return res.status(400).json(error.message) });
+})
 
 
 // Using path to route
-app.use("/api/auth",auth_route);
+app.use("/api/auth", auth_route);
 
-app.use("/api/books",bt_route);
-app.use("/api/book",bt_route);
+app.use("/api/books", bt_route);
+app.use("/api/book", bt_route);
 
-app.use("/api/topics",topic_route);
-app.use("/api/topic",topic_route);
+app.use("/api/topics", topic_route);
+app.use("/api/topic", topic_route);
 
-app.use("/api/subtopics",subTopic_route);
-app.use("/api/subtopic",subTopic_route);
+app.use("/api/subtopics", subTopic_route);
+app.use("/api/subtopic", subTopic_route);
 
-app.use("/api/notes",note_route);
+app.use("/api/notes", note_route);
 
-app.use("/api/cnote",cnote_route);
+app.use("/api/cnote", cnote_route);
 
-app.use("/api/levels",level_route);
+app.use("/api/levels", level_route);
 
-app.use("/api/dbsearch",search_route);
+app.use("/api/dbsearch", search_route);
 
-app.use("/api/count",count_route);
+app.use("/api/count", count_route);
 
-app.use("/api/profile",user_route);
+app.use("/api/profile", user_route);
 
-app.use("/api/dbquestion",question_route);
+app.use("/api/dbquestion", question_route);
 
 // Listening server in port 5000
-app.listen(5000, (req,res)=>{
+app.listen(5000, (req, res) => {
     console.log("Starting server now!");
 });

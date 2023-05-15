@@ -984,7 +984,7 @@ function Profile() {
                             ? file.name
                             : avatarUrl == "" || !avatarUrl
                             ? "Choose a profile pic..."
-                            : avatarUrl.slice(30, 300)}
+                            : avatarUrl.slice(25, 300)}
                         </div>
                         <div className="up-right px-4 py-2 bg-[#6f94f6] text-white rounded-md">
                           Browse

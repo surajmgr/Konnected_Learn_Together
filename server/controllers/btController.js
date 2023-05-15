@@ -72,8 +72,8 @@ const sendNotificationMail = async (name, email, subject, message, coverImg) => 
             subject: subject,
             html: message,
             attachments: [{
-                filename: 'kZOeWS3XXJstOVA2Rg65Mp238DUJmDGCsNT6crck.jpg',
-                path: `https://hostednovel.com/cdn-cgi/image/quality=75,width=300/https://www.hostednovelcdn.com/covers/kZOeWS3XXJstOVA2Rg65Mp238DUJmDGCsNT6crck.jpg`,
+                filename: 'Book cover.jpg',
+                path: coverImg,
                 cid: uniqueName
             }]
         }
