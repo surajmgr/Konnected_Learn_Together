@@ -56,7 +56,6 @@ function Profile() {
       setLoading(true);
       const res = await axios.get(`/profile/${username}`);
       setUser(res.data);
-      console.log(res.data);
       fetchFeeds(res.data.uid);
       getFollowing(res.data.uid);
       getFollower(res.data.uid);
@@ -108,7 +107,9 @@ function Profile() {
   };
 
   const fetchFeeds = async (uid) => {
-    const resFeed = await axios.get(`/profile/notifications/${uid}?page=${currentPage.current}&limit=${limit}`);
+    const resFeed = await axios.get(
+      `/profile/notifications/${uid}?page=${currentPage.current}&limit=${limit}`
+    );
     setFeeds(resFeed.data.result);
     setPageCount(resFeed.data.pageCount);
     resFeed.data.result.map((feed) => {
@@ -120,7 +121,7 @@ function Profile() {
 
   function handlePageClick(e, page) {
     currentPage.current = page;
-    fetchFeeds(user.uid)
+    fetchFeeds(user.uid);
   }
 
   const updateReadFeed = async (changereq) => {
@@ -295,17 +296,23 @@ function Profile() {
 
   const handleChange = (e) => {
     setUserInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    console.log(e.target.name);
-    console.log(userInputs);
   };
 
   const upload = async () => {
     try {
       const formData = new FormData();
-      formData.append("file", file);
-      const res = await axios.post("/profile/upload-avatar/1", formData);
-      const path = res.data;
-      return path;
+      formData.append("image", file); // Change to file for server upload
+      // ImgBB
+      const res = await axios.post(
+        "https://api.imgbb.com/1/upload?key=813193a847a3b03c944209bdbe5daaa3",
+        formData
+      );
+      return res.data.data;
+
+      // For Multer Upload from server
+      // const res = await axios.post("/profile/upload-avatar/1", formData);
+      // const path = res.data;
+      // return path;
     } catch (error) {
       Store.addNotification({
         title: "Error!",
@@ -410,12 +417,44 @@ function Profile() {
         };
 
         if (file) {
-          upload()
-            .then((data) => {
-              console.log(data);
-              fileUrl(data);
-            })
-            .catch((err) => console.log(err.message));
+          if (parseInt(file.size) / 1024 ** 2 > 10) {
+            Store.addNotification({
+              title: "Size Error!",
+              message: "Profile picture must not exceed MB.",
+              type: "warning",
+              insert: "top",
+              container: "top-right",
+              animationIn: ["animate__animated"],
+              animationOut: ["animate__animated", "animate__fadeOut"],
+              dismiss: {
+                duration: 3000,
+                onScreen: true,
+                showIcon: true,
+              },
+            });
+          } else {
+            upload()
+              .then((data) => {
+                fileUrl(data.url); // for ImgBB
+                // fileUrl(data); // for Server
+              })
+              .catch((err) => {
+                Store.addNotification({
+                  title: "Error!",
+                  message: err.message,
+                  type: "warning",
+                  insert: "top",
+                  container: "top-right",
+                  animationIn: ["animate__animated"],
+                  animationOut: ["animate__animated", "animate__fadeOut"],
+                  dismiss: {
+                    duration: 3000,
+                    onScreen: true,
+                    showIcon: true,
+                  },
+                });
+              });
+          }
         } else {
           fileUrl(avatarUrl);
         }
@@ -471,9 +510,6 @@ function Profile() {
       },
     });
   };
-
-  console.log("Users");
-  console.log(user);
 
   const openEditUser = (e) => {
     e.preventDefault();
@@ -704,7 +740,7 @@ function Profile() {
                           <>
                             <Link
                               to={feed.link}
-                              class={
+                              className={
                                 "block px-4 py-[9px] border-b w-[99%] flex transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" +
                                 (index + 1)
                               }
@@ -743,14 +779,14 @@ function Profile() {
                       )}
                       {pageCount > 1 && (
                         <div className="flex justify-around">
-                        <Pagination
-                          count={pageCount}
-                          onChange={handlePageClick}
-                          variant="outlined"
-                          shape="rounded"
-                          color="primary"
-                          className="!p-[5px] my-[5px] gap-[10px] fos-animate-me fadeIn delay-0_9"
-                        />
+                          <Pagination
+                            count={pageCount}
+                            onChange={handlePageClick}
+                            variant="outlined"
+                            shape="rounded"
+                            color="primary"
+                            className="!p-[5px] my-[5px] gap-[10px] fos-animate-me fadeIn delay-0_9"
+                          />
                         </div>
                       )}
                     </div>
@@ -959,6 +995,7 @@ function Profile() {
                       type="file"
                       ref={hiddenFileInput}
                       onChange={(e) => setCover(e.target.files[0])}
+                      accept="image/*"
                       style={{ display: "none" }}
                     />
                   </div>
