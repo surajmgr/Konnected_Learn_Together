@@ -42,17 +42,23 @@ function AddBook(props) {
 
   const handleChange = (e) => {
     setBookInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    console.log(e.target.name);
-    console.log(bookInputs);
   };
 
   const upload = async () => {
     try {
       const formData = new FormData();
-      formData.append("file", file);
-      const res = await axios.post("/books/upload-cover", formData);
-      const path = res.data;
-      return path;
+      formData.append("image", file); // Change to file for server upload
+      // ImgBB
+      const res = await axios.post(
+        "https://api.imgbb.com/1/upload?key=813193a847a3b03c944209bdbe5daaa3",
+        formData
+      );
+      return res.data.data;
+
+      // For Multer Upload from server
+      // const res = await axios.post("/books/upload-cover", formData);
+      // const path = res.data;
+      // return path;
     } catch (error) {
       console.log(error.message);
     }
@@ -179,12 +185,44 @@ function AddBook(props) {
           }, 700);
         };
 
-        upload()
-          .then((data) => {
-            console.log(data);
-            fileUrl(data);
-          })
-          .catch((err) => console.log(err.message));
+        if (parseInt(file.size) / 1024 ** 2 > 10) {
+          Store.addNotification({
+            title: "Size Error!",
+            message: "Profile picture must not exceed MB.",
+            type: "warning",
+            insert: "top",
+            container: "top-right",
+            animationIn: ["animate__animated"],
+            animationOut: ["animate__animated", "animate__fadeOut"],
+            dismiss: {
+              duration: 3000,
+              onScreen: true,
+              showIcon: true,
+            },
+          });
+        } else {
+          upload()
+            .then((data) => {
+              fileUrl(data.url); // for ImgBB
+              // fileUrl(data); // for Server
+            })
+            .catch((err) => {
+              Store.addNotification({
+                title: "Error!",
+                message: err.message,
+                type: "warning",
+                insert: "top",
+                container: "top-right",
+                animationIn: ["animate__animated"],
+                animationOut: ["animate__animated", "animate__fadeOut"],
+                dismiss: {
+                  duration: 3000,
+                  onScreen: true,
+                  showIcon: true,
+                },
+              });
+            });
+        }
       }
     } catch (error) {
       Store.addNotification({
@@ -270,6 +308,7 @@ function AddBook(props) {
                   type="file"
                   ref={hiddenFileInput}
                   onChange={(e) => setCover(e.target.files[0])}
+                  accept="image/*"
                   style={{ display: "none" }}
                 />
               </div>

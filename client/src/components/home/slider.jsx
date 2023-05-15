@@ -82,7 +82,7 @@ function Slider() {
                   </div>
                   <div className="details">
                     <div className="name">Manish Timilsina</div>
-                    <div className="job job-3">UI/UX Contributor</div>
+                    <div className="job job-3">UI/UX Developer</div>
                   </div>
                   <div className="media-icons">
                     <p>
