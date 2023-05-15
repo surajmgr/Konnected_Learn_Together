@@ -417,10 +417,10 @@ function Profile() {
         };
 
         if (file) {
-          if (parseInt(file.size) / 1024 ** 2 > 10) {
+          if (parseInt(file.size) / 1024 ** 2 > 5) {
             Store.addNotification({
               title: "Size Error!",
-              message: "Profile picture must not exceed MB.",
+              message: "Profile picture must not exceed 5 MB.",
               type: "warning",
               insert: "top",
               container: "top-right",

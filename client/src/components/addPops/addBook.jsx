@@ -188,7 +188,7 @@ function AddBook(props) {
         if (parseInt(file.size) / 1024 ** 2 > 10) {
           Store.addNotification({
             title: "Size Error!",
-            message: "Profile picture must not exceed MB.",
+            message: "Profile picture must not exceed 10 MB.",
             type: "warning",
             insert: "top",
             container: "top-right",
