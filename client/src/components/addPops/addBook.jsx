@@ -50,7 +50,7 @@ function AddBook(props) {
       formData.append("image", file); // Change to file for server upload
       // ImgBB
       const res = await axios.post(
-        "https://api.imgbb.com/1/upload?key=813193a847a3b03c944209bdbe5daaa3",
+        `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMGBB}`,
         formData
       );
       return res.data.data;
@@ -153,7 +153,7 @@ function AddBook(props) {
       } else {
         const fileUrl = async (imgUrl) => {
           const res = await axios.post(
-            "/books/add-book",
+            `${process.env.REACT_APP_API_BASE_URL}/books/add-book`,
             {
               objects: [bookInputs, sendingLevel],
               coverImg: file ? imgUrl : "",

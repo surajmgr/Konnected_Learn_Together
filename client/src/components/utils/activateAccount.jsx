@@ -13,7 +13,7 @@ function ActivateAccount() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(`/auth/activate-account${token}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/auth/activate-account${token}`);
       setSuc(res.data);
     } catch (error) {
       console.log(error);

@@ -10,7 +10,7 @@ function BookVerified() {
 
   useEffect(async () => {
     try {
-      const res = await axios.post(`/books/server-verify-book/1${token}`,token,{
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/books/server-verify-book/1${token}`,token,{
         withCredentials: true,
       });
       setSuc(res.data);

@@ -33,7 +33,7 @@ function ResetPassword() {
     e.preventDefault();
     if (inputs.email !== "") {
       try {
-        const res = await axios.post("/auth/reset-password", inputs, {
+        const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/reset-password`, inputs, {
           withCredentials: true,
         });
         setState(res.data);
@@ -89,7 +89,7 @@ function ResetPassword() {
       if (inputs.code.length === 4) {
         if (inputs.password.length >= 8) {
           try {
-            const res = await axios.post(`/auth/reset-password`, inputs, {
+            const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/reset-password`, inputs, {
               withCredentials: true,
             });
             setSuc(res.data);

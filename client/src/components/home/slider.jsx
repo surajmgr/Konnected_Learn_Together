@@ -43,7 +43,7 @@ function Slider() {
           <input type="radio" name="dot" id="two" />
           <div className="main-card">
             <div className="cards">
-              <div ref={ref2} onClick={() => navigate("/user/kripesh")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me bounceInUp delay-0_3" : "hidden")}>
+              <div ref={ref2} onClick={() => navigate("/user/kripesh")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_3" : "hidden")}>
                 <div className="content">
                   <div className="img img-1">
                     <img src={kripesh} alt="" />
@@ -59,7 +59,7 @@ function Slider() {
                   </div>
                 </div>
               </div>
-              <div onClick={() => navigate("/user/surajmgr")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me bounceInUp delay-0_4" : "hidden")}>
+              <div onClick={() => navigate("/user/surajmgr")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_4" : "hidden")}>
                 <div className="content">
                   <div className="img img-2">
                     <img src={suraj} alt="" />
@@ -75,7 +75,7 @@ function Slider() {
                   </div>
                 </div>
               </div>
-              <div onClick={() => navigate("/user/manish")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me bounceInUp delay-0_5" : "hidden")}>
+              <div onClick={() => navigate("/user/manish")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_5" : "hidden")}>
                 <div className="content">
                   <div className="img img-3">
                     <img src={manish} alt="" />
@@ -91,7 +91,7 @@ function Slider() {
                   </div>
                 </div>
               </div>
-              <div className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me bounceInUp delay-0_6" : "hidden")}>
+              <div className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_6" : "hidden")}>
                 <div className="content">
                   <div className="img img-4">
                     <img src={avt1} alt="" />

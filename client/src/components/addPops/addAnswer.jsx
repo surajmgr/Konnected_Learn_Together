@@ -58,13 +58,13 @@ function AddAnswer(props) {
         });
       } else {
         const res = props.answer_info
-          ? await axios.put(`/dbquestion/answer/${props.answer_info.aid}`, {
+          ? await axios.put(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/answer/${props.answer_info.aid}`, {
               content,
               question: qid,
               uid: currentUser.id,
               sq_name: sq_name,
             })
-          : await axios.post(`/dbquestion/answer`, {
+          : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/answer`, {
               content,
               question: qid,
               uid: currentUser.id,

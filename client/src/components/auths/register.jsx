@@ -111,7 +111,7 @@ function Login() {
         });
       } else {
         setLoading(true);
-        await axios.post("auth/register", inputs, { withCredentials: true });
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/register`, inputs, { withCredentials: true });
         setLoading(false);
         navigate("/login", { state });
       }

@@ -29,7 +29,7 @@ function BooksFetch(props) {
 
   async function getBooks() {
     try {
-      const res = await axios.get(`/books/getall/1/2`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/books/getall/1/2`);
       console.log("Get Data!");
       console.log(res.data);
       setBooks(res.data);

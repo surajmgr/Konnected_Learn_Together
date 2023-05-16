@@ -70,11 +70,11 @@ function Topics() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `/topics?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/topics?page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
       res.data.result.map(async (topic) => {
-        const res = await axios.get(`/count/subtopic/${topic.tid}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic.tid}`);
         setSubTopicsCount((prev) => [...prev, res.data]);
       });
       setTopics(res.data.result);
