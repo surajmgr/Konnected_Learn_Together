@@ -9,7 +9,10 @@ const strUrl = (in_str) => {
 }
 
 const addNote = (req, res) => {
-    const token = req.session.token;
+    const sessionName = Object.values(req.sessionStore.sessions)[0];
+    const parsedJson = JSON.parse(sessionName);
+    const token = parsedJson.token;
+    console.log('token');
     console.log(token);
     if (!token) return res.status(401).json("Not Authenticated!");
 
@@ -47,7 +50,10 @@ const addNote = (req, res) => {
 }
 
 const deleteNote = (req, res) => {
-    const token = req.session.token;
+    const sessionName = Object.values(req.sessionStore.sessions)[0];
+    const parsedJson = JSON.parse(sessionName);
+    const token = parsedJson.token;
+    console.log('token');
     console.log(token);
     if (!token) return res.status(401).json("Not Authenticated!");
 
@@ -65,7 +71,10 @@ const deleteNote = (req, res) => {
 }
 
 const updateNote = (req, res) => {
-    const token = req.session.token;
+    const sessionName = Object.values(req.sessionStore.sessions)[0];
+    const parsedJson = JSON.parse(sessionName);
+    const token = parsedJson.token;
+    console.log('token');
     console.log(token);
     if (!token) return res.status(401).json("Not Authenticated!");
 

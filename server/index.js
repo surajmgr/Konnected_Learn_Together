@@ -29,9 +29,16 @@ app.use(cors({
 const session = require('express-session');
 app.use(session({
     secret: "konnectedsessionsecret",
+    proxy: true,
+    cookie: { httpOnly: true, secure: true },
+    name: "myuniquename",
     resave: true,
     saveUninitialized: true
 }));
+// app.use(cookieSession({
+//     secret: 'secret-key-you-don\'t-tell-the-client',
+//     signed: true,
+//   }));
 
 // Storage through Multer
 const multer = require('multer');

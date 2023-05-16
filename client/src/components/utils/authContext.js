@@ -10,7 +10,9 @@ export const AuthContextProvider = ({ children }) => {
 
     const login = async (inputs) => {
         const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/auth/login`, inputs, { withCredentials: true });
-        setCurrentUser(res.data);
+        const { token, ...other } = res.data;
+        sessionStorage.setItem("token", token);
+        setCurrentUser(other);
     };
 
     const updateExistingUser = (data) => {
