@@ -182,9 +182,6 @@ function ExplainGPT(props) {
     }
   }, [info.content, isTyping, index]);
 
-  console.log("Messages");
-  console.log(messages);
-
   return (
     <>
       <TextSelector
