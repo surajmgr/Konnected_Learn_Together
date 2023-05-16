@@ -13,7 +13,6 @@ const getAllNotes = (req,res) => {
     console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
-        console.log(data.rows);
         return res.status(200).json(data.rows);
     })
 }
@@ -27,7 +26,6 @@ const getNotes = (req, res) => {
     console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
-        console.log(data.rows);
         return res.status(200).json(data.rows);
     })
 }
@@ -42,7 +40,6 @@ const getDisplayNote = (req, res) => {
     console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
-        console.log(data.rows);
         return res.status(200).json(data.rows);
     })
 }
@@ -55,7 +52,6 @@ const getNote = (req, res) => {
     console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
-        console.log(data.rows);
         return res.status(200).json(data.rows);
     })
 }

@@ -311,9 +311,7 @@ const login = (req, res) => {
 
         req.session.token = token;
         req.session.save();
-        console.log(req.session.token);
-        console.log("Session Id: " + req.session.id);
-        res.status(200).json({ id, username, name, email, avatar, tinymce, gpt });
+        res.status(200).json({ id, username, name, email, avatar, tinymce, gpt, token });
     });
 }
 
