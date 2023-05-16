@@ -173,7 +173,7 @@ function AddQuestion(props) {
                     content_style:
                       "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
                     toolbar_mode: "sliding",
-                    images_upload_url: "/upload",
+                    images_upload_url: `${process.env.REACT_APP_API_BASE_URL}/upload`,
                     images_upload_base_path: "",
                     fontsize_formats: "8pt 10pt 12pt 14pt 18pt 24pt 36pt",
                     content_style: `

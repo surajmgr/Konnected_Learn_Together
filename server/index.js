@@ -26,6 +26,8 @@ app.use(cors({
     credentials: true
 }));
 
+const cookieParser = require('cookie-parser');
+app.use(cookieParser())
 const session = require('express-session');
 app.use(session({
     secret: "konnectedsessionsecret",
