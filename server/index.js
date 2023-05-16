@@ -67,6 +67,10 @@ app.post('/api/upload', upload.single('file'), async function (req, res) {
         .catch((error) => { return res.status(400).json(error.message) });
 })
 
+// Health check for server
+app.get('/run', (req, res) => {
+    return res.json("Server is running properly.");
+})
 
 // Using path to route
 app.use("/api/auth", auth_route);
