@@ -3,7 +3,8 @@
 Konnected-proj is the main source folder inhabiting both the front-end and back-end. I'll describe about the functions of all those here. Let's first set up the project.
 
 ### Demo
-Visit http://bit.ly/konnectEd for demo. If there are some errors, then it might be because the server has shut down. So, you could just visit https://codesandbox.io/p/sandbox/fancy-dawn-b17xoj and restart the server. Then, you would be good to go.
+Visit http://bit.ly/konnectEd for demo. If there are some errors, then it might be because the server has shut down. So, you could just visit https://codesandbox.io/p/sandbox/fancy-dawn-b17xoj and restart the server. Then, you will be good to go.
+For visit purpose only https://konnected-urn3.onrender.com/ | Redirect from url won't work. You'll have to link from within the page.
 
 ### Set Up
 For the first time, open two terminal in VS Code. Only one will also be sufficient, but it will be better to have two terminal in split view for client and server. Then, follow the below steps to install dependencies and start the web:
