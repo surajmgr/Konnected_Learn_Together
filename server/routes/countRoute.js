@@ -11,5 +11,6 @@ count_route.get("/contributions/:uid", count_controller.getNCCount)
 count_route.get("/votes/:aid", count_controller.getVCount)
 count_route.get("/questions/:tid", count_controller.getQCount)
 count_route.get("/answers/:qid", count_controller.getACount)
+count_route.get("/books/:lid", count_controller.getBCount)
 
 module.exports = count_route;

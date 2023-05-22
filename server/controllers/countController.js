@@ -77,7 +77,7 @@ const getVCount = (req, res) => {
     console.log("UID Here!");
     console.log(uid);
     db.query(q, (err, data) => {
-        if (err) return res.send(err);
+        if (err) return res.send({ upvote:0, downvote:0, status:'null', aid });
         const upvote = data.rows[0].count;
         const q = `SELECT COUNT(id) FROM votes WHERE answer=${aid} AND status='down';`
         db.query(q, (err, data) => {
@@ -112,6 +112,16 @@ const getACount = (req, res) => {
     })
 }
 
+const getBCount = (req, res) => {
+    const lid = req.params.lid;
+    const q = `SELECT COUNT(id) FROM bookLevel WHERE level_id=${lid};`
+    console.log(q);
+    db.query(q, (err, data) => {
+        if (err) return res.send(err);
+        return res.json({ count: data.rows[0].count, lid: lid });
+    })
+}
+
 module.exports = {
     getStCount,
     getNTCount,
@@ -120,5 +130,6 @@ module.exports = {
     getNCCount,
     getVCount,
     getQCount,
-    getACount
+    getACount,
+    getBCount
 }

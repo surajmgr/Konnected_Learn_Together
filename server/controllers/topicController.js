@@ -111,8 +111,8 @@ const addTopic = (req, res) => {
 
     const st_name = strUrl(topicInfo.tname)
 
-    const q = `INSERT INTO topics (name,description,st_name)
-    VALUES('${topicInfo.tname.replaceAll("'","''")}', '', '${st_name}') RETURNING *;`
+    const q = `INSERT INTO topics (name,st_name)
+    VALUES('${topicInfo.tname.replaceAll("'","''")}','${st_name}') RETURNING *;`
     console.log(q);
     db.query(q,(err,data)=>{
         if (err) return res.status(500).json(err.message);

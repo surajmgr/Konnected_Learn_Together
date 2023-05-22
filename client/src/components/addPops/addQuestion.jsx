@@ -22,7 +22,13 @@ function AddQuestion(props) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const qid = location.pathname.split("/")[3];
+  let qid = "";
+
+  if(location.pathname.split("/")[1] == "topic"){
+    qid = location.pathname.split("/")[3];
+  }else if(location.pathname.split("/")[1] == "subtopic"){
+    qid = location.pathname.split("/")[5];
+  }
   const st_name = location.pathname.split("/")[2];
 
   const [content, setContent] = useState((props.question_info) ? props.question_info.body : "");
@@ -185,6 +191,25 @@ function AddQuestion(props) {
                       margin-top: 5px;
                       margin-bottom: 5px;
                       line-height: 19px;
+                    }
+
+                    code {
+                      background-color: #272822 !important;
+                      color: #f8f8f2 !important;
+                      border-radius: 0.3rem !important;
+                      padding: 4px 5px 5px !important;
+                      white-space: nowrap !important;
+                    }
+                    
+                    pre code {
+                      white-space: inherit !important;
+                    }
+                    
+                    pre {
+                      background-color: #272822 !important;
+                      padding: 5px !important;
+                      border-radius: 0.3em !important;
+                      color: #f8f8f2 !important;
                     }
                     `,
                   }}

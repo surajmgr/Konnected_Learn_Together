@@ -18,3 +18,7 @@
     width: 100% !important;
     left: 0 !important;
 }
+
+.tox .tox-dialog--width-lg{
+    max-width: 864px !important;
+}

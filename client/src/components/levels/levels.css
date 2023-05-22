@@ -1,0 +1,87 @@
+.level-content .levels_title__vCKfs {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  
+  .level-content .levels_title__vCKfs .levels_webClass__EvZDP {
+    align-items: center;
+    display: flex;
+    float: right;
+    height: 40px;
+  }
+  
+  .level-content .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    font-size: 16px;
+  }
+  
+  .level-content .g-2,
+  .gx-2 {
+    --bs-gutter-x: 0.5rem;
+  }
+  
+  .level-content .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  
+  .show-filter .search-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .show-filter .search-group i {
+    position: absolute;
+    left: 9px;
+    color: #2e9efb;
+  }
+  
+  .feather-search:before {
+    content: "\e9c1";
+  }
+  
+  .add-level-info .form-control {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    min-height: 40px;
+    font-size: 14px;
+    padding-left: 40px;
+  }
+  
+  .view-info::after {
+    font-size: 10px;
+    content: "\f054";
+    font-weight: 600;
+    line-height: 2.4;
+    font-family: "font awesome 5 free";
+    float: left;
+    padding-left: 5px;
+  }
+  
+  .ch-l-points{
+      align-self: center;
+      background: #2e9efb;
+      border-radius: 50%;
+      height: 3px;
+      margin: 0 6px;
+      width: 3px;
+  }
+
+  .horizontal-info {
+    color: #999;
+    font-weight: 500;
+    height: 26px;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.horizontal-info span {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  line-height: 19.12px;
+}

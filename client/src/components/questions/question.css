@@ -15,3 +15,22 @@
     border: 2px solid white; /* should match background, can't be transparent */
     background-color: #5bc376ba;
 }
+
+.ques-body ol, .ques-body ul {
+    display: block !important;
+    list-style-type: disc !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    padding-inline-start: 40px !important;
+}
+
+.ques-body blockquote, .ques-body dl, .ques-body dd, .ques-body h1, .ques-body h2, .ques-body h3, .ques-body h4, .ques-body h5, .ques-body h6, .ques-body hr, .ques-body figure, .ques-body pre {
+    display: block !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    font-weight: bold !important;
+}

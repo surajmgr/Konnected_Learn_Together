@@ -4,7 +4,7 @@ import { useLocation, Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../utils/authContext";
 import { Pagination } from "@mui/material";
 import Breadcrum from "../utils/breadcrum";
-import "./topic.css";
+import "./levels.css";
 import LargeLoading from "../utils/largeLoading";
 
 // React Notification
@@ -28,16 +28,16 @@ function getUnique(array, key) {
   );
 }
 
-function Topics() {
+function Levels() {
   const { currentUser } = useContext(AuthContext);
-  const [topics, setTopics] = useState([]);
-  const [subtopicsCount, setSubTopicsCount] = useState([]);
+  const [levels, setlevels] = useState([]);
   const [total, setTotal] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
 
   const location = useLocation();
   const navigate = useNavigate();
+  let search;
 
   // Pagination
   const [limit, setLimit] = useState(10);
@@ -57,27 +57,25 @@ function Topics() {
 
   useEffect(() => {
     currentPage.current = 1;
-    getPaginatedTopics();
+    getPaginatedlevels();
   }, []);
 
   function handlePageClick(e, page) {
     window.scrollTo({ top: 0, behavior: "smooth" });
     currentPage.current = page;
-    getPaginatedTopics();
+    getPaginatedlevels();
   }
 
-  async function getPaginatedTopics() {
+  async function getPaginatedlevels() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `${process.env.REACT_APP_API_BASE_URL}/topics?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/levels${
+          search ? search + "&" : "?"
+        }page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
-      res.data.result.map(async (topic) => {
-        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic.tid}`);
-        setSubTopicsCount((prev) => [...prev, res.data]);
-      });
-      setTopics(res.data.result);
+      setlevels(res.data.result);
       setTotal(res.data.total);
       setLoading(false);
     } catch (error) {
@@ -105,23 +103,25 @@ function Topics() {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      navigate(`/search?query=${searchTerm}`, { state: { tab: 1 } });
+      event.preventDefault();
+      console.log("Enter key pressed");
+      // window.location.href = `/levels?query=${searchTerm}`;
+      // navigate(`/levels?query=${searchTerm}`)
+      search = `?query=${searchTerm}`;
+      getPaginatedlevels();
     }
   };
 
-  console.log("Current Here!");
-  console.log(currentPage.current);
-
   return (
     <>
-      <Breadcrum path="All Topics" />
-      <section className="topicInf">
-        <div className="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
+      <Breadcrum path="All levels" />
+      <section className="levelInf">
+        <div className="max-w-[986px] w-full mx-auto px-[4rem] textlevels_title__vCKfs">
           <div className="title-heading">
             <div className="flex justify-between">
-            <div className="title-heading-name">All Topics</div>
+              <div className="title-heading-name">All levels</div>
               <div className="col-lg-6">
-                <div className="show-filter add-topic-info">
+                <div className="show-filter add-level-info">
                   <form action="#">
                     <div className="row gx-2 items-center">
                       <div className="col-md-6 col-item"></div>
@@ -138,8 +138,9 @@ function Topics() {
                             type="text"
                             onChange={handleSearchChange}
                             onKeyDown={handleKeyDown}
+                            value={searchTerm}
                             className="form-control focus:outline-none focus:border-[#fdae40]"
-                            placeholder="Search for topics"
+                            placeholder="Search for levels"
                           />
                         </div>
                       </div>
@@ -151,71 +152,72 @@ function Topics() {
           </div>
           <div className="horizontal-info fos-animate-me fadeIn delay-0_1">
             <div className="flex items-center justify-start flex-wrap">
-              <span>{total} topics are here</span>
+              <span>{total} levels are here</span>
             </div>
           </div>
           {loading ? (
             <div className="my-[250px] pt-[50px]">
               <LargeLoading />
             </div>
-          ) : (<div className="tp-container min-h-[450px] mt-[30px]">
-          <div className="card-body p-0">
-            <ul className="flex flex-wrap">
-              {getUnique(topics, "tid").map((topic, index) => (
-                  <div className={"w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" + (index+1)}>
-                    <div className={"ch-index " + "!text-[#76e199]"}>
-                      {index == 9
-                        ? `${currentPage.current + "0"}`
-                        : `${parseInt(currentPage.current) - 1}` +
-                          `${index + 1}`}
-                    </div>
-                    <div className="ch-details">
-                    <Link to={`/topic/${topic.st_name}/${topic.tid}`}>
-                      <h2 className="ch-name">{topic.tname}</h2>
-                      </Link>
-                      <div className="ch-meta justify-between">
-                        <div className="ch-meta-item flex text-[#fdae40] pt-[10px]">
-                          <span>
-                            {subtopicsCount?.length > 0
-                              ? getUnique(subtopicsCount, "tid").map(
-                                  (subtopic) =>
-                                    subtopic.tid == topic.tid &&
-                                    (subtopic?.count == 1
-                                      ? "1 Lesson"
-                                      : subtopic?.count + " Lessons")
-                                )
-                              : "__Lessons"}
-                          </span>
-                        </div>
-                        <div
-                          className={
-                            "ch-meta-item flex view-info items-center flex text-[14px] leading-[19px] " +
-                            "!text-[#76e199]"
-                          }
-                        >
-                          <Link to={`/topic/${topic.st_name}/${topic.tid}`}>
-                            <span>View Topic</span>
-                          </Link>
+          ) : (
+            <div className="tp-container min-h-[450px] mt-[30px]">
+              <div className="card-body p-0">
+                <ul className="flex flex-wrap">
+                  {getUnique(levels, "id").map((level, index) => (
+                    <div
+                      className={
+                        "w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" +
+                        (index + 1)
+                      }
+                    >
+                      <div className={"ch-index " + "!text-[#76e199]"}>
+                        {index == 9
+                          ? `${currentPage.current + "0"}`
+                          : `${parseInt(currentPage.current) - 1}` +
+                            `${index + 1}`}
+                      </div>
+                      <div className="ch-details">
+                        <Link to={`/books/${level.sl_name}`}>
+                          <h2 className="ch-name">{level.name}</h2>
+                        </Link>
+                        <div className="ch-meta justify-between">
+                          <div className="ch-meta-item flex text-[#fdae40] pt-[10px]">
+                            <span>
+                              {level?.count == 1
+                                ? "1 Book"
+                                : level?.count + " Books"}
+                            </span>
+                          </div>
+                          <div
+                            className={
+                              "ch-meta-item flex view-info items-center flex text-[14px] leading-[19px] " +
+                              "!text-[#76e199]"
+                            }
+                          >
+                            <Link to={`/level/${level.st_name}/${level.tid}`}>
+                              <span>View books</span>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-              ))}
-            </ul>
-          </div>
-          </div>)}
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
       </section>
-            {pageCount > 1 && (
-              <Pagination
-                count={pageCount}
-                onChange={handlePageClick}
-                color="primary"
-                className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
-              />
-            )}
+      {pageCount > 1 && (
+        <Pagination
+          count={pageCount}
+          onChange={handlePageClick}
+          color="primary"
+          className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
+        />
+      )}
     </>
   );
 }
 
-export default Topics;
+export default Levels;

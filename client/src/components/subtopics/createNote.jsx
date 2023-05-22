@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import { Editor } from "@tinymce/tinymce-react";
+import { Editor } from '@tinymce/tinymce-react';
 import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../utils/authContext";
 import axios from "axios";
@@ -200,6 +200,25 @@ function CreateNote() {
             body {
               background: #fff;
               max-width: 840px;
+            }
+
+            code {
+              background-color: #272822 !important;
+              color: #f8f8f2 !important;
+              border-radius: 0.3rem !important;
+              padding: 4px 5px 5px !important;
+              white-space: nowrap !important;
+            }
+            
+            pre code {
+              white-space: inherit !important;
+            }
+            
+            pre {
+              background-color: #272822 !important;
+              padding: 5px !important;
+              border-radius: 0.3em !important;
+              color: #f8f8f2 !important;
             }
           `,
                 }}

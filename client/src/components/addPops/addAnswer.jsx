@@ -191,6 +191,25 @@ function AddAnswer(props) {
                       margin-bottom: 5px;
                       line-height: 19px;
                     }
+
+                    code {
+                      background-color: #272822 !important;
+                      color: #f8f8f2 !important;
+                      border-radius: 0.3rem !important;
+                      padding: 4px 5px 5px !important;
+                      white-space: nowrap !important;
+                    }
+                    
+                    pre code {
+                      white-space: inherit !important;
+                    }
+                    
+                    pre {
+                      background-color: #272822 !important;
+                      padding: 5px !important;
+                      border-radius: 0.3em !important;
+                      color: #f8f8f2 !important;
+                    }
                     `,
                 }}
                 value={content}
