@@ -170,7 +170,7 @@ const updateBalance = (req, res) => {
     const q=`SELECT id, balance FROM users where id=${uid};`
     db.query(q, (err, data) => {
         if (err) return res.status(500).json(err.message);
-        var balance = parseInt(data.rows[0].balance);
+        var balance = (data.rows[0].balance) ? parseInt(data.rows[0].balance) : 0;
         if(changereq == "add"){
             balance += parseInt(amount);
         } else if(changereq == "withdraw"){

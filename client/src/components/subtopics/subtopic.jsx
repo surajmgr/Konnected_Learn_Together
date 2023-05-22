@@ -131,8 +131,8 @@ function Subtopic() {
           token: payload.token,
           amount: payload.amount,
         };
-        addNotifications();
         updateBalance(data.amount / 100, "add");
+        addNotifications();
         Store.addNotification({
           title: "Success!",
           message: "Payment Successfull.",
