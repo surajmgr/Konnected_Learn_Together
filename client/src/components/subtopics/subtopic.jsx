@@ -23,6 +23,7 @@ import Loading from "../utils/loading";
 import LargeLoading from "../utils/largeLoading";
 import ExplainGPT from "../explaingpt/explainGPT";
 import YoutubePlayer from "../youtubePlayer/youtubePlayer";
+import RecomVideos from "../youtubePlayer/recomVideos";
 
 function getUnique(array, key) {
   if (typeof key !== "function") {
@@ -693,12 +694,14 @@ function Subtopic() {
                                   <div className="text-sm">
                                     <Link
                                       to={`/user/${displayNote["0"]?.username}`}
+                                      title={displayNote["0"].byname}
                                       className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
                                     >
                                       {displayNote["0"]?.byname}{" "}
                                     </Link>
                                     {displayNote["0"]?.phone && (
                                       <span
+                                      title={`Tip for ${displayNote["0"].byname}`}
                                         onClick={(e) => {
                                           e.preventDefault();
                                           setShowDonation(0);
@@ -713,7 +716,9 @@ function Subtopic() {
                                   </div>
                                 </div>
                               </div>
-                              <img
+                              <Link
+                                      to={`/user/${displayNote["0"]?.username}`}
+                                      title={displayNote["0"].byname}><img
                                 className="w-12 h-12 rounded-full"
                                 src={
                                   displayNote["0"].avatar
@@ -721,29 +726,45 @@ function Subtopic() {
                                     : "/upload/avatar/no-cover-avatar.png"
                                 }
                                 alt={displayNote["0"]?.byname}
+                              /></Link>
+                            </div>
+                          </div>
+                          {subtopic && (
+                            <div className="recom-component fos-animate-me fadeIn delay-0_2 ml-[15px]">
+                              <RecomVideos
+                                term={subtopic.stname + " - " + subtopic.tname}
                               />
                             </div>
-                          </div>
+                          )}
                         </>
                       ) : (
-                        <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeInUp delay-0_1">
-                          <img src={add} alt="" className="mr-[25px]" />
-                          <div className="add-meta">
-                            <div className="">Note is not available!</div>
-                            <div
-                              className="text-[#249efb] cursor-pointer p-[12px]"
-                              onClick={() => {
-                                currentUser
-                                  ? navigate(
-                                      `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
-                                    )
-                                  : loginWarning();
-                              }}
-                            >
-                              Add new note
+                        <>
+                          <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeIn delay-0_1">
+                            <img src={add} alt="" className="mr-[25px]" />
+                            <div className="add-meta">
+                              <div className="">Note is not available!</div>
+                              <div
+                                className="text-[#249efb] cursor-pointer p-[12px]"
+                                onClick={() => {
+                                  currentUser
+                                    ? navigate(
+                                        `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
+                                      )
+                                    : loginWarning();
+                                }}
+                              >
+                                Add new note
+                              </div>
                             </div>
                           </div>
-                        </div>
+                          {subtopic && (
+                            <div className="recom-component fos-animate-me fadeIn delay-0_2 ml-[15px]">
+                              <RecomVideos
+                                term={subtopic.stname + " - " + subtopic.tname}
+                              />
+                            </div>
+                          )}
+                        </>
                       )}
                     </>
                   )}
