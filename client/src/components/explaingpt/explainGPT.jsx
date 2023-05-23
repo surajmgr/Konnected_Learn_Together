@@ -140,6 +140,7 @@ function ExplainGPT(props) {
 
   const elaborateEng = (html, text) => {
     setText("");
+    setInfo({});
     setPopRes(1);
     systemMessage.content =
       "Act as an educator who can explain anything in simple way so as even a ten year old can understand. Takes topic, subtopic and sentence as input and replies in english.";
@@ -151,6 +152,7 @@ function ExplainGPT(props) {
 
   const elaborateNep = (html, text) => {
     setText("")
+    setInfo({});
     setPopRes(1);
     systemMessage.content =
       "Act as a nepali educator who can explain anything in simple way so as even a ten year old can understand, but only in nepali. Takes topic, subtopic and sentence as input and replies in nepali.";
@@ -162,6 +164,7 @@ function ExplainGPT(props) {
 
   const removeMessages = () => {
     setText("");
+    setInfo({});
     setMessages([
       {
         message: "Hello, I'm GPT! Ask me anything!",
