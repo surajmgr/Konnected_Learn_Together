@@ -61,7 +61,7 @@ function RecomVideos(props) {
                     >
                       <span
                         title={video.snippet.title}
-                        class="RecomArtiTitle block font-[500] -ml-[5px] capitalize truncate w-[545px]"
+                        class="RecomArtiTitle block font-[500] -ml-[5px] first-letter:uppercase truncate w-[545px]"
                       >
                         {parse(video.snippet.title)}
                       </span>
