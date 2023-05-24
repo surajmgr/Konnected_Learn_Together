@@ -10,7 +10,7 @@ function RecomVideos(props) {
   const [videoInfo, setVideoInfo] = useState({});
 
   useEffect(() => {
-    if (props.term) {
+    if (props.term && props.term != "undefined") {
       onTermSubmit(props.term);
     }
   }, [props.term]);
