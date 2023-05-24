@@ -227,7 +227,11 @@ function ExplainGPT(props) {
           <i
             id="close"
             className="fa fa-close close"
-            onClick={() => setPopRes(0)}
+            onClick={() => {
+              setText("");
+              setInfo({});
+              setPopRes(0);
+            }}
           ></i>
           <div className="warning-heading-text border-b">Brief Explaination</div>
           <div className="warning-body-text text-sm border-2 rounded-lg overflow-y-scroll overflow-x-scroll min-h-[150px] max-h-[250px] p-[15px]">
@@ -243,7 +247,11 @@ function ExplainGPT(props) {
             <button
               id="close"
               className="cancel mt-[12px] bg-[#6f93f6] hover:bg-[#275df1]"
-              onClick={(e) => setPopRes(0)}
+              onClick={(e) => {
+                setText("");
+                setInfo({});
+                setPopRes(0);
+              }}
             >
               Close
             </button>
