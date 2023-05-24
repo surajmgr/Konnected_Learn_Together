@@ -129,6 +129,7 @@ function Login() {
           onScreen: false,
         },
       });
+      setLoading(false);
     }
   };
 
