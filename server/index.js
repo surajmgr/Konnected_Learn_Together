@@ -72,6 +72,7 @@ const cnote_route = require('./routes/cnoteRoute');
 const search_route = require('./routes/searchRoute');
 const count_route = require('./routes/countRoute');
 const question_route = require('./routes/questionRoute');
+const yt_route = require('./routes/ytRoute');
 
 app.post('/api/upload', upload.single('file'), async function (req, res) {
     const file = req.file;
@@ -118,6 +119,8 @@ app.use("/api/count", count_route);
 app.use("/api/profile", user_route);
 
 app.use("/api/dbquestion", question_route);
+
+app.use("/api/yt", yt_route);
 
 // Listening server in port 5000
 app.listen(5000, (req, res) => {

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { stopVideoPlayer } from "./layout.js";
 import Draggable from "react-draggable";
 import { ResizableBox } from "react-resizable";
 import "react-resizable/css/styles.css";
@@ -34,7 +32,8 @@ const YoutubePlayer = (props) => {
               <iframe
                 id="player"
                 type="text/html"
-                className={loading ? "hidden " : "" + "w-full h-full rounded-[15px] border shadow fos-animate-me"}
+                title={`Playing video no. ${videoId}`}
+                className={loading ? "hidden" : null + " w-full h-full rounded-[15px] border shadow fos-animate-me"}
                 src={`https://www.youtube.com/embed/${videoId}`}
                 onLoad={()=>setLoading(false)}
                 frameborder="0"

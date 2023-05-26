@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../utils/authContext";
 import logoCut from "../../static/logo-cut.png";
-import { useIntersection } from "../utils/onScreen";
 
 // React Notification
 import { Store } from "react-notifications-component";
@@ -16,6 +15,7 @@ function DesignNavbar() {
   const [searchTerm, setSearchTerm] = useState("");
   const [profileDp, showPrflDp] = useState(0);
   const [notifications, showNotifications] = useState(0);
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
   const refOne = useRef(null);
   const refTwo = useRef(null);
 
@@ -31,6 +31,25 @@ function DesignNavbar() {
       fetchProfile();
     }
   }, []);
+
+  useEffect(() => {
+    // Update network status
+    const handleStatusChange = () => {
+      setIsOnline(navigator.onLine);
+    };
+
+    // Listen to the online status
+    window.addEventListener('online', handleStatusChange);
+
+    // Listen to the offline status
+    window.addEventListener('offline', handleStatusChange);
+
+    // Specify how to clean up after this effect for performance improvment
+    return () => {
+      window.removeEventListener('online', handleStatusChange);
+      window.removeEventListener('offline', handleStatusChange);
+    };
+  }, [isOnline]);
 
   const fetchProfile = async () => {
     try {
@@ -103,7 +122,8 @@ function DesignNavbar() {
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      window.location.href = `/search?query=${searchTerm}`;
+      // window.location.href = `/search?query=${searchTerm}`;
+      navigate(`/search?query=${searchTerm}`,  { state: { tab: 2 } });
     }
   };
 
@@ -115,7 +135,7 @@ function DesignNavbar() {
       ></link>
       {/* <header className="w-full"> */}
       <nav
-        className="navbar h-[54px] z-10 top-0 sticky flex justify-between lg:px-[120px] py-3 border-b items-center bg-white font-poppins tracking-[0.5px]"
+        className={"navbar h-[54px] z-10 top-0 sticky flex justify-between lg:px-[120px] py-3 border-b items-center bg-white tracking-[0.5px]" + (isOnline ? " font-poppins" : "")}
         style={{ boxShadow: "1px 0px 5px #7b8f981f" }}
       >
         <div className="flex items-center">
@@ -221,11 +241,11 @@ function DesignNavbar() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 611.999 611.999"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}

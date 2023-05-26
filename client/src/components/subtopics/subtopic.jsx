@@ -466,6 +466,8 @@ function Subtopic() {
     });
   };
 
+  console.log(subtopic.stname + " - " + subtopic.tname);
+
   return (
     <>
       <Breadcrum
@@ -550,7 +552,7 @@ function Subtopic() {
           </div>
           <div className="note-content">
             <div
-              class={
+              className={
                 (openTab === 1 ? "block " : "hidden ") +
                 "tp-container tp-container-active subtopic-subtopics-info-container card content-sec"
               }
@@ -575,7 +577,7 @@ function Subtopic() {
                           </div>
                           <div className="author mt-3 mb-5 shadow p-5 rounded-md">
                             <div
-                              class={
+                              className={
                                 showDonation === 1
                                   ? "popup-outer z-10"
                                   : "active popup-outer z-10"
@@ -640,7 +642,7 @@ function Subtopic() {
                               </div>
                             </div>
                             <div
-                              class={
+                              className={
                                 showNoteDelWarning.state === 1
                                   ? "popup-outer z-10"
                                   : "active popup-outer z-10"
@@ -784,7 +786,7 @@ function Subtopic() {
                         ) : (
                           <>
                             {subTopics.map((subTopic, index) => (
-                              <li>
+                              <li key={index+1}>
                                 <span className="index text-[#ef6862]">
                                   {index < 9 ? "0" + (index + 1) : index + 1}
                                 </span>
@@ -1052,7 +1054,7 @@ function Subtopic() {
                 />
               )}
               <div
-                class={
+                className={
                   showDelWarning.state === 1
                     ? "popup-outer z-10"
                     : "active popup-outer z-10"
