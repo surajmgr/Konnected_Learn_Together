@@ -33,17 +33,29 @@ const getLevels = (req, res) => {
     const page = (req.query.page) ? parseInt(req.query.page) : 1;
     const limit = (req.query.limit) ? parseInt(req.query.limit) : 10;
     let q;
-    if (req.query.query) {
-        q = `SELECT l.id, l.name, sl_name, count(bl.id) as count FROM levels l JOIN bookLevel bl ON l.id=bl.level_id WHERE Lower(name) ILIKE '%${req.query.query}%' AND is_verified = '1' GROUP BY(l.id) ORDER BY COUNT(bl.id);`;
+    if (req.query.all == 'true') {
+        q = `SELECT id, name, sl_name FROM levels WHERE is_verified = '1' ORDER BY id;`;
+        console.log(q);
+        db.query(q, (err, data) => {
+            if (err) return res.send(err);
+            const levels = data.rows;
+            return res.status(200).json({
+                total: levels.length,
+                result: levels
+            });
+        })
     } else {
-        q = `SELECT l.id, l.name, sl_name, count(bl.id) as count FROM levels l JOIN bookLevel bl ON l.id=bl.level_id WHERE is_verified = '1' GROUP BY(l.id) ORDER BY COUNT(bl.id);`;
+        if (req.query.query) {
+            q = `SELECT l.id, l.name, sl_name, count(bl.id) as count FROM levels l JOIN bookLevel bl ON l.id=bl.level_id WHERE Lower(name) ILIKE '%${req.query.query}%' AND is_verified = '1' GROUP BY(l.id) ORDER BY COUNT(bl.id);`;
+        } else {
+            q = `SELECT l.id, l.name, sl_name, count(bl.id) as count FROM levels l JOIN bookLevel bl ON l.id=bl.level_id WHERE is_verified = '1' GROUP BY(l.id) ORDER BY COUNT(bl.id);`;
+        }
+        db.query(q, (err, data) => {
+            if (err) return res.send(err);
+            const levels = data.rows;
+            return res.status(200).json(pagination(page, limit, levels));
+        })
     }
-    console.log(q);
-    db.query(q, (err, data) => {
-        if (err) return res.send(err);
-        const levels = data.rows;
-        return res.status(200).json(pagination(page, limit, levels));
-    })
 }
 
 module.exports = {

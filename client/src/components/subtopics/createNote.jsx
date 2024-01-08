@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import { Editor } from '@tinymce/tinymce-react';
+import { Editor } from "@tinymce/tinymce-react";
 import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../utils/authContext";
 import axios from "axios";
@@ -7,6 +7,44 @@ import moment from "moment";
 import "./createNote.css";
 import LargeLoading from "../utils/largeLoading";
 import { Store } from "react-notifications-component";
+import ReactQuill, { Quill } from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import "react-quill/dist/quill.core.css";
+import "react-quill/dist/quill.bubble.css";
+import ImageResize from "quill-image-resize-module-react";
+import { ImageDrop } from 'quill-image-drop-module';
+
+Quill.register("modules/imageResize", ImageResize);
+Quill.register('modules/imageDrop', ImageDrop);
+
+CreateNote.modules = {
+  toolbar: [
+    [
+      { header: "1" },
+      { header: "2" },
+      { font: [] }
+    ],[
+      { size: [] }
+    ],
+    ["bold", "italic", "underline", "strike", "blockquote", "align"],
+    [
+      { list: "ordered" },
+      { list: "bullet" },
+      { indent: "-1" },
+      { indent: "+1" },
+    ],
+    ["link", "image"],
+    ["clean"],
+  ],
+  clipboard: {
+    // toggle to add extra line breaks when pasting HTML:
+    matchVisual: false
+  },
+  imageResize: {
+    parchment: Quill.import('parchment'),
+    modules: ['Resize', 'DisplaySize']
+  },
+};
 
 function CreateNote() {
   const state = useLocation().state;
@@ -15,6 +53,7 @@ function CreateNote() {
   const { currentUser } = useContext(AuthContext);
   const editorRef = useRef(null);
   const [loading, setLoading] = useState(true);
+  const [offline, isOffline] = useState(false);
   const log = () => {
     if (editorRef.current) {
       console.log(editorRef.current.getContent());
@@ -66,12 +105,15 @@ function CreateNote() {
       } else {
         setLoading(true);
         const res = state
-          ? await axios.put(`${process.env.REACT_APP_API_BASE_URL}/cnote/${state.nid}`, {
-              title,
-              content,
-              subtopic: subtopic_id,
-              uid: currentUser.id,
-            })
+          ? await axios.put(
+              `${process.env.REACT_APP_API_BASE_URL}/cnote/${state.nid}`,
+              {
+                title,
+                content,
+                subtopic: subtopic_id,
+                uid: currentUser.id,
+              }
+            )
           : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/cnote/`, {
               title,
               content,
@@ -101,10 +143,29 @@ function CreateNote() {
     }
   };
 
+  const failedTinyMCE = (e) => {
+    isOffline(true);
+    Store.addNotification({
+      title: "Connection failed!",
+      message: "Loading offline editor...",
+      type: "warning",
+      insert: "top",
+      container: "top-right",
+      animationIn: ["animate__animated"],
+      animationOut: ["animate__animated", "animate__fadeOut"],
+      dismiss: {
+        duration: 5000,
+        onScreen: true,
+        showIcon: true,
+      },
+    });
+    setLoading(false);
+  };
+
   return (
     <>
       {!currentUser ? (
-        <>{()=>navigate(-1)}</>
+        <>{() => navigate(-1)}</>
       ) : (
         <section className="createNote min-h-[500px]">
           <>
@@ -138,7 +199,7 @@ function CreateNote() {
             )}
             <div
               className={
-                (loading ? "hidden " : "") +
+                (loading || offline ? "hidden " : "") +
                 "editor-container w-[900px] flex justify-around mx-auto min-h-[550px] overflow-hidden"
               }
             >
@@ -154,6 +215,9 @@ function CreateNote() {
                   editorRef.current = editor;
                   setLoading(false);
                 }}
+                onScriptsLoadError={failedTinyMCE}
+                onModelLoadError={failedTinyMCE}
+                onerror
                 init={{
                   menubar: false,
                   width: 840,
@@ -162,7 +226,6 @@ function CreateNote() {
                   resize: false,
                   branding: false,
                   skin: "snow",
-                  icons: "thin",
                   plugins: [
                     "advlist",
                     "autolink",
@@ -226,6 +289,25 @@ function CreateNote() {
                 onEditorChange={handleEditorChange}
               />
             </div>
+
+            {offline && (
+              <div
+                className={
+                  (loading ? "hidden " : "") +
+                  "react-quill editor-container w-[840px] flex justify-around mx-auto min-h-[550px]"
+                }
+              >
+                <div className="w-full">
+                  <ReactQuill
+                    placeholder="Type / paste pre-formatted text"
+                    modules={CreateNote.modules}
+                    theme="snow"
+                    value={content}
+                    onChange={handleEditorChange}
+                  />
+                </div>
+              </div>
+            )}
           </>
         </section>
       )}

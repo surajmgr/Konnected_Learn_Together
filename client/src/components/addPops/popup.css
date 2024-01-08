@@ -117,3 +117,15 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+  .ql-editor {
+    height: 200px !important;
+  }
+
+  .quill .ql-toolbar.ql-snow {
+    border-bottom: #ddd solid 1px !important;
+    height: 38px;
+    overflow: hidden !important;
+    padding-left: 0;
+    margin-left: 7px !important;
+  }
