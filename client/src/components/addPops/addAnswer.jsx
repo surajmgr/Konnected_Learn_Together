@@ -6,16 +6,21 @@ import { Editor } from "@tinymce/tinymce-react";
 import moment from "moment";
 import icon_add from "../../static/icon-add.png";
 import "./inlineEditor.css";
+import "react-quill/dist/quill.snow.css";
+import "react-quill/dist/quill.core.css";
+import "react-quill/dist/quill.bubble.css";
 
 // React Notification
 import { Store } from "react-notifications-component";
 import Loading from "../utils/loading";
 import { AuthContext } from "../utils/authContext";
 import LargeLoading from "../utils/largeLoading";
+import ReactQuill from "react-quill";
 
 function AddAnswer(props) {
   const { currentUser } = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
+  const [offline, isOffline] = useState(false);
   const [entering, setEntering] = useState(1);
   const editorRef = useRef(null);
 
@@ -94,6 +99,26 @@ function AddAnswer(props) {
     }
   };
 
+  const failedTinyMCE = (e) => {
+    isOffline(true);
+    Store.addNotification({
+      title: "Connection failed!",
+      message: "Loading offline editor...",
+      type: "warning",
+      insert: "top",
+      container: "top-right",
+      animationIn: ["animate__animated"],
+      animationOut: ["animate__animated", "animate__fadeOut"],
+      dismiss: {
+        duration: 5000,
+        onScreen: true,
+        showIcon: true,
+      },
+    });
+    setLoading(false);
+  };
+
+
   return (
     <>
       <div
@@ -136,7 +161,7 @@ function AddAnswer(props) {
           <>
             <div
               className={
-                loading
+                loading || offline
                   ? "tiny-editor-container hidden"
                   : "tiny-editor-container fos-animate-me fadeIn delay-0_1"
               }
@@ -152,6 +177,7 @@ function AddAnswer(props) {
                   setLoading(false);
                   console.log("Initialized!");
                 }}
+                onScriptsLoadError={() => failedTinyMCE()}
                 init={{
                   height: 250,
                   menubar: false,
@@ -216,6 +242,22 @@ function AddAnswer(props) {
                 onEditorChange={handleEditorChange}
               />
             </div>
+            {offline && (
+              <div
+                className={
+                  (loading ? "hidden " : "") +
+                  "react-quill tiny-editor-container fos-animate-me fadeIn delay-0_1"
+                }
+              >
+                <div className="w-full border rounded-lg">
+                  <ReactQuill
+                    theme="snow"
+                    value={content}
+                    onChange={handleEditorChange}
+                  />
+                </div>
+              </div>
+            )}
             {!loading && (
               <div className="button fos-animate-me fadeIn delay-0_1">
                 <button

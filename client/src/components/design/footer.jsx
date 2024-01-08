@@ -4,6 +4,7 @@ import icon19 from "../../static/icon-19.svg";
 import icon20 from "../../static/icon-20.svg";
 import logo from "../../static/logo.png";
 import { Link } from "react-router-dom";
+import moment from "moment";
 
 function Footer() {
   return (
@@ -108,7 +109,7 @@ function Footer() {
               </div>
               <div className="col-md-6">
                 <div className="copyright-text">
-                  <p className="mb-0">© 2023 KonnectEd. All rights reserved.</p>
+                  <p className="mb-0">© {moment().year()} KonnectEd. All rights reserved.</p>
                 </div>
               </div>
             </div>

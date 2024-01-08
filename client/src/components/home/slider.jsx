@@ -75,7 +75,7 @@ function Slider() {
                   </div>
                 </div>
               </div>
-              <div onClick={() => navigate("/user/manish")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_5" : "hidden")}>
+              <div onClick={() => navigate("/user/manishtimilsinaa")} className={"card cursor-pointer" + ((isInViewport2) ? " fos-animate-me fadeIn delay-0_5" : "hidden")}>
                 <div className="content">
                   <div className="img img-3">
                     <img src={manish} alt="" />

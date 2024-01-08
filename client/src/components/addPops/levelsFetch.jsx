@@ -28,8 +28,9 @@ function LevelsFetch(props) {
 
   async function getLevels() {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/levels`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/levels?all=true`);
       setLevels(res.data);
+      console.log(res.data);
     } catch (error) {
       console.log(error);
     }
@@ -101,7 +102,7 @@ function LevelsFetch(props) {
                 className="my-2 text-sm overflow-scroll max-h-[108px]"
                 aria-labelledby="dropdownDefaultButton"
               >
-                {levels
+                {levels.result
                   .filter((data) => {
                     const searchTerm = selectValue.toString().toLowerCase();
                     const tname = data.name.toString().toLowerCase();
