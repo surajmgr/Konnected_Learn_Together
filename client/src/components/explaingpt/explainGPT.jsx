@@ -2,12 +2,14 @@ import React, { useRef, useState } from "react";
 import TextSelector from "./get-selected-text.js";
 import "./explainGPT.css";
 import LargeLoading from "../utils/largeLoading.jsx";
+import parse from "html-react-parser";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../utils/authContext.js";
 
 // React Notifications
 import { Store } from "react-notifications-component";
+import TypingEffect from "../questions/typingEffect.jsx";
 
 const systemMessage = {
   //  Explain things like you're talking to a software professional with 5 years of experience.
@@ -103,6 +105,7 @@ function ExplainGPT(props) {
           },
         ]);
         setInfo({ content: data.choices[0].message.content });
+        setText(data.choices[0].message.content)
         setIndex(0);
         setIsTyping(false);
       }).catch((error,data) => {
@@ -175,16 +178,16 @@ function ExplainGPT(props) {
     setPopRes(0);
   };
 
-  useEffect(() => {
-    if(!isTyping && info.content){
-      if (index < info.content.length) {
-        setTimeout(() => {
-          setText(text + info.content[index]);
-          setIndex(index + 1);
-        }, 30);
-      }
-    }
-  }, [info.content, isTyping, index]);
+  // useEffect(() => {
+  //   if(!isTyping && info.content){
+  //     if (index < info.content.length) {
+  //       setTimeout(() => {
+  //         setText(text + info.content[index]);
+  //         setIndex(index + 1);
+  //       }, 30);
+  //     }
+  //   }
+  // }, [info.content, isTyping, index]);
 
   return (
     <>
@@ -235,7 +238,7 @@ function ExplainGPT(props) {
           ></i>
           <div className="warning-heading-text border-b">Brief Explaination</div>
           <div className="warning-body-text text-sm border-2 rounded-lg overflow-y-scroll overflow-x-scroll min-h-[150px] max-h-[250px] p-[15px]">
-            {isTyping ? <div className="mt-[30px]"><LargeLoading /></div> : text}
+            {isTyping ? <div className="mt-[30px]"><LargeLoading /></div> : <TypingEffect text={text.replaceAll("\n", "<br>")} />}
           </div>
           <div className="button">
             <button
