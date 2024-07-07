@@ -22,7 +22,7 @@ var allowedDomains = [process.env.client_KED, 'http://localhost:3000/'];
 //     return callback(null, true);
 //   }
 app.use(cors({
-    origin: 'https://konnected-urn3.onrender.com',
+    origin: 'http://localhost:3000',
     credentials: true
 }));
 
