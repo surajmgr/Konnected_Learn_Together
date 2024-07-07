@@ -31,7 +31,7 @@ const pagination = (page, limit, responseData) => {
 
 const getProfile = (req, res) => {
     const username = req.params.username;
-    const q = `SELECT u.id as uid, u.name as uname, username, email, phone, avatar, bio, balance, u.points as upoints, tinymce, gpt, r.name as rank, l.name as level FROM users u 
+    const q = `SELECT u.id as uid, u.name as uname, username, email, phone, avatar, bio, balance, coins, u.points as upoints, tinymce, gpt, r.name as rank, l.name as level FROM users u 
     JOIN ranks r ON u.rank=r.id JOIN levels l ON u.level=l.id
     WHERE username='${username}';`
     db.query(q, (err, data) => {
@@ -184,6 +184,26 @@ const updateBalance = (req, res) => {
     })
 }
 
+const updateCoins = (req, res) => {
+    const { uid, amount } = req.body;
+    const q=`SELECT id, coins FROM users where id=${uid};`
+    db.query(q, (err, data) => {
+        if (err) return res.status(500).json(err.message);
+        var coins = (data.rows[0].coins) ? parseInt(data.rows[0].coins) : 0;
+        coins += parseInt(amount);
+        const q = `UPDATE users SET coins=${coins} WHERE id=${uid};`
+        db.query(q, (err, data) => {
+            if (err) return res.status(500).json(err.message);
+            return res.json("Updated Coins.");
+        })
+    })
+}
+
+const getBody = (req, res) => {
+    const { token, amount, message } = req.body;
+    console.log(token, amount, message);
+}
+
 module.exports = {
     getProfile,
     isFollowing,
@@ -196,5 +216,7 @@ module.exports = {
     getNotifications,
     updateReadNotif,
     addNotifications,
-    updateBalance
+    updateBalance,
+    getBody,
+    updateCoins
 }

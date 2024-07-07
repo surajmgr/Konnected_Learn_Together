@@ -26,5 +26,7 @@ user_route.get("/notifications/:uid", user_controller.getNotifications)
 user_route.post("/notifications", user_controller.updateReadNotif)
 user_route.post("/notifications/add", user_controller.addNotifications)
 user_route.post("/update-balance", user_controller.updateBalance)
+user_route.post("/update-coins", user_controller.updateCoins)
+user_route.post("/transaction", user_controller.getBody)
 
 module.exports = user_route;

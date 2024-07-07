@@ -11,6 +11,7 @@ import { Store } from "react-notifications-component";
 import Loading from "../utils/loading";
 import LargeLoading from "../utils/largeLoading";
 import { Pagination, TablePagination } from "@mui/material";
+import CoinsHandle from "./CoinsHandle";
 
 function Profile() {
   const [openTab, setOpenTab] = useState(1);
@@ -54,7 +55,9 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/${username}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/profile/${username}`
+      );
       setUser(res.data);
       fetchFeeds(res.data.uid);
       getFollowing(res.data.uid);
@@ -222,7 +225,9 @@ function Profile() {
   const getFollowing = async (uid) => {
     try {
       setLoading(true);
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/followings/${uid}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/profile/followings/${uid}`
+      );
       setFollowings(res.data);
       setLoading(false);
     } catch (error) {
@@ -247,7 +252,9 @@ function Profile() {
   const getFollower = async (uid) => {
     try {
       setLoading(true);
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/followers/${uid}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/profile/followers/${uid}`
+      );
       setFollowers(res.data);
       setLoading(false);
     } catch (error) {
@@ -271,7 +278,9 @@ function Profile() {
 
   const getNoteContributions = async (uid) => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/contributions/${uid}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/count/contributions/${uid}`
+      );
       setNoteContributions(res.data);
     } catch (error) {
       Store.addNotification({
@@ -332,6 +341,7 @@ function Profile() {
 
   const updateUser = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       console.log(userInputs);
       if (userInputs.uname.length < 3 || userInputs.uname.length > 40) {
@@ -459,7 +469,9 @@ function Profile() {
           fileUrl(avatarUrl);
         }
       }
+      setLoading(false);
     } catch (error) {
+      setLoading(false);
       Store.addNotification({
         title: "Error!",
         message: error.message,
@@ -560,8 +572,8 @@ function Profile() {
                   currentUser.username == username ? (
                     <>
                       <span>
-                        Rs.{" "}
-                        {user.balance ? user.balance.toLocaleString() : "00"}
+                        {user.coins ? user.coins.toLocaleString() : "00"}{" "}
+                        <b>C</b>
                       </span>
                       My Balance
                     </>
@@ -663,11 +675,14 @@ function Profile() {
               </div>
               {currentUser ? (
                 currentUser.username == username ? (
-                  <div
-                    onClick={openEditUser}
-                    className="mt-0 bg-[#2e9efb] text-white px-[25px] py-[10px] rounded-lg cursor-pointer font-poppins"
-                  >
-                    Edit Profile
+                  <div className="flex justify-between items-center">
+                    <div
+                      onClick={openEditUser}
+                      className="mt-0 bg-[#2e9efb] text-white px-[25px] py-[10px] rounded-lg cursor-pointer font-poppins"
+                    >
+                      Edit Profile
+                    </div>
+                    <CoinsHandle username={username} uid={currentUser.id} fetchProfile={fetchProfile} />
                   </div>
                 ) : follow != 0 ? (
                   <div

@@ -9,6 +9,7 @@ import Breadcrum from "../utils/breadcrum";
 import editIcon from "../../static/editIcon1.png";
 import deleteIcon from "../../static/delete.png";
 import add from "../../static/add.png";
+import warning from "../../static/warning.webp";
 import "./subtopic.css";
 import { Pagination } from "@mui/material";
 import AddQuestion from "../addPops/addQuestion";
@@ -24,6 +25,7 @@ import LargeLoading from "../utils/largeLoading";
 import ExplainGPT from "../explaingpt/explainGPT";
 import YoutubePlayer from "../youtubePlayer/youtubePlayer";
 import RecomVideos from "../youtubePlayer/recomVideos";
+import CartNow from "./CartNow.jsx";
 
 function getUnique(array, key) {
   if (typeof key !== "function") {
@@ -53,6 +55,9 @@ function Subtopic() {
   const [subTopics, setSubTopics] = useState([]);
   const [openTab, setOpenTab] = useState(1);
   const [showDonation, setShowDonation] = useState(1);
+  const [showPurchase, setShowPurchase] = useState(1);
+  const [noteInfo, setNoteInfo] = useState({});
+  const [isPurchasing, setIsPurchasing] = useState(false);
   const [showDelWarning, setShowDelWarning] = useState({ state: 1, qid: 0 });
   const [showNoteDelWarning, setShowNoteDelWarning] = useState({
     state: 1,
@@ -61,6 +66,7 @@ function Subtopic() {
   const [total, setTotal] = useState([]);
   const [showAdd, setShowAdd] = useState(1);
   const [showUpdateAdd, setShowUpdateAdd] = useState(1);
+  const [isLocked, setIsLocked] = useState(false);
 
   // const dispatch = useDispatch();
 
@@ -289,7 +295,13 @@ function Subtopic() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `${process.env.REACT_APP_API_BASE_URL}/notes/display/${subtopic_id}${nid}`
+        `${process.env.REACT_APP_API_BASE_URL}/notes/display/${subtopic_id}${
+          nid.includes("nid")
+            ? nid + (currentUser ? `&uid=${currentUser.id}` : "")
+            : currentUser
+            ? `?uid=${currentUser.id}`
+            : ""
+        }`
       );
       console.log(res.data);
       setDisplayNote(res.data);
@@ -297,7 +309,7 @@ function Subtopic() {
     } catch (error) {
       Store.addNotification({
         title: "Error!",
-        message: error.response.data,
+        message: error.response.data.message,
         type: "danger",
         insert: "top",
         container: "top-right",
@@ -308,6 +320,11 @@ function Subtopic() {
           onScreen: false,
         },
       });
+      // if the status is 401, then the note is locked
+      if (error.response.status === 401) {
+        setIsLocked(true);
+        setNoteInfo(error.response.data.note);
+      }
       setLoading(false);
     }
   };
@@ -371,6 +388,54 @@ function Subtopic() {
         },
       });
       setLoading(false);
+    }
+  };
+
+  const removeFromCart = (note_id) => {
+    const cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+    const newCart = cart.filter((item) => item.note_id !== note_id);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  }
+
+  const purchaseNote = async (nid) => {
+    try {
+      setIsPurchasing(true);
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/notes/purchase`, {
+        user_id: currentUser.id,
+        note_id: nid,
+      });
+      Store.addNotification({
+        title: "Success!",
+        message: res.data.message,
+        type: "success",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 3000,
+          onScreen: false,
+        },
+      });
+      setIsPurchasing(false);
+      setShowPurchase(1);
+      removeFromCart(nid);
+      fetchDisplayNotes();
+    } catch (error) {
+      Store.addNotification({
+        title: "Error!",
+        message: error.response.data.message,
+        type: "danger",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 3000,
+          onScreen: false,
+        },
+      });
+      setIsPurchasing(false);
     }
   };
 
@@ -512,7 +577,9 @@ function Subtopic() {
                     )}
                   </>
                 ) : (
-                  <span>Note is not available!</span>
+                  <span>
+                    {isLocked ? "Note is locked!" : "Note is not available!"}
+                  </span>
                 )}
               </div>
             )}
@@ -703,7 +770,7 @@ function Subtopic() {
                                     </Link>
                                     {displayNote["0"]?.phone && (
                                       <span
-                                      title={`Tip for ${displayNote["0"].byname}`}
+                                        title={`Tip for ${displayNote["0"].byname}`}
                                         onClick={(e) => {
                                           e.preventDefault();
                                           setShowDonation(0);
@@ -719,16 +786,19 @@ function Subtopic() {
                                 </div>
                               </div>
                               <Link
-                                      to={`/user/${displayNote["0"]?.username}`}
-                                      title={displayNote["0"].byname}><img
-                                className="w-12 h-12 rounded-full"
-                                src={
-                                  displayNote["0"].avatar
-                                    ? displayNote["0"].avatar
-                                    : "/upload/avatar/no-cover-avatar.png"
-                                }
-                                alt={displayNote["0"]?.byname}
-                              /></Link>
+                                to={`/user/${displayNote["0"]?.username}`}
+                                title={displayNote["0"].byname}
+                              >
+                                <img
+                                  className="w-12 h-12 rounded-full"
+                                  src={
+                                    displayNote["0"].avatar
+                                      ? displayNote["0"].avatar
+                                      : "/upload/avatar/no-cover-avatar.png"
+                                  }
+                                  alt={displayNote["0"]?.byname}
+                                />
+                              </Link>
                             </div>
                           </div>
                           {subtopic && (
@@ -741,24 +811,47 @@ function Subtopic() {
                         </>
                       ) : (
                         <>
-                          <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeIn delay-0_1">
-                            <img src={add} alt="" className="mr-[25px]" />
-                            <div className="add-meta">
-                              <div className="">Note is not available!</div>
-                              <div
-                                className="text-[#249efb] cursor-pointer p-[12px]"
-                                onClick={() => {
-                                  currentUser
-                                    ? navigate(
-                                        `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
-                                      )
-                                    : loginWarning();
-                                }}
-                              >
-                                Add new note
+                          {isLocked ? (
+                            <div className="add-banner bg-[#ffeded] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeIn delay-0_1">
+                              <img src={warning} alt="" className="mr-[25px]" />
+                              <div className="add-meta">
+                                <div className="">Note is locked!</div>
+                                <div
+                                  className="text-[#249efb] cursor-pointer p-[12px]"
+                                  onClick={() => {
+                                    currentUser
+                                      ? setShowPurchase(0)
+                                      : loginWarning();
+                                  }}
+                                >
+                                  Purchase Note
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          ) : (
+                            <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeIn delay-0_1">
+                              <img src={add} alt="" className="mr-[25px]" />
+                              <div className="add-meta">
+                                <div className="">
+                                  {isLocked
+                                    ? "Note is locked!"
+                                    : "Note is not available!"}
+                                </div>
+                                <div
+                                  className="text-[#249efb] cursor-pointer p-[12px]"
+                                  onClick={() => {
+                                    currentUser
+                                      ? navigate(
+                                          `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
+                                        )
+                                      : loginWarning();
+                                  }}
+                                >
+                                  Add new note
+                                </div>
+                              </div>
+                            </div>
+                          )}
                           {subtopic && (
                             <div className="recom-component fos-animate-me fadeIn delay-0_2 ml-[15px]">
                               <RecomVideos
@@ -770,6 +863,49 @@ function Subtopic() {
                       )}
                     </>
                   )}
+                  <div
+                    className={
+                      showPurchase === 1
+                        ? "popup-outer z-10"
+                        : "active popup-outer z-10"
+                    }
+                  >
+                    <div className="popup-box">
+                      <i
+                        id="close"
+                        className="fa fa-close close"
+                        onClick={() => setShowPurchase(1)}
+                      ></i>
+                      <div className="profile-text">
+                        <div className="text !ml-0">
+                          <span className="name">
+                            Purchase Details
+                          </span>
+                          <span className="profession">Buy Now</span>
+                        </div>
+                      </div>
+                      <div className="p">
+                        <b>Note: </b> <span>{noteInfo?.nname} <i>by {noteInfo?.byname}</i></span>
+                        <br />
+                        <b>Price: </b> <span>{noteInfo?.amount} Coins</span>
+                        <br />
+                        <b>Balance </b> <span>{noteInfo?.coins} Coins</span>
+                        <br />
+
+                      </div>
+                      <div className="button">
+                        <CartNow noteInfo={noteInfo} />
+                        <button
+                          onClick={() => {
+                            purchaseNote(noteInfo?.nid);
+                          }}
+                          className="send bg-[#6f93f6] hover:bg-[#275df1]"
+                        >
+                          {isPurchasing ? "Purchasing..." : "Purchase"}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="note-content-side">
@@ -786,15 +922,15 @@ function Subtopic() {
                         ) : (
                           <>
                             {subTopics.map((subTopic, index) => (
-                              <li key={index+1}>
+                              <li key={index + 1}>
                                 <span className="index text-[#ef6862]">
                                   {index < 9 ? "0" + (index + 1) : index + 1}
                                 </span>
-                                <Link
-                                  to={`/subtopic/${subTopic.st_name}/${subTopic.sst_name}/${subTopic.stid}/${subtopic.tid}`}
+                                <a
+                                  href={`/subtopic/${subTopic.st_name}/${subTopic.sst_name}/${subTopic.stid}/${subtopic.tid}`}
                                 >
                                   {subTopic.stname}
-                                </Link>
+                                </a>
                               </li>
                             ))}
                           </>
@@ -802,7 +938,7 @@ function Subtopic() {
                       </ul>
                     </div>
                   </section>
-                  {displayNote["0"] && (
+                  {(
                     <section className="side-section">
                       <div className="side-section-body">
                         <div className="section-heading">

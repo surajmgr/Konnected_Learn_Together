@@ -12,20 +12,15 @@ import "react-quill/dist/quill.snow.css";
 import "react-quill/dist/quill.core.css";
 import "react-quill/dist/quill.bubble.css";
 import ImageResize from "quill-image-resize-module-react";
-import { ImageDrop } from 'quill-image-drop-module';
+import { ImageDrop } from "quill-image-drop-module";
 
 Quill.register("modules/imageResize", ImageResize);
-Quill.register('modules/imageDrop', ImageDrop);
+Quill.register("modules/imageDrop", ImageDrop);
 
 CreateNote.modules = {
   toolbar: [
-    [
-      { header: "1" },
-      { header: "2" },
-      { font: [] }
-    ],[
-      { size: [] }
-    ],
+    [{ header: "1" }, { header: "2" }, { font: [] }],
+    [{ size: [] }],
     ["bold", "italic", "underline", "strike", "blockquote", "align"],
     [
       { list: "ordered" },
@@ -38,11 +33,11 @@ CreateNote.modules = {
   ],
   clipboard: {
     // toggle to add extra line breaks when pasting HTML:
-    matchVisual: false
+    matchVisual: false,
   },
   imageResize: {
-    parchment: Quill.import('parchment'),
-    modules: ['Resize', 'DisplaySize']
+    parchment: Quill.import("parchment"),
+    modules: ["Resize", "DisplaySize"],
   },
 };
 
@@ -54,6 +49,7 @@ function CreateNote() {
   const editorRef = useRef(null);
   const [loading, setLoading] = useState(true);
   const [offline, isOffline] = useState(false);
+  const [locked, setLocked] = useState(state?.is_locked || false);
   const log = () => {
     if (editorRef.current) {
       console.log(editorRef.current.getContent());
@@ -112,6 +108,7 @@ function CreateNote() {
                 content,
                 subtopic: subtopic_id,
                 uid: currentUser.id,
+                isLocked: locked,
               }
             )
           : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/cnote/`, {
@@ -120,6 +117,7 @@ function CreateNote() {
               subtopic: subtopic_id,
               uid: currentUser.id,
               date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss"),
+              isLocked: locked,
             });
         setLoading(false);
         navigate(-1);
@@ -185,6 +183,17 @@ function CreateNote() {
                         onChange={(e) => setTitle(e.target.value)}
                       ></input>
                     </h1>
+                    <div className="status-code-container flex justify-between items-center my-auto ml-[16px] absolute top-30 -right-3">
+                      <button
+                        onClick={() => setLocked(!locked)}
+                        className="text-gray-900 border border-gray-300 focus:outline-none hover:text-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+                        style={{
+                          backgroundColor: locked ? "#fff54a" : "#f0f0f0"
+                        }}
+                      >
+                        $
+                      </button>
+                    </div>
                     <div className="status-code-container flex justify-between items-center my-auto ml-[16px]">
                       <button
                         onClick={handleSubmit}

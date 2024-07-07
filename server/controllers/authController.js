@@ -307,11 +307,11 @@ const login = (req, res) => {
         if (!data.rows[0].is_activated) return res.status(403).json("Please activate your account through mail!");
 
         const token = jwt.sign({ id: data.rows[0].id }, "jwtkey");
-        const { id, name, username, email, avatar, is_admin, tinymce, gpt, ...other } = data.rows[0];
+        const { id, name, username, email, avatar, is_admin, tinymce, gpt, coins, ...other } = data.rows[0];
 
         req.session.token = token;
         req.session.save();
-        res.status(200).json({ id, username, name, email, avatar, tinymce, gpt, token });
+        res.status(200).json({ id, username, name, email, avatar, tinymce, gpt, token, coins });
     });
 }
 

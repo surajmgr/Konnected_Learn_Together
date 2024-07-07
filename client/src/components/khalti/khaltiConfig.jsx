@@ -8,29 +8,30 @@ let config = {
   productUrl: "http://localhost:3000",
   eventHandler: {
     onSuccess(payload) {
+      axios
+        .post("http://localhost:5000/api/profile/transaction", {
+          token: payload.token,
+          amount: payload.amount,
+          message: payload.message,
+        })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+
       // hit merchant api for initiating verfication
       console.log(payload);
       let data = {
         token: payload.token,
         amount: payload.amount,
-        message: payload.message
+        message: payload.message,
       };
-          NotificationManager.success(payload.message, 'Successful!', 2000);
-
-      // axios
-      //   .get(
-      //     `https://meslaforum.herokuapp.com/khalti/${data.token}/${data.amount}/${myKey.secretKey}`
-      //   )
-      //   .then((response) => {
-      //     console.log(response.data);
-      //     alert("Thank you for generosity");
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   });
+      NotificationManager.success(payload.message, "Successful!", 2000);
     },
     onError(error) {
-      NotificationManager.error('Payment has failed!', 'Error!', 2000);
+      NotificationManager.error("Payment has failed!", "Error!", 2000);
       console.log(error);
     },
     onClose() {

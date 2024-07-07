@@ -21,7 +21,7 @@ const addNote = (req, res) => {
     const o_content = req.body.content
     const content = o_content.replaceAll("'", "''")
 
-    const q = `INSERT INTO notes (name,body,sst_name,subtopic,uid,date) VALUES ('${req.body.title.replaceAll("'", "''")}','${content}','${sst_name}',${req.body.subtopic},${req.body.uid},'${req.body.date}') RETURNING id;`
+    const q = `INSERT INTO notes (name,body,sst_name,subtopic,uid,date,is_locked) VALUES ('${req.body.title.replaceAll("'", "''")}','${content}','${sst_name}',${req.body.subtopic},${req.body.uid},'${req.body.date}',${req.body.isLocked}) RETURNING id;`
     console.log(q);
 
     db.query(q, (err, data) => {
@@ -76,7 +76,7 @@ const updateNote = (req, res) => {
     // if (err) return res.status(403).json("Token is not valid!");
 
     const NoteId = req.params.id;
-    const q = `UPDATE notes SET name='${req.body.title.replaceAll("'", "''")}', body='${req.body.content.replaceAll("'", "''")}', subtopic=${req.body.subtopic} WHERE id=${NoteId} AND uid=${req.body.uid};`
+    const q = `UPDATE notes SET name='${req.body.title.replaceAll("'", "''")}', body='${req.body.content.replaceAll("'", "''")}', subtopic=${req.body.subtopic}, is_locked=${req.body.isLocked} WHERE id=${NoteId} AND uid=${req.body.uid};`
     console.log(q);
 
     db.query(q, (err, data) => {
