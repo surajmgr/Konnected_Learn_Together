@@ -1,0 +1,230 @@
+[
+  {
+    "book_id": "1",
+    "title": "Introduction to Information Technology",
+    "description": "Introduction to Information Technology incorporates the major changes that have taken place in the field of information technology, including not only the latest trends but also future technologies. The coverage of practical and historic perspectives on information technology demonstrates how concepts are applied to real systems and shows their evolution since its beginnings. Written in a clear, concise and lucid manner, each chapter is designed to be covered in two or three lectures while keeping inter-chapter dependencies to a minimum.",
+    "author": "Richard Fox",
+    "audience_level": [
+      "B.Sc. CSIT 1st Semester"
+    ],
+    "topics": [
+      "Introduction to Computer"
+    ],
+    "subtopics": [
+      "Characteristics of Computer",
+      "Classification Based on Brand",
+      "Classification of computers Based on work",
+      "Classification of Digital Computer based on Size",
+      "History of computers",
+      "Introduction & Functions",
+      "The Generations of computers",
+      "Types of Computer on the basis of model"
+    ],
+    "subject": [
+      "Information"
+    ]
+  },
+  {
+    "book_id": "2",
+    "title": "C Programming",
+    "description": "The authors present the complete guide to ANSI standard C language programming. Written by the developers of C, this new version helps readers keep up with the finalized ANSI standard for C while showing how to take advantage of C's rich set of operators, economy of expression, improved control flow, and data structures. The 2/E has been completely rewritten with additional examples and problem sets to clarify the implementation of difficult language constructs.",
+    "author": "Darrel L. Graham",
+    "audience_level": [
+      "B.Sc. CSIT 1st Semester"
+    ],
+    "topics": [
+      "C Program"
+    ],
+    "subtopics": [
+      "C Program Sub"
+    ],
+    "subject": [
+      "Information Technology"
+    ]
+  },
+  {
+    "book_id": "3",
+    "title": "Digital Logic",
+    "description": "The book presents the basic concepts used in the design and analysis of digital systems and introduces the principles of digital computer organization and design. It provides various methods and techniques suitable for a variety of digital system design applications and covers all aspects of digital systems from the electronic gate circuits to the complex structure of a microcomputer system. It also includes applications of the read only memory (ROM) and programmable logic array (PLA).",
+    "author": "M. Morris Mano",
+    "audience_level": [
+      "B.Sc. CSIT 1st Semester"
+    ],
+    "topics": [
+      "Program Digital"
+    ],
+    "subtopics": [
+      "Program Digital"
+    ],
+    "subject": [
+      "Technology"
+    ]
+  },
+  {
+    "book_id": "4",
+    "title": "Mathematics I",
+    "description": "Reading books is a kind of enjoyment. Reading books is a good habit. We bring you a different kinds of books. You can carry this book where ever you want. It is easy to carry. It can be an ideal gift to yourself and to your loved ones. Care instruction keep away from fire.",
+    "author": "Heritage Publishers",
+    "audience_level": [
+      "B.Sc. CSIT 1st Semester"
+    ],
+    "topics": [
+      "Mathematics I Digital"
+    ],
+    "subtopics": [
+      "Mathematics"
+    ],
+    "subject": [
+      "Information Technology"
+    ]
+  },
+  {
+    "book_id": "5",
+    "title": "Physics for CSIT",
+    "description": "This course covers the fundamentals of physics including oscillations, electromagnetic theory, and basics of quantum mechanics, band theory, semiconductors and universal logic gates and finally physics of manufacturing integrated circuits.\nThe main objective of this course is to provide knowledge in physics and apply this knowledge for computer science and information technology.",
+    "author": "Ajay K. Pitamber S. Ghanshyam T. Vijay K.",
+    "audience_level": [
+      "B.Sc. CSIT 1st Semester"
+    ],
+    "topics": [
+      "Physics for CSIT"
+    ],
+    "subtopics": [
+      "Physics"
+    ],
+    "subject": [
+      "Physics"
+    ]
+  },
+  {
+    "book_id": "6",
+    "title": "Discrete Mathematics and its Application",
+    "description": "The course covers fundamental concepts of discrete structure like introduce logic, proofs, sets, relations, functions, counting, and probability, with an emphasis on applications in computer science.\nThe main objective of the course is to introduce basic discrete structures, explore applications of discrete structures in computer science, understand concepts of Counting, Probability, Relations and Graphs respectively.",
+    "author": "Kenneth H. Rosen",
+    "audience_level": [
+      "B.Sc. CSIT 2nd Semester"
+    ],
+    "topics": [
+      "Basic Discrete Structures",
+      "Counting and Discrete Probability",
+      "Induction and Recursion",
+      "Integers and Matrices",
+      "Laboratory Work",
+      "Logic and Proof Methods",
+      "Relations and Graph"
+    ],
+    "subtopics": [
+      "Advanced Counting",
+      "Counting",
+      "Discrete Probability",
+      "Functions",
+      "Graphs",
+      "Induction",
+      "Integers",
+      "Logic",
+      "Matrices",
+      "Network Flows",
+      "Proof Methods",
+      "Recursive Definitions and Structural Induction",
+      "Relations",
+      "Sequences and Summations",
+      "Sets",
+      "Trees",
+      "Unit 1",
+      "Unit 2",
+      "Unit 3",
+      "Unit 4",
+      "Unit 5",
+      "Unit 6"
+    ],
+    "subject": [
+      "Technology"
+    ]
+  },
+  {
+    "book_id": "7",
+    "title": "Object Oriented Programming",
+    "description": "The course covers the basic concepts of object oriented programming using C++ programming language. The main objective of this course is to understand object oriented programming and advanced C++ concepts such as composition of objects, operator overloads, inheritance and polymorphism, file I/O, exception handling and templates.",
+    "author": "E Balagurusamy",
+    "audience_level": [
+      "B.Sc. CSIT 2nd Semester"
+    ],
+    "topics": [
+      "Basics of C++ Programming",
+      "Classes & Objects",
+      "Introduction to OOP"
+    ],
+    "subtopics": [
+      "Basics & Structure",
+      "Characteristics of OOP",
+      "Constructor",
+      "Destructor",
+      "Functions",
+      "Member functions defined outside the class",
+      "Memory allocation",
+      "Object oriented programming approach",
+      "Overview and Problems",
+      "Pointers",
+      "Simple Class & Object",
+      "Static members",
+      "Structures and Classes"
+    ],
+    "subject": [
+      "Information Technology"
+    ]
+  },
+  {
+    "book_id": "8",
+    "title": "Microprocessor",
+    "description": "This course contains of fundamental concepts of computer organization, basic I/O interfaces and Interrupts operations. The course objective is to introduce the operation, programming and application of microprocessor.",
+    "author": "S. K. Sen",
+    "audience_level": [
+      "B.Sc. CSIT 2nd Semester"
+    ],
+    "topics": [
+      "Microprocessor"
+    ],
+    "subtopics": [
+      "Microprocessor"
+    ],
+    "subject": [
+      "Microprocessor"
+    ]
+  },
+  {
+    "book_id": "9",
+    "title": "Mathematics II",
+    "description": "The course topics include systems of linear equations, determinants, vectors and vector spaces, eigen values and eigenvectors, and singular value decomposition of a matrix.\nThe main objective of the course is to make familiarize with the concepts and techniques of linear algebra, solve system of linear equation with Gauss-Jordon method, to impart knowledge of vector space and subspace, eigenvalues and eigenvectors of a matrix and get the idea of diagonalization of a matrix, linear programming, Group, Ring, and Field.",
+    "author": "Tulsi P. Jhavi L. Laxman B. Pawan S. Subas A.",
+    "audience_level": [
+      "B.Sc. CSIT 2nd Semester"
+    ],
+    "topics": [
+      "Mathematics"
+    ],
+    "subtopics": [
+      "Mathematics"
+    ],
+    "subject": [
+      "Information Technology"
+    ]
+  },
+  {
+    "book_id": "10",
+    "title": "Statistics I",
+    "description": "This course contains the basics of statistics, descriptive statistics, probability, sampling, random variables, mathematical expectations, probability distribution, correlation, and regression.\nThe main objective of this course is to impart knowledge of descriptive statistics, correlation, regression, sampling, theoretical as well as applied knowledge of probability, and some probability distributions.",
+    "author": "Vikash R. Ram P. Bijay L. Nabraj P. Prakash B.",
+    "audience_level": [
+      "B.Sc. CSIT 2nd Semester"
+    ],
+    "topics": [
+      "Statistics"
+    ],
+    "subtopics": [
+      "Statistics"
+    ],
+    "subject": [
+      "Technology"
+    ]
+  }
+]
