@@ -41,6 +41,8 @@ function Book() {
   const { currentUser } = useContext(AuthContext);
   const [showAdd, setShowAdd] = useState(1);
 
+  const [recommendations, setRecommendations] = useState([]); 
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -58,6 +60,9 @@ function Book() {
         const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/book/${s_name}/${book_id}`);
         setBook(res.data[0]);
         setLevels(res.data);
+
+        const resRec = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/recommend/book?id=${book_id}`);
+        setRecommendations(resRec.data);
         setLoading(false);
       } catch (error) {
         Store.addNotification({
@@ -355,6 +360,72 @@ function Book() {
                   )}
                 </div>
               </div>
+
+              <div className="book-topics-info-container card content-sec">
+                <div className="card-body">
+                  <div className="row fos-animate-me fadeIn delay-0_1">
+                    <div className="col-sm-6">
+                      {recommendations.length > 0 && (
+                        <h5 className="subs-title">Recommendations</h5>
+                      )}
+                    </div>
+                  </div>
+                  {loading ? (
+                    <div className="mb-[150px] pt-[100px]">
+                      <LargeLoading />
+                    </div>
+                  ) : (
+                    <>
+                      {recommendations.length > 0 ? (
+                        <>
+                          <ul className="flex flex-wrap">
+                            {recommendations.map((rec, index) => (
+                              <Link
+                                to={`/book/${rec.s_name}/${rec.bid}`}
+                                className={"w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.025] fos-animate-me fadeIn delay-0_" + (index+1)}
+                              >
+                                <div className="ch-index">
+                                  {index < 9 ? "0" + (index + 1) : index + 1}
+                                </div>
+                                <div className="ch-details">
+                                  <h2
+                                    className="ch-name"
+                                    onClick={() =>
+                                      navigate(
+                                        `/book/${rec.s_name}/${rec.bid}`
+                                      )
+                                    }
+                                  >
+                                    {rec.tname == ""
+                                      ? "Name of the Book"
+                                      : rec.bname}
+                                  </h2>
+                                </div>
+                                <i className="ch-l-right fa fa-chevron-right"></i>
+                              </Link>
+                            ))}
+                          </ul>
+                        </>
+                      ) : (
+                        <div className="no-result-info fos-animate-me bounceInUp delay-0_1">
+                          <div className="mt-[100px] mb-[200px] pb-[20px] flex justify-around">
+                            <div className="flex items-center justify-start">
+                              <div className="text-left ml-[10px]">
+                                <div className="text-gray-500">
+                                  <div className="text-sm">
+                                    More context needed
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+              </div>
+              
               {showAdd == 0 && <AddTopic showState={showState} />}
             </div>
           </section>
