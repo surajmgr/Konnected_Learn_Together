@@ -1,0 +1,966 @@
+[
+    {
+        "note_id": "1",
+        "subtopic_id": "subtopic_101",
+        "title": "Understanding Algebra Concepts",
+        "note_text": "classroom comprehension concept idea illustration discussion study understanding solution review idea exam concept example lesson example comprehension lesson study discussion knowledge classroom application knowledge comprehension application classroom education classroom lesson understanding review solution teacher chapter study application education application understanding learning solution learning quiz exercise classroom quiz topic explanation",
+        "examples_illustrations": "concept learning teacher lesson concept comprehension classroom study student teacher explanation understanding teacher comprehension lesson",
+        "connected_notes": [
+            "2",
+            "5"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Mathematics",
+            "Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "2",
+        "subtopic_id": "subtopic_102",
+        "title": "Calculus Derivatives Basics",
+        "note_text": "classroom discussion understanding derivative concept differentiation classroom learning applications examples teacher solutions comprehension exam preparation review quizzes study topics solutions",
+        "examples_illustrations": "derivatives examples classroom application understanding differentiation applications review student comprehension explanation",
+        "connected_notes": [
+            "1",
+            "4"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Mathematics",
+            "Physics"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "3",
+        "subtopic_id": "subtopic_103",
+        "title": "Introduction to Programming Concepts",
+        "note_text": "classroom understanding programming basics concepts classroom examples illustrations solutions discussions student understanding comprehension application review practice problems quizzes",
+        "examples_illustrations": "programming basics examples student classroom understanding concept discussions teacher explanation",
+        "connected_notes": [
+            "6",
+            "7"
+        ],
+        "relevance_score": 0.97,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "CSIT"
+        ]
+    },
+    {
+        "note_id": "4",
+        "subtopic_id": "subtopic_104",
+        "title": "Data Science Applications",
+        "note_text": "classroom learning data analysis techniques understanding classroom comprehension application student solutions examples illustrations study reviews quizzes explanations discussions",
+        "examples_illustrations": "data analysis concepts classroom examples teacher solutions discussions student comprehension",
+        "connected_notes": [
+            "2",
+            "5"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Data Science"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "5",
+        "subtopic_id": "subtopic_105",
+        "title": "Linear Algebra Applications",
+        "note_text": "classroom concepts vector operations understanding applications solutions classroom learning examples discussions student comprehension reviews quizzes",
+        "examples_illustrations": "vector operations classroom applications learning teacher discussion",
+        "connected_notes": [
+            "1",
+            "4"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Mathematics"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "6",
+        "subtopic_id": "subtopic_106",
+        "title": "Machine Learning Basics",
+        "note_text": "classroom learning machine learning fundamentals understanding examples applications solutions discussions student comprehension classroom reviews quizzes",
+        "examples_illustrations": "machine learning concepts classroom examples teacher solutions",
+        "connected_notes": [
+            "3",
+            "4"
+        ],
+        "relevance_score": 0.96,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "7",
+        "subtopic_id": "subtopic_107",
+        "title": "Statistics Fundamentals",
+        "note_text": "classroom understanding statistical concepts learning applications classroom discussions examples comprehension solutions review quizzes",
+        "examples_illustrations": "statistics concepts classroom examples teacher solutions",
+        "connected_notes": [
+            "2",
+            "6"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Statistics"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "8",
+        "subtopic_id": "subtopic_108",
+        "title": "Web Development Basics",
+        "note_text": "classroom understanding web development concepts examples applications classroom discussions student comprehension teacher solutions review quizzes",
+        "examples_illustrations": "web development concepts classroom applications teacher explanations",
+        "connected_notes": [
+            "3",
+            "5"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "9",
+        "subtopic_id": "subtopic_109",
+        "title": "Introduction to Philosophy",
+        "note_text": "classroom discussion philosophy concepts classroom examples illustrations understanding discussions review solutions student comprehension",
+        "examples_illustrations": "philosophy concepts classroom understanding teacher discussion examples",
+        "connected_notes": [
+            "4",
+            "5"
+        ],
+        "relevance_score": 0.90,
+        "subject": [
+            "Philosophy"
+        ],
+        "audience_level": [
+            "BSC",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "10",
+        "subtopic_id": "subtopic_110",
+        "title": "Environmental Science Fundamentals",
+        "note_text": "classroom learning environmental science concepts applications solutions discussions examples understanding classroom review quizzes",
+        "examples_illustrations": "environmental science concepts classroom examples teacher solutions discussions student understanding",
+        "connected_notes": [
+            "2",
+            "8"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Environmental Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "11",
+        "subtopic_id": "subtopic_111",
+        "title": "History of Art",
+        "note_text": "classroom exploration of art history concepts applications solutions examples discussions reviews understanding classroom quizzes",
+        "examples_illustrations": "art history concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "1",
+            "6"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Art"
+        ],
+        "audience_level": [
+            "BFA"
+        ]
+    },
+    {
+        "note_id": "12",
+        "subtopic_id": "subtopic_112",
+        "title": "Financial Management Principles",
+        "note_text": "classroom understanding financial management concepts applications solutions discussions examples reviews quizzes comprehension",
+        "examples_illustrations": "financial management concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "4",
+            "5"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Finance"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "13",
+        "subtopic_id": "subtopic_113",
+        "title": "Introduction to Microeconomics",
+        "note_text": "classroom understanding microeconomic concepts applications examples discussions solutions comprehension reviews quizzes",
+        "examples_illustrations": "microeconomics concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "2",
+            "6"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Economics"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "14",
+        "subtopic_id": "subtopic_114",
+        "title": "Digital Marketing Basics",
+        "note_text": "classroom understanding digital marketing concepts applications solutions discussions examples classroom reviews quizzes",
+        "examples_illustrations": "digital marketing concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "4",
+            "8"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Marketing"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "15",
+        "subtopic_id": "subtopic_115",
+        "title": "Basic Principles of Accounting",
+        "note_text": "classroom understanding accounting principles applications solutions examples discussions reviews comprehension quizzes",
+        "examples_illustrations": "accounting principles concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "5",
+            "12"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Accounting"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "16",
+        "subtopic_id": "subtopic_116",
+        "title": "Project Management Fundamentals",
+        "note_text": "classroom understanding project management concepts applications examples solutions classroom discussions reviews quizzes",
+        "examples_illustrations": "project management concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "6",
+            "12"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Management"
+        ],
+        "audience_level": [
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "17",
+        "subtopic_id": "subtopic_117",
+        "title": "Introduction to Human Resource Management",
+        "note_text": "classroom understanding human resource concepts applications discussions solutions examples reviews comprehension quizzes",
+        "examples_illustrations": "human resources concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "7",
+            "11"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Human Resources"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "18",
+        "subtopic_id": "subtopic_118",
+        "title": "Cybersecurity Fundamentals",
+        "note_text": "classroom understanding cybersecurity concepts applications examples classroom discussions solutions reviews quizzes comprehension",
+        "examples_illustrations": "cybersecurity concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "3",
+            "7",
+            "9"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Cybersecurity"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "19",
+        "subtopic_id": "subtopic_119",
+        "title": "Artificial Intelligence Basics",
+        "note_text": "classroom understanding artificial intelligence concepts applications solutions examples discussions classroom reviews quizzes",
+        "examples_illustrations": "AI concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "1",
+            "4",
+            "6"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "20",
+        "subtopic_id": "subtopic_120",
+        "title": "Understanding Political Science",
+        "note_text": "classroom discussion political science concepts applications examples classroom solutions comprehension reviews quizzes",
+        "examples_illustrations": "political science concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "8",
+            "10"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Political Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "21",
+        "subtopic_id": "subtopic_121",
+        "title": "Principles of Marketing",
+        "note_text": "classroom understanding marketing principles applications solutions examples discussions reviews comprehension quizzes",
+        "examples_illustrations": "marketing principles concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "6",
+            "15"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Marketing"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "22",
+        "subtopic_id": "subtopic_122",
+        "title": "Sociology Basics",
+        "note_text": "classroom understanding sociology concepts applications discussions examples classroom reviews comprehension quizzes",
+        "examples_illustrations": "sociology concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "3",
+            "7",
+            "14"
+        ],
+        "relevance_score": 0.90,
+        "subject": [
+            "Sociology"
+        ],
+        "audience_level": [
+            "BSC"
+        ]
+    },
+    {
+        "note_id": "23",
+        "subtopic_id": "subtopic_123",
+        "title": "Understanding Ethics in Business",
+        "note_text": "classroom discussion business ethics concepts applications examples solutions classroom reviews quizzes comprehension",
+        "examples_illustrations": "business ethics concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "10",
+            "19"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Business Ethics"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "24",
+        "subtopic_id": "subtopic_124",
+        "title": "History of Technology",
+        "note_text": "classroom learning technology history concepts applications solutions examples discussions comprehension reviews quizzes",
+        "examples_illustrations": "technology history concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "11",
+            "15",
+            "20"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "History"
+        ],
+        "audience_level": [
+            "BSC"
+        ]
+    },
+    {
+        "note_id": "25",
+        "subtopic_id": "subtopic_125",
+        "title": "Basics of Graphic Design",
+        "note_text": "classroom understanding graphic design concepts applications solutions discussions examples reviews comprehension quizzes",
+        "examples_illustrations": "graphic design concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "9",
+            "12"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Design"
+        ],
+        "audience_level": [
+            "BFA"
+        ]
+    },
+    {
+        "note_id": "26",
+        "subtopic_id": "subtopic_126",
+        "title": "Cognitive Psychology",
+        "note_text": "classroom understanding cognitive psychology concepts applications examples discussions solutions classroom reviews quizzes",
+        "examples_illustrations": "cognitive psychology concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "5",
+            "8"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Psychology"
+        ],
+        "audience_level": [
+            "BSC"
+        ]
+    },
+    {
+        "note_id": "27",
+        "subtopic_id": "subtopic_127",
+        "title": "Globalization Effects",
+        "note_text": "classroom understanding globalization concepts applications examples discussions solutions reviews comprehension quizzes",
+        "examples_illustrations": "globalization concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "1",
+            "6",
+            "18"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "International Studies"
+        ],
+        "audience_level": [
+            "BSC"
+        ]
+    },
+    {
+        "note_id": "28",
+        "subtopic_id": "subtopic_128",
+        "title": "Introduction to Statistics",
+        "note_text": "classroom understanding statistical analysis concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "statistics analysis concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "2",
+            "5"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Statistics"
+        ],
+        "audience_level": [
+            "BSC",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "29",
+        "subtopic_id": "subtopic_129",
+        "title": "Creative Writing Techniques",
+        "note_text": "classroom understanding creative writing concepts applications solutions discussions examples reviews comprehension quizzes",
+        "examples_illustrations": "creative writing concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "4",
+            "11"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Writing"
+        ],
+        "audience_level": [
+            "BFA"
+        ]
+    },
+    {
+        "note_id": "30",
+        "subtopic_id": "subtopic_130",
+        "title": "Mobile App Development",
+        "note_text": "classroom understanding mobile app development concepts applications solutions discussions examples reviews comprehension quizzes",
+        "examples_illustrations": "mobile app development concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "3",
+            "10"
+        ],
+        "relevance_score": 0.96,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "31",
+        "subtopic_id": "subtopic_131",
+        "title": "Supply Chain Management",
+        "note_text": "classroom understanding supply chain concepts applications solutions discussions examples reviews comprehension quizzes",
+        "examples_illustrations": "supply chain concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "12",
+            "15",
+            "22"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Management"
+        ],
+        "audience_level": [
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "32",
+        "subtopic_id": "subtopic_132",
+        "title": "Introduction to Artificial Intelligence",
+        "note_text": "classroom understanding AI concepts applications examples discussions solutions reviews comprehension quizzes",
+        "examples_illustrations": "AI concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "18",
+            "19"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Computer Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "33",
+        "subtopic_id": "subtopic_133",
+        "title": "Understanding Behavioral Economics",
+        "note_text": "classroom understanding behavioral economics concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "behavioral economics concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "6",
+            "17"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Economics"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "34",
+        "subtopic_id": "subtopic_134",
+        "title": "Basics of Network Security",
+        "note_text": "classroom understanding network security concepts applications examples discussions solutions reviews comprehension quizzes",
+        "examples_illustrations": "network security concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "12",
+            "30"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Cybersecurity"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "35",
+        "subtopic_id": "subtopic_135",
+        "title": "Introduction to Health Psychology",
+        "note_text": "classroom understanding health psychology concepts applications discussions solutions reviews quizzes comprehension",
+        "examples_illustrations": "health psychology concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "7",
+            "13"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Psychology"
+        ],
+        "audience_level": [
+            "BSC"
+        ]
+    },
+    {
+        "note_id": "36",
+        "subtopic_id": "subtopic_136",
+        "title": "Understanding Quantum Physics",
+        "note_text": "classroom understanding quantum physics concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "quantum physics concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "2",
+            "20",
+            "31"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Physics",
+            "Advanced Physics"
+        ],
+        "audience_level": [
+            "BSC",
+            "MSc"
+        ]
+    },
+    {
+        "note_id": "37",
+        "subtopic_id": "subtopic_137",
+        "title": "Introduction to Sociology",
+        "note_text": "classroom understanding sociology concepts applications discussions solutions examples reviews comprehension quizzes",
+        "examples_illustrations": "sociology concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "9",
+            "26",
+            "28"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Sociology"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "38",
+        "subtopic_id": "subtopic_138",
+        "title": "Basics of Investment Strategies",
+        "note_text": "classroom understanding investment strategies concepts applications discussions solutions examples reviews comprehension quizzes",
+        "examples_illustrations": "investment strategies concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "19",
+            "23",
+            "35"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Finance",
+            "Business"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "39",
+        "subtopic_id": "subtopic_139",
+        "title": "Fundamentals of Biochemistry",
+        "note_text": "classroom understanding biochemistry concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "biochemistry concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "1",
+            "5",
+            "20"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Biology",
+            "Chemistry"
+        ],
+        "audience_level": [
+            "BSC",
+            "MSc"
+        ]
+    },
+    {
+        "note_id": "40",
+        "subtopic_id": "subtopic_140",
+        "title": "Basics of Game Development",
+        "note_text": "classroom understanding game development concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "game development concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "3",
+            "6",
+            "8"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Computer Science",
+            "Design"
+        ],
+        "audience_level": [
+            "BSC",
+            "BFA"
+        ]
+    },
+    {
+        "note_id": "41",
+        "subtopic_id": "subtopic_141",
+        "title": "Environmental Sustainability Principles",
+        "note_text": "classroom understanding environmental sustainability concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "sustainability concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "10",
+            "12",
+            "30"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Environmental Science",
+            "Business"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "42",
+        "subtopic_id": "subtopic_142",
+        "title": "The Art of Negotiation",
+        "note_text": "classroom understanding negotiation techniques concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "negotiation techniques concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "21",
+            "23"
+        ],
+        "relevance_score": 0.92,
+        "subject": [
+            "Business",
+            "Communication"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "43",
+        "subtopic_id": "subtopic_143",
+        "title": "Introduction to Cloud Computing",
+        "note_text": "classroom understanding cloud computing concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "cloud computing concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "1",
+            "3",
+            "7"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Computer Science",
+            "Information Technology"
+        ],
+        "audience_level": [
+            "BSC",
+            "BIT"
+        ]
+    },
+    {
+        "note_id": "44",
+        "subtopic_id": "subtopic_144",
+        "title": "Principles of Public Relations",
+        "note_text": "classroom understanding public relations concepts applications discussions examples solutions reviews quizzes",
+        "examples_illustrations": "public relations concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "19",
+            "21"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Public Relations",
+            "Communication"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "45",
+        "subtopic_id": "subtopic_145",
+        "title": "Emerging Trends in Digital Marketing",
+        "note_text": "classroom understanding digital marketing trends concepts applications discussions examples solutions reviews quizzes",
+        "examples_illustrations": "digital marketing trends concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "12",
+            "14"
+        ],
+        "relevance_score": 0.95,
+        "subject": [
+            "Marketing",
+            "Business"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "46",
+        "subtopic_id": "subtopic_146",
+        "title": "Foundations of Artificial Intelligence",
+        "note_text": "classroom understanding foundational AI concepts applications examples discussions solutions reviews quizzes",
+        "examples_illustrations": "AI foundations concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "22",
+            "32"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Computer Science",
+            "Data Science"
+        ],
+        "audience_level": [
+            "BSC",
+            "MSc"
+        ]
+    },
+    {
+        "note_id": "47",
+        "subtopic_id": "subtopic_147",
+        "title": "Basics of Supply Chain Management",
+        "note_text": "classroom understanding supply chain concepts applications discussions solutions examples reviews comprehension quizzes",
+        "examples_illustrations": "supply chain concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "15",
+            "31"
+        ],
+        "relevance_score": 0.91,
+        "subject": [
+            "Management",
+            "Business"
+        ],
+        "audience_level": [
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "48",
+        "subtopic_id": "subtopic_148",
+        "title": "Fundamentals of Data Analysis",
+        "note_text": "classroom understanding data analysis concepts applications examples discussions solutions reviews comprehension quizzes",
+        "examples_illustrations": "data analysis concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "4",
+            "34"
+        ],
+        "relevance_score": 0.94,
+        "subject": [
+            "Data Science",
+            "Statistics"
+        ],
+        "audience_level": [
+            "BSC",
+            "MBA"
+        ]
+    },
+    {
+        "note_id": "49",
+        "subtopic_id": "subtopic_149",
+        "title": "The Basics of Urban Planning",
+        "note_text": "classroom understanding urban planning concepts applications discussions solutions examples reviews comprehension quizzes",
+        "examples_illustrations": "urban planning concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "8",
+            "10",
+            "24"
+        ],
+        "relevance_score": 0.93,
+        "subject": [
+            "Urban Studies",
+            "Geography"
+        ],
+        "audience_level": [
+            "BSC",
+            "BBA"
+        ]
+    },
+    {
+        "note_id": "50",
+        "subtopic_id": "subtopic_150",
+        "title": "Digital Transformation Strategies",
+        "note_text": "classroom understanding digital transformation concepts applications examples discussions solutions reviews comprehension quizzes",
+        "examples_illustrations": "digital transformation concepts classroom examples teacher discussions solutions",
+        "connected_notes": [
+            "20",
+            "41",
+            "46"
+        ],
+        "relevance_score": 0.96,
+        "subject": [
+            "Business",
+            "Information Technology"
+        ],
+        "audience_level": [
+            "BBA",
+            "MBA"
+        ]
+    }
+]
