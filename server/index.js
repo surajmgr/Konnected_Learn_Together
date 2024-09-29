@@ -64,6 +64,7 @@ const upload = multer({ dest: "./uploads/" });
 const auth_route = require('./routes/authRoute');
 const user_route = require('./routes/userRoute');
 const bt_route = require('./routes/btRoute');
+const recommend_route = require('./routes/recommendRoute');
 const note_route = require('./routes/noteRoute');
 const topic_route = require('./routes/topicRoute');
 const level_route = require('./routes/levelRoute');
@@ -99,6 +100,7 @@ app.use("/api/auth", auth_route);
 
 app.use("/api/books", bt_route);
 app.use("/api/book", bt_route);
+app.use("/api/recommend", recommend_route)
 
 app.use("/api/topics", topic_route);
 app.use("/api/topic", topic_route);
