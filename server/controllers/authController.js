@@ -54,10 +54,10 @@ const sendAccountActivationMail = async (name, email, activate_token) => {
                         have successfully registered your KonnectEd account.</span> <span class="para"
                         style="font-family: 'Roboto',sans-serif;line-height: normal;font-size: 18px;"> 
                         You can activate your account by clicking following button, or visit
-                        <a href="http://127.0.0.1:3000/auth/activate-account?activate_token=${activate_token}">here</a>.
+                        <a href="http://localhost:3000/auth/activate-account?activate_token=${activate_token}">here</a>.
                     </span>
                     <br style="font-family: 'Roboto',sans-serif;">
-                    <a href="http://127.0.0.1:3000/auth/activate-account?activate_token=${activate_token}">
+                    <a href="http://localhost:3000/auth/activate-account?activate_token=${activate_token}">
                     <button type="button"
                         style="font-family: 'Roboto',sans-serif;background-color: black;cursor:pointer;color: white; margin-top: 20px; border-radius: 15px;padding: 10px 30px;">ACTIVATE
                         YOUR ACCOUNT</button>
