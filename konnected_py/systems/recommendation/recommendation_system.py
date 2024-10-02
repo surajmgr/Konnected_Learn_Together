@@ -49,6 +49,7 @@ class RecommendationSystem:
     def compute_distances(self, x):
         x = np.array(x)
         if self.metric == "euclidean":
+            print(np.sqrt(np.sum((self.feature_matrix - x) ** 2, axis=1)))
             return np.sqrt(np.sum((self.feature_matrix - x) ** 2, axis=1))
         elif self.metric == "manhattan":
             return np.sum(np.abs(self.feature_matrix - x), axis=1)

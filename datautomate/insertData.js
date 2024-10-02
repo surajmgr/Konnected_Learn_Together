@@ -4,10 +4,10 @@ const path = require('path');
 
 // Create a pool of connections to the PostgreSQL database
 const pool = new Pool({
-    user: 'apple',
+    user: 'postgres',
     host: 'localhost',
     database: 'konnected_new',
-    password: '',
+    password: 'new_password',
     port: 5432,
 });
 

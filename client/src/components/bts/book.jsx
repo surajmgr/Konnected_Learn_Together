@@ -378,33 +378,44 @@ function Book() {
                     <>
                       {recommendations.length > 0 ? (
                         <>
-                          <ul className="flex flex-wrap">
-                            {recommendations.map((rec, index) => (
+                          <div className="books-container my-2">
+                          <div className="grid grid-cols-5 gap-[40px] py-[15px]">
+                            {recommendations.map((book, index) => (
                               <Link
-                                to={`/book/${rec.s_name}/${rec.bid}`}
-                                className={"w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.025] fos-animate-me fadeIn delay-0_" + (index+1)}
-                              >
-                                <div className="ch-index">
-                                  {index < 9 ? "0" + (index + 1) : index + 1}
+                              to={`/book/${book.s_name}/${book.bid}`}
+                              className={"transform transition duration-500 hover:scale-[1.025] fos-animate-me fadeIn delay-0_" + (index+1)}
+                            >
+                              <div className="oneContainer">
+                                <img
+                                  className="max-w-[130px] rounded-lg mb-[2px] w-[130px] max-h-[165px] h-[165px] object-cover"
+                                  src={
+                                    book.coverimg != null
+                                      ? book.coverimg
+                                      : "/upload/cover/no-cover-img.jpeg"
+                                  }
+                                  alt=""
+                                />
+                                <div>
+                                  <div className="book-title">{book.bname}</div>
+                                  {/* <div className="book-subtitle">
+                                    Author: {book.author}
+                                  </div>
+                                  <div className="book-level">
+                                    Level:{" "}
+                                    {levels.map((level) =>
+                                      level.bid === book.bid ? (
+                                        <Link to={`/books/${level.sl_name}`}>
+                                          {level.lname}.{" "}
+                                        </Link>
+                                      ) : null
+                                    )}
+                                  </div> */}
                                 </div>
-                                <div className="ch-details">
-                                  <h2
-                                    className="ch-name"
-                                    onClick={() =>
-                                      navigate(
-                                        `/book/${rec.s_name}/${rec.bid}`
-                                      )
-                                    }
-                                  >
-                                    {rec.tname == ""
-                                      ? "Name of the Book"
-                                      : rec.bname}
-                                  </h2>
-                                </div>
-                                <i className="ch-l-right fa fa-chevron-right"></i>
-                              </Link>
+                              </div>
+                            </Link>
                             ))}
-                          </ul>
+                            </div>
+                            </div>
                         </>
                       ) : (
                         <div className="no-result-info fos-animate-me bounceInUp delay-0_1">

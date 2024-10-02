@@ -252,6 +252,9 @@ const resetPassword = async (req, res) => {
 // }
 
 const register = (req, res) => {
+    try{
+
+    
     // Check existing user
     const { name, username, email, password } = req.body;
     const q = `SELECT * FROM users
@@ -275,11 +278,11 @@ const register = (req, res) => {
             '${email}',
             '${hashedPassword}',
             1,
-            12,
+            7,
             '${randomString}'
             );`;
             db.query(q, (err, data) => {
-                if (err) return res.json(err.message);
+                if (err) return res.status(500).json(err.message);
 
                 sendAccountActivationMail(name, email, randomString).then(() => {
                     return res.status(200).json("User has been Created!");
@@ -289,6 +292,9 @@ const register = (req, res) => {
             });
         })
     });
+}catch(e){
+console.error(e.message);
+}
 }
 
 const login = (req, res) => {

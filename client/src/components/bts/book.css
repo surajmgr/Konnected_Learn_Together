@@ -16,11 +16,18 @@
 }
 
 .bookInf .book-title {
-  color: #000;
+  /* color: #000;
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
-  padding-bottom: 8px;
+  padding-bottom: 8px; */
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 14px;
+  padding-bottom: 16px;
+  text-align: left;
+ 
 }
 
 .bookInf .book-subtitle {
