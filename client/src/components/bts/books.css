@@ -81,6 +81,106 @@ nav.navbar{
     font-size: 12px;
     font-weight: 600;
     line-height: 17px;
+}/* Responsive Styles */
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .course-content .textbooks_title__vCKfs {
+        font-size: 2rem;
+    }
+
+    .course-content .col-lg-6,
+    .course-content .col-md-6 {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .book-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .book-subtitle, .book-level {
+        font-size: 11px;
+    }
+
+    .add-meta {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    nav.navbar {
+        box-shadow: rgba(123, 143, 152, 0.12) 10px 15px 20px !important;
+    }
+
+    .course-content .textbooks_title__vCKfs {
+        font-size: 1.5rem;
+    }
+
+    .course-content .textbooks_title__vCKfs .textbooks_webClass__EvZDP {
+        height: 35px;
+        justify-content: center;
+    }
+
+    .show-filter .search-group i {
+        left: 6px;
+    }
+
+    .add-course-info .form-control {
+        padding-left: 35px;
+    }
+
+    .book-title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .book-subtitle, .book-level {
+        font-size: 10px;
+    }
+
+    .add-meta {
+        font-size: 15px;
+    }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .course-content .textbooks_title__vCKfs {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .course-content .textbooks_title__vCKfs .textbooks_webClass__EvZDP {
+        height: 30px;
+        float: none;
+        justify-content: center;
+    }
+
+    .course-content .col-lg-6,
+    .course-content .col-md-6 {
+        font-size: 14px;
+    }
+
+    .book-title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .book-subtitle, .book-level {
+        font-size: 9px;
+    }
+
+    .add-meta {
+        font-size: 14px;
+    }
+
+    .add-course-info .form-control {
+        padding-left: 30px;
+        min-height: 35px;
+    }
 }
 
 .add-meta{
@@ -96,3 +196,4 @@ nav.navbar{
 .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
       background-color: #2e9efb !important;
    }
+

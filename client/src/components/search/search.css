@@ -7,3 +7,31 @@
     float: left;
     padding-left: 5px;
   }
+
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .view-info::after {
+      font-size: 9px;
+      line-height: 2.2;
+      padding-left: 4px;
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .view-info::after {
+      font-size: 8px;
+      line-height: 2;
+      padding-left: 3px;
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .view-info::after {
+      font-size: 7px;
+      line-height: 1.8;
+      padding-left: 2px;
+  }
+}

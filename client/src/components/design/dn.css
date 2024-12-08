@@ -1,5 +1,5 @@
 body {
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 1.3;
@@ -8,57 +8,55 @@ body {
     padding: 0;
 }
 
-.Header_wrapper__7bI8Z {
+.Header_wrapper {
     background-color: #fff;
-    box-shadow: 1px 0px 5px #7b8f981f;
+    box-shadow: 1px 0px 5px rgba(123, 143, 152, 0.12);
     height: 54px;
     z-index: 4;
 }
 
-.Header_sticky__c__ol {
-    position: -webkit-sticky;
+.Header_sticky {
     position: sticky;
     top: 0;
 }
 
-.Header_contentWrapper__sjvbL, .Header_headerContainer__WY2xn {
+.Header_contentWrapper, .Header_headerContainer {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.Header_headerContainer__WY2xn {
+.Header_headerContainer {
     height: 100%;
 }
 
-.Header_contentWrapper__sjvbL {
+.Header_contentWrapper {
     align-items: center;
     align-self: center;
     max-width: 1170px;
 }
 
-.Header_askLogo__mpo42 {
+.Header_logo {
+    background-image: url("https://d3ij1nwy8h49c3.cloudfront.net/images/Sprites/header-sprites-new1.png");
     background-position: -118px -3px;
     height: 40px;
-    margin-left: -15px;
-    min-width: 158px;
-    transform: scale(.8);
     width: 158px;
-    background-image: url("https://d3ij1nwy8h49c3.cloudfront.net/images/Sprites/header-sprites-new1.png");
+    margin-left: -15px;
+    transform: scale(0.8);
 }
 
-.Header_navLinksContainer__JMdLd {
+.Header_navLinksContainer {
     display: flex;
     justify-content: flex-start;
     white-space: nowrap;
 }
 
-.Header_active__bEWTQ {
+.Header_active {
     background-color: #f1f0f3;
     border-radius: 8px;
 }
 
-.Header_navLink__ZD9YK {
+.Header_navLink {
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
@@ -67,74 +65,117 @@ body {
     padding: 5px 12px;
 }
 
-.Header_loginSignupContainer__vwKSJ {
+.Header_loginSignupContainer {
     margin: 0 12px;
 }
 
-.Header_expandContainer__YG5qr {
+.Header_expandContainer {
     display: flex;
     flex: 1 1;
     justify-content: flex-end;
 }
 
-.LoginSignUp_root__E1vCX {
+.LoginSignUp_container {
     min-width: 60px;
     position: relative;
-    right: 0;
-    top: 0;
-}
-
-.LoginSignUp_root__E1vCX {
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
-.LoginSignUp_root__E1vCX .LoginSignUp_btn__PLc7M {
+.LoginSignUp_button {
     background-color: #7ed321;
     color: #fff;
     font-size: 12px;
-    height: 36px;
-    letter-spacing: -.6px;
-    margin-left: 0;
-    width: 110px;
-}
-
-.LoginSignUp_root__E1vCX .LoginSignUp_btn__PLc7M {
-    background-color: initial;
+    font-weight: 800;
     border: 1px solid #7ed321;
     border-radius: 23px;
-    box-shadow: none;
-    color: #7ed321;
-    font-family: Manrope;
-    font-size: 12px;
-    font-weight: 800;
     height: 32px;
-    letter-spacing: -.39px;
-    line-height: 16px;
+    width: 72px;
+    letter-spacing: -0.39px;
     margin-left: 8px;
     text-transform: none;
     white-space: nowrap;
-    width: 72px;
 }
 
-.Button_green-default__Lm_DZ {
+.Button {
     background: #7ed321;
-    transition: background .1s ease;
-}
-
-.Button_button__ffAJx {
-    align-items: center;
     border-radius: 20px;
     color: #fff;
-    cursor: pointer;
-    display: inline-flex;
     font-size: 12px;
     font-weight: 700;
     height: 40px;
-    justify-content: center;
-    letter-spacing: 1px;
     padding: 0 20px;
-    text-align: center;
-    -webkit-user-select: none;
-    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.1s ease;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .Header_logo {
+        transform: scale(0.7);
+        margin-left: 0;
+    }
+
+    .Header_navLinksContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Header_navLink {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+    .Header_loginSignupContainer {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .Header_contentWrapper {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+  .navbar {
+    padding: 0 20px; /* Adjust padding to reduce horizontal space */
+  }
+  .navbar ul {
+    flex-wrap: wrap; /* Stack items if needed */
+  }
+  .search-bar {
+    width: 80%; /* Make search bar smaller */
+  }
+  .navbar img, .navbar h1, .navbar a {
+    font-size: 0.9rem; /* Slightly smaller font */
+  }
+}
+
+
+@media (max-width: 480px) {
+    .LoginSignUp_button {
+        font-size: 10px;
+        width: 90px;
+        height: 28px;
+        padding: 5px 10px;
+    }
+
+    .Button {
+        font-size: 10px;
+        padding: 0 15px;
+        height: 35px;
+    }
+
+    .Header_wrapper {
+        height: auto;
+        padding: 10px 0;
+    }
 }

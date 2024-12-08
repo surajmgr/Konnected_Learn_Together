@@ -1,19 +1,28 @@
+/* Reveal and Animation Classes */
+
 .reveal {
   position: relative;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for reveal */
 }
-.reveal {
+
+.reveal.active {
   opacity: 1;
 }
+
 .fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
+
 .fade-left {
   animation: fade-left 1s ease-in;
 }
+
 .fade-right {
   animation: fade-right 1s ease-in;
 }
+
+/* Keyframes for Animations */
 
 @keyframes fade-bottom {
   0% {
@@ -25,6 +34,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fade-left {
   0% {
     transform: translateX(-100px);
@@ -35,6 +45,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fade-right {
   0% {
     transform: translateX(100px);
@@ -43,5 +54,104 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .fade-bottom {
+    animation: fade-bottom-tablet 0.8s ease-in;
+  }
+
+  .fade-left {
+    animation: fade-left-tablet 0.8s ease-in;
+  }
+
+  .fade-right {
+    animation: fade-right-tablet 0.8s ease-in;
+  }
+
+  /* Tablet Keyframes with reduced distances */
+  @keyframes fade-bottom-tablet {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left-tablet {
+    0% {
+      transform: translateX(-60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right-tablet {
+    0% {
+      transform: translateX(60px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .fade-bottom {
+    animation: fade-bottom-mobile 0.7s ease-in;
+  }
+
+  .fade-left {
+    animation: fade-left-mobile 0.7s ease-in;
+  }
+
+  .fade-right {
+    animation: fade-right-mobile 0.7s ease-in;
+  }
+
+  /* Mobile Keyframes with even more reduced distances */
+  @keyframes fade-bottom-mobile {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left-mobile {
+    0% {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right-mobile {
+    0% {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }

@@ -149,3 +149,50 @@
     color: #000;
     text-align: right;
 }
+
+/* Responsive Footer Styling */
+@media (max-width: 768px) {
+    /* Stack columns vertically on smaller screens */
+    .col-lg-4, .col-lg-2, .footer-bottom .col-md-6 {
+        width: 100%;
+        text-align: center; /* Center-align for smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked sections */
+    }
+
+    /* Center-align footer menu items */
+    .footer-widget.footer-menu ul {
+        text-align: center;
+    }
+
+    /* Center privacy policy and copyright text */
+    .privacy-policy ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-bottom .copyright-text p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Adjust footer padding */
+    .footer-top {
+        padding-top: 30px;
+    }
+
+    .footer-bottom .copyright {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust footer logo size and text for smaller screens */
+    .footer-widget .footer-logo img {
+        width: 200px;
+    }
+
+    /* Increase padding for clickable areas */
+    .footer-menu ul li {
+        padding-bottom: 15px;
+    }
+}

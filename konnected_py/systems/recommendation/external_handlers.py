@@ -26,6 +26,8 @@ def booksInstance():
         metric="euclidean",
         vectorize_attrs=["keywords", "audience_level", "subject"],
         keys={"id": "book_id", "keywords": "keywords", "model_name": "book"}
+        
+
     )
     return books_recommendations
 

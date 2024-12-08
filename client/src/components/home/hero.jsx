@@ -23,7 +23,7 @@ function Hero() {
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex h-[300px] ml-[55px] fos-animate-me fadeIn delat-0_3">
             <img src={heroimg} alt="mockup" />
           </div>
-          <div className="mr-auto place-self-center lg:col-span-7 ml-[60px]">
+          <div className="mr-auto place-self-center lg:col-span-7 ml-[25px]">
             <h1 className="text-[35px] leading-[2.5rem] tracking-[1px]">
               HEY!<span className="font-semibold"> Join Us.</span>
               <br />
@@ -84,7 +84,7 @@ function Hero() {
           </div>
         </div>
       </section>
-      <section className="section relative mt-[-60px]">
+      <section className="section relative mt-[-10px]">
         <div className="max-w-[1320px] w-full mx-auto px-[0.75rem]">
           <div className="course-widget">
             <div className="row">

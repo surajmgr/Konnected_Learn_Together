@@ -79,7 +79,9 @@ function Footer() {
                   <p className="flex">
                     <img src={icon19} alt="" className="img-fluid" />
                     <Link to="mailto:surajpulami8@gmail.com">
-                      surajpulami8@gmail.com
+                      surajpulami8@gmail.com <br></br>
+                      timilsinamanish3@gmail.com<br></br>
+                      kripeshNeupane@gmail.com
                     </Link>
                   </p>
                 </div>

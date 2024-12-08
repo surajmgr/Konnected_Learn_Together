@@ -25,7 +25,7 @@ class BookRecommendationRequest(BaseModel):
 
 @app.on_event("startup")
 async def startup_event():
-    generateModels(forceBooks=False)
+    generateModels(forceBooks=True)
         
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, exc):
