@@ -9,7 +9,7 @@ router = APIRouter()
 class QuizRequest(BaseModel):
     topic_id: str
     student_id: str
-    already_attempted: List[str] = []
+    already_attempted: list = []
     total_questions: int = 5
 
 """
@@ -40,7 +40,7 @@ async def startQuiz(quiz_request: QuizRequest):
         )
 
 class AnswerRequest(BaseModel):
-    user_answers: Dict[str, str]
+    user_answers: dict
     student_id: str
 
 """

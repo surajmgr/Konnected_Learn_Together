@@ -1,0 +1,260 @@
+tree -I "node_modules|__pycache__|build|venv"
+.
+├── README.md
+├── client
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   ├── index.html
+│   │   ├── logo.png
+│   │   ├── manifest.json
+│   │   └── upload
+│   │       ├── avatar
+│   │       │   ├── file-1683742820050-0-65885a85657762a48f752979eee3052a.jpg
+│   │       │   ├── file-1683743961591-0-pooja.jpg
+│   │       │   └── no-cover-avatar.png
+│   │       ├── cover
+│   │       │   ├── file-1683635224712-0-irdlbook.jpg
+│   │       │   └── no-cover-img.jpeg
+│   │       └── files
+│   │           ├── file-1684148256338-0-add.png
+│   │           ├── file-1684148831920-1-book.png
+│   │           ├── file-1684151665336-0-book.png
+│   │           ├── file-1684151703531-1-add.png
+│   │           ├── file-1684151982513-1-add.png
+│   │           ├── file-1684152040968-1-add.png
+│   │           ├── file-1684152075660-0-book.png
+│   │           └── file-1684152121009-0-book.png
+│   ├── src
+│   │   ├── App.js
+│   │   ├── components
+│   │   │   ├── addPops
+│   │   │   │   ├── addAnswer.jsx
+│   │   │   │   ├── addBook.jsx
+│   │   │   │   ├── addQuestion.jsx
+│   │   │   │   ├── addTopic.jsx
+│   │   │   │   ├── booksFetch.jsx
+│   │   │   │   ├── inlineEditor.css
+│   │   │   │   ├── levelsFetch.jsx
+│   │   │   │   ├── popup.css
+│   │   │   │   └── setSubtopics.jsx
+│   │   │   ├── auths
+│   │   │   │   ├── login.jsx
+│   │   │   │   └── register.jsx
+│   │   │   ├── bts
+│   │   │   │   ├── book.css
+│   │   │   │   ├── book.jsx
+│   │   │   │   ├── books.css
+│   │   │   │   ├── books.jsx
+│   │   │   │   ├── booksByLevel.jsx
+│   │   │   │   └── createFields.jsx
+│   │   │   ├── design
+│   │   │   │   ├── designNavbar.jsx
+│   │   │   │   ├── dn.css
+│   │   │   │   ├── footer.css
+│   │   │   │   └── footer.jsx
+│   │   │   ├── explaingpt
+│   │   │   │   ├── explainGPT.css
+│   │   │   │   ├── explainGPT.jsx
+│   │   │   │   └── get-selected-text.js
+│   │   │   ├── home
+│   │   │   │   ├── hero.css
+│   │   │   │   ├── hero.jsx
+│   │   │   │   ├── home.css
+│   │   │   │   ├── home.jsx
+│   │   │   │   ├── join.jsx
+│   │   │   │   ├── latest.css
+│   │   │   │   ├── latest.jsx
+│   │   │   │   ├── slider.css
+│   │   │   │   ├── slider.jsx
+│   │   │   │   ├── works.css
+│   │   │   │   └── works.jsx
+│   │   │   ├── khalti
+│   │   │   │   ├── khaltiConfig.jsx
+│   │   │   │   └── khaltiKey.jsx
+│   │   │   ├── levels
+│   │   │   │   ├── levels.css
+│   │   │   │   └── levels.jsx
+│   │   │   ├── questions
+│   │   │   │   ├── question.css
+│   │   │   │   ├── question.jsx
+│   │   │   │   └── typingEffect.jsx
+│   │   │   ├── search
+│   │   │   │   ├── search.css
+│   │   │   │   └── search.jsx
+│   │   │   ├── subtopics
+│   │   │   │   ├── CartNow.jsx
+│   │   │   │   ├── CartTable.jsx
+│   │   │   │   ├── createNote.css
+│   │   │   │   ├── createNote.jsx
+│   │   │   │   ├── setNotes.jsx
+│   │   │   │   ├── subtopic.css
+│   │   │   │   └── subtopic.jsx
+│   │   │   ├── topics
+│   │   │   │   ├── topic.css
+│   │   │   │   ├── topic.jsx
+│   │   │   │   ├── topics.css
+│   │   │   │   └── topics.jsx
+│   │   │   ├── user
+│   │   │   │   ├── CoinsHandle.jsx
+│   │   │   │   ├── profile.css
+│   │   │   │   └── profile.jsx
+│   │   │   ├── utils
+│   │   │   │   ├── Untitled-2.pgsql
+│   │   │   │   ├── activateAccount.jsx
+│   │   │   │   ├── authContext.js
+│   │   │   │   ├── bookVerified.jsx
+│   │   │   │   ├── breadcrum.css
+│   │   │   │   ├── breadcrum.jsx
+│   │   │   │   ├── fonts
+│   │   │   │   │   ├── notification.eot
+│   │   │   │   │   ├── notification.svg
+│   │   │   │   │   ├── notification.ttf
+│   │   │   │   │   └── notification.woff
+│   │   │   │   ├── largeLoading.css
+│   │   │   │   ├── largeLoading.jsx
+│   │   │   │   ├── loading.css
+│   │   │   │   ├── loading.jsx
+│   │   │   │   ├── navbar.jsx
+│   │   │   │   ├── notifications.css
+│   │   │   │   ├── onScreen.js
+│   │   │   │   ├── refInputAutoComplete.jsx
+│   │   │   │   ├── resetPassword.jsx
+│   │   │   │   ├── scrollToTop.jsx
+│   │   │   │   └── tick.css
+│   │   │   └── youtubePlayer
+│   │   │       ├── layout.js
+│   │   │       ├── recomVideos.jsx
+│   │   │       ├── youtubeApi.js
+│   │   │       └── youtubePlayer.jsx
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── static
+│   │       ├── add.png
+│   │       ├── avatar
+│   │       │   ├── avt-1.webp
+│   │       │   ├── avt-2.webp
+│   │       │   ├── avt-3.webp
+│   │       │   ├── avt-5.webp
+│   │       │   ├── avt-6.webp
+│   │       │   ├── kripesh.jpeg
+│   │       │   ├── manish.jpeg
+│   │       │   └── suraj.jpg
+│   │       ├── blurGrad.png
+│   │       ├── certificate-icon.svg
+│   │       ├── choice.png
+│   │       ├── cources-icon.svg
+│   │       ├── delete.png
+│   │       ├── downloads.png
+│   │       ├── downvote.png
+│   │       ├── downvoted.png
+│   │       ├── edit-info.png
+│   │       ├── edit.png
+│   │       ├── editIcon.png
+│   │       ├── editIcon1.png
+│   │       ├── girlPaint.png
+│   │       ├── gratuate-icon.svg
+│   │       ├── hero-img-min.png
+│   │       ├── hero-img.png
+│   │       ├── icon-19.svg
+│   │       ├── icon-20.svg
+│   │       ├── icon-add.png
+│   │       ├── logo-cut.png
+│   │       ├── logo.png
+│   │       ├── object.png
+│   │       ├── pencil-icon.svg
+│   │       ├── readHero.png
+│   │       ├── share.png
+│   │       ├── upvote.png
+│   │       ├── upvoted.png
+│   │       └── warning.webp
+│   └── tailwind.config.js
+├── datautomate
+│   ├── converter.js
+│   ├── data
+│   │   ├── bscsit.json
+│   │   └── courses.json
+│   ├── fetchImages.js
+│   ├── index.js
+│   ├── insertData.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── scrapContent.js
+│   └── updateImages.js
+├── konnected_py
+│   ├── README.md
+│   ├── assets
+│   │   ├── data
+│   │   │   ├── books.json
+│   │   │   ├── d_books.json
+│   │   │   ├── notes.json
+│   │   │   ├── synthetic_books.json
+│   │   │   └── synthetic_notes.json
+│   │   └── models
+│   │       ├── book_recommender_model.pkl
+│   │       ├── note_recommender_model.pkl
+│   │       └── synthetic_book_recommender_model.pkl
+│   ├── consts
+│   │   └── stopwords.py
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── routes
+│   │   ├── details_routes.py
+│   │   └── recommendation_routes.py
+│   └── systems
+│       ├── adaptive_quiz
+│       │   ├── irt_model.py
+│       │   ├── quiz.py
+│       │   └── quiz_database.py
+│       ├── database
+│       │   └── database.py
+│       └── recommendation
+│           ├── dummy_generator.py
+│           ├── external_handlers.py
+│           ├── prepare_data.py
+│           ├── processor.py
+│           └── recommendation_system.py
+├── new_ch_qsn.json
+└── server
+    ├── add.js
+    ├── controllers
+    │   ├── authController.js
+    │   ├── btController.js
+    │   ├── cnoteController.js
+    │   ├── countController.js
+    │   ├── levelController.js
+    │   ├── noteController.js
+    │   ├── questionController.js
+    │   ├── recommendController.js
+    │   ├── searchController.js
+    │   ├── subTopicController.js
+    │   ├── topicController.js
+    │   ├── userController.js
+    │   └── ytController.js
+    ├── index.js
+    ├── package-lock.json
+    ├── package.json
+    ├── routes
+    │   ├── authRoute.js
+    │   ├── btRoute.js
+    │   ├── cnoteRoute.js
+    │   ├── countRoute.js
+    │   ├── levelRoute.js
+    │   ├── noteRoute.js
+    │   ├── questionRoute.js
+    │   ├── recommendRoute.js
+    │   ├── searchRoute.js
+    │   ├── subTopicRoute.js
+    │   ├── topicRoute.js
+    │   ├── userRoute.js
+    │   └── ytRoute.js
+    ├── uploads
+    └── utils
+        ├── data.sql
+        ├── db.js
+        ├── htmlTemp.html
+        ├── new_db.sql
+        ├── queryDB.sql
+        └── results.rest
