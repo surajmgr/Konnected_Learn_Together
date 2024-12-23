@@ -1,0 +1,691 @@
+[
+    {
+        "book_id": "1996850017",
+        "title": "Introduction to Information Technology",
+        "description": "Explores fundamental concepts of computers, IT, databases, networking, internet, multimedia, and cybersecurity.",
+        "categories": [
+            "Information Technology",
+            "Networking",
+            "Cybersecurity",
+            "Multimedia"
+        ],
+        "tags": [
+            "Computers",
+            "Databases",
+            "Internet",
+            "Networking Basics",
+            "Cybersecurity Basics",
+            "Multimedia"
+        ]
+    },
+    {
+        "book_id": "1996850018",
+        "title": "C Programming",
+        "description": "Covers structured programming concepts, including problem-solving, control structures, arrays, pointers, and file handling.",
+        "categories": [
+            "Programming",
+            "C Programming"
+        ],
+        "tags": [
+            "C Programming",
+            "Structured Programming",
+            "Control Structures",
+            "Arrays",
+            "Pointers",
+            "File Handling"
+        ]
+    },
+    {
+        "book_id": "1996850019",
+        "title": "Digital Logic",
+        "description": "Introduces digital logic concepts, including Boolean algebra, circuit design, sequential logic, and digital devices.",
+        "categories": [
+            "Electrical Engineering",
+            "Digital Logic"
+        ],
+        "tags": [
+            "Boolean Algebra",
+            "Circuit Design",
+            "Sequential Logic",
+            "Digital Devices",
+            "Logic Gates"
+        ]
+    },
+    {
+        "book_id": "136730359",
+        "title": "Mathematics I",
+        "description": "Covers functions, limits, derivatives, integrals, differential equations, vectors, partial derivatives, and multiple integration.",
+        "categories": [
+            "Mathematics",
+            "Calculus",
+            "Differential Equations"
+        ],
+        "tags": [
+            "Functions",
+            "Limits",
+            "Derivatives",
+            "Integrals",
+            "Differential Equations",
+            "Partial Derivatives",
+            "Multiple Integration"
+        ]
+    },
+    {
+        "book_id": "212042008",
+        "title": "Physics",
+        "description": "Explores rotational dynamics, oscillations, electromagnetism, quantum mechanics, solid-state physics, semiconductors, and integrated circuits.",
+        "categories": [
+            "Physics",
+            "Electromagnetism",
+            "Quantum Mechanics"
+        ],
+        "tags": [
+            "Rotational Dynamics",
+            "Oscillations",
+            "Electromagnetism",
+            "Quantum Mechanics",
+            "Solid-State Physics",
+            "Semiconductors",
+            "Integrated Circuits"
+        ]
+    },
+    {
+        "book_id": "1996850173",
+        "title": "Discrete Structure",
+        "description": "Covers logic, proofs, sets, relations, counting, probability, and their applications in computer science.",
+        "categories": [
+            "Mathematics",
+            "Computer Science",
+            "Discrete Mathematics"
+        ],
+        "tags": [
+            "Logic",
+            "Proofs",
+            "Sets",
+            "Relations",
+            "Counting",
+            "Probability",
+            "Applications in CS"
+        ]
+    },
+    {
+        "book_id": "1996850174",
+        "title": "Object Oriented Programming",
+        "description": "Covers fundamental concepts of object-oriented programming using C++.",
+        "categories": [
+            "Programming",
+            "Object-Oriented Programming"
+        ],
+        "tags": [
+            "C++",
+            "Object-Oriented Programming",
+            "Classes",
+            "Objects",
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+        ]
+    },
+    {
+        "book_id": "1996850175",
+        "title": "Microprocessor",
+        "description": "Covers fundamentals of computer organization, I/O interfaces, and interrupt operations.",
+        "categories": [
+            "Computer Architecture",
+            "Microprocessor"
+        ],
+        "tags": [
+            "Computer Organization",
+            "I/O Interfaces",
+            "Interrupts",
+            "Assembly Language",
+            "Hardware"
+        ]
+    },
+    {
+        "book_id": "136730515",
+        "title": "Mathematics II",
+        "description": "Focuses on linear algebra concepts, including systems of equations, determinants, vector spaces, eigenvalues, and matrix decomposition.",
+        "categories": [
+            "Mathematics",
+            "Linear Algebra"
+        ],
+        "tags": [
+            "Systems of Equations",
+            "Determinants",
+            "Vector Spaces",
+            "Eigenvalues",
+            "Matrix Decomposition"
+        ]
+    },
+    {
+        "book_id": "308296885",
+        "title": "Statistics I",
+        "description": "Covers descriptive statistics, probability, sampling, random variables, distributions, correlation, and regression.",
+        "categories": [
+            "Mathematics",
+            "Statistics"
+        ],
+        "tags": [
+            "Descriptive Statistics",
+            "Probability",
+            "Sampling",
+            "Random Variables",
+            "Distributions",
+            "Correlation",
+            "Regression"
+        ]
+    },
+    {
+        "book_id": "1996850975",
+        "title": "Data Structure and Algorithm",
+        "description": "Covers fundamental data structures (stack, queue, list, tree, graph) and algorithms for sorting, searching, and recursion.",
+        "categories": [
+            "Computer Science",
+            "Data Structures",
+            "Algorithms"
+        ],
+        "tags": [
+            "Stack",
+            "Queue",
+            "List",
+            "Tree",
+            "Graph",
+            "Sorting",
+            "Searching",
+            "Recursion"
+        ]
+    },
+    {
+        "book_id": "1996850976",
+        "title": "Numerical Method",
+        "description": "Focuses on numerical techniques for solving nonlinear equations, interpolation, regression, differentiation, integration, and partial differential equations.",
+        "categories": [
+            "Mathematics",
+            "Numerical Methods"
+        ],
+        "tags": [
+            "Nonlinear Equations",
+            "Interpolation",
+            "Regression",
+            "Differentiation",
+            "Integration",
+            "Partial Differential Equations"
+        ]
+    },
+    {
+        "book_id": "1996850977",
+        "title": "Computer Architecture",
+        "description": "Covers instruction set architecture, micro-architecture, and system architecture, focusing on data representation, CPU organization, and memory systems.",
+        "categories": [
+            "Computer Architecture",
+            "Computer Science"
+        ],
+        "tags": [
+            "Instruction Set Architecture",
+            "Micro-architecture",
+            "System Architecture",
+            "Data Representation",
+            "CPU Organization",
+            "Memory Systems"
+        ]
+    },
+    {
+        "book_id": "1996850978",
+        "title": "Computer Graphics",
+        "description": "Covers graphics hardware, software, geometric transformations, rendering techniques, and virtual reality concepts.",
+        "categories": [
+            "Computer Graphics",
+            "Computer Science"
+        ],
+        "tags": [
+            "Graphics Hardware",
+            "Geometric Transformations",
+            "Rendering Techniques",
+            "Virtual Reality"
+        ]
+    },
+    {
+        "book_id": "308297687",
+        "title": "Statistics II",
+        "description": "Covers descriptive statistics, probability, sampling, random variables, correlation, regression, and hypothesis testing.",
+        "categories": [
+            "Mathematics",
+            "Statistics"
+        ],
+        "tags": [
+            "Descriptive Statistics",
+            "Probability",
+            "Sampling",
+            "Random Variables",
+            "Correlation",
+            "Regression",
+            "Hypothesis Testing"
+        ]
+    },
+    {
+        "book_id": "1996851131",
+        "title": "Theory of Computation",
+        "description": "Study of finite automata, regular expressions, grammars, Turing machines, and computational complexity.",
+        "categories": [
+            "Computer Science",
+            "Theory of Computation"
+        ],
+        "tags": [
+            "Finite Automata",
+            "Regular Expressions",
+            "Grammars",
+            "Turing Machines",
+            "Computational Complexity"
+        ]
+    },
+    {
+        "book_id": "1996851132",
+        "title": "Computer Networks",
+        "description": "Introduces computer networking concepts and discusses the layers of networking models.",
+        "categories": [
+            "Computer Science",
+            "Computer Networks"
+        ],
+        "tags": [
+            "Networking",
+            "Networking Models",
+            "OSI Model",
+            "TCP/IP",
+            "Data Transmission"
+        ]
+    },
+    {
+        "book_id": "1996851134",
+        "title": "Database Management System",
+        "description": "Covers database concepts, system architecture, data modeling, relational models, SQL, normalization, transaction processing, and database recovery.",
+        "categories": [
+            "Computer Science",
+            "Databases"
+        ],
+        "tags": [
+            "Database Concepts",
+            "System Architecture",
+            "Data Modeling",
+            "Relational Models",
+            "SQL",
+            "Normalization",
+            "Transaction Processing",
+            "Database Recovery"
+        ]
+    },
+    {
+        "book_id": "1996851133",
+        "title": "Operating Systems",
+        "description": "Introduces operating system concepts, including process management, memory management, file systems, I/O management, and Linux case study.",
+        "categories": [
+            "Computer Science",
+            "Operating Systems"
+        ],
+        "tags": [
+            "Process Management",
+            "Memory Management",
+            "File Systems",
+            "I/O Management",
+            "Linux",
+            "Operating Systems Concepts"
+        ]
+    },
+    {
+        "book_id": "1996851135",
+        "title": "Artificial Intelligence",
+        "description": "Introduces AI principles, including intelligent agents, problem solving, search algorithms, knowledge representation, machine learning, and natural language processing.",
+        "categories": [
+            "Computer Science",
+            "Artificial Intelligence"
+        ],
+        "tags": [
+            "Intelligent Agents",
+            "Problem Solving",
+            "Search Algorithms",
+            "Knowledge Representation",
+            "Machine Learning",
+            "Natural Language Processing"
+        ]
+    },
+    {
+        "book_id": "1996851939",
+        "title": "Design and Analysis of Algorithms",
+        "description": "Learn fundamental techniques for algorithm design and analysis, including divide and conquer, greedy methods, dynamic programming, graph algorithms, NP-completeness, and approximation strategies.",
+        "categories": [
+            "Computer Science",
+            "Algorithms"
+        ],
+        "tags": [
+            "Divide and Conquer",
+            "Greedy Methods",
+            "Dynamic Programming",
+            "Graph Algorithms",
+            "NP-Completeness",
+            "Approximation Strategies"
+        ]
+    },
+    {
+        "book_id": "1996851940",
+        "title": "System Analysis and Design",
+        "description": "Explore systems development, planning, analysis, design, implementation, and maintenance, along with object-oriented development and project management techniques.",
+        "categories": [
+            "Software Engineering",
+            "Systems Analysis and Design"
+        ],
+        "tags": [
+            "System Development",
+            "Planning",
+            "Analysis",
+            "Design",
+            "Implementation",
+            "Maintenance",
+            "Object-Oriented Development",
+            "Project Management"
+        ]
+    },
+    {
+        "book_id": "1996851941",
+        "title": "Cryptography",
+        "description": "A comprehensive study of cryptosystems covering traditional and modern ciphers, hash functions, authentication, network security protocols, and malicious logic.",
+        "categories": [
+            "Computer Science",
+            "Cryptography",
+            "Cybersecurity"
+        ],
+        "tags": [
+            "Cryptosystems",
+            "Ciphers",
+            "Hash Functions",
+            "Authentication",
+            "Network Security",
+            "Malicious Logic"
+        ]
+    },
+    {
+        "book_id": "332198676",
+        "title": "Simulation and Modelling",
+        "description": "Explore system modeling, simulation techniques, queuing theory, random number generation, and simulation languages.",
+        "categories": [
+            "Computer Science",
+            "Simulation",
+            "Modeling"
+        ],
+        "tags": [
+            "System Modeling",
+            "Simulation Techniques",
+            "Queuing Theory",
+            "Random Number Generation",
+            "Simulation Languages"
+        ]
+    },
+    {
+        "book_id": "1996851943",
+        "title": "Web Technology",
+        "description": "Explore the fundamentals of web development, including HTML, CSS, JavaScript, XML, PHP, and modern frameworks.",
+        "categories": [
+            "Web Development",
+            "Computer Science"
+        ],
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "XML",
+            "PHP",
+            "Web Frameworks"
+        ]
+    },
+    {
+        "book_id": "1996851944",
+        "title": "Multimedia Computing",
+        "description": "Learn the core concepts of multimedia systems, including audio, video, graphics, data compression, and application design.",
+        "categories": [
+            "Computer Science",
+            "Multimedia"
+        ],
+        "tags": [
+            "Audio",
+            "Video",
+            "Graphics",
+            "Data Compression",
+            "Application Design"
+        ]
+    },
+    {
+        "book_id": "1996851969",
+        "title": "Society and Ethics in Information Technology",
+        "description": "Explore sociological concepts and ethical challenges in IT, including intellectual property, computing's social context, and emerging ethical issues.",
+        "categories": [
+            "Ethics",
+            "Information Technology"
+        ],
+        "tags": [
+            "Sociological Concepts",
+            "Ethical Challenges",
+            "Intellectual Property",
+            "Social Context of Computing",
+            "Emerging Ethical Issues"
+        ]
+    },
+    {
+        "book_id": "1996852126",
+        "title": "Software Engineering",
+        "description": "Understand software engineering concepts, including process models, agile methods, requirements engineering, system design, testing, evolution, and project management.",
+        "categories": [
+            "Software Engineering"
+        ],
+        "tags": [
+            "Process Models",
+            "Agile Methods",
+            "Requirements Engineering",
+            "System Design",
+            "Testing",
+            "Evolution",
+            "Project Management"
+        ]
+    },
+    {
+        "book_id": "1772873884",
+        "title": "E-Governance",
+        "description": "Explore e-governance models, infrastructure, security, and the use of data warehousing and mining in government processes.",
+        "categories": [
+            "E-Governance",
+            "Government Technology"
+        ],
+        "tags": [
+            "E-Governance Models",
+            "Infrastructure",
+            "Security",
+            "Data Warehousing",
+            "Data Mining"
+        ]
+    },
+    {
+        "book_id": "1996852129",
+        "title": "NET Centric Computing",
+        "description": "Learn cross-platform web development using ASP.NET Core MVC with C#.",
+        "categories": [
+            "Web Development",
+            "Programming"
+        ],
+        "tags": [
+            "ASP.NET Core",
+            "MVC",
+            "C#",
+            "Cross-Platform Development"
+        ]
+    },
+    {
+        "book_id": "1996852130",
+        "title": "Technical Writing",
+        "description": "This course develops workplace writing skills, focusing on document creation in business, science, and tech fields, including reports, proposals, and manuals.",
+        "categories": [
+            "Writing",
+            "Business",
+            "Technical Communication"
+        ],
+        "tags": [
+            "Workplace Writing",
+            "Reports",
+            "Proposals",
+            "Manuals",
+            "Business Writing",
+            "Tech Writing"
+        ]
+    },
+    {
+        "book_id": "1996852127",
+        "title": "Compiler Design and Construction",
+        "description": "This course covers the core concepts of compiler design, including lexical analysis, syntax analysis, translation, type checking, and optimization techniques.",
+        "categories": [
+            "Computer Science",
+            "Compiler Design"
+        ],
+        "tags": [
+            "Lexical Analysis",
+            "Syntax Analysis",
+            "Translation",
+            "Type Checking",
+            "Optimization Techniques"
+        ]
+    },
+    {
+        "book_id": "1996852121",
+        "title": "E-Commerce",
+        "description": "This course covers the fundamentals of E-commerce, including business models, payment systems, security, digital marketing, and system optimization.",
+        "categories": [
+            "Business",
+            "E-Commerce",
+            "Digital Marketing"
+        ],
+        "tags": [
+            "Business Models",
+            "Payment Systems",
+            "E-Commerce Security",
+            "Digital Marketing",
+            "System Optimization"
+        ]
+    },
+    {
+        "book_id": "1996852874",
+        "title": "Advanced Java Programming",
+        "description": "This course covers advanced Java topics such as GUI programming, database connectivity, networking, servlets, JSP, and distributed systems.",
+        "categories": [
+            "Programming",
+            "Java",
+            "Software Development"
+        ],
+        "tags": [
+            "GUI Programming",
+            "Database Connectivity",
+            "Networking",
+            "Servlets",
+            "JSP",
+            "Distributed Systems"
+        ]
+    },
+    {
+        "book_id": "1996852896",
+        "title": "Data Warehousing and Data Mining",
+        "description": "This course covers data warehousing principles, data mining techniques, and their applications in various domains such as frequent pattern mining, classification, clustering, and graph mining.",
+        "categories": [
+            "Data Science",
+            "Data Warehousing",
+            "Data Mining"
+        ],
+        "tags": [
+            "Data Warehousing",
+            "Data Mining",
+            "Pattern Mining",
+            "Classification",
+            "Clustering",
+            "Graph Mining"
+        ]
+    },
+    {
+        "book_id": "125084955",
+        "title": "Principles of Management",
+        "description": "This course explores key management principles such as organizational structure, leadership, motivation, planning, decision-making, and global management trends.",
+        "categories": [
+            "Business",
+            "Management"
+        ],
+        "tags": [
+            "Organizational Structure",
+            "Leadership",
+            "Motivation",
+            "Planning",
+            "Decision-Making",
+            "Global Management"
+        ]
+    },
+    {
+        "book_id": "1996853052",
+        "title": "Advanced Database",
+        "description": "This course covers advanced database topics such as relational and extended E-R models, query optimization, NoSQL databases, and big data processing techniques.",
+        "categories": [
+            "Computer Science",
+            "Database Management"
+        ],
+        "tags": [
+            "Relational Models",
+            "Extended E-R Models",
+            "Query Optimization",
+            "NoSQL",
+            "Big Data Processing"
+        ]
+    },
+    {
+        "book_id": "1996853054",
+        "title": "Advanced Networking with IPv6",
+        "description": "This course focuses on IPv6 network design, routing protocols, migration, performance measurement, and the next generation of Internet technologies and applications.",
+        "categories": [
+            "Networking",
+            "IPv6",
+            "Internet Technologies"
+        ],
+        "tags": [
+            "IPv6",
+            "Network Design",
+            "Routing Protocols",
+            "Migration",
+            "Performance Measurement",
+            "Next-Generation Internet"
+        ]
+    },
+    {
+        "book_id": "125085144",
+        "title": "International Business Management",
+        "description": "This course covers globalization, international trade, economic and political environments, business strategies, and financial management in international business.",
+        "categories": [
+            "Business",
+            "International Business",
+            "Management"
+        ],
+        "tags": [
+            "Globalization",
+            "International Trade",
+            "Economic Environment",
+            "Political Environment",
+            "Business Strategies",
+            "Financial Management"
+        ]
+    },
+    {
+        "book_id": "1996853058",
+        "title": "Introduction to Cloud Computing",
+        "description": "This course explores cloud computing concepts, including architectures, virtualization, programming models, security, and applications.",
+        "categories": [
+            "Cloud Computing",
+            "Technology"
+        ],
+        "tags": [
+            "Cloud Architectures",
+            "Virtualization",
+            "Programming Models",
+            "Cloud Security",
+            "Cloud Applications"
+        ]
+    }
+]

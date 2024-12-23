@@ -7,14 +7,10 @@ from systems.recommendation.external_handlers import generateModels, recommendNo
 
 router = APIRouter()
 
-class NoteRecommendationRequest(BaseModel):
-    note_id: str
-    limit: int = 5
-
 @router.get("/note")
-async def recommend_note(note_recommendation : NoteRecommendationRequest):
+async def recommend_note(note_id: str, limit: int = 5):
     try:
-        recommendations = recommendNotes(note_recommendation.note_id, note_recommendation.limit)
+        recommendations = recommendNotes(note_id, limit)
         notes = await note_details(recommendations)
         return notes
     except Exception as e:
@@ -23,20 +19,19 @@ async def recommend_note(note_recommendation : NoteRecommendationRequest):
             content={"message": str(e)}
         )
 
-class BookRecommendationRequest(BaseModel):
-    book_id: str
-    limit: int = 5
-
 @router.get("/book")
-async def recommend_book(book_recommendation : BookRecommendationRequest):
+async def recommend_book(book_id: str, limit: int = 5):
     try:
-        recommendations = recommendBooks(book_recommendation.book_id, book_recommendation.limit)
-        return recommendations
-        recommendations.extend([book_recommendation.book_id])
+        recommendations = recommendBooks(book_id, limit)
+        # return recommendations
+        recommendations.extend([book_id])
+        # print(recommendations)
         books = await book_details(recommendations)
+        # sort the books based on the recommendations
+        books.sort(key=lambda x: recommendations.index(x["book_id"]))
         currentBook = {}
         for book in books:
-            if book["book_id"] == book_recommendation.book_id:
+            if book["book_id"] == book_id:
                 currentBook = book
                 books.remove(book)
                 break

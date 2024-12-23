@@ -14,7 +14,7 @@ notes_path = "assets/data/notes.json"
 def notesInstance():
     notes_recommendations = RecommendationSystem(
         k=10,
-        metric="euclidean",
+        metric="cosine",
         vectorize_attrs=["subtopic_id", "keywords", "connected_notes", "relevance_score", "subject", "audience_level"],
         keys={"id": "note_id", "keywords": "keywords", "model_name": "note"}
     )
@@ -23,8 +23,8 @@ def notesInstance():
 def booksInstance():
     books_recommendations = RecommendationSystem(
         k=10,
-        metric="euclidean",
-        vectorize_attrs=["keywords", "audience_level", "subject"],
+        metric="cosine",
+        vectorize_attrs=["keywords", "subject", "audience_level"],
         keys={"id": "book_id", "keywords": "keywords", "model_name": "book"}
     )
     return books_recommendations
