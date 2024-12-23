@@ -1,6 +1,6 @@
 from systems.recommendation.prepare_data import PrepareData
 
-def preprocess_books(books, top_n=10):
+def preprocess_books(books, top_n=20):
     prepare_data = PrepareData(
         top_n,
         text_format='plain',

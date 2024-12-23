@@ -1,0 +1,1741 @@
+[
+    {
+        "book_id": "1996850017",
+        "title": "Introduction to Information Technology",
+        "description": "Explores fundamental concepts of computers, IT, databases, networking, internet, multimedia, and cybersecurity.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Introduction to Computers",
+            "Computer Hardware",
+            "Computer Memory",
+            "Input and Output Devices",
+            "Data Representation",
+            "Computer Software",
+            "Networking and Communication",
+            "Internet and Services",
+            "Database Fundamentals",
+            "Multimedia Basics",
+            "Computer Security"
+        ],
+        "subtopics": [
+            "Digital and Analog Computers",
+            "History of Computers",
+            "Computer Generations",
+            "CPU and Microprocessors",
+            "Memory Hierarchy",
+            "Cache Memory",
+            "Primary and Secondary Storage",
+            "Input Devices",
+            "Output Devices",
+            "Number Systems",
+            "Binary Arithmetic",
+            "Logic Gates",
+            "Types of Software",
+            "Operating System Basics",
+            "Process and Memory Management",
+            "File Management",
+            "Data Transmission Media",
+            "Network Types and Topologies",
+            "Internet Protocols",
+            "IoT and Cloud Computing",
+            "E-commerce and Smart City",
+            "Database Management Systems",
+            "Data Warehousing and Big Data",
+            "Multimedia Applications",
+            "Security Threats and Mechanisms",
+            "Cryptography and Firewalls",
+            "User Authentication"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850018",
+        "title": "C Programming",
+        "description": "Covers structured programming concepts, including problem-solving, control structures, arrays, pointers, and file handling.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Problem Solving with Computers",
+            "Elements of C",
+            "Input and Output",
+            "Operators and Expressions",
+            "Control Statements",
+            "Arrays",
+            "Functions",
+            "Structures and Unions",
+            "Pointers",
+            "File Handling",
+            "Introduction to Graphics"
+        ],
+        "subtopics": [
+            "Problem Analysis",
+            "Algorithms and Flowcharts",
+            "Debugging and Testing",
+            "C Standards",
+            "C Tokens and Variables",
+            "Data Types",
+            "Constants and Expressions",
+            "Formatted and Unformatted I/O",
+            "Arithmetic and Logical Operators",
+            "Operator Precedence",
+            "Decision Making and Branching",
+            "Loops and Exit Functions",
+            "Single and Multi-Dimensional Arrays",
+            "Character Arrays and Strings",
+            "String Library Functions",
+            "User-Defined Functions",
+            "Recursive Functions",
+            "Passing Arrays and Strings",
+            "Variable Scope and Lifetime",
+            "Structures and Nested Structures",
+            "Unions",
+            "Pointers and Dynamic Memory",
+            "File Operations",
+            "Graphics Modes and Functions"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850019",
+        "title": "Digital Logic",
+        "description": "Introduces digital logic concepts, including Boolean algebra, circuit design, sequential logic, and digital devices.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Binary Systems",
+            "Boolean Algebra and Logic Gates",
+            "Simplification of Boolean Functions",
+            "Combinational Logic",
+            "Combinational Logic with MSI and LSI",
+            "Synchronous Sequential Logic",
+            "Asynchronous Sequential Logic",
+            "Registers and Counters"
+        ],
+        "subtopics": [
+            "Digital Systems",
+            "Binary Numbers",
+            "Number Base Conversion",
+            "Octal and Hexadecimal Numbers",
+            "Signed Binary Numbers",
+            "Binary Storage and Registers",
+            "Boolean Algebra",
+            "Logic Operations and Gates",
+            "Karnaugh Maps",
+            "Product of Sum Simplification",
+            "NAND and NOR Implementation",
+            "Prime Implicants",
+            "Adders and Subtractors",
+            "Decoders and Encoders",
+            "Multiplexers",
+            "ROM and PLA",
+            "Flip-Flops",
+            "State Equations",
+            "State Reduction Table",
+            "Registers and Shift Registers",
+            "Ripple and Synchronous Counters",
+            "Memory Devices"
+        ],
+        "subject": [
+            "Mathematics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "136730359",
+        "title": "Mathematics I",
+        "description": "Covers functions, limits, derivatives, integrals, differential equations, vectors, partial derivatives, and multiple integration.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Functions of One Variable",
+            "Limits and Continuity",
+            "Derivatives",
+            "Applications of Derivatives",
+            "Antiderivatives",
+            "Applications of Antiderivatives",
+            "Ordinary Differential Equations",
+            "Infinite Sequences and Series",
+            "Plane and Space Vectors",
+            "Partial Derivatives and Multiple Integration"
+        ],
+        "subtopics": [
+            "Polynomial, Trigonometric, Exponential, and Logarithmic Functions",
+            "Range and Domain of Functions",
+            "Limits at Infinity",
+            "Horizontal and Vertical Asymptotes",
+            "Tangents and Velocity",
+            "Rate of Change",
+            "Mean Value Theorem",
+            "L'H\u00f4pital's Rule",
+            "Maxima and Minima",
+            "Optimization Problems",
+            "Newton's Method",
+            "Indefinite and Definite Integrals",
+            "Fundamental Theorem of Calculus",
+            "Improper Integrals",
+            "Areas Between Curves",
+            "Volume and Arc Length",
+            "First-Order Differential Equations",
+            "Second-Order Linear Equations",
+            "Non-Homogeneous Equations",
+            "Taylor and Maclaurin Series",
+            "Dot Product and Cross Product",
+            "Equations of Lines and Planes",
+            "Partial Derivatives",
+            "Tangent Planes",
+            "Maximum and Minimum Values",
+            "Multiple Integrals"
+        ],
+        "subject": [
+            "Mathematics"
+        ]
+    },
+    {
+        "book_id": "212042008",
+        "title": "Physics",
+        "description": "Explores rotational dynamics, oscillations, electromagnetism, quantum mechanics, solid-state physics, semiconductors, and integrated circuits.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Rotational Dynamics and Oscillatory Motion",
+            "Electric and Magnetic Field",
+            "Atomic Theory",
+            "Quantum Mechanics",
+            "Solid-State Physics",
+            "Semiconductors",
+            "Integrated Circuits"
+        ],
+        "subtopics": [
+            "Moment of Inertia and Torque",
+            "Rotational Kinetic Energy",
+            "Angular Momentum Conservation",
+            "Oscillations: Frequency, Period, Energy",
+            "Electric and Magnetic Fields",
+            "Force on Current and Charge",
+            "Hall Effect",
+            "Electromagnetic Waves",
+            "Blackbody Radiation",
+            "Bohr Atom and Hydrogen Spectrum",
+            "Franck-Hertz Experiment",
+            "De Broglie Hypothesis",
+            "Uncertainty Principle",
+            "Schrodinger Equation",
+            "H-Atom Solutions",
+            "Crystal Structure and Bonding",
+            "Free Electron Models",
+            "Kronig-Penny Model",
+            "Conductors, Insulators, and Semiconductors",
+            "Intrinsic and Extrinsic Semiconductors",
+            "Semiconductor Diode",
+            "BJT and FET Transistors",
+            "Universal Gates",
+            "TTL and Memory Circuits",
+            "IC Production",
+            "Semiconductor Fabrication"
+        ],
+        "subject": [
+            "Science",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850173",
+        "title": "Discrete Structure",
+        "description": "Covers logic, proofs, sets, relations, counting, probability, and their applications in computer science.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Basic Discrete Structures",
+            "Integers and Matrices",
+            "Logic and Proof Methods",
+            "Induction and Recursion",
+            "Counting and Probability",
+            "Relations and Graphs"
+        ],
+        "subtopics": [
+            "Sets and Subsets",
+            "Set Operations and Venn Diagrams",
+            "Functions: Injective, Bijective, Inverse",
+            "Sequences and Summations",
+            "Integers and Division",
+            "Prime Numbers and GCD",
+            "Chinese Remainder Theorem",
+            "Boolean Matrix Operations",
+            "Propositional Logic",
+            "Predicates and Quantifiers",
+            "Proof Methods: Direct, Indirect, Contradiction",
+            "Mathematical and Strong Induction",
+            "Recursive Algorithms and Correctness",
+            "Counting: Permutations and Combinations",
+            "Pigeonhole Principle",
+            "Discrete Probability",
+            "Expected Value and Variance",
+            "Recurrence Relations",
+            "Relations and Equivalence",
+            "Graph Basics and Types",
+            "Graph Isomorphism and Connectivity",
+            "Shortest Path Algorithm",
+            "Spanning Trees and Kruskal\u2019s Algorithm",
+            "Network Flows and Max Flow-Min Cut Theorem"
+        ],
+        "subject": [
+            "Mathematics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850174",
+        "title": "Object Oriented Programming",
+        "description": "Covers fundamental concepts of object-oriented programming using C++.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Introduction to Object-Oriented Programming",
+            "Basics of C++ Programming",
+            "Classes and Objects",
+            "Operator Overloading",
+            "Inheritance",
+            "Virtual Functions and Polymorphism",
+            "Function Templates and Exception Handling",
+            "File Handling"
+        ],
+        "subtopics": [
+            "Structured vs. Object-Oriented Programming",
+            "Characteristics of Object-Oriented Languages",
+            "C++ Program Structure and Data Types",
+            "Dynamic Memory Allocation",
+            "Control Statements and Functions",
+            "Pointers and Arrays",
+            "Classes and Access Specifiers",
+            "Constructors and Destructors",
+            "Static Members and Member Functions",
+            "Operator Overloading and Restrictions",
+            "Data Conversion",
+            "Inheritance Types and Access Specifiers",
+            "Constructor and Destructor in Inheritance",
+            "Aggregation and Composition",
+            "Virtual Functions and Abstract Classes",
+            "Friend Functions and This Pointer",
+            "Polymorphism Roles",
+            "Function and Class Templates",
+            "Exception Handling with Try-Catch",
+            "Console and File I/O",
+            "Stream Operators and Formatting",
+            "File Operations and Random Access",
+            "Error Handling in File Operations"
+        ],
+        "subject": [
+            "Inheritance and Polymorphism",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850175",
+        "title": "Microprocessor",
+        "description": "Covers fundamentals of computer organization, I/O interfaces, and interrupt operations.",
+        "author": "Corporations",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Introduction to Microprocessor",
+            "Basic Architecture",
+            "Instruction Cycle",
+            "Assembly Language Programming",
+            "I/O and Interrupt Operations",
+            "Input/Output Interfaces",
+            "Advanced Microprocessors"
+        ],
+        "subtopics": [
+            "Microprocessor Components: Registers, ALU, Control and Timing",
+            "Bus Systems: Data, Address, and Control Buses",
+            "8085 Architecture and Pin Functions",
+            "Control Signal Generation",
+            "Instruction Cycle, Machine Cycle, Timing Diagram",
+            "Memory Interfacing",
+            "Assembly Language Basics: Instruction Format, Addressing Modes, Mnemonics",
+            "Control Structures: Branch, Jumps, Loops, Conditional Statements",
+            "Debugging Techniques",
+            "Memory and I/O Read/Write Operations",
+            "Direct Memory Access (DMA)",
+            "Interrupts: Types, Masking, Handling in 8085",
+            "Peripheral Interfacing: 8255A, 8259A",
+            "8086 Architecture and Segmentation",
+            "80286 Architecture: Real/Protected Modes, Multitasking",
+            "80386 Features: Paging, Memory Management, Protected Mode"
+        ],
+        "subject": [
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "136730515",
+        "title": "Mathematics II",
+        "description": "Focuses on linear algebra concepts, including systems of equations, determinants, vector spaces, eigenvalues, and matrix decomposition.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Beginner"
+        ],
+        "topics": [
+            "Linear Equations",
+            "Transformations",
+            "Matrix Algebra",
+            "Determinants",
+            "Vector Spaces",
+            "Eigenvalues and Eigenvectors",
+            "Orthogonality and Least Squares",
+            "Groups and Subgroups",
+            "Rings and Fields"
+        ],
+        "subtopics": [
+            "Linear equations and row reduction",
+            "Matrix equations and applications",
+            "Linear independence and transformations",
+            "Matrix operations and factorization",
+            "Subspaces, dimension, and rank",
+            "Cramer\u2019s rule and volume",
+            "Vector spaces and bases",
+            "Markov Chains and difference equations",
+            "Eigenvectors, diagonalization, and linear transformations",
+            "Orthogonal sets and Gram-Schmidt process",
+            "Least squares problems and linear models",
+            "Groups, subgroups, and cyclic groups",
+            "Rings, fields, and integral domains"
+        ],
+        "subject": [
+            "Mathematics"
+        ]
+    },
+    {
+        "book_id": "308296885",
+        "title": "Statistics I",
+        "description": "Covers descriptive statistics, probability, sampling, random variables, distributions, correlation, and regression.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Introduction to Statistics",
+            "Descriptive Statistics",
+            "Probability",
+            "Sampling",
+            "Random Variables and Expectation",
+            "Probability Distributions",
+            "Correlation and Regression"
+        ],
+        "subtopics": [
+            "Concept of statistics",
+            "Scales of measurement",
+            "Types of data",
+            "Measures of central tendency and dispersion",
+            "Skewness and kurtosis",
+            "Box plot and five-number summary",
+            "Probability laws and Bayes theorem",
+            "Sampling methods and errors",
+            "Random variables and distributions",
+            "Mathematical expectation",
+            "Bernoulli, Binomial, and Poisson distributions",
+            "Normal, Exponential, and Gamma distributions",
+            "Bivariate data and frequency distribution",
+            "Karl Pearson\u2019s correlation",
+            "Spearman\u2019s rank correlation",
+            "Regression analysis and determination coefficient"
+        ],
+        "subject": [
+            "Mathematics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850975",
+        "title": "Data Structure and Algorithm",
+        "description": "Covers fundamental data structures (stack, queue, list, tree, graph) and algorithms for sorting, searching, and recursion.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Beginner"
+        ],
+        "topics": [
+            "Introduction to Data Structures",
+            "Stack",
+            "Queue",
+            "Recursion",
+            "Lists",
+            "Sorting",
+            "Searching and Hashing",
+            "Trees and Graphs"
+        ],
+        "subtopics": [
+            "Data types and abstract data types",
+            "Dynamic memory allocation in C",
+            "Asymptotic notations",
+            "Stack operations and applications",
+            "Infix to postfix/prefix conversion",
+            "Queue operations and types (linear, circular, priority)",
+            "Recursion vs. iteration, factorial, Fibonacci, GCD, TOH",
+            "Linked lists: singly, doubly, circular",
+            "Sorting algorithms: bubble, selection, insertion, merge, quick, heap",
+            "Searching algorithms: sequential, binary, hashing",
+            "Binary tree operations and traversals",
+            "Binary search tree (BST) operations",
+            "AVL tree and balancing",
+            "Graph representation and traversal",
+            "Minimum spanning trees (Kruskal, Prim)",
+            "Shortest path (Dijkstra)"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850976",
+        "title": "Numerical Method",
+        "description": "Focuses on numerical techniques for solving nonlinear equations, interpolation, regression, differentiation, integration, and partial differential equations.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Nonlinear Equations",
+            "Interpolation and Regression",
+            "Numerical Differentiation and Integration",
+            "System of Linear Equations",
+            "Ordinary Differential Equations",
+            "Partial Differential Equations"
+        ],
+        "subtopics": [
+            "Errors in numerical calculations",
+            "Solving nonlinear equations (trial, Newton's, secant methods)",
+            "Lagrange and Newton interpolation",
+            "Least squares method, linear and nonlinear regression",
+            "Differentiating continuous and tabulated functions",
+            "Trapezoidal and Simpson's integration rules",
+            "Gaussian and Romberg integration",
+            "Gaussian elimination, pivoting, Gauss-Jordan method",
+            "Matrix factorization and iterative solutions",
+            "Eigenvalue and eigenvector problems",
+            "Differential equations (Taylor series, Euler's method, Runge-Kutta)",
+            "Solving systems of ordinary differential equations",
+            "Partial differential equations (Laplacian, Poisson's equation)"
+        ],
+        "subject": [
+            "Mathematics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850977",
+        "title": "Computer Architecture",
+        "description": "Covers instruction set architecture, micro-architecture, and system architecture, focusing on data representation, CPU organization, and memory systems.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Data Representation",
+            "Register Transfer and Microoperations",
+            "Basic Computer Organization and Design",
+            "Microprogrammed Control",
+            "Central Processing Unit",
+            "Pipelining",
+            "Computer Arithmetic",
+            "Input Output Organization",
+            "Memory Organization"
+        ],
+        "subtopics": [
+            "Binary and floating-point representation",
+            "Error detection codes",
+            "Microoperations and register transfer",
+            "Arithmetic, logic, and shift operations",
+            "Instruction code and format",
+            "Control unit design",
+            "CPU components and RISC/CISC",
+            "Parallel processing and pipelining",
+            "Signed magnitude and 2's complement operations",
+            "Input-output interface and DMA",
+            "Memory hierarchy and cache memory"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996850978",
+        "title": "Computer Graphics",
+        "description": "Covers graphics hardware, software, geometric transformations, rendering techniques, and virtual reality concepts.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles"
+        ],
+        "topics": [
+            "Introduction to Computer Graphics",
+            "Scan Conversion Algorithms",
+            "2D Geometric Transformations",
+            "3D Geometric Transformations",
+            "3D Objects Representation",
+            "Solid Modeling",
+            "Visible Surface Detection",
+            "Illumination and Rendering",
+            "Virtual Reality",
+            "Introduction to OpenGL"
+        ],
+        "subtopics": [
+            "Graphics hardware and display technology",
+            "Scan conversion algorithms: DDA, Bresenham, Midpoint",
+            "2D transformations: Translation, Rotation, Scaling",
+            "3D transformations and viewing pipelines",
+            "Polygon and wireframe surface representation",
+            "Curves: Bezier, B-spline, Cubic splines",
+            "Solid modeling: BSP trees, Octree representation",
+            "Visible surface detection: Z-buffer, Painter's algorithm",
+            "Illumination models: Ambient, Diffuse, Phong",
+            "Virtual reality components and applications",
+            "OpenGL basics: Drawing and viewing"
+        ],
+        "subject": [
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "308297687",
+        "title": "Statistics II",
+        "description": "Covers descriptive statistics, probability, sampling, random variables, correlation, regression, and hypothesis testing.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Intermediate",
+            "Advanced"
+        ],
+        "topics": [
+            "Sampling Distribution and Estimation",
+            "Testing of Hypothesis",
+            "Non-Parametric Tests",
+            "Multiple Correlation and Regression",
+            "Design of Experiment",
+            "Stochastic Process"
+        ],
+        "subtopics": [
+            "Sampling distribution of mean and proportion",
+            "Central Limit Theorem",
+            "Inferential Statistics",
+            "Point estimation methods",
+            "Confidence intervals and limits",
+            "Statistical hypotheses: null and alternative",
+            "Type I and Type II errors",
+            "t-tests for means and proportions",
+            "Chi-square test",
+            "Wilcoxon signed rank test",
+            "ANOVA and multiple comparisons",
+            "Markov processes and steady-state distributions",
+            "Poisson process and queuing systems"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Mathematics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851131",
+        "title": "Theory of Computation",
+        "description": "Study of finite automata, regular expressions, grammars, Turing machines, and computational complexity.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Advanced",
+            "Graduate/Postgraduate Level"
+        ],
+        "topics": [
+            "Basic Foundations",
+            "Finite Automata",
+            "Regular Expressions",
+            "Context-Free Grammars",
+            "Push-Down Automata",
+            "Turing Machines",
+            "Undecidability and Complexity"
+        ],
+        "subtopics": [
+            "Set Theory",
+            "Logic",
+            "Automata",
+            "Computability",
+            "Complexity Theory",
+            "Finite State Machines",
+            "Regular Operators",
+            "Parse Trees",
+            "Chomsky Normal Form",
+            "Push-Down Automata Operations",
+            "Turing Machines with Multiple Tracks",
+            "Universal Turing Machine",
+            "Time and Space Complexity",
+            "Cook's Theorem",
+            "Halting Problem"
+        ],
+        "subject": [
+            "Mathematics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851132",
+        "title": "Computer Networks",
+        "description": "Introduces computer networking concepts and discusses the layers of networking models.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Intermediate",
+            "Advanced"
+        ],
+        "topics": [
+            "Introduction to Computer Network",
+            "Physical Layer and Media",
+            "Data Link Layer",
+            "Network Layer",
+            "Transport Layer",
+            "Application Layer",
+            "Multimedia & Future Networking"
+        ],
+        "subtopics": [
+            "Network Definitions, Uses, Benefits",
+            "Network Topologies (Star, Tree, Bus)",
+            "Network Types (PAN, LAN, MAN)",
+            "Protocols and Standards Overview",
+            "OSI & TCP/IP Models",
+            "Internet and ISPs",
+            "Network Devices (Repeater, Hub, Switch)",
+            "Transmission Media (Wired, Wireless)",
+            "Ethernet Cable Standards",
+            "Circuit & Message Switching",
+            "ISDN Interface and Standards",
+            "Data Link Layer Functionality",
+            "Framing and Flow Control",
+            "Error Detection and Correction",
+            "ALOHA, Ethernet Standards",
+            "Wireless LAN (Wi-Fi, Bluetooth)",
+            "Virtual Circuit Switching",
+            "IPv4 & IPv6 Addressing",
+            "Routing (Static, Dynamic, RIP, OSPF)",
+            "ICMP/ICMPv6 & NAT",
+            "TCP/UDP Comparison",
+            "Congestion Control & Traffic Shaping",
+            "Web Protocols (HTTP, DNS, FTP)",
+            "Application Server Concepts",
+            "Multimedia Streaming Protocols",
+            "SDN and NFV"
+        ],
+        "subject": [
+            "Security and Privacy",
+            "Miscellaneous",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851134",
+        "title": "Database Management System",
+        "description": "Covers database concepts, system architecture, data modeling, relational models, SQL, normalization, transaction processing, and database recovery.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Intermediate",
+            "Advanced"
+        ],
+        "topics": [
+            "Database Users",
+            "Database System Concepts",
+            "Entity-Relational Model",
+            "Relational Model & Constraints",
+            "Relational Algebra & Calculus",
+            "SQL",
+            "Database Design",
+            "Transaction Processing",
+            "Concurrency Control",
+            "Database Recovery"
+        ],
+        "subtopics": [
+            "Database Approach & Characteristics",
+            "Database Languages & Interfaces",
+            "Entity Types & Relationships",
+            "ER Diagrams & Design Issues",
+            "Relational Model Concepts & Constraints",
+            "Relational Algebra Operations",
+            "Tuple & Domain Relational Calculus",
+            "SQL Queries (Insert, Delete, Update)",
+            "Relational Design (ER-to-Relational Mapping)",
+            "Normalization (1NF, 2NF, 3NF, BCNF)",
+            "Transaction Concepts & Properties",
+            "Concurrency Control (Two-Phase Locking, Timestamps)",
+            "Recovery Techniques (UNDO/REDO, Shadow Paging)"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851133",
+        "title": "Operating Systems",
+        "description": "Introduces operating system concepts, including process management, memory management, file systems, I/O management, and Linux case study.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Intermediate",
+            "Advanced"
+        ],
+        "topics": [
+            "Operating System Overview",
+            "Process Management",
+            "Deadlocks",
+            "Memory Management",
+            "File Management",
+            "Device Management",
+            "Linux Case Study"
+        ],
+        "subtopics": [
+            "Operating System Types & Evolution",
+            "System Calls & Shell",
+            "Process vs Program",
+            "Process States & Control Block",
+            "Threads & IPC",
+            "Mutual Exclusion (Semaphores, Monitors)",
+            "Process Scheduling (FCFS, SJF, Round-Robin)",
+            "Deadlock Prevention & Avoidance",
+            "Memory Management (Paging, Segmentation)",
+            "Virtual Memory & Page Replacement",
+            "File Systems (Naming, Structure, Allocation)",
+            "Disk Scheduling & RAID",
+            "I/O Devices & Controllers",
+            "Linux Kernel & Process Management"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851135",
+        "title": "Artificial Intelligence",
+        "description": "Introduces AI principles, including intelligent agents, problem solving, search algorithms, knowledge representation, machine learning, and natural language processing.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Intermediate",
+            "Advanced"
+        ],
+        "topics": [
+            "Introduction to AI",
+            "Intelligent Agents",
+            "Problem Solving by Searching",
+            "Knowledge Representation",
+            "Machine Learning",
+            "Applications of AI"
+        ],
+        "subtopics": [
+            "AI Perspectives: Rationality, Humanly Acting",
+            "History & Foundations of AI",
+            "Types of Agents: Reflexive, Goal-based",
+            "Search Strategies: BFS, DFS, A*",
+            "Game Playing: Minimax, Alpha-Beta Pruning",
+            "Knowledge Representation Systems: Semantic Nets, Frames",
+            "Propositional & Predicate Logic",
+            "Uncertainty & Fuzzy Logic",
+            "Machine Learning: Supervised, Unsupervised",
+            "Neural Networks: Types, Backpropagation",
+            "Expert Systems: Knowledge Base, Inference Engine",
+            "Natural Language Processing: Lexical Analysis, Machine Translation",
+            "Robotics & Machine Vision"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851939",
+        "title": "Design and Analysis of Algorithms",
+        "description": "Learn fundamental techniques for algorithm design and analysis, including divide and conquer, greedy methods, dynamic programming, graph algorithms, NP-completeness, and approximation strategies.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional",
+            "Graduate/Postgraduate Level"
+        ],
+        "topics": [
+            "Foundation of Algorithm Analysis",
+            "Iterative Algorithms",
+            "Divide and Conquer",
+            "Greedy Algorithms",
+            "Dynamic Programming",
+            "Backtracking",
+            "Number Theoretic Algorithms",
+            "NP Completeness"
+        ],
+        "subtopics": [
+            "Algorithm properties",
+            "RAM model",
+            "Time and space complexity",
+            "Aggregate analysis",
+            "Asymptotic notations (Big-O, Big-\u03a9, Big-\u0398)",
+            "Recurrences and solving techniques",
+            "Basic algorithms (GCD, Fibonacci)",
+            "Sorting (Bubble, Selection, Merge, Quick, Heap)",
+            "Order statistics",
+            "Optimization problems",
+            "Greedy algorithms (Knapsack, Kruskal, Prim, Dijkstra)",
+            "Huffman coding",
+            "Dynamic programming (Matrix Chain, Knapsack, TSP)",
+            "Memoization",
+            "Backtracking (Subset-sum, N-queen)",
+            "Number theory (Euclid, Modular equations, Primality testing)",
+            "Complexity classes (P, NP, NP-Hard, NP-Complete)",
+            "Approximation algorithms"
+        ],
+        "subject": [
+            "Mathematics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851940",
+        "title": "System Analysis and Design",
+        "description": "Explore systems development, planning, analysis, design, implementation, and maintenance, along with object-oriented development and project management techniques.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional",
+            "Graduate/Postgraduate Level"
+        ],
+        "topics": [
+            "Foundations for Systems Development",
+            "Planning",
+            "Analysis",
+            "Design",
+            "Implementation and Maintenance",
+            "Object-Oriented Development"
+        ],
+        "subtopics": [
+            "Systems development lifecycle",
+            "Waterfall model",
+            "Agile and prototyping",
+            "Project management tools",
+            "Feasibility assessment",
+            "Requirements determination methods",
+            "Process modeling and data flow diagrams",
+            "E-R modeling and normalization",
+            "Relational database design",
+            "Designing forms and reports",
+            "Interface and dialogue design",
+            "System implementation and testing",
+            "Unified Modeling Language (UML)",
+            "Structural and behavioral diagrams"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Engineering",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851941",
+        "title": "Cryptography",
+        "description": "A comprehensive study of cryptosystems covering traditional and modern ciphers, hash functions, authentication, network security protocols, and malicious logic.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional",
+            "Graduate/Postgraduate Level"
+        ],
+        "topics": [
+            "Introduction and Classical Ciphers",
+            "Symmetric Ciphers",
+            "Asymmetric Ciphers",
+            "Hash Functions and Digital Signatures",
+            "Authentication",
+            "Network Security",
+            "Malicious Logic"
+        ],
+        "subtopics": [
+            "Computer Security",
+            "Information Security",
+            "CIA Triad",
+            "Cryptanalysis",
+            "Classical Cryptosystems",
+            "Substitution and Transposition Techniques",
+            "Block vs. Stream Ciphers",
+            "Symmetric vs. Asymmetric Ciphers",
+            "Data Encryption Standards (DES)",
+            "Advanced Encryption Standards (AES)",
+            "Modes of Block Cipher Encryption",
+            "Prime Numbers and Number Theory",
+            "RSA Algorithm",
+            "Diffie-Hellman Key Exchange",
+            "Message Authentication Codes",
+            "Secure Hash Algorithms (SHA)",
+            "Digital Signatures",
+            "Password-Based Authentication",
+            "Challenge-Response Systems",
+            "Biometric Systems",
+            "Kerberos Protocol",
+            "PKI and Digital Certificates",
+            "Email Security (PGP)",
+            "SSL and TLS",
+            "IPSec",
+            "Firewalls",
+            "Malicious Logic Types",
+            "Intrusion Detection Systems"
+        ],
+        "subject": [
+            "Mathematics",
+            "Security and Privacy",
+            "Business and Economics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "332198676",
+        "title": "Simulation and Modelling",
+        "description": "Explore system modeling, simulation techniques, queuing theory, random number generation, and simulation languages.",
+        "author": "Notable Scholars",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Professional"
+        ],
+        "subject": [
+            "Mathematics",
+            "Engineering",
+            "Computer Science and IT"
+        ],
+        "topics": [
+            "Introduction to Simulation",
+            "Continuous and Discrete Systems",
+            "Queuing Systems",
+            "Markov Chains",
+            "Random Numbers",
+            "Verification and Validation",
+            "Simulation Output Analysis",
+            "Computer System Simulation"
+        ],
+        "subtopics": [
+            "System Components",
+            "Discrete and Continuous Systems",
+            "System Simulation Models",
+            "Differential Equations in Modeling",
+            "Simulation Phases",
+            "Analog and Hybrid Simulation",
+            "Discrete Event Simulation",
+            "Poisson Processes",
+            "Queuing Performance Metrics",
+            "Random Number Generation",
+            "Tests for Randomness",
+            "Random Variate Generation",
+            "Simulation Model Design",
+            "Model Verification and Validation",
+            "Confidence Intervals",
+            "Simulation Languages (GPSS)",
+            "Case Studies of Simulation Models"
+        ]
+    },
+    {
+        "book_id": "1996851943",
+        "title": "Web Technology ",
+        "description": "Explore the fundamentals of web development, including HTML, CSS, JavaScript, XML, PHP, and modern frameworks.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "AJAX and XML",
+            "PHP"
+        ],
+        "subtopics": [
+            "Web basics: Internet, WWW, Static vs. Dynamic Web Pages",
+            "HTTP concepts: Requests, Responses, URLs",
+            "HTML elements: Headings, Paragraphs, Forms, Media, Tables, Frames",
+            "HTML5: Canvas, Main, Section, Article, Nav, and Footer",
+            "CSS: Syntax, Selectors, Box Model, Positioning, Responsive Design, Media Queries",
+            "JavaScript: Variables, Functions, Objects, DOM, Event Handling, jQuery",
+            "AJAX and JSON basics",
+            "XML: Syntax, Elements, Attributes, Schema (DTD, XSD)",
+            "PHP: Syntax, Variables, Functions, Cookies, Sessions, Database Integration",
+            "Frameworks: CodeIgniter, Laravel, WordPress"
+        ],
+        "subject": [
+            "Database",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851944",
+        "title": "Multimedia Computing",
+        "description": "Learn the core concepts of multimedia systems, including audio, video, graphics, data compression, and application design.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Multimedia",
+            "Sound and Audio Systems",
+            "Image and Graphics",
+            "Video and Animation",
+            "Data Compression",
+            "User Interfaces",
+            "Programming Abstractions",
+            "Multimedia Applications"
+        ],
+        "subtopics": [
+            "Multimedia basics: history, structure, and applications",
+            "Medium types: perception, representation, storage, transmission",
+            "Multimedia system properties: integration, computer control, interactivity",
+            "Challenges: synchronization, sequencing, scheduling",
+            "Components: capture devices, storage, networks, display",
+            "Sound systems: frequency, sampling, hardware, MIDI, speech generation",
+            "Image formats and processing: analysis, transmission, graphics systems",
+            "Video representation: digital formats, transmission",
+            "Animation: input, composition, controlling methods, display",
+            "Compression techniques: Huffman, Run-length, JPEG, MPEG",
+            "User interfaces: video/audio integration, user-friendly design",
+            "Programming: libraries, toolkits, higher languages, object-oriented approaches",
+            "Media integration: editors, authoring tools, interactive services",
+            "Applications: telemedicine, e-learning, video conferencing, video-on-demand"
+        ],
+        "subject": [
+            "Multimedia and Audio",
+            "Miscellaneous",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996851969",
+        "title": "Society and Ethics in Information Technology",
+        "description": "Explore sociological concepts and ethical challenges in IT, including intellectual property, computing's social context, and emerging ethical issues.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Sociology",
+            "Social and Cultural Change",
+            "Development and Transformation",
+            "Ethics in Technology",
+            "Intellectual Property Rights",
+            "Social Context of Computing",
+            "Software Issues",
+            "Emerging Ethical Frontiers"
+        ],
+        "subtopics": [
+            "Concept and applications of sociology",
+            "Social and ethical challenges in IT",
+            "Social change theories: evolution, conflict, functional",
+            "Factors of change: economics, technology, education, demography",
+            "Role of media and communication",
+            "Development indicators and planning",
+            "Modernization, globalization, migration",
+            "E-governance and e-commerce",
+            "Ethical theories and reasoning",
+            "Codes of ethics in IT",
+            "Intellectual property rights and protection",
+            "Computer ethics and digital divide",
+            "ICT in the workplace and employee monitoring",
+            "Improving software quality and consumer protection",
+            "AI, virtualization, and cyberspace ethics",
+            "Cyberbullying and online safety"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Social Sciences",
+            "Security and Privacy"
+        ]
+    },
+    {
+        "book_id": "1996852126",
+        "title": "Software Engineering",
+        "description": "Understand software engineering concepts, including process models, agile methods, requirements engineering, system design, testing, evolution, and project management.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Software Engineering",
+            "Software Processes",
+            "Agile Development",
+            "Requirements Engineering",
+            "System Modeling",
+            "Architectural Design",
+            "Design and Implementation",
+            "Software Testing",
+            "Software Evolution",
+            "Project Management"
+        ],
+        "subtopics": [
+            "Types and attributes of software",
+            "Software engineering fundamentals",
+            "Difference between software and system engineering",
+            "Challenges and costs in software development",
+            "Software engineering ethics",
+            "Software process models: waterfall, incremental, prototyping",
+            "Software validation and evolution",
+            "Agile vs. plan-driven development",
+            "Agile project management techniques",
+            "Functional and non-functional requirements",
+            "Requirements elicitation, specification, and validation",
+            "System modeling techniques: context, interaction, structural, behavioral",
+            "Architectural patterns and application architectures",
+            "Object-oriented design with UML",
+            "Design patterns and open-source development",
+            "Testing methods: validation, test-driven development, user testing",
+            "Software maintenance and legacy systems",
+            "Risk and people management in projects",
+            "Cost estimation techniques (COCOMO)",
+            "Quality and configuration management"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1772873884",
+        "title": "E-Governance",
+        "description": "Explore e-governance models, infrastructure, security, and the use of data warehousing and mining in government processes.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to E-Government",
+            "E-Governance Models",
+            "Infrastructure Development",
+            "E-Government Security",
+            "Data Warehousing and Mining Applications",
+            "Case Studies in E-Governance"
+        ],
+        "subtopics": [
+            "E-Government vs. E-Governance",
+            "Benefits and lifecycle of E-Government",
+            "Online and electronic service delivery",
+            "Global trends in E-Governance",
+            "Digital governance models",
+            "E-Governance maturity levels",
+            "Good governance through E-Governance",
+            "Network and computing infrastructure",
+            "Interoperability frameworks",
+            "Cloud governance and e-readiness",
+            "Infrastructural preparedness: legal, institutional, human, and technological",
+            "E-Government security challenges and standards",
+            "National data warehouses and applications",
+            "Use of data mining in sectors like health, agriculture, education, and trade",
+            "E-Government initiatives in Nepal",
+            "Cyber laws and land reform implementation",
+            "Case studies: Smart Nagarpalika, Bhoomi, E-Seva, E-Khazana",
+            "Global examples: USA, China, Brazil, Sri Lanka"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Social Sciences",
+            "Miscellaneous",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996852129",
+        "title": "NET Centric Computing",
+        "description": "Learn cross-platform web development using ASP.NET Core MVC with C#.",
+        "author": "Corporations",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Language Preliminaries",
+            "Introduction to ASP.NET",
+            "HTTP and ASP.NET Core",
+            "Building ASP.NET Core MVC Applications",
+            "Database Integration",
+            "State Management in ASP.NET Core",
+            "Client-side Development",
+            "Application Security",
+            "Hosting and Deployment"
+        ],
+        "subtopics": [
+            ".NET Framework Basics",
+            "C# Constructs: Arrays, Strings, Interfaces",
+            "Polymorphism and Inheritance",
+            "Generics and Collections",
+            "File IO and LINQ",
+            "Async Programming in C#",
+            ".NET Core and ASP.NET Frameworks",
+            "Compilation and Execution of .NET Applications",
+            "HTTP Basics and MVC Pattern",
+            "Controllers, Actions, and Razor Views",
+            "Models and Validation",
+            "Routing and Dependency Injection",
+            "Web API Development",
+            "Entity Framework Core and ORM",
+            "CRUD Operations with Databases",
+            "State Management Techniques",
+            "Client-side Tools: jQuery, Angular, React",
+            "Authentication and Authorization",
+            "Securing Applications: XSS, CSRF, SQL Injection",
+            "Hosting Models: IIS, Nginx, Apache",
+            "Docker and Containerization",
+            "Cloud Deployment with Azure"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996852130",
+        "title": "Technical Writing",
+        "description": "This course develops workplace writing skills, focusing on document creation in business, science, and tech fields, including reports, proposals, and manuals.",
+        "author": "Publishers",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Technical Writing",
+            "Audience and Purpose",
+            "Writing Process",
+            "Brief Correspondence",
+            "Document Design",
+            "Writing for the Web",
+            "Information Reports",
+            "Employment Communication",
+            "Presentations",
+            "Recommendation Reports",
+            "Proposals",
+            "Ethics in the Workplace"
+        ],
+        "subtopics": [
+            "Technical Writing Overview",
+            "Audience Analysis",
+            "Planning, Drafting, Revising",
+            "Collaborative Writing",
+            "Emails, Memos, Letters",
+            "Document and Graphic Design",
+            "Web Page Writing",
+            "Informative Reports",
+            "Resume and Employment Letters",
+            "Presentation Techniques",
+            "Recommendation Report Structure",
+            "Proposal Writing",
+            "Workplace Ethics"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Social Sciences",
+            "Miscellaneous",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996852127",
+        "title": "Compiler Design and Construction",
+        "description": "This course covers the core concepts of compiler design, including lexical analysis, syntax analysis, translation, type checking, and optimization techniques.",
+        "author": "Publishers",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Compiler",
+            "Lexical Analyzer",
+            "Symbol Table Design",
+            "Runtime Storage Management",
+            "Intermediate Code Generator",
+            "Code Optimization",
+            "Case Studies"
+        ],
+        "subtopics": [
+            "Compiler Structure",
+            "Lexical Analysis",
+            "Finite Automata",
+            "Context-Free Grammars",
+            "Top-down Parsing",
+            "Bottom-up Parsing",
+            "Syntax Tree Construction",
+            "Type Checking",
+            "Symbol Table Design",
+            "Runtime Storage Management",
+            "Intermediate Code Generation",
+            "Code Generation",
+            "Code Optimization",
+            "C/C++ Compiler Case Studies"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996852121",
+        "title": "E-Commerce",
+        "description": "This course covers the fundamentals of E-commerce, including business models, payment systems, security, digital marketing, and system optimization.",
+        "author": "Publishers",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to E-commerce",
+            "Business Models",
+            "Electronic Payment Systems",
+            "Building E-commerce Systems",
+            "E-commerce Security",
+            "Digital Marketing",
+            "System Optimization"
+        ],
+        "subtopics": [
+            "E-business Models",
+            "Revenue Models",
+            "B2C and B2B Models",
+            "E-payment Systems",
+            "Digital Wallets",
+            "Online Payment Protocols",
+            "E-commerce Website Development",
+            "Transaction Processing",
+            "Security Threats and Solutions",
+            "Cryptography",
+            "Search Engine Marketing",
+            "SEO and SEM",
+            "Affiliate and Social Marketing",
+            "Mobile Marketing"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Security and Privacy"
+        ]
+    },
+    {
+        "book_id": "1996852874",
+        "title": "Advanced Java Programming",
+        "description": "This course covers advanced Java topics such as GUI programming, database connectivity, networking, servlets, JSP, and distributed systems.",
+        "author": "Corporations",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional",
+            "Intermediate"
+        ],
+        "topics": [
+            "Java Programming",
+            "User Interface Components",
+            "Event Handling",
+            "Database Connectivity",
+            "Network Programming",
+            "JavaFX GUI",
+            "Servlets and JSP",
+            "RMI and CORBA"
+        ],
+        "subtopics": [
+            "Java Architecture",
+            "Classes and Objects",
+            "Exception Handling",
+            "Concurrency",
+            "File Handling",
+            "AWT vs Swing",
+            "Swing Controls",
+            "Layout Management",
+            "Menu and Toolbars",
+            "Dialogs and Frames",
+            "Event Listeners",
+            "Action Events",
+            "JDBC Architecture",
+            "DDL and DML Operations",
+            "Socket Programming",
+            "Java Mail API",
+            "JavaFX Layouts",
+            "JavaFX UI Controls",
+            "Servlet Life Cycle",
+            "JSP Syntax and Implicit Objects",
+            "Java Web Frameworks",
+            "RMI Architecture",
+            "CORBA Architecture"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996852896",
+        "title": "Data Warehousing and Data Mining",
+        "description": "This course covers data warehousing principles, data mining techniques, and their applications in various domains such as frequent pattern mining, classification, clustering, and graph mining.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Specialized Roles",
+            "Intermediate"
+        ],
+        "topics": [
+            "Data Warehousing",
+            "Data Mining",
+            "Data Preprocessing",
+            "Data Cube Technology",
+            "Frequent Pattern Mining",
+            "Classification and Prediction",
+            "Cluster Analysis",
+            "Graph Mining",
+            "Spatial, Multimedia, Text, and Web Data Mining"
+        ],
+        "subtopics": [
+            "Multidimensional Data Model",
+            "OLAP Operations",
+            "Data Warehouse Architecture",
+            "Data Marts",
+            "Data Mining Functionalities",
+            "Data Cleaning and Integration",
+            "Data Reduction",
+            "Frequent Itemsets",
+            "Apriori Algorithm",
+            "Classification Algorithms",
+            "Decision Trees",
+            "Bayesian Classification",
+            "Support Vector Machine",
+            "K-fold Cross Validation",
+            "Clustering Techniques",
+            "DBSCAN",
+            "Outlier Analysis",
+            "Graph Mining Algorithms",
+            "Social Network Analysis",
+            "Spatial Data Mining",
+            "Multimedia Data Mining",
+            "Text Mining",
+            "Web Mining"
+        ],
+        "subject": [
+            "Mathematics",
+            "Data Science and Big Data",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "125084955",
+        "title": "Principles of Management",
+        "description": "This course explores key management principles such as organizational structure, leadership, motivation, planning, decision-making, and global management trends.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional",
+            "Intermediate"
+        ],
+        "topics": [
+            "Nature of Organizations",
+            "Introduction to Management",
+            "Evolution of Management Thought",
+            "Planning and Decision Making",
+            "Organizing Function",
+            "Leadership and Conflict",
+            "Motivation",
+            "Communication",
+            "Control and Quality Management",
+            "Global Context of Management",
+            "Management Trends in Nepal"
+        ],
+        "subtopics": [
+            "Organizational Goals and Types",
+            "Principles of Management",
+            "Classical and Behavioral Theories",
+            "Business Environment Analysis",
+            "Planning and Decision-Making Process",
+            "Strategic Planning and SWOT Analysis",
+            "Organizational Structuring",
+            "Leadership Styles and Conflict Management",
+            "Motivational Theories and Reward Systems",
+            "Communication Types and Barriers",
+            "Control Systems and Total Quality Management",
+            "Globalization and Multinational Companies",
+            "Business Practices in Nepal"
+        ],
+        "subject": [
+            "Business and Economics"
+        ]
+    },
+    {
+        "book_id": "1996853052",
+        "title": "Advanced Database",
+        "description": "This course covers advanced database topics such as relational and extended E-R models, query optimization, NoSQL databases, and big data processing techniques.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Graduate/Postgraduate Level",
+            "Professional",
+            "Advanced"
+        ],
+        "topics": [
+            "Relational and Enhanced E-R Models",
+            "Object and Object-Relational Databases",
+            "Query Processing and Optimization",
+            "Distributed Databases and NoSQL",
+            "Advanced Database Models and Applications"
+        ],
+        "subtopics": [
+            "Entity Relationship and Inheritance",
+            "Relational Model and SQL Extensions",
+            "File Structures, Hashing, Indexing",
+            "Object Database Design and OQL",
+            "Query Optimization and Execution Plans",
+            "Distributed Database and CAP Theorem",
+            "NoSQL Systems: Document, Key-Value, Column, Graph",
+            "Big Data Concepts: Hadoop, MapReduce",
+            "Active, Temporal, and Spatial Databases",
+            "Multimedia, Deductive Databases, and Web Search"
+        ],
+        "subject": [
+            "Data Science and Big Data",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "1996853054",
+        "title": "Advanced Networking with IPv6",
+        "description": "This course focuses on IPv6 network design, routing protocols, migration, performance measurement, and the next generation of Internet technologies and applications.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Graduate/Postgraduate Level",
+            "Professional",
+            "Advanced"
+        ],
+        "topics": [
+            "IPv6 Network Design",
+            "Routing Protocols",
+            "IPv6 Migration",
+            "QoS in IPv6",
+            "Internet Applications"
+        ],
+        "subtopics": [
+            "Event Handling Concept",
+            "Listener Interfaces",
+            "Action Commands",
+            "Adapter Classes",
+            "Handling Action Events",
+            "Key Events",
+            "Focus Events",
+            "Mouse Events",
+            "Window Events",
+            "Item Events"
+        ],
+        "subject": [
+            "Business and Economics",
+            "Security and Privacy",
+            "Computer Science and IT"
+        ]
+    },
+    {
+        "book_id": "125085144",
+        "title": "International Business Management",
+        "description": "This course covers globalization, international trade, economic and political environments, business strategies, and financial management in international business.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Globalization and International Business",
+            "Global and Regional Economies",
+            "National Differences in Environments",
+            "International Financial Environment",
+            "Strategies for International Business"
+        ],
+        "subtopics": [
+            "Domestic, International, and Global Business",
+            "Globalization Drivers and Types",
+            "International Business Environment",
+            "Global Economic Integration (WTO, NAFTA, EU)",
+            "Cultural, Political, and Legal Differences",
+            "Economic Systems and Development",
+            "Foreign Exchange and Exchange Rate Systems",
+            "Modes of Entry into Foreign Markets",
+            "Global Marketing and Production Strategies",
+            "Global Finance and HR Management"
+        ],
+        "subject": [
+            "Business and Economics"
+        ]
+    },
+    {
+        "book_id": "1996853058",
+        "title": "Introduction to Cloud Computing",
+        "description": "This course explores cloud computing concepts, including architectures, virtualization, programming models, security, and applications.",
+        "author": "Academic Institutions",
+        "audience_level": [
+            "Undergraduate Level",
+            "Professional"
+        ],
+        "topics": [
+            "Introduction to Cloud Computing",
+            "Cloud Computing Architecture",
+            "Cloud Virtualization Technology",
+            "Cloud Programming Models",
+            "Cloud Security",
+            "Cloud Platforms and Applications"
+        ],
+        "subtopics": [
+            "Cloud Evolution and Characteristics",
+            "Cloud Services (IaaS, PaaS, SaaS)",
+            "Public, Private, Hybrid Clouds",
+            "Cloud Design and Implementation",
+            "Virtualization Types and Benefits",
+            "MapReduce Programming",
+            "Cloud Security Challenges and Risks",
+            "Data and Application Security",
+            "Security Architecture and Monitoring",
+            "Cloud Platforms (Azure, AppEngine)",
+            "Business and Consumer Applications"
+        ],
+        "subject": [
+            "Computer Science and IT"
+        ]
+    }
+]
