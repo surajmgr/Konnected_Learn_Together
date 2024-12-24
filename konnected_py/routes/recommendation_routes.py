@@ -23,7 +23,7 @@ async def recommend_note(note_id: str, limit: int = 5):
 async def recommend_book(book_id: str, limit: int = 5):
     try:
         recommendations = recommendBooks(book_id, limit)
-        # return recommendations
+        return recommendations
         recommendations.extend([book_id])
         # print(recommendations)
         books = await book_details(recommendations)

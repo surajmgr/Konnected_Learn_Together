@@ -253,6 +253,7 @@ const resetPassword = async (req, res) => {
 
 const register = (req, res) => {
     // Check existing user
+    try {
     const { name, username, email, password } = req.body;
     const q = `SELECT * FROM users
         WHERE (email = '${email}');`
@@ -275,7 +276,7 @@ const register = (req, res) => {
             '${email}',
             '${hashedPassword}',
             1,
-            12,
+            41,
             '${randomString}'
             );`;
             db.query(q, (err, data) => {
@@ -289,6 +290,10 @@ const register = (req, res) => {
             });
         })
     });
+        
+} catch (error) {
+    console.log(error.message);
+}
 }
 
 const login = (req, res) => {
