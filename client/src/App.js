@@ -34,6 +34,7 @@ import ScrollToTop from "./components/utils/scrollToTop";
 import Question from "./components/questions/question";
 import ExplainGPT from "./components/explaingpt/explainGPT";
 import Levels from "./components/levels/levels";
+import Quiz from "./components/quiz/quiz";
 
 const Layout = ()=>{
   return (
@@ -68,6 +69,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />
       },
+      {path: "/home", element: <Home />},
       {
         path: "/books",
         element: <Books />
@@ -112,6 +114,10 @@ const router = createBrowserRouter([
         path: "/question/:qname/:qid",
         element: <Question />
       },
+      {
+        path: "/quiz/:tname/:tid",
+        element: <Quiz />
+      }
     ]
   },
   {

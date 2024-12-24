@@ -293,7 +293,6 @@
         "author": "Academic Institutions",
         "audience_level": [
             "Mathematics",
-            "Computer Science",
             "Discrete Mathematics"
         ],
         "topics": [
@@ -533,7 +532,6 @@
         "description": "Covers fundamental data structures (stack, queue, list, tree, graph) and algorithms for sorting, searching, and recursion.",
         "author": "Notable Scholars",
         "audience_level": [
-            "Computer Science",
             "Data Structures",
             "Algorithms"
         ],
@@ -623,8 +621,7 @@
         "description": "Covers instruction set architecture, micro-architecture, and system architecture, focusing on data representation, CPU organization, and memory systems.",
         "author": "Notable Scholars",
         "audience_level": [
-            "Computer Architecture",
-            "Computer Science"
+            "Computer Architecture"
         ],
         "topics": [
             "Data Representation",
@@ -665,8 +662,7 @@
         "description": "Covers graphics hardware, software, geometric transformations, rendering techniques, and virtual reality concepts.",
         "author": "Notable Scholars",
         "audience_level": [
-            "Computer Graphics",
-            "Computer Science"
+            "Computer Graphics"
         ],
         "topics": [
             "Introduction to Computer Graphics",
@@ -748,7 +744,6 @@
         "description": "Study of finite automata, regular expressions, grammars, Turing machines, and computational complexity.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Theory of Computation"
         ],
         "topics": [
@@ -791,7 +786,6 @@
         "description": "Introduces computer networking concepts and discusses the layers of networking models.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Computer Networks"
         ],
         "topics": [
@@ -845,7 +839,6 @@
         "description": "Covers database concepts, system architecture, data modeling, relational models, SQL, normalization, transaction processing, and database recovery.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Databases"
         ],
         "topics": [
@@ -892,7 +885,6 @@
         "description": "Introduces operating system concepts, including process management, memory management, file systems, I/O management, and Linux case study.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Operating Systems"
         ],
         "topics": [
@@ -935,7 +927,6 @@
         "description": "Introduces AI principles, including intelligent agents, problem solving, search algorithms, knowledge representation, machine learning, and natural language processing.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Artificial Intelligence"
         ],
         "topics": [
@@ -976,7 +967,6 @@
         "description": "Learn fundamental techniques for algorithm design and analysis, including divide and conquer, greedy methods, dynamic programming, graph algorithms, NP-completeness, and approximation strategies.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Algorithms"
         ],
         "topics": [
@@ -1068,7 +1058,6 @@
         "description": "A comprehensive study of cryptosystems covering traditional and modern ciphers, hash functions, authentication, network security protocols, and malicious logic.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Cryptography",
             "Cybersecurity"
         ],
@@ -1126,7 +1115,6 @@
         "description": "Explore system modeling, simulation techniques, queuing theory, random number generation, and simulation languages.",
         "author": "Notable Scholars",
         "audience_level": [
-            "Computer Science",
             "Simulation",
             "Modeling"
         ],
@@ -1173,8 +1161,7 @@
         "description": "Explore the fundamentals of web development, including HTML, CSS, JavaScript, XML, PHP, and modern frameworks.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Web Development",
-            "Computer Science"
+            "Web Development"
         ],
         "topics": [
             "Introduction",
@@ -1211,7 +1198,6 @@
         "description": "Learn the core concepts of multimedia systems, including audio, video, graphics, data compression, and application design.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
             "Multimedia"
         ],
         "topics": [
@@ -1495,7 +1481,6 @@
         "description": "This course covers the core concepts of compiler design, including lexical analysis, syntax analysis, translation, type checking, and optimization techniques.",
         "author": "Publishers",
         "audience_level": [
-            "Computer Science",
             "Compiler Design"
         ],
         "topics": [
@@ -1735,8 +1720,7 @@
         "description": "This course covers advanced database topics such as relational and extended E-R models, query optimization, NoSQL databases, and big data processing techniques.",
         "author": "Academic Institutions",
         "audience_level": [
-            "Computer Science",
-            "Database Management"
+            "Databases"
         ],
         "topics": [
             "Relational and Enhanced E-R Models",
