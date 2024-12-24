@@ -1,0 +1,3133 @@
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28778,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Galois Fields (GF(p) & GF(2n)) in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28771,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Data Encryption Standards (DES) in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28777,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Euclidean Algorithm in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28781,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Advanced Encryption Standards (AES) Cipher in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28782,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Modes of Block Cipher Encryptions (Electronic Code Book in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28775,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Fields in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28785,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Output Feedback Mode in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28770,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Substitution Permutation Network (SPN) in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2689,
+    "subtopic_id": 28784,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Cipher Feedback Mode in topic: Unit 2. Symmetric Ciphers in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28819,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28822,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Biometric System in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28816,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28818,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Dictionary Attacks in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28823,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Needham-Schroeder Scheme in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28819,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28822,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Biometric System in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28816,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28818,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Dictionary Attacks in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28823,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Needham-Schroeder Scheme in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28819,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28822,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Biometric System in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28816,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28818,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Dictionary Attacks in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2692,
+    "subtopic_id": 28823,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Needham-Schroeder Scheme in topic: Unit 5. Authentication in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28802,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Message Authentication in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28803,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Message Authentication Functions in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28811,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Arbitrated Digital Signature in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28810,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Digital Signatures: Direct Digital Signatures in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28806,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Properties of Hash functions in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2691,
+    "subtopic_id": 28812,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Digital Signature Standard: The DSS Approach in topic: Unit 4. Cryptographic Hash Functions and Digital Signatures in book: Cryptography
+        
+
+In the following format:
+{
+    "topic_id": 2548,
+    "subtopic_id": 27194,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Arc length in topic: Unit 6. Applications of Antiderivatives in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2548,
+    "subtopic_id": 27191,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Areas between the curves in topic: Unit 6. Applications of Antiderivatives in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2551,
+    "subtopic_id": 27205,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction in topic: Unit 9. Plain and Space Vectors in book: Mathematics I
+        
+
+
+
+----------------------===============-----------------------==================================------------------------------------------------------
+
+
+
+
+
+
+In the following format:
+{
+    "topic_id": 2551,
+    "subtopic_id": 27207,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Dot product and cross Product in topic: Unit 9. Plain and Space Vectors in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2551,
+    "subtopic_id": 27210,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Arc length and curvature in topic: Unit 9. Plain and Space Vectors in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2551,
+    "subtopic_id": 27211,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Normal and binomial vectors in topic: Unit 9. Plain and Space Vectors in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2548,
+    "subtopic_id": 27194,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Arc length in topic: Unit 6. Applications of Antiderivatives in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2548,
+    "subtopic_id": 27191,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Areas between the curves in topic: Unit 6. Applications of Antiderivatives in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2552,
+    "subtopic_id": 27216,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Maximum and minimum values in topic: Unit 10. Partial Derivatives and Multiple Integration in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2552,
+    "subtopic_id": 27214,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Partial Derivatives in topic: Unit 10. Partial Derivatives and Multiple Integration in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2550,
+    "subtopic_id": 27203,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Convergence tests and power series in topic: Unit 8. Infinite Sequence and Series in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2550,
+    "subtopic_id": 27204,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Taylor's and Maclaurin's  series in topic: Unit 8. Infinite Sequence and Series in book: Mathematics I
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28149,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Time and Space complexity of A Turing Machine in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28152,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Problem and its types: Absract in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28153,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Decision in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28157,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Circuit Satisfiability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28150,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Intractability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28160,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Undecidability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28148,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Computational Complexity in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28161,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Undecidable Problems: Post’s Correspondence Problem in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28039,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Automata in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28051,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Languages in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28046,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Positive Closure of Alphabet in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28041,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Computability Theory in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28037,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Functions in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28047,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Strings in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28038,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Proofs in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28043,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Basic concepts of Automata Theory: Alphabets in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28052,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Empty Language in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28120,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28119,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Construction of PDA by Empty Stack in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28123,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of PDA to CFG in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28117,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Language of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28110,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Representation of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28115,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Non Deterministic PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28122,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of CFG to PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28113,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Instantaneous Description for PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28120,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28119,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Construction of PDA by Empty Stack in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28123,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of PDA to CFG in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28117,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Language of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28110,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Representation of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28115,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Non Deterministic PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28122,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of CFG to PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28113,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Instantaneous Description for PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28076,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Regular Languages and their applications in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28078,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Equivalence of Regular Expression and Finite Automata in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28083,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Application of Pumping Lemma in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28079,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Reduction of Regular Expression to ε – NFA in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28086,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Complement) Minimization of Finite State Machines: Table Filling Algorithm in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2639,
+    "subtopic_id": 28081,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Properties of Regular Languages in topic: Unit 3. Regular Expression in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2761,
+    "subtopic_id": 29612,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Composing Informal Proposals in topic: Unit 11. Proposals in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2761,
+    "subtopic_id": 29609,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction in topic: Unit 11. Proposals in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2762,
+    "subtopic_id": 29618,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Why Is It So Difficult to Behave Ethically? in topic: Unit 12. Ethics in the Workplace in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2762,
+    "subtopic_id": 29616,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Creating a Culture of Ethics in topic: Unit 12. Ethics in the Workplace in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2762,
+    "subtopic_id": 29617,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: What Do you When Faces with an Ethical Dilemma? in topic: Unit 12. Ethics in the Workplace in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2759,
+    "subtopic_id": 29602,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Presenting in topic: Unit 9. Presentations in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2759,
+    "subtopic_id": 29603,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Organizing a Group Presentation in topic: Unit 9. Presentations in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2759,
+    "subtopic_id": 29597,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Getting Started on Presentations in topic: Unit 9. Presentations in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2759,
+    "subtopic_id": 29598,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Planning in topic: Unit 9. Presentations in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2760,
+    "subtopic_id": 29608,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Composing Recommendation Reports in topic: Unit 10. Recommendation Reports in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2760,
+    "subtopic_id": 29604,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction in topic: Unit 10. Recommendation Reports in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2760,
+    "subtopic_id": 29605,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: What Is a Recommendation Report? in topic: Unit 10. Recommendation Reports in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2761,
+    "subtopic_id": 29612,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Composing Informal Proposals in topic: Unit 11. Proposals in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2761,
+    "subtopic_id": 29609,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction in topic: Unit 11. Proposals in book: Technical Writing
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28087,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction to Context Free Grammar (CFG) in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28099,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Simplification of CFG: Removal of Useless symbols in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28106,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Chomsky Hierarchy Pumping Lemma for CFL in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28094,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Parse tree and its construction in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28092,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Leftmost and Rightmost in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28108,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Closure Properties of CFL in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28095,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Ambiguous grammar in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28089,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Use of CFG in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28098,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Equivalence of regular grammar and finite automata in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28090,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Context Free Language (CFL) in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2640,
+    "subtopic_id": 28107,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Application of Pumping Lemma in topic: Unit 4. Context Free Grammar in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28120,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic:  in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28119,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Construction of PDA by Empty Stack in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28123,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of PDA to CFG in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28117,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Language of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28110,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Representation of PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28115,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Non Deterministic PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28122,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Conversion of CFG to PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2641,
+    "subtopic_id": 28113,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Instantaneous Description for PDA in topic: Unit 5. Push Down Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28065,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Theorems for equivalence of Language accepted by DFA and NFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28066,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Finite Automaton with Epsilon Transition (ε - NFA) in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28057,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Language of DFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28064,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Method for reduction of NFA to DFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28054,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Introduction of Finite State Machine in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28071,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Equivalence of NFA and ε –NFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28058,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Extended Transition Function of DFA Non-Deterministic Finite Automaton (NFA) in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28062,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Equivalence of DFA and NFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28070,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Removing Epsilon Transition using the concept of Epsilon Closure in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28059,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Notations for NFA in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2638,
+    "subtopic_id": 28055,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Deterministic Finite Automata (DFA) in topic: Unit 2. Introduction to Finite Automata in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28039,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Automata in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28051,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Languages in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28046,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Positive Closure of Alphabet in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28041,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Computability Theory in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28037,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Functions in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28047,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Strings in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28038,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Proofs in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28043,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Basic concepts of Automata Theory: Alphabets in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2637,
+    "subtopic_id": 28052,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Empty Language in topic: Unit 1. Basic Foundations in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28149,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Time and Space complexity of A Turing Machine in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28152,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Problem and its types: Absract in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28153,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Decision in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28157,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Circuit Satisfiability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28150,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Intractability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28160,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Undecidability in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28148,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Computational Complexity in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        
+
+In the following format:
+{
+    "topic_id": 2643,
+    "subtopic_id": 28161,
+    "questions": [
+        {
+            question: "Q",
+            answer: "A",
+            options: ["A", "B", "C", "D"],
+            difficulty: 0.0,
+            discrimination: 0.0,
+            guessing: 0.0
+        },
+        and so on
+    ]
+}
+
+Range of difficulty: -3.0 to 3.0, discrimination: 0.5 to 2.5, guessing: 0.0 to 0.4
+
+Provide me at least 10 questions for subtopic: Undecidable Problems: Post’s Correspondence Problem in topic: Unit 7. Undecidability and Intractability in book: Theory of Computation
+        

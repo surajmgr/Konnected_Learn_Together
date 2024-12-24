@@ -1,0 +1,147 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model User {
+  id             Int    @id @default(autoincrement())
+  name           String
+  username       String @unique
+  email          String @unique
+  password       String
+  isActivated    Boolean @default(false)
+  resetToken     String?
+  activateToken  String?
+  rank           Int    @default(1)
+  level          Int    @default(12)
+  avatar         String?
+  tinymce        Boolean @default(false)
+  gpt            Boolean @default(false)
+  coins          Int    @default(0)
+  Questions Question[]
+  Answers Answer[]
+}
+model Note {
+    id        Int      @id @default(autoincrement())
+    name      String
+    body      String
+    sst_name  String
+    subtopic  Subtopic @relation(fields: [subtopicId], references: [id])
+    subtopicId Int
+    uid       Int
+    date      DateTime
+    is_locked Boolean
+   createdAt  DateTime @default(now())
+}
+
+model Notification {
+    id      Int    @id @default(autoincrement())
+    content String
+    link    String
+    uid     Int
+    read    Boolean
+}
+
+model Subtopic {
+    id      Int     @id @default(autoincrement())
+    name String
+    st_name String
+    sst_name String?
+    topic   Topic   @relation(fields: [topicId], references: [id])
+    topicId Int
+}
+
+model Topic {
+    id      Int     @id @default(autoincrement())
+    name    String
+    st_name String?
+    subtopics Subtopic[]
+    topicBooks TopicBook[]
+}
+
+
+model Vote {
+    id        Int     @id @default(autoincrement())
+    answerId  Int
+    uid       Int
+    status    String
+    answer Answer @relation(fields:[answerId],references:[id])
+    userId Int
+}
+
+model Question {
+    id      Int     @id @default(autoincrement())
+    topic   Topic   @relation(fields: [topicId], references: [id])
+    topicId Int
+    title String
+    body String
+    sqName String
+    userId Int
+    date DateTime
+    Answes Answer[]
+}
+
+model Answer {
+    id         Int      @id @default(autoincrement())
+    question   Question @relation(fields: [questionId], references: [id])
+    questionId Int
+    body String
+    vote Int @default(0)
+    userId Int
+    date DateTime
+
+}
+
+model BookLevel {
+    id       Int @id @default(autoincrement())
+    levelId  Int
+}
+model Level {
+    id          Int         @id @default(autoincrement())
+    name        String
+    sl_name     String
+    is_verified Boolean
+    bookLevel   BookLevel[]
+}
+
+model BookLevel {
+    id       Int    @id @default(autoincrement())
+    levelId  Int
+    level    Level  @relation(fields: [levelId], references: [id])
+}
+
+
+model TopicBook {
+  topicId Int
+  bookId  Int
+  topic   Topic @relation(fields: [topicId], references: [id])
+  book    Book  @relation(fields: [bookId], references: [id])
+  @@id([topicId, bookId])
+}
+
+
+model Book {
+  id          Int      @id @default(autoincrement())
+  name        String
+  is_verified Boolean   @default(false)
+  topics      TopicBook[]
+}
+
+model SearchLog {
+  id         Int      @id @default(autoincrement())
+  searchTerm String
+  results    Json
+  createdAt  DateTime @default(now())
+}

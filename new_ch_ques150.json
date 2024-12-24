@@ -1,0 +1,4225 @@
+[
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28778,
+        "questions": [
+            {
+                "question": "What is a Galois Field?",
+                "answer": "A finite field",
+                "options": ["A finite field", "An infinite field", "A vector space", "A group"],
+                "difficulty": 0.2,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does GF(p) represent?",
+                "answer": "A Galois Field with p elements",
+                "options": [
+                    "A Galois Field with p elements",
+                    "A group with p elements",
+                    "A finite vector space over p",
+                    "A finite ring of order p"
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the characteristic of GF(2ⁿ)?",
+                "answer": "2",
+                "options": ["2", "n", "p", "0"],
+                "difficulty": 0.6,
+                "discrimination": 1.4,
+                "guessing": 0.0
+            },
+            {
+                "question": "In GF(2ⁿ), addition of two elements is performed using:",
+                "answer": "Bitwise XOR",
+                "options": ["Bitwise XOR", "Bitwise AND", "Multiplication", "Modulo addition"],
+                "difficulty": 0.1,
+                "discrimination": 1.8,
+                "guessing": 0.0
+            },
+            {
+                "question": "The polynomial used to define GF(2ⁿ) is called:",
+                "answer": "An irreducible polynomial",
+                "options": [
+                    "An irreducible polynomial",
+                    "A reducible polynomial",
+                    "A monomial",
+                    "A constant polynomial"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is true for multiplication in GF(p)?",
+                "answer": "It is associative and distributive",
+                "options": [
+                    "It is associative and distributive",
+                    "It is only commutative",
+                    "It lacks distributive property",
+                    "It is non-associative"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.3,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the number of elements in GF(2³)?",
+                "answer": "8",
+                "options": ["8", "6", "16", "9"],
+                "difficulty": -0.5,
+                "discrimination": 1.9,
+                "guessing": 0.0
+            },
+            {
+                "question": "Why is GF(2ⁿ) commonly used in cryptography?",
+                "answer": "Efficient implementation in hardware and software",
+                "options": [
+                    "Efficient implementation in hardware and software",
+                    "Complex arithmetic",
+                    "Unlimited field size",
+                    "Easy to solve linear equations"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.2,
+                "guessing": 0.1
+            },
+            {
+                "question": "The order of a Galois Field GF(pⁿ) is:",
+                "answer": "pⁿ",
+                "options": ["pⁿ", "p + n", "p × n", "p - n"],
+                "difficulty": 0.3,
+                "discrimination": 1.7,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the additive identity in GF(p)?",
+                "answer": "0",
+                "options": ["0", "1", "p", "-1"],
+                "difficulty": -0.8,
+                "discrimination": 1.6,
+                "guessing": 0.0
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28771,
+        "questions": [
+            {
+                "question": "What is the block size used in DES?",
+                "answer": "64 bits",
+                "options": ["64 bits", "128 bits", "32 bits", "256 bits"],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "How many rounds are there in the DES encryption process?",
+                "answer": "16",
+                "options": ["16", "10", "12", "20"],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the key size used in DES?",
+                "answer": "56 bits",
+                "options": ["56 bits", "64 bits", "128 bits", "48 bits"],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which structure does DES use for its encryption rounds?",
+                "answer": "Feistel network",
+                "options": ["Feistel network", "Substitution-permutation network", "Linear block", "Stream cipher"],
+                "difficulty": 0.4,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "In DES, what is the purpose of the initial permutation (IP)?",
+                "answer": "To rearrange bits for diffusion",
+                "options": [
+                    "To rearrange bits for diffusion",
+                    "To strengthen encryption",
+                    "To generate subkeys",
+                    "To reverse ciphertext"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.4,
+                "guessing": 0.0
+            },
+            {
+                "question": "What type of keys does DES use?",
+                "answer": "Symmetric keys",
+                "options": ["Symmetric keys", "Asymmetric keys", "Public keys", "Private keys"],
+                "difficulty": 0.2,
+                "discrimination": 1.9,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the main vulnerability of DES?",
+                "answer": "Brute-force attack due to short key length",
+                "options": [
+                    "Brute-force attack due to short key length",
+                    "Weak substitution process",
+                    "High computational overhead",
+                    "Limited scalability"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the function of the S-boxes in DES?",
+                "answer": "To provide non-linearity",
+                "options": [
+                    "To provide non-linearity",
+                    "To generate subkeys",
+                    "To rearrange bits",
+                    "To execute XOR operations"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the role of the P-box in DES?",
+                "answer": "To permute bits for diffusion",
+                "options": [
+                    "To permute bits for diffusion",
+                    "To substitute bits",
+                    "To generate keys",
+                    "To encrypt plaintext"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which encryption standard replaced DES as a more secure option?",
+                "answer": "AES",
+                "options": ["AES", "RSA", "Blowfish", "Twofish"],
+                "difficulty": -0.2,
+                "discrimination": 2.2,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28777,
+        "questions": [
+            {
+                "question": "What is the primary purpose of the Euclidean Algorithm in cryptography?",
+                "answer": "To compute the greatest common divisor (GCD)",
+                "options": [
+                    "To compute the greatest common divisor (GCD)",
+                    "To find prime numbers",
+                    "To generate keys",
+                    "To factorize large numbers"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the time complexity of the Euclidean Algorithm?",
+                "answer": "O(log(min(a, b)))",
+                "options": [
+                    "O(log(min(a, b)))",
+                    "O(n)",
+                    "O(n^2)",
+                    "O(1)"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does the Euclidean Algorithm repeatedly perform?",
+                "answer": "Division and remainder calculations",
+                "options": [
+                    "Division and remainder calculations",
+                    "Exponentiation",
+                    "Modulo inversion",
+                    "Subtraction"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "The Euclidean Algorithm is most commonly used in which field of cryptography?",
+                "answer": "Public key cryptography",
+                "options": [
+                    "Public key cryptography",
+                    "Symmetric encryption",
+                    "Stream ciphers",
+                    "Block ciphers"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which property of GCD makes it useful in modular arithmetic?",
+                "answer": "It identifies coprime numbers",
+                "options": [
+                    "It identifies coprime numbers",
+                    "It determines factorization",
+                    "It simplifies fractions",
+                    "It eliminates primes"
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.7,
+                "guessing": 0.0
+            },
+            {
+                "question": "What modification of the Euclidean Algorithm is used to find modular inverses?",
+                "answer": "Extended Euclidean Algorithm",
+                "options": [
+                    "Extended Euclidean Algorithm",
+                    "Chinese Remainder Theorem",
+                    "Prime Factorization",
+                    "Elliptic Curve Algorithm"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the GCD of two prime numbers?",
+                "answer": "1",
+                "options": ["1", "0", "Their product", "Their sum"],
+                "difficulty": -0.5,
+                "discrimination": 1.9,
+                "guessing": 0.0
+            },
+            {
+                "question": "How does the Euclidean Algorithm terminate?",
+                "answer": "When the remainder becomes 0",
+                "options": [
+                    "When the remainder becomes 0",
+                    "When the quotient becomes 1",
+                    "After a fixed number of steps",
+                    "When the dividend equals the divisor"
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.8,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the main application of the Extended Euclidean Algorithm in cryptography?",
+                "answer": "To compute modular inverses",
+                "options": [
+                    "To compute modular inverses",
+                    "To encrypt data",
+                    "To generate prime numbers",
+                    "To perform key exchange"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is true about the Euclidean Algorithm?",
+                "answer": "It works for both positive and negative integers",
+                "options": [
+                    "It works for both positive and negative integers",
+                    "It works only for positive integers",
+                    "It is limited to prime numbers",
+                    "It requires one number to be prime"
+                ],
+                "difficulty": 0.2,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28781,
+        "questions": [
+            {
+                "question": "What is the block size used in AES?",
+                "answer": "128 bits",
+                "options": ["128 bits", "64 bits", "256 bits", "512 bits"],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What are the possible key sizes in AES?",
+                "answer": "128, 192, or 256 bits",
+                "options": [
+                    "128, 192, or 256 bits",
+                    "128, 256, or 512 bits",
+                    "64, 128, or 192 bits",
+                    "192, 256, or 512 bits"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "How many rounds are there in AES-128?",
+                "answer": "10",
+                "options": ["10", "12", "14", "16"],
+                "difficulty": 0.6,
+                "discrimination": 1.7,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which structure does AES use for encryption?",
+                "answer": "Substitution-permutation network",
+                "options": [
+                    "Substitution-permutation network",
+                    "Feistel network",
+                    "Linear block structure",
+                    "Stream cipher structure"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which step in AES involves rearranging rows of the state matrix?",
+                "answer": "ShiftRows",
+                "options": ["ShiftRows", "MixColumns", "AddRoundKey", "SubBytes"],
+                "difficulty": 0.4,
+                "discrimination": 1.8,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the purpose of the MixColumns step in AES?",
+                "answer": "To provide diffusion",
+                "options": [
+                    "To provide diffusion",
+                    "To generate round keys",
+                    "To add confusion",
+                    "To encrypt the state matrix"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the function of the SubBytes step in AES?",
+                "answer": "Byte substitution using S-boxes",
+                "options": [
+                    "Byte substitution using S-boxes",
+                    "Rearranging rows of the state matrix",
+                    "Mixing columns",
+                    "Adding the round key"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does the AddRoundKey step in AES involve?",
+                "answer": "XORing the state with the round key",
+                "options": [
+                    "XORing the state with the round key",
+                    "Substituting bytes",
+                    "Mixing columns",
+                    "Shifting rows"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.7,
+                "guessing": 0.0
+            },
+            {
+                "question": "How are round keys generated in AES?",
+                "answer": "Using the AES key schedule",
+                "options": [
+                    "Using the AES key schedule",
+                    "Using random generation",
+                    "Using hashing",
+                    "Using block permutation"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What cryptographic properties make AES secure?",
+                "answer": "Confusion and diffusion",
+                "options": [
+                    "Confusion and diffusion",
+                    "Simplicity and speed",
+                    "Linear structure and substitution",
+                    "Symmetry and periodicity"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.2,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28782,
+        "questions": [
+            {
+                "question": "What does Electronic Code Book (ECB) mode do with identical plaintext blocks?",
+                "answer": "Encrypts them into identical ciphertext blocks",
+                "options": [
+                    "Encrypts them into identical ciphertext blocks",
+                    "Encrypts them into unique ciphertext blocks",
+                    "Rearranges their order",
+                    "Ignores identical blocks"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the primary disadvantage of ECB mode?",
+                "answer": "Lack of diffusion",
+                "options": [
+                    "Lack of diffusion",
+                    "High computational complexity",
+                    "Requires an IV",
+                    "Cannot encrypt large files"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "In ECB mode, how is each block of plaintext processed?",
+                "answer": "Independently",
+                "options": ["Independently", "Using feedback", "Using an IV", "Using chaining"],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is a primary use case for ECB mode?",
+                "answer": "Encrypting small and random data like keys",
+                "options": [
+                    "Encrypting small and random data like keys",
+                    "Encrypting large files",
+                    "Streaming video encryption",
+                    "Online data transfer"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which cryptographic principle does ECB mode fail to satisfy?",
+                "answer": "Confusion",
+                "options": ["Confusion", "Diffusion", "Both confusion and diffusion", "Integrity"],
+                "difficulty": 1.2,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "Why is ECB not recommended for encrypting images?",
+                "answer": "Patterns in the plaintext are visible in the ciphertext",
+                "options": [
+                    "Patterns in the plaintext are visible in the ciphertext",
+                    "It consumes excessive memory",
+                    "It requires key reuse",
+                    "It modifies the image structure"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which block cipher mode is typically suggested over ECB?",
+                "answer": "Cipher Block Chaining (CBC)",
+                "options": ["Cipher Block Chaining (CBC)", "Counter Mode (CTR)", "Output Feedback (OFB)", "Cipher Feedback (CFB)"],
+                "difficulty": 0.4,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does ECB mode handle blocks of plaintext shorter than the block size?",
+                "answer": "Pads them to the required length",
+                "options": [
+                    "Pads them to the required length",
+                    "Splits them into smaller blocks",
+                    "Encrypts directly without padding",
+                    "Duplicates the previous block"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.4,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the major advantage of ECB mode?",
+                "answer": "Simplicity and parallel processing",
+                "options": [
+                    "Simplicity and parallel processing",
+                    "High security",
+                    "Resistance to attacks",
+                    "IV independence"
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the relationship between plaintext and ciphertext in ECB mode?",
+                "answer": "Each plaintext block corresponds to a unique ciphertext block",
+                "options": [
+                    "Each plaintext block corresponds to a unique ciphertext block",
+                    "Ciphertext depends on previous blocks",
+                    "Ciphertext blocks are random",
+                    "Each block encrypts differently"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.0
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28775,
+        "questions": [
+            {
+                "question": "What is a field in mathematics and cryptography?",
+                "answer": "A set equipped with two operations, addition and multiplication, satisfying specific properties",
+                "options": [
+                    "A set equipped with two operations, addition and multiplication, satisfying specific properties",
+                    "A group of prime numbers",
+                    "A subset of integers with modulo arithmetic",
+                    "A structure used for encryption only"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is an example of a finite field?",
+                "answer": "GF(p)",
+                "options": ["GF(p)", "Integers", "Real numbers", "Complex numbers"],
+                "difficulty": 0.6,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the order of a finite field GF(p^n)?",
+                "answer": "p^n",
+                "options": ["p^n", "p", "n", "p*n"],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What property must the number p satisfy in GF(p)?",
+                "answer": "p must be a prime number",
+                "options": [
+                    "p must be a prime number",
+                    "p must be an odd number",
+                    "p must be even",
+                    "p must be greater than 10"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which property is NOT satisfied by elements of a field?",
+                "answer": "Existence of non-invertible multiplication",
+                "options": [
+                    "Existence of non-invertible multiplication",
+                    "Associativity",
+                    "Distributivity",
+                    "Existence of additive inverses"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which field operation is performed modulo p in GF(p)?",
+                "answer": "Both addition and multiplication",
+                "options": [
+                    "Both addition and multiplication",
+                    "Addition only",
+                    "Multiplication only",
+                    "Neither addition nor multiplication"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.0
+            },
+            {
+                "question": "What does the characteristic of a finite field represent?",
+                "answer": "The smallest positive integer n such that n * 1 = 0",
+                "options": [
+                    "The smallest positive integer n such that n * 1 = 0",
+                    "The largest prime factor of the field order",
+                    "The number of elements in the field",
+                    "The sum of all field elements"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the key application of fields in cryptography?",
+                "answer": "To construct efficient algorithms for modular arithmetic",
+                "options": [
+                    "To construct efficient algorithms for modular arithmetic",
+                    "To generate random numbers",
+                    "To find large prime numbers",
+                    "To factorize integers"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "In GF(2^n), what are the possible values of elements?",
+                "answer": "0 and 1",
+                "options": ["0 and 1", "Any prime number", "Real numbers", "Positive integers only"],
+                "difficulty": 0.4,
+                "discrimination": 1.6,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which of the following ensures a finite field is closed under its operations?",
+                "answer": "Addition and multiplication are performed modulo a prime number or irreducible polynomial",
+                "options": [
+                    "Addition and multiplication are performed modulo a prime number or irreducible polynomial",
+                    "Only addition is defined",
+                    "The field contains only prime numbers",
+                    "The field is infinite"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28785,
+        "questions": [
+            {
+                "question": "What is the primary feature of Output Feedback (OFB) mode?",
+                "answer": "It converts a block cipher into a stream cipher",
+                "options": [
+                    "It converts a block cipher into a stream cipher",
+                    "It uses a single initialization vector for all messages",
+                    "It requires padding for plaintext blocks",
+                    "It uses feedback based on ciphertext"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does OFB mode use to generate the keystream?",
+                "answer": "The output of the encryption function",
+                "options": [
+                    "The output of the encryption function",
+                    "The input plaintext",
+                    "The previous ciphertext block",
+                    "A random number generator"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which property of OFB mode ensures error propagation is avoided?",
+                "answer": "Ciphertext errors do not affect subsequent plaintext blocks",
+                "options": [
+                    "Ciphertext errors do not affect subsequent plaintext blocks",
+                    "Feedback is taken from plaintext",
+                    "Padding is used for every block",
+                    "It does not use an initialization vector"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the role of the initialization vector (IV) in OFB mode?",
+                "answer": "It ensures that the same plaintext encrypts to different ciphertexts each time",
+                "options": [
+                    "It ensures that the same plaintext encrypts to different ciphertexts each time",
+                    "It is used as a key for encryption",
+                    "It serves as the plaintext input",
+                    "It determines the block size"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "What happens if the same IV is reused in OFB mode?",
+                "answer": "The same keystream is generated, compromising security",
+                "options": [
+                    "The same keystream is generated, compromising security",
+                    "The ciphertext becomes random",
+                    "The encryption fails completely",
+                    "The decryption process is altered"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which operation is performed on the keystream in OFB mode?",
+                "answer": "XOR with the plaintext",
+                "options": [
+                    "XOR with the plaintext",
+                    "Addition with the plaintext",
+                    "Multiplication with the plaintext",
+                    "Division with the plaintext"
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is one advantage of OFB mode over Cipher Block Chaining (CBC) mode?",
+                "answer": "Error propagation is avoided",
+                "options": [
+                    "Error propagation is avoided",
+                    "It requires no initialization vector",
+                    "It provides higher diffusion",
+                    "It supports variable block sizes"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does OFB mode handle plaintext lengths that are not a multiple of the block size?",
+                "answer": "It requires no padding since it operates as a stream cipher",
+                "options": [
+                    "It requires no padding since it operates as a stream cipher",
+                    "It pads with zeros",
+                    "It truncates the plaintext",
+                    "It repeats the initialization vector"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which of the following is a drawback of OFB mode?",
+                "answer": "It is vulnerable to keystream reuse",
+                "options": [
+                    "It is vulnerable to keystream reuse",
+                    "It propagates errors across all blocks",
+                    "It requires padding for plaintext",
+                    "It uses feedback from ciphertext"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What ensures the security of OFB mode encryption?",
+                "answer": "A unique initialization vector for each encryption",
+                "options": [
+                    "A unique initialization vector for each encryption",
+                    "The feedback from ciphertext",
+                    "Padding the plaintext to block size",
+                    "Encrypting in multiple rounds"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.7,
+                "guessing": 0.0
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28770,
+        "questions": [
+            {
+                "question": "What is the primary purpose of a Substitution-Permutation Network (SPN)?",
+                "answer": "To create confusion and diffusion in a cipher",
+                "options": [
+                    "To create confusion and diffusion in a cipher",
+                    "To generate random keys",
+                    "To reduce encryption complexity",
+                    "To minimize memory usage"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "In an SPN, what is the role of the substitution step?",
+                "answer": "To replace input values with other values to create confusion",
+                "options": [
+                    "To replace input values with other values to create confusion",
+                    "To rearrange the bits of input data",
+                    "To combine multiple keys",
+                    "To add redundancy to the plaintext"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which operation in SPN provides diffusion?",
+                "answer": "Permutation",
+                "options": ["Permutation", "Substitution", "Key mixing", "Expansion"],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "What is the typical structure of an SPN-based cipher?",
+                "answer": "A series of repeated rounds involving substitution, permutation, and key mixing",
+                "options": [
+                    "A series of repeated rounds involving substitution, permutation, and key mixing",
+                    "A single round of substitution and permutation",
+                    "A stream cipher with linear feedback",
+                    "A randomized structure with no fixed pattern"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the S-box in an SPN?",
+                "answer": "A nonlinear component used for substitution",
+                "options": [
+                    "A nonlinear component used for substitution",
+                    "A table for key generation",
+                    "A linear permutation function",
+                    "A feedback register for stream encryption"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What ensures security against linear and differential cryptanalysis in SPNs?",
+                "answer": "A strong S-box design and sufficient rounds",
+                "options": [
+                    "A strong S-box design and sufficient rounds",
+                    "Using a long key length",
+                    "Adding multiple IVs",
+                    "Combining with stream cipher techniques"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is true for an SPN's permutation step?",
+                "answer": "It rearranges bits to distribute input influence across output",
+                "options": [
+                    "It rearranges bits to distribute input influence across output",
+                    "It substitutes input values with fixed outputs",
+                    "It generates random key values",
+                    "It provides nonlinearity to the cipher"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the primary advantage of using SPN in symmetric ciphers?",
+                "answer": "It balances security and computational efficiency",
+                "options": [
+                    "It balances security and computational efficiency",
+                    "It eliminates the need for a key schedule",
+                    "It avoids the use of S-boxes",
+                    "It eliminates the need for permutations"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "Which key operation is included in every round of an SPN?",
+                "answer": "Key mixing",
+                "options": ["Key mixing", "Key expansion", "Key swapping", "Key reversal"],
+                "difficulty": 0.6,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is an example of an SPN-based cipher?",
+                "answer": "AES (Advanced Encryption Standard)",
+                "options": ["AES (Advanced Encryption Standard)", "DES (Data Encryption Standard)", "RSA", "Blowfish"],
+                "difficulty": 0.4,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2689,
+        "subtopic_id": 28784,
+        "questions": [
+            {
+                "question": "What is the primary purpose of Cipher Feedback (CFB) mode?",
+                "answer": "To convert a block cipher into a self-synchronizing stream cipher",
+                "options": [
+                    "To convert a block cipher into a self-synchronizing stream cipher",
+                    "To reduce encryption complexity",
+                    "To encrypt fixed-length blocks",
+                    "To generate initialization vectors"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "How is feedback used in CFB mode?",
+                "answer": "Ciphertext is used as feedback for subsequent encryption",
+                "options": [
+                    "Ciphertext is used as feedback for subsequent encryption",
+                    "Plaintext is used as feedback for subsequent encryption",
+                    "Keys are used as feedback",
+                    "Random numbers are used as feedback"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the role of the initialization vector (IV) in CFB mode?",
+                "answer": "It provides a starting point for feedback and ensures ciphertext uniqueness",
+                "options": [
+                    "It provides a starting point for feedback and ensures ciphertext uniqueness",
+                    "It encrypts the first plaintext block",
+                    "It generates the key for encryption",
+                    "It acts as a substitute for the key"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "What happens if the same IV is reused in CFB mode?",
+                "answer": "The same plaintext will produce identical ciphertext, compromising security",
+                "options": [
+                    "The same plaintext will produce identical ciphertext, compromising security",
+                    "Encryption fails due to key conflict",
+                    "The ciphertext becomes random",
+                    "The decryption process becomes invalid"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is one advantage of CFB mode over ECB mode?",
+                "answer": "It avoids patterns in the ciphertext for identical plaintext blocks",
+                "options": [
+                    "It avoids patterns in the ciphertext for identical plaintext blocks",
+                    "It requires no initialization vector",
+                    "It supports longer key sizes",
+                    "It is faster to encrypt data"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "How does CFB mode handle plaintext lengths that are not a multiple of the block size?",
+                "answer": "It does not require padding since it operates as a stream cipher",
+                "options": [
+                    "It does not require padding since it operates as a stream cipher",
+                    "It pads with zeros",
+                    "It truncates the plaintext",
+                    "It adds redundant blocks"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is a drawback of CFB mode?",
+                "answer": "Errors in a ciphertext block affect multiple plaintext blocks",
+                "options": [
+                    "Errors in a ciphertext block affect multiple plaintext blocks",
+                    "It requires extensive padding",
+                    "It is vulnerable to replay attacks",
+                    "It does not support encryption of variable-length plaintexts"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which operation is performed to combine the output of the cipher function with plaintext in CFB mode?",
+                "answer": "XOR operation",
+                "options": ["XOR operation", "Addition operation", "Subtraction operation", "Multiplication operation"],
+                "difficulty": 0.4,
+                "discrimination": 1.5,
+                "guessing": 0.0
+            },
+            {
+                "question": "What ensures security in CFB mode encryption?",
+                "answer": "A unique IV for each encryption process",
+                "options": [
+                    "A unique IV for each encryption process",
+                    "Key rotation in every block",
+                    "Repeated plaintext padding",
+                    "Longer encryption keys"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does CFB mode achieve synchronization during decryption?",
+                "answer": "It uses the ciphertext blocks for feedback in the decryption process",
+                "options": [
+                    "It uses the ciphertext blocks for feedback in the decryption process",
+                    "It uses plaintext blocks for feedback",
+                    "It compares decrypted blocks with the IV",
+                    "It relies on block alignment mechanisms"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28819,
+        "questions": [
+            {
+                "question": "What is the primary goal of authentication in cryptography?",
+                "answer": "To verify the identity of users or systems",
+                "options": [
+                    "To verify the identity of users or systems",
+                    "To encrypt messages between users",
+                    "To generate secure encryption keys",
+                    "To ensure data integrity"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is NOT an example of an authentication factor?",
+                "answer": "Transaction amount",
+                "options": [
+                    "Password",
+                    "Fingerprint scan",
+                    "Transaction amount",
+                    "Smartcard"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does two-factor authentication (2FA) require?",
+                "answer": "Two different types of authentication factors",
+                "options": [
+                    "Two different types of authentication factors",
+                    "One factor and a backup password",
+                    "Two passwords from different systems",
+                    "A single secure token"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is a characteristic of biometric authentication?",
+                "answer": "It uses physical characteristics for user verification",
+                "options": [
+                    "It uses physical characteristics for user verification",
+                    "It requires a password as a second factor",
+                    "It generates a random code for each session",
+                    "It uses security tokens for authentication"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the role of a hash function in digital signature authentication?",
+                "answer": "To generate a unique digest of the message to be signed",
+                "options": [
+                    "To generate a unique digest of the message to be signed",
+                    "To encrypt the message",
+                    "To verify the user's identity",
+                    "To transmit the signature securely"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "In public key infrastructure (PKI), what is the purpose of a certificate authority (CA)?",
+                "answer": "To issue and manage digital certificates",
+                "options": [
+                    "To issue and manage digital certificates",
+                    "To generate public and private keys",
+                    "To authenticate users directly",
+                    "To provide encryption services"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which authentication method uses a shared secret between the user and the server?",
+                "answer": "Password-based authentication",
+                "options": [
+                    "Password-based authentication",
+                    "Biometric authentication",
+                    "Multi-factor authentication",
+                    "Digital signatures"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the main vulnerability of password-based authentication?",
+                "answer": "Passwords can be easily guessed or stolen",
+                "options": [
+                    "Passwords can be easily guessed or stolen",
+                    "It requires multiple secret keys",
+                    "It is difficult to implement",
+                    "It requires biometric scanning"
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is a key advantage of multi-factor authentication (MFA)?",
+                "answer": "It enhances security by requiring multiple forms of verification",
+                "options": [
+                    "It enhances security by requiring multiple forms of verification",
+                    "It reduces encryption complexity",
+                    "It eliminates the need for passwords",
+                    "It improves server performance"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "In digital signature authentication, how is the signature generated?",
+                "answer": "By encrypting the hash of the message with the sender's private key",
+                "options": [
+                    "By encrypting the hash of the message with the sender's private key",
+                    "By hashing the message with the recipient's public key",
+                    "By generating a random key for encryption",
+                    "By combining the message with a symmetric key"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28822,
+        "questions": [
+            {
+                "question": "What is the main advantage of biometric authentication over traditional password-based systems?",
+                "answer": "It uses unique physical characteristics that are difficult to replicate",
+                "options": [
+                    "It uses unique physical characteristics that are difficult to replicate",
+                    "It is easier to implement",
+                    "It requires less computational power",
+                    "It does not require an internet connection"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is an example of a behavioral biometric characteristic?",
+                "answer": "Keystroke dynamics",
+                "options": [
+                    "Keystroke dynamics",
+                    "Fingerprint scan",
+                    "Iris recognition",
+                    "Face recognition"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which biometric trait is most commonly used for authentication in mobile devices?",
+                "answer": "Fingerprint recognition",
+                "options": [
+                    "Fingerprint recognition",
+                    "Iris scanning",
+                    "Voice recognition",
+                    "Facial recognition"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the primary challenge in implementing biometric systems?",
+                "answer": "Ensuring the accuracy and reliability of the biometric data",
+                "options": [
+                    "Ensuring the accuracy and reliability of the biometric data",
+                    "Finding low-cost biometric sensors",
+                    "Providing public access to biometric data",
+                    "Handling large amounts of biometric data storage"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "In biometric systems, what is the term for a false rejection of an authorized user?",
+                "answer": "False negative",
+                "options": [
+                    "False negative",
+                    "False positive",
+                    "True positive",
+                    "True negative"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following biometric systems uses the pattern of the veins in a person's palm?",
+                "answer": "Palm vein recognition",
+                "options": [
+                    "Palm vein recognition",
+                    "Fingerprint recognition",
+                    "Iris scanning",
+                    "Facial recognition"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the main disadvantage of facial recognition as a biometric authentication method?",
+                "answer": "It can be vulnerable to spoofing using photos or videos",
+                "options": [
+                    "It can be vulnerable to spoofing using photos or videos",
+                    "It requires high-quality images in all lighting conditions",
+                    "It is slow to process and authenticate",
+                    "It requires users to be in a specific pose"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is meant by the term 'biometric template' in biometric authentication systems?",
+                "answer": "A mathematical representation of a biometric trait",
+                "options": [
+                    "A mathematical representation of a biometric trait",
+                    "A physical copy of the biometric data",
+                    "A record of a user's authentication attempts",
+                    "A stored image of the biometric trait"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is a limitation of fingerprint recognition systems?",
+                "answer": "It may fail to recognize fingerprints that are worn or damaged",
+                "options": [
+                    "It may fail to recognize fingerprints that are worn or damaged",
+                    "It is not fast enough for real-time applications",
+                    "It is vulnerable to facial spoofing",
+                    "It requires extensive storage space"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "In biometric authentication, what does the term 'false positive' refer to?",
+                "answer": "An unauthorized user is incorrectly identified as authorized",
+                "options": [
+                    "An unauthorized user is incorrectly identified as authorized",
+                    "An authorized user is incorrectly rejected",
+                    "A user's biometric data is corrupted during capture",
+                    "The system fails to authenticate a valid user"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28818,
+        "questions": [
+            {
+                "question": "What is a dictionary attack in cryptography?",
+                "answer": "An attack that tries all words in a precompiled list (dictionary) as potential passwords",
+                "options": [
+                    "An attack that tries all words in a precompiled list (dictionary) as potential passwords",
+                    "An attack that uses brute force to try every possible password combination",
+                    "An attack that exploits vulnerabilities in password hash algorithms",
+                    "An attack that intercepts password transmissions"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following is the primary vulnerability that dictionary attacks target?",
+                "answer": "Weak or common passwords",
+                "options": [
+                    "Weak or common passwords",
+                    "Encryption key lengths",
+                    "Hashing algorithm weaknesses",
+                    "Exposed network traffic"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Why are dictionary attacks effective against password-based authentication systems?",
+                "answer": "Because many users choose weak or common passwords that are in the dictionary",
+                "options": [
+                    "Because many users choose weak or common passwords that are in the dictionary",
+                    "Because the system allows unlimited login attempts",
+                    "Because the system uses weak encryption algorithms",
+                    "Because the system encrypts passwords with reversible algorithms"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is a common countermeasure against dictionary attacks?",
+                "answer": "Using strong, complex passwords that are not in common dictionaries",
+                "options": [
+                    "Using strong, complex passwords that are not in common dictionaries",
+                    "Limiting the number of login attempts",
+                    "Using salted hashes for password storage",
+                    "Implementing multi-factor authentication"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the role of 'salting' in preventing dictionary attacks?",
+                "answer": "Salting adds random data to passwords before hashing, making precompiled dictionary attacks ineffective",
+                "options": [
+                    "Salting adds random data to passwords before hashing, making precompiled dictionary attacks ineffective",
+                    "Salting increases the strength of the password hash algorithm",
+                    "Salting encrypts the password hash for storage",
+                    "Salting reduces the number of attempts required for a successful dictionary attack"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            },
+            {
+                "question": "What type of passwords are most vulnerable to dictionary attacks?",
+                "answer": "Short, common, or dictionary words",
+                "options": [
+                    "Short, common, or dictionary words",
+                    "Randomly generated long strings",
+                    "Passwords using special characters only",
+                    "Passwords that use multi-factor authentication"
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following techniques can significantly reduce the risk of a dictionary attack on password-based systems?",
+                "answer": "Using multi-factor authentication",
+                "options": [
+                    "Using multi-factor authentication",
+                    "Using reversible encryption",
+                    "Allowing unlimited login attempts",
+                    "Using weak hash functions"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does a dictionary attack differ from a brute-force attack?",
+                "answer": "A dictionary attack uses a predefined list of common passwords, while a brute-force attack tries all possible combinations",
+                "options": [
+                    "A dictionary attack uses a predefined list of common passwords, while a brute-force attack tries all possible combinations",
+                    "A dictionary attack is faster than a brute-force attack",
+                    "A dictionary attack is only applicable to encrypted data",
+                    "A brute-force attack can only target weak encryption algorithms"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the primary goal of a dictionary attack?",
+                "answer": "To quickly identify a valid password from a list of commonly used passwords",
+                "options": [
+                    "To quickly identify a valid password from a list of commonly used passwords",
+                    "To decrypt the data encrypted with the password",
+                    "To determine the algorithm used to hash the password",
+                    "To bypass multi-factor authentication mechanisms"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which of the following tools is commonly used to perform dictionary attacks?",
+                "answer": "John the Ripper",
+                "options": [
+                    "John the Ripper",
+                    "Wireshark",
+                    "Metasploit",
+                    "Aircrack-ng"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28823,
+        "questions": [
+            {
+                "question": "What is the primary purpose of the Needham-Schroeder authentication protocol?",
+                "answer": "To enable secure communication between two parties by exchanging encrypted messages",
+                "options": [
+                    "To enable secure communication between two parties by exchanging encrypted messages",
+                    "To establish a secure key exchange between multiple parties",
+                    "To authenticate a user's identity using biometric data",
+                    "To encrypt data using public-key cryptography"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which cryptographic technique is primarily used in the Needham-Schroeder protocol?",
+                "answer": "Symmetric-key encryption",
+                "options": [
+                    "Symmetric-key encryption",
+                    "Public-key encryption",
+                    "Hashing algorithms",
+                    "Digital signatures"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "In the Needham-Schroeder protocol, which entity is responsible for generating the session key?",
+                "answer": "The trusted third party (server)",
+                "options": [
+                    "The trusted third party (server)",
+                    "The initiator",
+                    "The responder",
+                    "The attacker"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is a potential vulnerability in the original Needham-Schroeder protocol?",
+                "answer": "Replay attacks, where an attacker intercepts and resends messages",
+                "options": [
+                    "Replay attacks, where an attacker intercepts and resends messages",
+                    "Man-in-the-middle attacks, where the attacker intercepts and modifies messages",
+                    "Key exhaustion, where the session key is guessed by brute force",
+                    "Side-channel attacks, where cryptographic keys are extracted through physical observation"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does the Needham-Schroeder protocol prevent impersonation attacks?",
+                "answer": "By using encrypted challenges and responses to verify the identities of the parties",
+                "options": [
+                    "By using encrypted challenges and responses to verify the identities of the parties",
+                    "By relying on a digital signature from the trusted third party",
+                    "By ensuring that both parties know the public key of the server",
+                    "By exchanging passwords instead of encryption keys"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the key feature of the Needham-Schroeder protocol that distinguishes it from simpler authentication methods?",
+                "answer": "The use of a trusted third party to mediate the authentication process",
+                "options": [
+                    "The use of a trusted third party to mediate the authentication process",
+                    "The use of public-key encryption for all communications",
+                    "The reliance on a shared secret between the parties",
+                    "The use of time-stamped tokens to prevent replay attacks"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the role of the nonce in the Needham-Schroeder protocol?",
+                "answer": "To prevent replay attacks by ensuring that each session is unique",
+                "options": [
+                    "To prevent replay attacks by ensuring that each session is unique",
+                    "To provide a time-stamp for each message",
+                    "To authenticate the user to the server",
+                    "To encrypt the communication between the initiator and responder"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            },
+            {
+                "question": "Which type of attack is specifically addressed by the Needham-Schroeder protocol's use of nonces?",
+                "answer": "Replay attacks",
+                "options": [
+                    "Replay attacks",
+                    "Denial of service attacks",
+                    "Man-in-the-middle attacks",
+                    "Brute-force attacks"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.6,
+                "guessing": 0.1
+            },
+            {
+                "question": "What modification was made in the Needham-Schroeder-Lowe protocol to address its vulnerability to replay attacks?",
+                "answer": "The introduction of an additional nonce and message verification step",
+                "options": [
+                    "The introduction of an additional nonce and message verification step",
+                    "The use of public-key encryption for session key exchange",
+                    "The use of time-stamps for message ordering",
+                    "The elimination of the trusted third party"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            },
+            {
+                "question": "In the Needham-Schroeder protocol, which of the following is a critical assumption about the trusted third party (server)?",
+                "answer": "It is trusted and cannot be compromised by an attacker",
+                "options": [
+                    "It is trusted and cannot be compromised by an attacker",
+                    "It is capable of breaking encryption algorithms",
+                    "It has access to the session keys of both parties",
+                    "It controls all communications between the initiator and responder"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.9,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28819,
+        "questions": [
+            {
+                "question": "What is the primary purpose of authentication in cryptography?",
+                "answer": "To verify the identity of the entities involved in communication",
+                "options": [
+                    "To verify the identity of the entities involved in communication",
+                    "To encrypt data securely",
+                    "To generate cryptographic keys",
+                    "To protect data integrity"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is a commonly used method for user authentication?",
+                "answer": "Password-based authentication",
+                "options": [
+                    "Password-based authentication",
+                    "Public-key cryptography",
+                    "Hash functions",
+                    "Data encryption"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 1.5,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is the challenge-response authentication method?",
+                "answer": "A method where one party challenges the other to prove their identity through a response",
+                "options": [
+                    "A method where one party challenges the other to prove their identity through a response",
+                    "A method where both parties exchange passwords for verification",
+                    "A method that uses digital signatures for authentication",
+                    "A method that uses a shared secret key for authentication"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "In which situation would two-factor authentication (2FA) be most useful?",
+                "answer": "When additional security is needed beyond just a password",
+                "options": [
+                    "When additional security is needed beyond just a password",
+                    "When the system requires high-speed data transmission",
+                    "When encryption keys are easily compromised",
+                    "When the system does not require user verification"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.7,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the role of a digital signature in authentication?",
+                "answer": "To verify the authenticity and integrity of the message",
+                "options": [
+                    "To verify the authenticity and integrity of the message",
+                    "To encrypt the message for secure transmission",
+                    "To prevent unauthorized access to a system",
+                    "To generate cryptographic keys"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is a potential risk in authentication systems?",
+                "answer": "Phishing attacks",
+                "options": [
+                    "Phishing attacks",
+                    "Confidentiality breaches",
+                    "Data compression",
+                    "Key management errors"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a biometric authentication system?",
+                "answer": "A system that authenticates users based on physical characteristics, such as fingerprints or iris scans",
+                "options": [
+                    "A system that authenticates users based on physical characteristics, such as fingerprints or iris scans",
+                    "A system that uses passwords for authentication",
+                    "A system that uses security tokens for verification",
+                    "A system that relies on challenge-response authentication"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 1.7,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does a cryptographic nonce do in authentication protocols?",
+                "answer": "It ensures that each transaction is unique and prevents replay attacks",
+                "options": [
+                    "It ensures that each transaction is unique and prevents replay attacks",
+                    "It encrypts the authentication message for security",
+                    "It stores user credentials in an encrypted form",
+                    "It validates the public keys used in the system"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.6,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is an advantage of using public-key infrastructure (PKI) for authentication?",
+                "answer": "It allows for secure digital signatures and certificates for identity verification",
+                "options": [
+                    "It allows for secure digital signatures and certificates for identity verification",
+                    "It eliminates the need for encryption algorithms",
+                    "It ensures faster data transmission",
+                    "It does not require any password management"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the purpose of a one-time password (OTP) in authentication?",
+                "answer": "To provide a temporary password that is used only once for authentication",
+                "options": [
+                    "To provide a temporary password that is used only once for authentication",
+                    "To store a user's permanent password securely",
+                    "To verify the authenticity of the user using biometric data",
+                    "To encrypt user credentials during transmission"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28822,
+        "questions": [
+            {
+                "question": "Which of the following is a characteristic of biometric authentication systems?",
+                "answer": "They rely on unique physical or behavioral traits for identification",
+                "options": [
+                    "They rely on unique physical or behavioral traits for identification",
+                    "They require users to input passwords",
+                    "They use cryptographic keys for verification",
+                    "They store fingerprints in a public database"
+                ],
+                "difficulty": 1.8,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the most common biometric trait used in authentication systems?",
+                "answer": "Fingerprint recognition",
+                "options": [
+                    "Fingerprint recognition",
+                    "Voice recognition",
+                    "Iris scan",
+                    "Hand geometry"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a major advantage of biometric authentication over traditional password systems?",
+                "answer": "Biometrics are harder to forget or lose",
+                "options": [
+                    "Biometrics are harder to forget or lose",
+                    "Biometrics are more expensive to implement",
+                    "Biometrics are less accurate than passwords",
+                    "Biometrics require less storage space"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.7,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following biometric traits is most commonly used for identity verification in smartphones?",
+                "answer": "Fingerprint recognition",
+                "options": [
+                    "Fingerprint recognition",
+                    "Iris scan",
+                    "Facial recognition",
+                    "Voice recognition"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.6,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the main limitation of biometric authentication systems?",
+                "answer": "The risk of false positives or false negatives",
+                "options": [
+                    "The risk of false positives or false negatives",
+                    "The high cost of implementation",
+                    "The lack of widespread adoption",
+                    "The requirement of specific hardware"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the term 'liveness detection' refer to in biometric systems?",
+                "answer": "The ability to detect whether a biometric sample is from a live person or a fake/replica",
+                "options": [
+                    "The ability to detect whether a biometric sample is from a live person or a fake/replica",
+                    "The process of verifying the uniqueness of a biometric sample",
+                    "The ability to store biometric data securely",
+                    "The method of matching a biometric sample with a database record"
+                ],
+                "difficulty": 1.7,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the primary disadvantage of using facial recognition for biometric authentication?",
+                "answer": "It can be affected by changes in lighting or facial expression",
+                "options": [
+                    "It can be affected by changes in lighting or facial expression",
+                    "It requires expensive equipment to implement",
+                    "It cannot be used for mobile devices",
+                    "It is less accurate than fingerprint recognition"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which biometric system uses patterns of veins in a person's hand for identification?",
+                "answer": "Hand vein recognition",
+                "options": [
+                    "Hand vein recognition",
+                    "Fingerprint recognition",
+                    "Iris scanning",
+                    "Facial recognition"
+                ],
+                "difficulty": 1.8,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does 'false rejection rate' (FRR) refer to in biometric systems?",
+                "answer": "The rate at which legitimate users are incorrectly denied access",
+                "options": [
+                    "The rate at which legitimate users are incorrectly denied access",
+                    "The rate at which unauthorized users are incorrectly granted access",
+                    "The rate at which biometric data is lost",
+                    "The rate at which biometric data is corrupted"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is NOT a factor that can affect the accuracy of biometric authentication?",
+                "answer": "The color of the subject's clothing",
+                "options": [
+                    "The color of the subject's clothing",
+                    "Environmental conditions such as lighting",
+                    "Quality of the biometric sensor",
+                    "Changes in the biometric feature over time"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28816,
+        "questions": [
+            {
+                "question": "What is the primary purpose of authentication in cryptography?",
+                "answer": "To verify the identity of a user or entity",
+                "options": [
+                    "To verify the identity of a user or entity",
+                    "To ensure the confidentiality of data",
+                    "To detect unauthorized access",
+                    "To perform encryption of sensitive information"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is NOT a common method of authentication?",
+                "answer": "Voice recognition",
+                "options": [
+                    "Password-based authentication",
+                    "Biometric authentication",
+                    "Two-factor authentication",
+                    "Voice recognition"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 1.7,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does multi-factor authentication (MFA) require?",
+                "answer": "Two or more different types of authentication factors",
+                "options": [
+                    "A single password",
+                    "Two or more different types of authentication factors",
+                    "Biometric identification only",
+                    "A secret key shared between parties"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is an example of something you are in the context of authentication?",
+                "answer": "Fingerprint",
+                "options": [
+                    "Password",
+                    "Fingerprint",
+                    "Smart card",
+                    "PIN"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "In cryptography, what does the term 'nonce' refer to?",
+                "answer": "A number used once, often in authentication protocols to prevent replay attacks",
+                "options": [
+                    "A number used once, often in authentication protocols to prevent replay attacks",
+                    "A public key used for encryption",
+                    "A hash function used for verifying data integrity",
+                    "A timestamp used for session expiration"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is the main advantage of biometric authentication systems?",
+                "answer": "They are unique to the individual and cannot be easily forgotten or stolen",
+                "options": [
+                    "They are unique to the individual and cannot be easily forgotten or stolen",
+                    "They require minimal infrastructure",
+                    "They are faster than password-based authentication",
+                    "They can be easily replicated"
+                ],
+                "difficulty": 1.7,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the function of the public key in public key authentication?",
+                "answer": "To encrypt the data that only the corresponding private key can decrypt",
+                "options": [
+                    "To encrypt the data that only the corresponding private key can decrypt",
+                    "To verify the authenticity of the user",
+                    "To store sensitive information securely",
+                    "To generate the session key"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the primary challenge of password-based authentication?",
+                "answer": "Passwords can be easily guessed, stolen, or cracked",
+                "options": [
+                    "Passwords can be easily guessed, stolen, or cracked",
+                    "Passwords are difficult to remember",
+                    "Passwords are expensive to implement",
+                    "Passwords cannot be stored securely"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.7,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is an example of something you know in the context of authentication?",
+                "answer": "Password",
+                "options": [
+                    "Password",
+                    "Fingerprint",
+                    "Smart card",
+                    "PIN"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 1.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "In which scenario would a one-time password (OTP) most commonly be used?",
+                "answer": "For single-use authentication during online transactions",
+                "options": [
+                    "For single-use authentication during online transactions",
+                    "For biometric authentication",
+                    "For storing passwords securely",
+                    "For permanent user access"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28818,
+        "questions": [
+            {
+                "question": "What is a dictionary attack?",
+                "answer": "A method of attempting to break a password by systematically entering every word in a pre-arranged list of words",
+                "options": [
+                    "A method of attempting to break a password by systematically entering every word in a pre-arranged list of words",
+                    "A brute-force method where all possible password combinations are tried",
+                    "A method of exploiting password storage vulnerabilities",
+                    "An attack that exploits a known vulnerability in the hashing algorithm"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following makes a dictionary attack more effective?",
+                "answer": "When the password is a common word or simple phrase",
+                "options": [
+                    "When the password is a common word or simple phrase",
+                    "When the password is a long random string",
+                    "When the password is encrypted with a strong hash function",
+                    "When the attacker knows the user's identity"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "How can a dictionary attack be mitigated?",
+                "answer": "By using complex, random passwords and adding salt to the password hash",
+                "options": [
+                    "By using complex, random passwords and adding salt to the password hash",
+                    "By reducing the password length",
+                    "By allowing users to use common words for passwords",
+                    "By encrypting the password with a single key"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is a key limitation of dictionary attacks?",
+                "answer": "They are only effective against weak passwords that are common words or phrases",
+                "options": [
+                    "They are only effective against weak passwords that are common words or phrases",
+                    "They can break any password regardless of complexity",
+                    "They are faster than brute-force attacks",
+                    "They do not require the attacker to have access to the password hash"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is typically included in a dictionary for a dictionary attack?",
+                "answer": "Common words, names, and phrases that are likely to be used as passwords",
+                "options": [
+                    "Common words, names, and phrases that are likely to be used as passwords",
+                    "All possible combinations of characters",
+                    "Encrypted versions of common passwords",
+                    "A list of known vulnerabilities in password algorithms"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.7,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following attacks is often used in combination with a dictionary attack to improve its effectiveness?",
+                "answer": "Brute-force attack",
+                "options": [
+                    "Brute-force attack",
+                    "Man-in-the-middle attack",
+                    "Denial-of-service attack",
+                    "Replay attack"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the main weakness of a dictionary attack?",
+                "answer": "It is ineffective against strong, random passwords",
+                "options": [
+                    "It is ineffective against strong, random passwords",
+                    "It is slower than brute-force attacks",
+                    "It does not work on encrypted passwords",
+                    "It can only be used offline"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What role does salting play in defending against dictionary attacks?",
+                "answer": "It adds random data to passwords before hashing, making pre-computed dictionary attacks ineffective",
+                "options": [
+                    "It adds random data to passwords before hashing, making pre-computed dictionary attacks ineffective",
+                    "It prevents attackers from guessing the password's length",
+                    "It hides the password from attackers during transmission",
+                    "It speeds up the hash computation process"
+                ],
+                "difficulty": 1.7,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is NOT a common defense against dictionary attacks?",
+                "answer": "Reducing the password length",
+                "options": [
+                    "Using multi-factor authentication",
+                    "Enforcing password complexity requirements",
+                    "Adding salt to the password hash",
+                    "Reducing the password length"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "How can a dictionary attack be countered at the system level?",
+                "answer": "By implementing account lockouts or rate-limiting after a certain number of failed login attempts",
+                "options": [
+                    "By implementing account lockouts or rate-limiting after a certain number of failed login attempts",
+                    "By allowing users to enter passwords without restrictions",
+                    "By storing passwords in plain text",
+                    "By using a weak hashing algorithm"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28823,
+        "questions": [
+            {
+                "question": "What is the primary goal of the Needham-Schroeder protocol?",
+                "answer": "To provide mutual authentication between two parties over an insecure channel",
+                "options": [
+                    "To provide mutual authentication between two parties over an insecure channel",
+                    "To encrypt messages exchanged between two parties",
+                    "To prevent replay attacks in a secure communication system",
+                    "To provide secure key exchange over an insecure channel"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "In the Needham-Schroeder protocol, which entity issues the session key?",
+                "answer": "The trusted third party, also known as the Authentication Server",
+                "options": [
+                    "The trusted third party, also known as the Authentication Server",
+                    "The sender",
+                    "The receiver",
+                    "Both the sender and receiver together"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the primary weakness of the original Needham-Schroeder protocol?",
+                "answer": "It is vulnerable to a replay attack",
+                "options": [
+                    "It is vulnerable to a replay attack",
+                    "It does not provide mutual authentication",
+                    "It cannot prevent man-in-the-middle attacks",
+                    "It does not securely exchange session keys"
+                ],
+                "difficulty": 1.7,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following was a major improvement in the modified Needham-Schroeder protocol?",
+                "answer": "The addition of nonce values to prevent replay attacks",
+                "options": [
+                    "The addition of nonce values to prevent replay attacks",
+                    "The use of public key cryptography",
+                    "The inclusion of timestamping for message validity",
+                    "The removal of the Authentication Server"
+                ],
+                "difficulty": 1.8,
+                "discrimination": 2.3,
+                "guessing": 0.3
+            },
+            {
+                "question": "What type of cryptography is typically used in the Needham-Schroeder protocol?",
+                "answer": "Symmetric key cryptography",
+                "options": [
+                    "Symmetric key cryptography",
+                    "Asymmetric key cryptography",
+                    "Hashing functions",
+                    "Digital signatures"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which message in the Needham-Schroeder protocol contains the session key?",
+                "answer": "The third message sent from the Authentication Server to the receiver",
+                "options": [
+                    "The third message sent from the Authentication Server to the receiver",
+                    "The first message sent from the sender to the Authentication Server",
+                    "The second message sent from the receiver to the sender",
+                    "The last message sent from the sender to the receiver"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is a potential attack on the Needham-Schroeder protocol?",
+                "answer": "Man-in-the-middle attack",
+                "options": [
+                    "Man-in-the-middle attack",
+                    "Replay attack",
+                    "Brute force attack",
+                    "Phishing attack"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does a nonce typically ensure in a protocol like Needham-Schroeder?",
+                "answer": "It ensures that messages are fresh and prevents replay attacks",
+                "options": [
+                    "It ensures that messages are fresh and prevents replay attacks",
+                    "It encrypts the session key",
+                    "It verifies the authenticity of the public key",
+                    "It securely exchanges cryptographic keys"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            },
+            {
+                "question": "What happens if a replay attack occurs in the Needham-Schroeder protocol?",
+                "answer": "An attacker could impersonate one of the parties and gain unauthorized access",
+                "options": [
+                    "An attacker could impersonate one of the parties and gain unauthorized access",
+                    "The session key becomes invalid",
+                    "The Authentication Server revokes the keys",
+                    "The message will be discarded without any action"
+                ],
+                "difficulty": 1.6,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the Needham-Schroeder protocol use to protect against attackers intercepting messages?",
+                "answer": "Encryption of the messages exchanged between parties",
+                "options": [
+                    "Encryption of the messages exchanged between parties",
+                    "Hashing of session keys",
+                    "Timestamping of messages",
+                    "Two-factor authentication"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28819,
+        "questions": [
+            {
+                "question": "What is the main purpose of authentication in cryptography?",
+                "answer": "To verify the identity of a user or entity",
+                "options": [
+                    "To encrypt messages",
+                    "To verify the identity of a user or entity",
+                    "To compress data for transmission",
+                    "To generate a hash value"
+                ],
+                "difficulty": -1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following methods is commonly used for authentication?",
+                "answer": "Password-based authentication",
+                "options": [
+                    "Data encryption",
+                    "Password-based authentication",
+                    "File compression",
+                    "Checksum validation"
+                ],
+                "difficulty": -0.8,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is a two-factor authentication system?",
+                "answer": "An authentication system that requires two forms of identification",
+                "options": [
+                    "An authentication system that requires two forms of identification",
+                    "A system that encrypts data twice",
+                    "A backup authentication mechanism",
+                    "A system that uses only one strong factor of authentication"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does a biometric authentication system rely on?",
+                "answer": "Unique physical or behavioral characteristics",
+                "options": [
+                    "Passwords and PINs",
+                    "Unique physical or behavioral characteristics",
+                    "Encryption keys",
+                    "Session tokens"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is an example of something you know in authentication systems?",
+                "answer": "Password",
+                "options": [
+                    "Fingerprint",
+                    "Password",
+                    "Hardware token",
+                    "Facial recognition"
+                ],
+                "difficulty": -0.5,
+                "discrimination": 1.5,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the purpose of a session token in authentication?",
+                "answer": "To maintain user sessions securely after login",
+                "options": [
+                    "To store user passwords",
+                    "To generate encryption keys",
+                    "To maintain user sessions securely after login",
+                    "To compress transmitted data"
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "In authentication, what is a nonce primarily used for?",
+                "answer": "To ensure the freshness of communication and prevent replay attacks",
+                "options": [
+                    "To encrypt session keys",
+                    "To store user credentials",
+                    "To ensure the freshness of communication and prevent replay attacks",
+                    "To hash data"
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is mutual authentication?",
+                "answer": "A process where both the client and server authenticate each other",
+                "options": [
+                    "A process where both the client and server authenticate each other",
+                    "A single factor authentication method",
+                    "A technique to encrypt user credentials",
+                    "A method to create digital signatures"
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of these is an attack that exploits weak authentication systems?",
+                "answer": "Dictionary attack",
+                "options": [
+                    "Data encryption",
+                    "Dictionary attack",
+                    "Checksum mismatch",
+                    "Session caching"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "What role does hashing play in authentication?",
+                "answer": "It securely stores passwords by converting them into fixed-length values",
+                "options": [
+                    "It securely stores passwords by converting them into fixed-length values",
+                    "It encrypts session data",
+                    "It generates unique encryption keys",
+                    "It compresses authentication tokens"
+                ],
+                "difficulty": 0.4,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28822,
+        "questions": [
+            {
+                "question": "What is the primary characteristic of a biometric system?",
+                "answer": "It uses physical or behavioral traits for identification.",
+                "options": [
+                    "It uses passwords for security.",
+                    "It uses physical or behavioral traits for identification.",
+                    "It encrypts data using keys.",
+                    "It stores user credentials on servers."
+                ],
+                "difficulty": -0.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is an example of a physiological biometric trait?",
+                "answer": "Fingerprint",
+                "options": [
+                    "Typing speed",
+                    "Fingerprint",
+                    "Voice pattern",
+                    "Mouse movement"
+                ],
+                "difficulty": -0.3,
+                "discrimination": 1.7,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the term for rejecting an authorized person in a biometric system?",
+                "answer": "False rejection",
+                "options": [
+                    "False acceptance",
+                    "False rejection",
+                    "Error rate",
+                    "Misclassification"
+                ],
+                "difficulty": 0.3,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the Equal Error Rate (EER) in biometric systems?",
+                "answer": "The point where false acceptance rate equals false rejection rate.",
+                "options": [
+                    "The point where false acceptance rate equals false rejection rate.",
+                    "The error rate of the authentication system.",
+                    "The highest rate of authentication errors.",
+                    "The rate of unauthorized access."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of these is considered a behavioral biometric trait?",
+                "answer": "Keystroke dynamics",
+                "options": [
+                    "Retinal scan",
+                    "Finger vein patterns",
+                    "Keystroke dynamics",
+                    "Facial recognition"
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is one advantage of biometric systems over password-based systems?",
+                "answer": "They are difficult to forge or replicate.",
+                "options": [
+                    "They are cheaper to implement.",
+                    "They are faster to process.",
+                    "They are difficult to forge or replicate.",
+                    "They do not require user consent."
+                ],
+                "difficulty": -0.2,
+                "discrimination": 1.9,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the main drawback of biometric authentication systems?",
+                "answer": "Biometric data cannot be changed if compromised.",
+                "options": [
+                    "They are slower than password-based systems.",
+                    "They are always more expensive.",
+                    "Biometric data cannot be changed if compromised.",
+                    "They do not work in low-light environments."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a multimodal biometric system?",
+                "answer": "A system that uses multiple biometric traits for authentication.",
+                "options": [
+                    "A system that uses multiple biometric traits for authentication.",
+                    "A system that stores backup passwords.",
+                    "A system that encrypts biometric data.",
+                    "A system that supports multi-factor authentication."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does 'liveness detection' in biometric systems aim to prevent?",
+                "answer": "Spoofing attacks using fake biometric samples.",
+                "options": [
+                    "Unauthorized access from other devices.",
+                    "Spoofing attacks using fake biometric samples.",
+                    "Accidental rejections during authentication.",
+                    "Delays in authentication processes."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which biometric trait is generally considered the most reliable?",
+                "answer": "Iris recognition",
+                "options": [
+                    "Fingerprint recognition",
+                    "Voice recognition",
+                    "Keystroke dynamics",
+                    "Iris recognition"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28816,
+        "questions": [
+            {
+                "question": "What is the primary purpose of authentication in cryptography?",
+                "answer": "To verify the identity of a user or system.",
+                "options": [
+                    "To encrypt data for secure communication.",
+                    "To verify the identity of a user or system.",
+                    "To establish a secure network connection.",
+                    "To store passwords securely."
+                ],
+                "difficulty": -0.5,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is an example of two-factor authentication?",
+                "answer": "Using a password and a fingerprint scan.",
+                "options": [
+                    "Using a password and a fingerprint scan.",
+                    "Using two different passwords.",
+                    "Using a single sign-on service.",
+                    "Using encrypted communication."
+                ],
+                "difficulty": -0.3,
+                "discrimination": 1.7,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the role of a message authentication code (MAC) in cryptography?",
+                "answer": "To ensure the integrity and authenticity of a message.",
+                "options": [
+                    "To encrypt a message securely.",
+                    "To ensure the integrity and authenticity of a message.",
+                    "To hash a password for storage.",
+                    "To verify the recipient's identity."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of these is an example of a knowledge-based authentication factor?",
+                "answer": "A password",
+                "options": [
+                    "A fingerprint",
+                    "A password",
+                    "A hardware token",
+                    "An iris scan"
+                ],
+                "difficulty": -0.7,
+                "discrimination": 1.6,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the primary difference between authentication and authorization?",
+                "answer": "Authentication verifies identity; authorization grants access.",
+                "options": [
+                    "Authentication grants access; authorization verifies identity.",
+                    "Authentication ensures data encryption; authorization ensures data decryption.",
+                    "Authentication verifies identity; authorization grants access.",
+                    "Authentication and authorization are interchangeable terms."
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the purpose of a digital certificate in authentication?",
+                "answer": "To verify the ownership of a public key.",
+                "options": [
+                    "To store user credentials securely.",
+                    "To verify the ownership of a public key.",
+                    "To encrypt communication between devices.",
+                    "To hash data for integrity."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which protocol is commonly used for secure authentication over the internet?",
+                "answer": "OAuth",
+                "options": [
+                    "FTP",
+                    "OAuth",
+                    "SMTP",
+                    "DHCP"
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does single sign-on (SSO) authentication allow users to do?",
+                "answer": "Log in once and access multiple applications.",
+                "options": [
+                    "Log in once and access multiple applications.",
+                    "Use multiple passwords for higher security.",
+                    "Authenticate with biometric traits only.",
+                    "Encrypt messages with a single key."
+                ],
+                "difficulty": -0.3,
+                "discrimination": 1.7,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is mutual authentication?",
+                "answer": "A process where both the client and server verify each other.",
+                "options": [
+                    "A process where the client authenticates the server.",
+                    "A process where the server authenticates the client.",
+                    "A process where both the client and server verify each other.",
+                    "A process where authentication is skipped."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a common vulnerability in password-based authentication systems?",
+                "answer": "Passwords can be stolen or guessed.",
+                "options": [
+                    "Passwords can be stolen or guessed.",
+                    "Passwords are encrypted during storage.",
+                    "Passwords cannot be updated.",
+                    "Passwords are case-sensitive."
+                ],
+                "difficulty": 0.2,
+                "discrimination": 1.8,
+                "guessing": 0.3
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28818,
+        "questions": [
+            {
+                "question": "What is a dictionary attack?",
+                "answer": "An attack that uses a precompiled list of potential passwords.",
+                "options": [
+                    "An attack that uses a precompiled list of potential passwords.",
+                    "An attack that encrypts passwords to test vulnerabilities.",
+                    "An attack that blocks access to a system by flooding it with requests.",
+                    "An attack that targets hardware vulnerabilities."
+                ],
+                "difficulty": 0.0,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following best prevents a dictionary attack?",
+                "answer": "Using strong, complex passwords and salting.",
+                "options": [
+                    "Using a single-factor authentication system.",
+                    "Using strong, complex passwords and salting.",
+                    "Storing passwords in plaintext for quick access.",
+                    "Increasing network bandwidth."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the main weakness of systems vulnerable to dictionary attacks?",
+                "answer": "Use of weak or predictable passwords.",
+                "options": [
+                    "Use of weak or predictable passwords.",
+                    "Lack of encryption algorithms.",
+                    "Frequent updates to password databases.",
+                    "Overreliance on two-factor authentication."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.9,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the key resource needed to perform a dictionary attack?",
+                "answer": "A list of precompiled passwords.",
+                "options": [
+                    "A list of precompiled passwords.",
+                    "Access to encryption keys.",
+                    "A compromised server.",
+                    "Real-time network traffic data."
+                ],
+                "difficulty": -0.5,
+                "discrimination": 1.6,
+                "guessing": 0.2
+            },
+            {
+                "question": "How does salting passwords mitigate the risk of dictionary attacks?",
+                "answer": "By appending random data to passwords before hashing.",
+                "options": [
+                    "By appending random data to passwords before hashing.",
+                    "By encrypting passwords using a symmetric key.",
+                    "By storing passwords in a central repository.",
+                    "By allowing users to reuse old passwords."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a common characteristic of passwords vulnerable to dictionary attacks?",
+                "answer": "They are based on common words or phrases.",
+                "options": [
+                    "They are based on common words or phrases.",
+                    "They use special characters extensively.",
+                    "They are frequently changed by users.",
+                    "They are hashed with a salt."
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which hashing algorithm characteristic is most important to prevent dictionary attacks?",
+                "answer": "Resistance to precomputed hash tables.",
+                "options": [
+                    "Fast computation speed.",
+                    "Low memory usage.",
+                    "Resistance to precomputed hash tables.",
+                    "Dependence on symmetric keys."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the primary goal of a dictionary attack?",
+                "answer": "To guess a password by matching hashes.",
+                "options": [
+                    "To guess a password by matching hashes.",
+                    "To monitor user activity on a network.",
+                    "To overload a system with requests.",
+                    "To decrypt secure communication channels."
+                ],
+                "difficulty": -0.2,
+                "discrimination": 1.5,
+                "guessing": 0.3
+            },
+            {
+                "question": "Why are longer passwords more resistant to dictionary attacks?",
+                "answer": "They increase the computational effort required for an attack.",
+                "options": [
+                    "They increase the computational effort required for an attack.",
+                    "They can be stored in plaintext securely.",
+                    "They reduce the need for two-factor authentication.",
+                    "They simplify hashing algorithms."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What technique is used in a rainbow table attack related to dictionary attacks?",
+                "answer": "Precomputing hash values for potential passwords.",
+                "options": [
+                    "Precomputing hash values for potential passwords.",
+                    "Encrypting passwords in real-time.",
+                    "Overloading a system with authentication requests.",
+                    "Using multiple devices to brute force passwords."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2692,
+        "subtopic_id": 28823,
+        "questions": [
+            {
+                "question": "What is the primary purpose of the Needham-Schroeder scheme?",
+                "answer": "To establish a secure communication channel between two parties.",
+                "options": [
+                    "To establish a secure communication channel between two parties.",
+                    "To encrypt data using a public key.",
+                    "To verify digital signatures.",
+                    "To hash passwords for authentication."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which cryptographic method is utilized in the Needham-Schroeder protocol?",
+                "answer": "Symmetric key encryption.",
+                "options": [
+                    "Symmetric key encryption.",
+                    "Asymmetric key encryption.",
+                    "Hashing.",
+                    "Digital certificates."
+                ],
+                "difficulty": 0.2,
+                "discrimination": 1.7,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the role of the trusted third party (TTP) in the Needham-Schroeder scheme?",
+                "answer": "To distribute session keys securely to communicating parties.",
+                "options": [
+                    "To distribute session keys securely to communicating parties.",
+                    "To monitor all communication between parties.",
+                    "To decrypt messages for verification.",
+                    "To provide public keys for encryption."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What vulnerability is addressed by the Needham-Schroeder public key protocol?",
+                "answer": "Replay attacks.",
+                "options": [
+                    "Replay attacks.",
+                    "Man-in-the-middle attacks.",
+                    "Phishing attacks.",
+                    "Side-channel attacks."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "In the Needham-Schroeder symmetric key protocol, what is included in the session key message?",
+                "answer": "Session key and a timestamp.",
+                "options": [
+                    "Session key and a timestamp.",
+                    "Public key of the recipient.",
+                    "Hashed message digest.",
+                    "Digital signature of the sender."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "Why is a nonce used in the Needham-Schroeder protocol?",
+                "answer": "To prevent replay attacks by ensuring message freshness.",
+                "options": [
+                    "To prevent replay attacks by ensuring message freshness.",
+                    "To encrypt data during transmission.",
+                    "To verify the identity of the sender.",
+                    "To calculate message digests."
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a key limitation of the original Needham-Schroeder symmetric key protocol?",
+                "answer": "It is vulnerable to replay attacks.",
+                "options": [
+                    "It is vulnerable to replay attacks.",
+                    "It does not use a trusted third party.",
+                    "It cannot establish session keys.",
+                    "It relies solely on hashing."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "How is mutual authentication achieved in the Needham-Schroeder protocol?",
+                "answer": "By exchanging encrypted nonces.",
+                "options": [
+                    "By exchanging encrypted nonces.",
+                    "By signing the session key.",
+                    "By hashing the communication.",
+                    "By sharing a public key."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What enhancement is added to the Needham-Schroeder symmetric key protocol to address its replay attack vulnerability?",
+                "answer": "Use of timestamps.",
+                "options": [
+                    "Use of timestamps.",
+                    "Use of elliptic curve cryptography.",
+                    "Addition of message digests.",
+                    "Implementation of zero-knowledge proofs."
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which cryptographic concept is fundamental to the Needham-Schroeder public key protocol?",
+                "answer": "Asymmetric encryption.",
+                "options": [
+                    "Asymmetric encryption.",
+                    "Symmetric encryption.",
+                    "Hashing algorithms.",
+                    "Digital signatures."
+                ],
+                "difficulty": 0.3,
+                "discrimination": 1.6,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28802,
+        "questions": [
+            {
+                "question": "What is the primary goal of message authentication?",
+                "answer": "To verify the integrity and authenticity of a message.",
+                "options": [
+                    "To verify the integrity and authenticity of a message.",
+                    "To encrypt the message content.",
+                    "To compress the message data.",
+                    "To calculate the message length."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which method is commonly used to achieve message authentication?",
+                "answer": "Message Authentication Code (MAC).",
+                "options": [
+                    "Message Authentication Code (MAC).",
+                    "Public Key Infrastructure (PKI).",
+                    "Elliptic Curve Cryptography (ECC).",
+                    "Diffie-Hellman Key Exchange."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What cryptographic property ensures a message cannot be altered undetected?",
+                "answer": "Integrity.",
+                "options": [
+                    "Integrity.",
+                    "Confidentiality.",
+                    "Non-repudiation.",
+                    "Availability."
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is an example of a keyed hash function?",
+                "answer": "HMAC.",
+                "options": [
+                    "HMAC.",
+                    "SHA-256.",
+                    "RSA.",
+                    "MD5."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "How does a MAC ensure authenticity?",
+                "answer": "By using a shared secret key between sender and receiver.",
+                "options": [
+                    "By using a shared secret key between sender and receiver.",
+                    "By hashing the message using a public algorithm.",
+                    "By encrypting the message using a private key.",
+                    "By compressing the message data."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.3,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the key difference between a hash function and a MAC?",
+                "answer": "A MAC uses a secret key, while a hash function does not.",
+                "options": [
+                    "A MAC uses a secret key, while a hash function does not.",
+                    "A hash function is reversible, while a MAC is not.",
+                    "A MAC provides confidentiality, while a hash function does not.",
+                    "A hash function is faster than a MAC."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following algorithms is used to generate a MAC?",
+                "answer": "HMAC-SHA256.",
+                "options": [
+                    "HMAC-SHA256.",
+                    "AES.",
+                    "Diffie-Hellman.",
+                    "RSA."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What role does a secret key play in message authentication?",
+                "answer": "It ensures that only the sender and receiver can verify the authenticity of the message.",
+                "options": [
+                    "It ensures that only the sender and receiver can verify the authenticity of the message.",
+                    "It encrypts the message data for secure transmission.",
+                    "It generates a public-private key pair for authentication.",
+                    "It compresses the message for efficient transfer."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is a key advantage of using HMAC for message authentication?",
+                "answer": "HMAC is resistant to length-extension attacks.",
+                "options": [
+                    "HMAC is resistant to length-extension attacks.",
+                    "HMAC requires no shared secret.",
+                    "HMAC provides public key encryption.",
+                    "HMAC is faster than unkeyed hash functions."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the primary difference between MAC and digital signatures?",
+                "answer": "MACs use symmetric keys, while digital signatures use asymmetric keys.",
+                "options": [
+                    "MACs use symmetric keys, while digital signatures use asymmetric keys.",
+                    "MACs provide confidentiality, while digital signatures do not.",
+                    "MACs are faster than digital signatures.",
+                    "MACs require no keys, while digital signatures do."
+                ],
+                "difficulty": 1.1,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28803,
+        "questions": [
+            {
+                "question": "What is the primary purpose of a message authentication function?",
+                "answer": "To verify the integrity and authenticity of a message.",
+                "options": [
+                    "To verify the integrity and authenticity of a message.",
+                    "To encrypt the message for secure transmission.",
+                    "To generate public-private key pairs.",
+                    "To compress data for efficient storage."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is an example of a message authentication function?",
+                "answer": "HMAC.",
+                "options": [
+                    "HMAC.",
+                    "RSA.",
+                    "Elliptic Curve Cryptography.",
+                    "SHA-256."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What cryptographic property is ensured by a message authentication function?",
+                "answer": "Integrity.",
+                "options": [
+                    "Integrity.",
+                    "Confidentiality.",
+                    "Non-repudiation.",
+                    "Availability."
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "How does a keyed hash function differ from a regular hash function?",
+                "answer": "It includes a secret key in the hashing process.",
+                "options": [
+                    "It includes a secret key in the hashing process.",
+                    "It produces a shorter hash output.",
+                    "It is reversible.",
+                    "It is faster than regular hash functions."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the output of a message authentication function called?",
+                "answer": "Message Authentication Code (MAC).",
+                "options": [
+                    "Message Authentication Code (MAC).",
+                    "Digital Signature.",
+                    "Public Key.",
+                    "Ciphertext."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which component is required to verify a Message Authentication Code (MAC)?",
+                "answer": "A shared secret key.",
+                "options": [
+                    "A shared secret key.",
+                    "A private key.",
+                    "A public key.",
+                    "A digital certificate."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a key advantage of HMAC over other MAC algorithms?",
+                "answer": "It is resistant to length-extension attacks.",
+                "options": [
+                    "It is resistant to length-extension attacks.",
+                    "It provides confidentiality.",
+                    "It is faster than other MAC algorithms.",
+                    "It does not require a shared key."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "Why is a message authentication function used in cryptographic protocols?",
+                "answer": "To ensure that the message is not tampered with during transmission.",
+                "options": [
+                    "To ensure that the message is not tampered with during transmission.",
+                    "To encrypt the message for confidentiality.",
+                    "To generate a random key for encryption.",
+                    "To compress the message for efficient transfer."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the main difference between a MAC and a digital signature?",
+                "answer": "A MAC uses a symmetric key, while a digital signature uses asymmetric keys.",
+                "options": [
+                    "A MAC uses a symmetric key, while a digital signature uses asymmetric keys.",
+                    "A MAC provides non-repudiation, while a digital signature does not.",
+                    "A MAC ensures confidentiality, while a digital signature does not.",
+                    "A MAC is reversible, while a digital signature is not."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following algorithms can be used to implement a message authentication function?",
+                "answer": "HMAC-SHA256.",
+                "options": [
+                    "HMAC-SHA256.",
+                    "AES.",
+                    "Diffie-Hellman.",
+                    "RSA."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28811,
+        "questions": [
+            {
+                "question": "What is the role of an arbitrator in an arbitrated digital signature scheme?",
+                "answer": "To verify and validate the digital signature.",
+                "options": [
+                    "To verify and validate the digital signature.",
+                    "To generate the digital signature.",
+                    "To distribute public keys.",
+                    "To encrypt the message."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which key is used by the signer in an arbitrated digital signature?",
+                "answer": "The private key of the signer.",
+                "options": [
+                    "The private key of the signer.",
+                    "The public key of the arbitrator.",
+                    "The private key of the arbitrator.",
+                    "The public key of the receiver."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does the arbitrator provide to ensure trust in an arbitrated digital signature scheme?",
+                "answer": "A trusted third-party role.",
+                "options": [
+                    "A trusted third-party role.",
+                    "An encryption algorithm.",
+                    "A unique hash function.",
+                    "A symmetric key."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which component ensures the integrity of the message in an arbitrated digital signature?",
+                "answer": "A cryptographic hash function.",
+                "options": [
+                    "A cryptographic hash function.",
+                    "The private key.",
+                    "The arbitrator's signature.",
+                    "The encryption algorithm."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.3,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is a limitation of arbitrated digital signature schemes?",
+                "answer": "Dependence on the arbitrator for signature validation.",
+                "options": [
+                    "Dependence on the arbitrator for signature validation.",
+                    "Lack of confidentiality for messages.",
+                    "Inability to detect replay attacks.",
+                    "Requirement for asymmetric key pairs."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "In an arbitrated digital signature scheme, who generates the digital signature?",
+                "answer": "The signer using their private key.",
+                "options": [
+                    "The signer using their private key.",
+                    "The arbitrator using their private key.",
+                    "The receiver using their private key.",
+                    "A combination of the signer and the arbitrator."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "How does the receiver verify the authenticity of a message in an arbitrated digital signature scheme?",
+                "answer": "By relying on the arbitrator's validation.",
+                "options": [
+                    "By relying on the arbitrator's validation.",
+                    "By using the sender's public key directly.",
+                    "By decrypting the message with the arbitrator's private key.",
+                    "By hashing the message and comparing it with the arbitrator's signature."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Why might an arbitrated digital signature be preferred in certain scenarios?",
+                "answer": "It provides additional trust through a third-party arbitrator.",
+                "options": [
+                    "It provides additional trust through a third-party arbitrator.",
+                    "It eliminates the need for encryption.",
+                    "It is faster than traditional digital signatures.",
+                    "It removes the need for private keys."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a key difference between arbitrated and non-arbitrated digital signatures?",
+                "answer": "Arbitrated signatures involve a trusted third party.",
+                "options": [
+                    "Arbitrated signatures involve a trusted third party.",
+                    "Arbitrated signatures use symmetric keys.",
+                    "Non-arbitrated signatures are always less secure.",
+                    "Non-arbitrated signatures do not use hash functions."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "What cryptographic principle underpins the security of an arbitrated digital signature?",
+                "answer": "The infeasibility of forging signatures without the private key.",
+                "options": [
+                    "The infeasibility of forging signatures without the private key.",
+                    "The inability to decrypt messages without the public key.",
+                    "The irreversibility of hash functions.",
+                    "The randomness of key generation."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28810,
+        "questions": [
+            {
+                "question": "What is a direct digital signature primarily based on?",
+                "answer": "The sender's private key.",
+                "options": [
+                    "The sender's private key.",
+                    "The receiver's private key.",
+                    "The arbitrator's private key.",
+                    "A symmetric encryption key."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What ensures non-repudiation in direct digital signatures?",
+                "answer": "The use of the sender's private key.",
+                "options": [
+                    "The use of the sender's private key.",
+                    "The use of the receiver's public key.",
+                    "The involvement of a third party.",
+                    "The use of symmetric encryption."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is a limitation of direct digital signatures?",
+                "answer": "They are susceptible to key compromise.",
+                "options": [
+                    "They are susceptible to key compromise.",
+                    "They require a trusted third party.",
+                    "They cannot ensure message integrity.",
+                    "They only work with symmetric encryption."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which cryptographic operation is performed by the sender in a direct digital signature?",
+                "answer": "Signing with the sender's private key.",
+                "options": [
+                    "Signing with the sender's private key.",
+                    "Encrypting with the receiver's private key.",
+                    "Hashing the message with a symmetric key.",
+                    "Signing with the receiver's public key."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "How does the receiver verify a direct digital signature?",
+                "answer": "By using the sender's public key.",
+                "options": [
+                    "By using the sender's public key.",
+                    "By using the receiver's private key.",
+                    "By using a shared symmetric key.",
+                    "By contacting a trusted third party."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "What type of attack is direct digital signature most vulnerable to?",
+                "answer": "Replay attacks if timestamps are not used.",
+                "options": [
+                    "Replay attacks if timestamps are not used.",
+                    "Brute-force attacks on public keys.",
+                    "Collisions in hash functions.",
+                    "Attacks on symmetric encryption keys."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which element of direct digital signatures ensures message authenticity?",
+                "answer": "The sender's private key.",
+                "options": [
+                    "The sender's private key.",
+                    "The receiver's public key.",
+                    "A symmetric encryption algorithm.",
+                    "The use of a cryptographic hash function."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "Why might direct digital signatures require additional safeguards?",
+                "answer": "To mitigate key compromise risks.",
+                "options": [
+                    "To mitigate key compromise risks.",
+                    "To simplify the encryption process.",
+                    "To reduce computational overhead.",
+                    "To eliminate the need for hash functions."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.2,
+                "guessing": 0.1
+            },
+            {
+                "question": "What is a key requirement for verifying a direct digital signature?",
+                "answer": "Access to the sender's public key.",
+                "options": [
+                    "Access to the sender's public key.",
+                    "Access to the sender's private key.",
+                    "Access to a trusted third party.",
+                    "Access to a symmetric key."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.1
+            },
+            {
+                "question": "How can replay attacks be prevented in direct digital signature schemes?",
+                "answer": "By using timestamps or nonces.",
+                "options": [
+                    "By using timestamps or nonces.",
+                    "By employing symmetric encryption.",
+                    "By increasing key size.",
+                    "By avoiding public key distribution."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.5,
+                "guessing": 0.3
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28806,
+        "questions": [
+            {
+                "question": "What is the primary property of a cryptographic hash function?",
+                "answer": "It should produce a fixed-size output for any input.",
+                "options": [
+                    "It should produce a fixed-size output for any input.",
+                    "It should produce variable-sized outputs.",
+                    "It requires a private key for operation.",
+                    "It encrypts the input data."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which property ensures that a small change in the input causes a significant change in the hash output?",
+                "answer": "Avalanche effect.",
+                "options": [
+                    "Avalanche effect.",
+                    "Collision resistance.",
+                    "Pre-image resistance.",
+                    "Second pre-image resistance."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does collision resistance in hash functions mean?",
+                "answer": "It is computationally hard to find two different inputs that produce the same hash.",
+                "options": [
+                    "It is computationally hard to find two different inputs that produce the same hash.",
+                    "The hash value cannot be decrypted.",
+                    "The hash function supports multiple output lengths.",
+                    "A private key is required to generate a hash."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which property ensures that it is infeasible to generate the original input given the hash value?",
+                "answer": "Pre-image resistance.",
+                "options": [
+                    "Pre-image resistance.",
+                    "Collision resistance.",
+                    "Avalanche effect.",
+                    "Second pre-image resistance."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is second pre-image resistance in hash functions?",
+                "answer": "It is computationally hard to find a different input that produces the same hash as a given input.",
+                "options": [
+                    "It is computationally hard to find a different input that produces the same hash as a given input.",
+                    "It ensures that no two hashes are identical.",
+                    "It requires symmetric encryption for operation.",
+                    "It provides a fixed output length."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.4,
+                "guessing": 0.2
+            },
+            {
+                "question": "What ensures that hash outputs of cryptographic hash functions are uniformly distributed?",
+                "answer": "Statistical randomness.",
+                "options": [
+                    "Statistical randomness.",
+                    "Pre-image resistance.",
+                    "Avalanche effect.",
+                    "Collision resistance."
+                ],
+                "difficulty": 0.7,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which property of a cryptographic hash function makes it suitable for digital signatures?",
+                "answer": "Collision resistance.",
+                "options": [
+                    "Collision resistance.",
+                    "Avalanche effect.",
+                    "Second pre-image resistance.",
+                    "Fixed-length output."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "What does the term 'deterministic' mean in the context of cryptographic hash functions?",
+                "answer": "The same input will always produce the same hash output.",
+                "options": [
+                    "The same input will always produce the same hash output.",
+                    "The hash function can generate different outputs for the same input.",
+                    "The output is encrypted with a private key.",
+                    "The input must be encrypted before hashing."
+                ],
+                "difficulty": 0.6,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which property ensures that the hash function can handle any input size?",
+                "answer": "Variable input size.",
+                "options": [
+                    "Variable input size.",
+                    "Fixed output size.",
+                    "Collision resistance.",
+                    "Pre-image resistance."
+                ],
+                "difficulty": 0.5,
+                "discrimination": 1.8,
+                "guessing": 0.2
+            },
+            {
+                "question": "How does the property of fixed output size contribute to a cryptographic hash function?",
+                "answer": "It simplifies hash storage and comparison.",
+                "options": [
+                    "It simplifies hash storage and comparison.",
+                    "It increases the computational time.",
+                    "It reduces the input size.",
+                    "It ensures variable output length."
+                ],
+                "difficulty": 0.4,
+                "discrimination": 1.7,
+                "guessing": 0.1
+            }
+        ]
+    },
+    {
+        "topic_id": 2691,
+        "subtopic_id": 28812,
+        "questions": [
+            {
+                "question": "What is the primary purpose of the Digital Signature Standard (DSS)?",
+                "answer": "To provide a standard for digital signatures.",
+                "options": [
+                    "To provide a standard for digital signatures.",
+                    "To encrypt messages using public key cryptography.",
+                    "To generate public-private key pairs.",
+                    "To verify the integrity of data during transmission."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which algorithm does the Digital Signature Standard (DSS) use for signing and verification?",
+                "answer": "The Digital Signature Algorithm (DSA).",
+                "options": [
+                    "The Digital Signature Algorithm (DSA).",
+                    "RSA algorithm.",
+                    "Elliptic Curve Cryptography (ECC).",
+                    "Advanced Encryption Standard (AES)."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the primary function of the public key in the DSS?",
+                "answer": "To verify the authenticity of the signature.",
+                "options": [
+                    "To verify the authenticity of the signature.",
+                    "To encrypt the original message.",
+                    "To generate a private key.",
+                    "To create a digital certificate."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "In the Digital Signature Standard, what is the role of the private key?",
+                "answer": "It is used to generate the digital signature.",
+                "options": [
+                    "It is used to generate the digital signature.",
+                    "It is used to encrypt the message.",
+                    "It is used to verify the authenticity of the signature.",
+                    "It is used to store the digital certificate."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is true about the Digital Signature Standard (DSS)?",
+                "answer": "It provides a way to ensure data integrity and authenticity.",
+                "options": [
+                    "It provides a way to ensure data integrity and authenticity.",
+                    "It encrypts the data to ensure confidentiality.",
+                    "It uses symmetric key cryptography for signing.",
+                    "It is used for encrypting private messages."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which hashing algorithm is commonly used in the Digital Signature Standard (DSS)?",
+                "answer": "SHA-1 or SHA-2.",
+                "options": [
+                    "SHA-1 or SHA-2.",
+                    "MD5.",
+                    "RIPEMD-160.",
+                    "Blake2."
+                ],
+                "difficulty": 1.1,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the signature in the DSS ensure about the signed data?",
+                "answer": "It ensures the data has not been tampered with and that it originated from the signer.",
+                "options": [
+                    "It ensures the data has not been tampered with and that it originated from the signer.",
+                    "It encrypts the data for confidentiality.",
+                    "It ensures the data is stored securely.",
+                    "It ensures the message was received by the correct recipient."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.4,
+                "guessing": 0.3
+            },
+            {
+                "question": "In DSS, which of the following is necessary to generate a digital signature?",
+                "answer": "A private key and a secure hashing algorithm.",
+                "options": [
+                    "A private key and a secure hashing algorithm.",
+                    "A public key and a secure hashing algorithm.",
+                    "A private key and a digital certificate.",
+                    "A public key and a symmetric key algorithm."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which key is used by the recipient to verify a digital signature generated using DSS?",
+                "answer": "The sender's public key.",
+                "options": [
+                    "The sender's public key.",
+                    "The recipient's private key.",
+                    "The sender's private key.",
+                    "A randomly generated key."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.3,
+                "guessing": 0.1
+            },
+            {
+                "question": "What does the Digital Signature Algorithm (DSA) primarily rely on for security?",
+                "answer": "The difficulty of computing discrete logarithms in a finite field.",
+                "options": [
+                    "The difficulty of computing discrete logarithms in a finite field.",
+                    "The difficulty of factoring large prime numbers.",
+                    "The security of symmetric encryption algorithms.",
+                    "The strength of elliptic curve cryptography."
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.5,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2548,
+        "subtopic_id": 27194,
+        "questions": [
+            {
+                "question": "What is the formula for the arc length of a curve y = f(x) from x = a to x = b?",
+                "answer": "L = ∫[a to b] √(1 + (dy/dx)²) dx",
+                "options": [
+                    "L = ∫[a to b] √(1 + (dy/dx)²) dx",
+                    "L = ∫[a to b] f(x) dx",
+                    "L = ∫[a to b] f'(x) dx",
+                    "L = 2π ∫[a to b] f(x) dx"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "For the curve y = √x, find the arc length from x = 1 to x = 4.",
+                "answer": "L = ∫[1 to 4] √(1 + (1/(2√x))²) dx",
+                "options": [
+                    "L = ∫[1 to 4] √(1 + (1/(2√x))²) dx",
+                    "L = ∫[1 to 4] √x dx",
+                    "L = ∫[1 to 4] x dx",
+                    "L = ∫[1 to 4] (1/(2√x)) dx"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "If the curve is given by y = x², what is the arc length formula?",
+                "answer": "L = ∫[a to b] √(1 + (2x)²) dx",
+                "options": [
+                    "L = ∫[a to b] √(1 + (2x)²) dx",
+                    "L = ∫[a to b] √(1 + x²) dx",
+                    "L = ∫[a to b] (2x) dx",
+                    "L = ∫[a to b] √(1 - x²) dx"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "How do you compute the arc length of a curve y = f(x) between two points?",
+                "answer": "By integrating √(1 + (dy/dx)²) with respect to x over the interval.",
+                "options": [
+                    "By integrating √(1 + (dy/dx)²) with respect to x over the interval.",
+                    "By evaluating the function f(x) at the endpoints.",
+                    "By using the Fundamental Theorem of Calculus.",
+                    "By adding the values of f(x) at the endpoints."
+                ],
+                "difficulty": 1.1,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the arc length represent in geometry?",
+                "answer": "It represents the length of the curve between two points.",
+                "options": [
+                    "It represents the length of the curve between two points.",
+                    "It represents the area under the curve.",
+                    "It represents the slope of the curve.",
+                    "It represents the distance between the origin and the curve."
+                ],
+                "difficulty": 0.9,
+                "discrimination": 1.9,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is necessary to calculate the arc length of a curve y = f(x)?",
+                "answer": "You need to find the derivative of f(x).",
+                "options": [
+                    "You need to find the derivative of f(x).",
+                    "You need to find the integral of f(x).",
+                    "You need to find the inverse of f(x).",
+                    "You need to solve a system of equations."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following curves has an arc length of zero over an interval?",
+                "answer": "A straight line.",
+                "options": [
+                    "A straight line.",
+                    "A circle.",
+                    "A parabola.",
+                    "An exponential curve."
+                ],
+                "difficulty": 0.8,
+                "discrimination": 2.0,
+                "guessing": 0.1
+            },
+            {
+                "question": "How is the arc length of a curve related to the concept of a derivative?",
+                "answer": "The arc length involves the derivative of the function to calculate the rate of change of the curve.",
+                "options": [
+                    "The arc length involves the derivative of the function to calculate the rate of change of the curve.",
+                    "The arc length involves multiplying the function by its derivative.",
+                    "The arc length involves finding the integral of the second derivative.",
+                    "The arc length involves the square of the derivative."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.3,
+                "guessing": 0.3
+            },
+            {
+                "question": "For the function y = sin(x), what is the arc length from x = 0 to x = π?",
+                "answer": "L = ∫[0 to π] √(1 + cos²(x)) dx",
+                "options": [
+                    "L = ∫[0 to π] √(1 + cos²(x)) dx",
+                    "L = ∫[0 to π] sin(x) dx",
+                    "L = ∫[0 to π] cos(x) dx",
+                    "L = ∫[0 to π] 1 dx"
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.4,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the integral formula used for finding arc length in polar coordinates?",
+                "answer": "L = ∫[α to β] √(r(θ)² + (dr/dθ)²) dθ",
+                "options": [
+                    "L = ∫[α to β] √(r(θ)² + (dr/dθ)²) dθ",
+                    "L = ∫[α to β] r(θ) dθ",
+                    "L = ∫[α to β] (dr/dθ) dθ",
+                    "L = ∫[α to β] r(θ)² dθ"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.5,
+                "guessing": 0.3
+            }
+        ]
+    },
+    {
+        "topic_id": 2548,
+        "subtopic_id": 27191,
+        "questions": [
+            {
+                "question": "What is the formula for finding the area between two curves y = f(x) and y = g(x) over the interval [a, b]?",
+                "answer": "A = ∫[a to b] |f(x) - g(x)| dx",
+                "options": [
+                    "A = ∫[a to b] |f(x) - g(x)| dx",
+                    "A = ∫[a to b] f(x) dx",
+                    "A = ∫[a to b] g(x) dx",
+                    "A = ∫[a to b] (f(x) + g(x)) dx"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "To find the area between the curves y = x² and y = 4 over the interval [0, 2], what is the first step?",
+                "answer": "Set up the integral ∫[0 to 2] (4 - x²) dx",
+                "options": [
+                    "Set up the integral ∫[0 to 2] (4 - x²) dx",
+                    "Set up the integral ∫[0 to 2] (x² - 4) dx",
+                    "Set up the integral ∫[0 to 2] (x - 4) dx",
+                    "Set up the integral ∫[0 to 2] (4 + x²) dx"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.2,
+                "guessing": 0.2
+            },
+            {
+                "question": "If the curves y = x³ and y = x² intersect at x = 1, what is the area between the curves from x = 0 to x = 1?",
+                "answer": "A = ∫[0 to 1] (x² - x³) dx",
+                "options": [
+                    "A = ∫[0 to 1] (x² - x³) dx",
+                    "A = ∫[0 to 1] (x³ - x²) dx",
+                    "A = ∫[0 to 1] (x² + x³) dx",
+                    "A = ∫[0 to 1] (x³ + x²) dx"
+                ],
+                "difficulty": 1.5,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the correct formula to find the area between the curves y = 2x and y = x² on the interval [0, 2]?",
+                "answer": "A = ∫[0 to 2] (2x - x²) dx",
+                "options": [
+                    "A = ∫[0 to 2] (2x - x²) dx",
+                    "A = ∫[0 to 2] (x² - 2x) dx",
+                    "A = ∫[0 to 2] (2x + x²) dx",
+                    "A = ∫[0 to 2] (x² + 2x) dx"
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "How do you determine which curve is the upper curve when finding the area between two curves?",
+                "answer": "The upper curve is the one with the higher y-value at a given x within the interval.",
+                "options": [
+                    "The upper curve is the one with the higher y-value at a given x within the interval.",
+                    "The upper curve is always the one with the higher derivative.",
+                    "The upper curve is the one with the larger area.",
+                    "The upper curve is the one that intersects first."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.1,
+                "guessing": 0.2
+            },
+            {
+                "question": "When finding the area between two curves, what do you do if the curves intersect multiple times?",
+                "answer": "You split the integral at the points of intersection and calculate the area for each segment.",
+                "options": [
+                    "You split the integral at the points of intersection and calculate the area for each segment.",
+                    "You calculate the area for the entire interval without splitting.",
+                    "You only compute the area between the curves for the largest x-value.",
+                    "You approximate the area using numerical methods."
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.3,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the area between the curves y = x² and y = x over the interval [0, 1]?",
+                "answer": "A = ∫[0 to 1] (x - x²) dx",
+                "options": [
+                    "A = ∫[0 to 1] (x - x²) dx",
+                    "A = ∫[0 to 1] (x² - x) dx",
+                    "A = ∫[0 to 1] (x + x²) dx",
+                    "A = ∫[0 to 1] (x² + x) dx"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 2.0,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is the general approach for finding the area between two curves on a given interval?",
+                "answer": "Find the difference between the functions, then integrate that difference over the interval.",
+                "options": [
+                    "Find the difference between the functions, then integrate that difference over the interval.",
+                    "Integrate the sum of the functions over the interval.",
+                    "Find the area under each curve and subtract the smaller area from the larger one.",
+                    "Compute the total area of both curves separately and add them."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "For the curves y = x² and y = 4, what is the integral expression for the area between the curves on the interval [0, 2]?",
+                "answer": "A = ∫[0 to 2] (4 - x²) dx",
+                "options": [
+                    "A = ∫[0 to 2] (4 - x²) dx",
+                    "A = ∫[0 to 2] (x² - 4) dx",
+                    "A = ∫[0 to 2] (4 + x²) dx",
+                    "A = ∫[0 to 2] (x - 4) dx"
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following curves will not have a finite area between them over any interval?",
+                "answer": "Exponential curves like y = e^x and y = e^-x.",
+                "options": [
+                    "Exponential curves like y = e^x and y = e^-x.",
+                    "Linear curves.",
+                    "Parabolic curves.",
+                    "Sine and cosine curves."
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.3,
+                "guessing": 0.2
+            }
+        ]
+    },
+    {
+        "topic_id": 2551,
+        "subtopic_id": 27205,
+        "questions": [
+            {
+                "question": "What is the basic definition of a vector?",
+                "answer": "A vector is a quantity that has both magnitude and direction.",
+                "options": [
+                    "A vector is a quantity that has both magnitude and direction.",
+                    "A vector is a quantity that only has magnitude.",
+                    "A vector is a quantity that only has direction.",
+                    "A vector is a scalar quantity."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "Which of the following is a property of vectors?",
+                "answer": "Vectors can be added and subtracted geometrically.",
+                "options": [
+                    "Vectors can be added and subtracted geometrically.",
+                    "Vectors can only be multiplied.",
+                    "Vectors cannot be scaled.",
+                    "Vectors always have a magnitude of 1."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the term 'space vectors' refer to?",
+                "answer": "Space vectors refer to vectors that exist in three-dimensional space.",
+                "options": [
+                    "Space vectors refer to vectors that exist in three-dimensional space.",
+                    "Space vectors are vectors with only two components.",
+                    "Space vectors are vectors with no direction.",
+                    "Space vectors are only used in physics."
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.2,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is a vector in two-dimensional space?",
+                "answer": "A = (3, 4)",
+                "options": [
+                    "A = (3, 4)",
+                    "A = 3",
+                    "A = (3, 4, 5)",
+                    "A = 3 + 4"
+                ],
+                "difficulty": 1.1,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "How is the magnitude of a vector A = (3, 4) calculated?",
+                "answer": "The magnitude of the vector is √(3² + 4²) = 5.",
+                "options": [
+                    "The magnitude of the vector is √(3² + 4²) = 5.",
+                    "The magnitude of the vector is 3 + 4 = 7.",
+                    "The magnitude of the vector is √(3 + 4).",
+                    "The magnitude of the vector is 3 × 4 = 12."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "What is the direction of a vector?",
+                "answer": "The direction of a vector is the angle it makes with a reference axis.",
+                "options": [
+                    "The direction of a vector is the angle it makes with a reference axis.",
+                    "The direction of a vector is its magnitude.",
+                    "The direction of a vector is always horizontal.",
+                    "The direction of a vector is always vertical."
+                ],
+                "difficulty": 1.3,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "What is a scalar?",
+                "answer": "A scalar is a quantity that has only magnitude, not direction.",
+                "options": [
+                    "A scalar is a quantity that has only magnitude, not direction.",
+                    "A scalar has both magnitude and direction.",
+                    "A scalar is a vector in disguise.",
+                    "A scalar is a quantity used only in physics."
+                ],
+                "difficulty": 1.0,
+                "discrimination": 2.0,
+                "guessing": 0.2
+            },
+            {
+                "question": "How are vectors typically represented?",
+                "answer": "Vectors are typically represented as arrows or as an ordered pair or triplet of numbers.",
+                "options": [
+                    "Vectors are typically represented as arrows or as an ordered pair or triplet of numbers.",
+                    "Vectors are represented only as points on a graph.",
+                    "Vectors are represented as just a single number.",
+                    "Vectors are represented by their magnitude alone."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            },
+            {
+                "question": "Which of the following is a real-world example of a vector?",
+                "answer": "Wind velocity, which has both speed and direction.",
+                "options": [
+                    "Wind velocity, which has both speed and direction.",
+                    "Temperature, which has only magnitude.",
+                    "Mass, which has only magnitude.",
+                    "Time, which has only magnitude."
+                ],
+                "difficulty": 1.4,
+                "discrimination": 2.3,
+                "guessing": 0.3
+            },
+            {
+                "question": "What does the term 'magnitude of a vector' refer to?",
+                "answer": "The magnitude of a vector refers to its length or size.",
+                "options": [
+                    "The magnitude of a vector refers to its length or size.",
+                    "The magnitude of a vector refers to its direction.",
+                    "The magnitude of a vector refers to its angle with the horizontal.",
+                    "The magnitude of a vector is always 1."
+                ],
+                "difficulty": 1.2,
+                "discrimination": 2.1,
+                "guessing": 0.3
+            }
+        ]
+    }
+    
+]
