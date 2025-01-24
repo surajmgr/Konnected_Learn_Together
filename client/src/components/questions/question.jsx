@@ -89,7 +89,7 @@ function Question() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `/dbquestion/answers/${ques_id}/1?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/dbquestion/answers/${ques_id}/1?page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
       getVotes(res.data.result);
@@ -118,7 +118,7 @@ function Question() {
   const fetchQuestion = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/dbquestion/${sq_name}/${ques_id}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/${sq_name}/${ques_id}`);
       setQuestion(res.data);
       setLoading(false);
     } catch (error) {
@@ -145,8 +145,8 @@ function Question() {
       setVotes([]);
       answersArray.map(async (answer) => {
         const res = currentUser
-          ? await axios.get(`/count/votes/${answer.aid}?uid=${currentUser.id}`)
-          : await axios.get(`/count/votes/${answer.aid}?uid=null`);
+          ? await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/votes/${answer.aid}?uid=${currentUser.id}`)
+          : await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/votes/${answer.aid}?uid=null`);
         setVotes((prev) => [...prev, res.data]);
       });
     } catch (error) {
@@ -171,7 +171,7 @@ function Question() {
   const updateVotes = async (aid, uid, changereq) => {
     try {
       const res = await axios.post(
-        "/dbquestion/update-vote",
+        `${process.env.REACT_APP_API_BASE_URL}/dbquestion/update-vote`,
         {
           aid,
           uid,
@@ -242,7 +242,7 @@ function Question() {
 
   const handleDelete = async (aid) => {
     try {
-      const res = await axios.delete(`/dbquestion/answer/${aid}`);
+      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/answer/${aid}`);
       setShowDelWarning({ state: 1, aid: 0 });
       getAnswers();
     } catch (error) {

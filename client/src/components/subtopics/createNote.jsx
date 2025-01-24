@@ -66,13 +66,13 @@ function CreateNote() {
       } else {
         setLoading(true);
         const res = state
-          ? await axios.put(`/cnote/${state.nid}`, {
+          ? await axios.put(`${process.env.REACT_APP_API_BASE_URL}/cnote/${state.nid}`, {
               title,
               content,
               subtopic: subtopic_id,
               uid: currentUser.id,
             })
-          : await axios.post(`/cnote/`, {
+          : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/cnote/`, {
               title,
               content,
               subtopic: subtopic_id,
