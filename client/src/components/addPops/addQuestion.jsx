@@ -99,10 +99,10 @@ function AddQuestion(props) {
     <>
       <div className={"active popup-outer z-10 fos-animate-me" +
           (entering == 1 ? " bounceIn delay-0_1" : " bounceOut delay-0_1")}>
-        <div class="popup-box -mt-[160px] min-h-[481px]">
+        <div className="popup-box -mt-[160px] min-h-[481px]">
           <i
             id="close"
-            class="fa fa-close close fos-animate-me fadeIn delay-0_1"
+            className="fa fa-close close fos-animate-me fadeIn delay-0_1"
             onClick={() => {
               setEntering(0);
           setTimeout(() => {
@@ -110,15 +110,15 @@ function AddQuestion(props) {
           }, 700);
             }}
           ></i>
-          <div class="flex mb-[20px] items-center fos-animate-me fadeIn delay-0_1">
+          <div className="flex mb-[20px] items-center fos-animate-me fadeIn delay-0_1">
             <img
               className="mt-[2px] !h-[50px] !w-[50px] object-cover !rounded-[0]"
               src={icon_add}
               alt=""
             />
-            <div class="ml-2 text-adds">
-              <span class="text-[20px] name font-[700]">{(props.question_info) ? "Edit Question" : "Add Question"}</span>
-              <div class="text-[12px] font-[500] -mt-[4px] profession">
+            <div className="ml-2 text-adds">
+              <span className="text-[20px] name font-[700]">{(props.question_info) ? "Edit Question" : "Add Question"}</span>
+              <div className="text-[12px] font-[500] -mt-[4px] profession">
                 Keep it brief as needed
               </div>
             </div>
@@ -192,10 +192,10 @@ function AddQuestion(props) {
                   onEditorChange={handleEditorChange}
                 />
               </div>
-              {!loading && <div class="button fos-animate-me fadeIn delay-0_1">
+              {!loading && <div className="button fos-animate-me fadeIn delay-0_1">
                 <button
                   id="close"
-                  class="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
                   onClick={(e) => {
                     e.preventDefault();
                     setEntering(0);
@@ -208,7 +208,7 @@ function AddQuestion(props) {
                 </button>
                 <button
                   onClick={handleSubmit}
-                  class="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
                 >
                   {(props.question_info) ? "Edit Question" : "Add Question"}
                 </button>

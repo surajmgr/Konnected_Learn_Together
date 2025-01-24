@@ -102,10 +102,10 @@ function AddAnswer(props) {
           (entering == 1 ? " bounceIn delay-0_1" : " bounceOut delay-0_1")
         }
       >
-        <div class="popup-box -mt-[160px] min-h-[429px]">
+        <div className="popup-box -mt-[160px] min-h-[429px]">
           <i
             id="close"
-            class="fa fa-close close"
+            className="fa fa-close close"
             onClick={() => {
               setEntering(0);
               setTimeout(() => {
@@ -113,15 +113,15 @@ function AddAnswer(props) {
               }, 700);
             }}
           ></i>
-          <div class="flex mb-[20px] items-center">
+          <div className="flex mb-[20px] items-center">
             <img
               className="mt-[2px] !h-[50px] !w-[50px] object-cover !rounded-[0]"
               src={icon_add}
               alt=""
             />
-            <div class="ml-2 text-adds leading-[21px]">
-              <span class="text-[20px] name font-[700]">Answer Question</span>
-              <div class="text-[12px] font-[500] -mt-[4px] profession">
+            <div className="ml-2 text-adds leading-[21px]">
+              <span className="text-[20px] name font-[700]">Answer Question</span>
+              <div className="text-[12px] font-[500] -mt-[4px] profession">
                 Spam can lead to ban
               </div>
             </div>
@@ -198,10 +198,10 @@ function AddAnswer(props) {
               />
             </div>
             {!loading && (
-              <div class="button fos-animate-me fadeIn delay-0_1">
+              <div className="button fos-animate-me fadeIn delay-0_1">
                 <button
                   id="close"
-                  class="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="cancel bg-[#f082ac] hover:bg-[#ec5f95] h-fit leading-[1] !py-[9px] !px-[15px]"
                   onClick={(e) => {
                     e.preventDefault();
                     setEntering(0);
@@ -214,7 +214,7 @@ function AddAnswer(props) {
                 </button>
                 <button
                   onClick={handleSubmit}
-                  class="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
+                  className="send bg-[#6f93f6] hover:bg-[#275df1] h-fit leading-[1] !py-[9px] !px-[15px]"
                 >
                   {props.answer_info ? "Edit Answer" : "Add Answer"}
                 </button>

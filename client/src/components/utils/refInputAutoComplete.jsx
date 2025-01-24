@@ -59,17 +59,17 @@ const TagsInput = props => {
         <div className="tags-input">
           <input type="text" name="btopic" placeholder="Associated books"
             onChange={onChangeBook} value={topicValue}
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
           <ul className="my-2">
             {tags.map((tag, index) => (
               <li className="text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-2.5 py-1 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2">
                 <span>{tag.name}</span>
-                <span class="sr-only">Close</span>
+                <span className="sr-only">Close</span>
                 <svg
                   aria-hidden="true"
                   onClick={() => removeTags(index)}
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"

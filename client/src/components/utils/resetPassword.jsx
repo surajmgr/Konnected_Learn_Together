@@ -171,22 +171,22 @@ function ResetPassword() {
   return (
     <>
       <>
-        <section class="bg-gray-50 h-screen flex items-center justify-around">
-          <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto">
-            <div class="w-full bg-white rounded-lg shadow md:mt-0 w-[400px] xl:p-0 fos-animate-me bounceIn delay-0_3">
+        <section className="bg-gray-50 h-screen flex items-center justify-around">
+          <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
+            <div className="w-full bg-white rounded-lg shadow md:mt-0 w-[400px] xl:p-0 fos-animate-me bounceIn delay-0_3">
               <i
                 onClick={() => navigate("/")}
                 className="close fa fa-close float-right p-[10px] cursor-pointer"
               ></i>
-              <div class="p-6 space-y-5 sm:p-8">
+              <div className="p-6 space-y-5 sm:p-8">
                 {suc ? (
                   <>
-                    <p class="text-sm font-light text-gray-500">
+                    <p className="text-sm font-light text-gray-500">
                       Password has been changed.{" "}
                       <Link
                         to="/login"
                         state={state}
-                        class="font-medium text-[#2663eb] hover:underline"
+                        className="font-medium text-[#2663eb] hover:underline"
                       >
                         Redirect to Sign in
                       </Link>
@@ -194,7 +194,7 @@ function ResetPassword() {
                   </>
                 ) : (
                   <>
-                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                    <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                       Account Recovery
                     </h1>
                     <span className="pb-[15px]">
@@ -208,11 +208,11 @@ function ResetPassword() {
                       <br />
                     </span>
 
-                    <form class="space-y-4" action="#">
+                    <form className="space-y-4" action="#">
                       <div>
                         <label
                           for="email"
-                          class="block mb-2 text-sm font-medium text-gray-900"
+                          className="block mb-2 text-sm font-medium text-gray-900"
                         >
                           Your email
                         </label>
@@ -222,7 +222,7 @@ function ResetPassword() {
                           id="email"
                           pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                           onChange={handleChange}
-                          class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none w-full focus:border-[#2663eb] block p-2.5"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none w-full focus:border-[#2663eb] block p-2.5"
                           placeholder="name@company.com"
                           required=""
                         />
@@ -232,7 +232,7 @@ function ResetPassword() {
                           <div>
                             <label
                               for="code"
-                              class="block mb-2 text-sm font-medium text-gray-900"
+                              className="block mb-2 text-sm font-medium text-gray-900"
                             >
                               Reset code
                             </label>
@@ -242,14 +242,14 @@ function ResetPassword() {
                               id="code"
                               onChange={handleChange}
                               placeholder="••••••••"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:border-[#2663eb] block w-full p-2.5"
+                              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:border-[#2663eb] block w-full p-2.5"
                               required=""
                             />
                           </div>
                           <div>
                             <label
                               for="password"
-                              class="block mb-2 text-sm font-medium text-gray-900"
+                              className="block mb-2 text-sm font-medium text-gray-900"
                             >
                               New Password
                             </label>
@@ -259,7 +259,7 @@ function ResetPassword() {
                               id="password"
                               onChange={handleChange}
                               placeholder="••••••••"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:border-[#2663eb] block w-full p-2.5"
+                              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none focus:border-[#2663eb] block w-full p-2.5"
                               required=""
                             />
                           </div>
@@ -268,16 +268,16 @@ function ResetPassword() {
                       <button
                         type="submit"
                         onClick={state ? handleResetSubmit : handleUserSubmit}
-                        class="w-full text-white bg-[#2663eb] hover:bg-[#2663eb] focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                        className="w-full text-white bg-[#2663eb] hover:bg-[#2663eb] focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                       >
                         {state ? "Reset Password" : "Forgot Password"}
                       </button>
-                      <p class="text-sm font-light text-gray-500">
+                      <p className="text-sm font-light text-gray-500">
                         Remembered your password?{" "}
                         <Link
                           to="/login"
                           state={state}
-                          class="font-medium text-[#2663eb] hover:underline"
+                          className="font-medium text-[#2663eb] hover:underline"
                         >
                           Sign in
                         </Link>

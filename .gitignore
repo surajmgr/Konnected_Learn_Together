@@ -8,6 +8,13 @@ node_modules
 # testing
 /coverage
 
+# venv
+venv
+.venv
+
+__pycache__
+.*.pyc
+
 # production
 build
 
