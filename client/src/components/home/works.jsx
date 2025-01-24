@@ -856,7 +856,7 @@ function Works() {
               </g>
             </svg>
           </div>
-          <div ref={ref1} className={"col-lg-4 col-md-12" + ((isInViewport1) ? " fos-animate-me bounceInUp delay-0_1" : "")}>
+          <div ref={ref1} className={"col-lg-4 col-md-12" + ((isInViewport1) ? " fos-animate-me fadeIn delay-0_1" : "")}>
             <div className="work-process relative">
               <div className="box-loader">
                 {" "}
@@ -880,7 +880,7 @@ function Works() {
               </div>
             </div>
           </div>
-          <div className={"col-lg-4 col-md-12 md-mt-5" + ((isInViewport1) ? " fos-animate-me bounceInUp delay-0_2" : "")}>
+          <div className={"col-lg-4 col-md-12 md-mt-5" + ((isInViewport1) ? " fos-animate-me fadeIn delay-0_2" : "")}>
             <div className="work-process relative">
               <div className="box-loader">
                 {" "}
@@ -904,7 +904,7 @@ function Works() {
               </div>
             </div>
           </div>
-          <div className={"col-lg-4 col-md-12 md-mt-5" + ((isInViewport1) ? " fos-animate-me bounceInUp delay-0_3" : "")}>
+          <div className={"col-lg-4 col-md-12 md-mt-5" + ((isInViewport1) ? " fos-animate-me fadeIn delay-0_3" : "")}>
             <div className="work-process relative">
               <div className="step-num-box">
                 <div className="step-icon">

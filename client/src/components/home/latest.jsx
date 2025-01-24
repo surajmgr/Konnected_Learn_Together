@@ -7,7 +7,7 @@ function Latest() {
   const isInViewport1 = useIntersection(ref1, '0px');
 
   return (
-    <section ref={ref1} className={"section latest-blog" + ((isInViewport1) ? " fos-animate-me fadeInUp delay-0_2" : "")}>
+    <section ref={ref1} className={"section latest-blog" + ((isInViewport1) ? " fos-animate-me fadeIn delay-0_2" : "")}>
       <div className="max-w-[1320px] w-full mx-auto px-[0.75rem]">
         <div className="lab-course">
           <div
