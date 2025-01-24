@@ -55,7 +55,7 @@ const getQuestions = (req, res) => {
     db.query(q, (err, data) => {
         if (err) return res.send(err);
         const questions = data.rows;
-        return res.json(pagination(page, limit, questions));
+        return res.json(pagination(page, limit, questions.reverse()));
     })
 }
 
@@ -87,7 +87,7 @@ const getAnswers = (req, res) => {
 const updateVote = (req, res) => {
     const { aid, uid, changereq } = req.body;
     var q = "";
-
+    console.log("Here is the vote!");
     if (changereq == "rmupvote") {
         q = `UPDATE votes SET status=null WHERE answer=${aid} AND uid=${uid};`
         db.query(q, (err, data) => {
@@ -114,6 +114,7 @@ const updateVote = (req, res) => {
             if (err) return res.send(err);
             if (data.rows[0].count == 0) {
                 const q = `INSERT INTO votes(answer,uid,status) VALUES(${aid},${uid},'${changereq}');`
+                console.log(q);
                 db.query(q, (err, data) => {
                     if (err) return res.send(err);
                     if (changereq == "up") {
@@ -154,23 +155,24 @@ const updateVote = (req, res) => {
 }
 
 const addQuestion = (req, res) => {
-    const sessionName = Object.values(req.sessionStore.sessions)[0];
-    const parsedJson = JSON.parse(sessionName);
-    const token = parsedJson.token;
-    console.log('token');
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const sessionName = Object.values(req.sessionStore.sessions)[0];
+    // const parsedJson = JSON.parse(sessionName);
+    // const token = parsedJson.token;
+    // console.log('token');
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+        // if (err) return res.status(403).json("Token is not valid!");
         const sq_name = strUrl(req.body.title)
 
         const o_content = req.body.content ? req.body.content : ""
         const content = o_content.replaceAll("'", "''")
 
         const q = `INSERT INTO questions(title,body,sq_name,topic,uid,date) VALUES 
-        ('${req.body.title.replaceAll("'", "''")}', '${content}','${sq_name}',${req.body.topic},${userInfo.id},'${req.body.date}') 
+        ('${req.body.title.replaceAll("'", "''")}', '${content}','${sq_name}',${req.body.topic},${req.body.uid},'${req.body.date}') 
         RETURNING id;`
+        console.log(q);
 
         db.query(q, (err, data) => {
             if (err) return res.status(500).json(err.message);
@@ -184,61 +186,62 @@ const addQuestion = (req, res) => {
                 return res.json("Question created with notif!");
             })
         })
-    });
+    // });
 }
 
 const deleteQuestion = (req, res) => {
 
-    const token = req.session.token;
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const token = req.session.token;
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
 
         const qid = req.params.id;
-        const q = `DELETE FROM questions WHERE id = '${qid}' AND uid = '${userInfo.id}';`
+        const q = `DELETE FROM questions WHERE id = '${qid}' AND uid = '${req.body.uid}';`
         console.log(q);
         db.query(q, (err, data) => {
             if (err) return res.status(403).json("You can not delete this Question.");
             if (data.rowCount == 0) return res.status(403).json("Failed to execute.");
             return res.json("Question has been deleted!");
         })
-    })
+    // })
 }
 
 const updateQuestion = (req, res) => {
-    const token = req.session.token;
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const token = req.session.token;
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
         const qid = req.params.id;
         const q = `UPDATE questions SET title='${req.body.title.replaceAll("'", "''")}', 
     body='${req.body.content.replaceAll("'", "''")}', 
-    topic=${req.body.topic} WHERE id=${qid} AND uid=${userInfo.id};`
+    topic=${req.body.topic} WHERE id=${qid};`
+    //  AND uid=${req.body.id};`
         console.log(q);
         db.query(q, (err, data) => {
             if (err) return res.status(500).json(err.message);
             return res.json("Question has been updated!");
         })
-    })
+    // })
 }
 
 const addAnswer = (req, res) => {
-    const token = req.session.token;
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const token = req.session.token;
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
         const o_content = req.body.content ? req.body.content : ""
         const content = o_content.replaceAll("'", "''")
         const link = `/question/${req.body.sq_name}/${req.body.question}`
 
         const q = `INSERT INTO answers(body,question,vote,uid,date) VALUES 
-    ('${content}',${req.body.question},0,${userInfo.id},'${req.body.date}');`
+    ('${content}',${req.body.question},0,${req.body.uid},'${req.body.date}');`
 
         db.query(q, (err, data) => {
             if (err) return res.status(500).json(err.message);
@@ -278,45 +281,46 @@ const addAnswer = (req, res) => {
                 }
             })
         })
-    })
+    // })
 }
 
 const deleteAnswer = (req, res) => {
-    const token = req.session.token;
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const token = req.session.token;
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
 
         const aid = req.params.id;
-        const q = `DELETE FROM answers WHERE id = '${aid}' AND uid = '${userInfo.id}';`
+        const q = `DELETE FROM answers WHERE id = '${aid}';` 
+        // AND uid = '${userInfo.id}';`
         console.log(q);
         db.query(q, (err, data) => {
             if (err) return res.status(403).json("You can not delete this Answer.");
             if (data.rowCount == 0) return res.status(403).json("Failed to execute.");
             return res.json("Question has been deleted!");
         })
-    })
+    // })
 }
 
 const updateAnswer = (req, res) => {
-    const token = req.session.token;
-    console.log(token);
-    if (!token) return res.status(401).json("Not Authenticated!");
+    // const token = req.session.token;
+    // console.log(token);
+    // if (!token) return res.status(401).json("Not Authenticated!");
 
-    jwt.verify(token, "jwtkey", (err, userInfo) => {
-        if (err) return res.status(403).json("Token is not valid!");
+    // jwt.verify(token, "jwtkey", (err, userInfo) => {
+    //     if (err) return res.status(403).json("Token is not valid!");
         const aid = req.params.id;
         const q = `UPDATE answers SET
     body='${req.body.content.replaceAll("'", "''")}', 
-    question=${req.body.question} WHERE id=${aid} AND uid=${userInfo.id};`
+    question=${req.body.question} WHERE id=${aid} AND uid=${req.body.uid};`
         console.log(q);
         db.query(q, (err, data) => {
             if (err) return res.status(500).json(err.message);
             return res.json("Question has been updated!");
         })
-    })
+    // })
 }
 
 module.exports = {
