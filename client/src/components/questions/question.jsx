@@ -124,8 +124,9 @@ function Question() {
       setLoading(true);
       const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/${sq_name}/${ques_id}`);
       setQuestion(res.data);
+      console.log(res.data);
       setLoading(false);
-      await handleUserQuestion(res.data.qtitle);
+      // await handleUserQuestion(res.data.qtitle);
     } catch (error) {
       Store.addNotification({
         title: "Error!",

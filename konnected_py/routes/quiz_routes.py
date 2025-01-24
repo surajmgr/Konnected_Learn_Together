@@ -7,8 +7,8 @@ from systems.adaptive_quiz.external_handlers import getQuiz, checkAnswer
 router = APIRouter()
 
 class QuizRequest(BaseModel):
-    topic_id: str
-    student_id: str
+    topic_id: int
+    student_id: int
     already_attempted: list = []
     total_questions: int = 5
 
@@ -41,7 +41,7 @@ async def startQuiz(quiz_request: QuizRequest):
 
 class AnswerRequest(BaseModel):
     user_answers: dict
-    student_id: str
+    student_id: int
 
 """
 Format for AnswerRequest:

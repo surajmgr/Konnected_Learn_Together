@@ -16,11 +16,21 @@ def getQuiz(topic_id, student_id, already_attempted=None, total_questions=None):
     print("Student History: ", student_history_df)
     print("Questions for topic: ", len(questions_df))
 
+    # if no questions are available for the given topic, return empty list
+    if len(questions_df) == 0:
+        return []
+
     # filter out the questions which are already attempted in the current session
     questions_df = questions_df[~questions_df['id'].isin(already_attempted_qid_correct_per_session)]
     print("Not Attempted Questions: ", len(questions_df))
+
+    # if all questions are attempted, reset the session
+    if len(questions_df) == 0:
+        already_attempted_qid_correct_per_session = []
+        questions_df = quizAdaptiveHandler.quiz_db.fetch_quiz_questions(topic_id=topic_id)
+        print("Resetting Session")
     
-    print(questions_df[:2])
+    print(questions_df[:5])
     print(student_history_df[:2])
 
     # Select the number of questions to ask for each topic
@@ -34,6 +44,10 @@ def getQuiz(topic_id, student_id, already_attempted=None, total_questions=None):
         student_history_df=student_history_df,
         questions_df=questions_df
         )
+
+    print(selected_questions)
+
+    # quizAdaptiveHandler.final_main()
     
     return selected_questions
 

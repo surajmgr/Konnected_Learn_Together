@@ -64,7 +64,12 @@ const getQuestion = (req, res) => {
     const qid = req.params.qid;
     const q = `SELECT t.name as tname, t.id as tid, st_name, q.title as qtitle, q.id as qid, q.body as qbody
     FROM questions q JOIN topics t ON q.topic=t.id
-    WHERE q.sq_name ILIKE '${qname}' AND q.id=${qid};`
+    WHERE q.id=${qid};`
+
+    // SELECT t.name as tname, t.id as tid, st_name, q.title as qtitle, q.id as qid, q.body as qbody FROM questions q JOIN topics t ON q.topic=t.id
+    // WHERE q.id=6;
+
+    console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
         return res.status(200).json(data.rows[0]);

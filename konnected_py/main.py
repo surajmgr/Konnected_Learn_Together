@@ -87,6 +87,7 @@ app.include_router(details_routes.router, prefix="/details", tags=["detailsSyste
 app.include_router(quiz_routes.router, prefix="/quiz", tags=["quizSystem"])
 
 import uvicorn
+from systems.adaptive_quiz.quiz import QuizAdaptiveHandler
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
     run_main()
