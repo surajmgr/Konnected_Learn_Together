@@ -54,7 +54,7 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/profile/${username}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/${username}`);
       setUser(res.data);
       fetchFeeds(res.data.uid);
       getFollowing(res.data.uid);
@@ -83,7 +83,7 @@ function Profile() {
       userInputs.tinymce = res.data.tinymce ? res.data.tinymce : "";
       userInputs.gpt = res.data.gpt ? res.data.gpt : "";
       const resFollow = await axios.get(
-        `/profile/settings/follow/?following=${res.data.uid}&follower=${currentUser.id}`
+        `${process.env.REACT_APP_API_BASE_URL}/profile/settings/follow/?following=${res.data.uid}&follower=${currentUser.id}`
       );
       setFollow(resFollow.data);
       setLoading(false);
@@ -108,7 +108,7 @@ function Profile() {
 
   const fetchFeeds = async (uid) => {
     const resFeed = await axios.get(
-      `/profile/notifications/${uid}?page=${currentPage.current}&limit=${limit}`
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications/${uid}?page=${currentPage.current}&limit=${limit}`
     );
     setFeeds(resFeed.data.result);
     setPageCount(resFeed.data.pageCount);
@@ -126,7 +126,7 @@ function Profile() {
 
   const updateReadFeed = async (changereq) => {
     const res = await axios.post(
-      `/profile/notifications?changereq=${changereq}`,
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications?changereq=${changereq}`,
       {
         uid: currentUser.id,
       },
@@ -179,7 +179,7 @@ function Profile() {
   const doFollow = async () => {
     try {
       const res = await axios.post(
-        "/profile/settings/follow",
+        `${process.env.REACT_APP_API_BASE_URL}/profile/settings/follow`,
         { follower: currentUser.id, following: user.uid },
         {
           withCredentials: true,
@@ -222,7 +222,7 @@ function Profile() {
   const getFollowing = async (uid) => {
     try {
       setLoading(true);
-      const res = await axios.get(`/profile/followings/${uid}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/followings/${uid}`);
       setFollowings(res.data);
       setLoading(false);
     } catch (error) {
@@ -247,7 +247,7 @@ function Profile() {
   const getFollower = async (uid) => {
     try {
       setLoading(true);
-      const res = await axios.get(`/profile/followers/${uid}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/followers/${uid}`);
       setFollowers(res.data);
       setLoading(false);
     } catch (error) {
@@ -271,7 +271,7 @@ function Profile() {
 
   const getNoteContributions = async (uid) => {
     try {
-      const res = await axios.get(`/count/contributions/${uid}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/contributions/${uid}`);
       setNoteContributions(res.data);
     } catch (error) {
       Store.addNotification({
@@ -304,7 +304,7 @@ function Profile() {
       formData.append("image", file); // Change to file for server upload
       // ImgBB
       const res = await axios.post(
-        "https://api.imgbb.com/1/upload?key=813193a847a3b03c944209bdbe5daaa3",
+        `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMGBB}`,
         formData
       );
       return res.data.data;
@@ -385,7 +385,7 @@ function Profile() {
       } else {
         const fileUrl = async (imgUrl) => {
           const res = await axios.post(
-            `/profile/update/${username}/${currentUser.id}`,
+            `${process.env.REACT_APP_API_BASE_URL}/profile/update/${username}/${currentUser.id}`,
             {
               uname: userInputs.uname,
               bio: userInputs.bio ? userInputs.bio : "",
