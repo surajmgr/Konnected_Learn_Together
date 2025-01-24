@@ -6,7 +6,6 @@ const randomstring = require('randomstring');
 const strUrl = (in_str) => {
     const str = in_str.replace(/[^a-zA-Z0-9 ]/g, '');
     const resStr = str.slice(0, 25).replaceAll(' ', '-').toLowerCase()
-    console.log(resStr);
     return resStr;
 }
 
@@ -29,7 +28,6 @@ const pagination = (page, limit, responseData) => {
         }
     }
     results.result = responseData.slice(startIndex, lastIndex);
-    console.log(results);
     return results;
 }
 
@@ -96,7 +94,6 @@ const getBooks = (req, res) => {
     const page = (req.query.page) ? parseInt(req.query.page) : 1;
     const limit = (req.query.limit) ? parseInt(req.query.limit) : 15;
     const q = "SELECT b.name as bname, b.cover as coverimg, l.name as lname, b.id as bid, l.id as lid, * FROM books b JOIN bookLevel bl ON b.id=bl.book_id JOIN levels l ON l.id=bl.level_id WHERE b.is_verified='1';";
-    console.log(req.query);
     db.query(q, (err, data) => {
         // if (err) return res.json(err);
         if (err) {
@@ -113,7 +110,6 @@ const getBooksByLevel = (req, res) => {
     const page = (req.query.page) ? parseInt(req.query.page) : 1;
     const limit = (req.query.limit) ? parseInt(req.query.limit) : 15;
     const q = `SELECT b.name as bname, b.cover as coverImg, l.name as lname, b.id as bid, l.id as lid, * FROM books b JOIN bookLevel bl ON b.id=bl.book_id JOIN levels l ON l.id=bl.level_id WHERE l.sl_name='${req.params.level}' AND b.is_verified='1';`
-    console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.send(err);
         const books = data.rows;
@@ -127,7 +123,6 @@ const getAllBooks = (req, res) => {
         if (err) return res.json(err);
         const books = data.rows;
         const resVal = getUnique(books, 'bid').slice(0).reverse();
-        console.log(resVal)
         return res.status(200).json(resVal);
     })
 }
@@ -164,16 +159,12 @@ const addBook = (req, res) => {
     VALUES('${bookInfo.bname.replaceAll("'", "''")}', '${bookInfo.bdescription.replaceAll("'", "''")}', '${bookInfo.bauthor.replaceAll("'", "''")}',
     '${coverImg}', '${date}', ${uid},
     '0', '${s_name}', '${randomString}') RETURNING *;`
-    console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.status(500).json(err.message);
         const bookId = data.rows[0].id;
-        console.log(bookId);
         var q = `INSERT INTO bookLevel (book_id,level_id) VALUES
             (${bookId},${levelDetails[0].id})`
-        console.log(q);
         for (var i = 1; i < Object.keys(levelDetails).length; i++) {
-            console.log(levelDetails[i].name);
             const lvlId = levelDetails[i].id;
             q += `,(${bookId},${lvlId})`
         }
@@ -283,7 +274,6 @@ const verifyBook = (req,res) =>{
     db.query(q, (err, data) => {
         if (err) return console.log(err);
         const q = `UPDATE books SET is_verified='1' WHERE id=${bid};`
-        console.log(q);
         db.query(q, (err, data) => {
             if (err) return console.log(err);
             return res.status(200).json('Book has been verified!');

@@ -20,7 +20,7 @@ function Breadcrum(props) {
                         </Link>
                       </li>
                       <li className="breadcrumb-item active" aria-current="page">
-                        {props.path}
+                        {props.path.slice(0,90)}
                       </li>
                     </ol>
                   </nav>
