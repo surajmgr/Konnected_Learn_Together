@@ -215,7 +215,7 @@ class QuizAdaptiveHandler:
             print(user_answers[question['id']])
 
         # Evaluate the student's answers
-        self.check_answer(user_answers, 1)
+        self.check_answers(user_answers, 1)
             
     def calculate_params_update(self,student_id, question, status):
         # fetch student's history for the given topic and subtopic
@@ -238,25 +238,88 @@ class QuizAdaptiveHandler:
 
         return updated_theta
 
-    def check_answer(self,user_answers, student_id):
+    def check_answers(self,user_answers, student_id):
         keys = user_answers.keys()
         response = {
             "correct": [],
             "incorrect": [],
-            "new_theta": {}
+            "new_theta": {},
+            "subtopic": {}
         }
+        # Set
+        subtopics_attached = set()
+        topic_id = 0
+        old_theta_subtopics = {}
+
         for key in keys:
             question = self.quiz_db.fetch_quiz_questions(id=key).iloc[0].to_dict()
+            topic_id = question['topic_id'] if topic_id == 0 else topic_id
+            subtopics_attached.add(question['subtopic_id'])
+            ques_item = {
+                "qid": question['id'],
+                "answer": question['answer'],
+                "a": question['discrimination'],
+                "b": question['difficulty'],
+                "c": question['guessing'],
+                "subtopic": question['subtopic_id'],
+                "new_theta": 0.0
+            }
+            old_theta = self.quiz_db.fetch_theta(student_id, question['subtopic_id'])
+            
+            # check if old_theta for the subtopic is already fetched
+            if question['subtopic_id'] not in old_theta_subtopics:
+                if old_theta.empty or old_theta is None:
+                    old_theta = 0.0
+                else:
+                    old_theta = old_theta['theta'].values[0]
+                print(f"Old Theta: {old_theta}")
+                old_theta_subtopics[question['subtopic_id']] = old_theta
+            else:
+                old_theta = old_theta_subtopics[question['subtopic_id']]
+
+            print(f"Old Theta: {old_theta}")
+
             if question['answer'] == user_answers[key]:
                 print(f"Correct! Question ID: {key}")
-                response["correct"].append(key)
                 new_theta = self.calculate_params_update(student_id, question, 1)
-                response["new_theta"][key] = new_theta
+                # response["new_theta"][key] = new_theta
+                ques_item["new_theta"] = new_theta
+                response["correct"].append(ques_item)
             else:
                 print(f"Incorrect! Question ID: {key}")
-                response["incorrect"].append(key)
                 new_theta = self.calculate_params_update(student_id, question, 0)
-                response["new_theta"][key] = new_theta
+                # response["new_theta"][key] = new_theta
+                ques_item["new_theta"] = new_theta
+                response["incorrect"].append(ques_item)
 
+        # For each subtopic, fetch the student's history and subtopic information
+        for subtopic_id in subtopics_attached:
+            student_history = self.quiz_db.fetch_student_history(student_id=student_id, topic_id=topic_id, subtopic_id=subtopic_id)
+            subtopic_info = self.quiz_db.fetch_subtopic_info(subtopic_id)
+            # print(f"Subtopic ID: {subtopic_id}, Student History: {student_history}, Subtopic Info: {subtopic_info}")
+
+            # "message":"'float' object has no attribute 'empty'"
+            print(f"Old Theta Subtopics: {old_theta_subtopics}")
+
+            # if old_theta[subtopic_id] has theta ke
+
+            print(f"Old Theta Subtopics: {old_theta_subtopics}")
+
+            response["subtopic"][subtopic_id] = {
+                "old_theta": old_theta_subtopics[subtopic_id],
+                "history": {
+                    # convert to int to avoid numpy int64 serialization issue
+                    "correct": int(student_history['correct'].values[0]) if not student_history.empty else 0,
+                    "total": int(student_history['total'].values[0]) if not student_history.empty else 0,
+                    "theta": student_history['theta'].values[0] if not student_history.empty else 0.0
+                },
+                "info": {
+                    "name": subtopic_info['name'].values[0],
+                    "sst_name": subtopic_info['sst_name'].values[0],
+                }
+            }
+
+            print(f"Results: {response}")
+            
         print(f"Results: {response}")
         return response

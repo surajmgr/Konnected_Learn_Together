@@ -23,6 +23,14 @@ class QuizDatabaseHandler:
 
         return results
 
+    def fetch_subtopic_info(self, subtopic_id):
+        query = "SELECT * FROM subtopics WHERE id = %s"
+        values = (subtopic_id,)
+
+        results = self.db.query_db(query, values)
+        
+        return results
+
     def fetch_student_history(self,student_id = None, topic_id = None, subtopic_id = None, conn = None):
         query = "SELECT * FROM student_history"
         values = ()
@@ -38,6 +46,14 @@ class QuizDatabaseHandler:
                 if subtopic_id is not None:
                     query += f" AND subtopic_id = %s"
                     values += (subtopic_id,)
+
+        results = self.db.query_db(query, values)
+
+        return results
+
+    def fetch_theta(self,student_id, subtopic_id):
+        query = "SELECT theta FROM student_history WHERE student_id = %s AND subtopic_id = %s"
+        values = (student_id, subtopic_id)
 
         results = self.db.query_db(query, values)
 

@@ -30,8 +30,8 @@ class Database:
             
             with self.conn.cursor(cursor_factory=RealDictCursor) as cur:
                 # Use parameterized query to prevent SQL injection
-                print("Query: ", query)
-                print("Params: ", params)
+                # print("Query: ", query)
+                # print("Params: ", params)
                 cur.execute(query, params)
                 
                 # Check if the query is a SELECT statement
