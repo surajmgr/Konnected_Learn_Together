@@ -209,7 +209,7 @@ function DesignNavbar() {
                     ? showNotifications(0)
                     : showNotifications(1);
                 }}
-                class="mr-3 text-sm rounded-full cursor-pointer mr-[20px]"
+                className="mr-3 text-sm rounded-full cursor-pointer mr-[20px]"
               >
                 <div className="notif">
                   <svg
@@ -250,40 +250,40 @@ function DesignNavbar() {
               <div ref={refTwo}>
                 {notifications == 1 && (
                   <div
-                    class="overflow-scroll max-h-[293px] z-50 border fixed top-[37px] right-[120px] my-4 pb-[10px] text-base list-none bg-white divide-y divide-gray-100 rounded-lg  shadow fos-animate-me fadeIn delay-0_1"
+                    className="overflow-scroll max-h-[293px] z-50 border fixed top-[37px] right-[120px] my-4 pb-[10px] text-base list-none bg-white divide-y divide-gray-100 rounded-lg  shadow fos-animate-me fadeIn delay-0_1"
                     id="user-dropdown"
                   >
-                    <div class="px-4 py-3">
-                      <span class="block text-lg font-semibold text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                    <div className="px-4 py-3">
+                      <span className="block text-lg font-semibold text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                         Latest Feeds
                       </span>
                       <div className="span-below">
-                        <span class="text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                        <span className="text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                           Includes activity
                         </span>
                         {(hasUnread == 1) ? (
                           <span onClick={()=>{
                             updateReadFeed("readAll");
                             setHasUnread(0);
-                            }} class="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem] transform transition duration-500 hover:scale-[1.01]">
+                            }} className="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem] transform transition duration-500 hover:scale-[1.01]">
                             Mark all as read
                           </span>
                         ) : (
                           <span onClick={()=>{
                             updateReadFeed("unreadAll");
                             setHasUnread(1);
-                            }} class="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem] transform transition duration-500 hover:scale-[1.01]">
+                            }} className="ml-[5px] text-black p-[4px] bg-yellow-300 rounded-lg cursor-pointer text-[10px] leading-[1.25rem] transform transition duration-500 hover:scale-[1.01]">
                             Unread All
                           </span>
                         )}
                       </div>
                     </div>
                     {feeds.map((feed) => (
-                      <Link to={feed.link} class="block px-4 py-[9px] border-b w-[300px] flex transform transition duration-500 hover:scale-[1.01]">
+                      <Link to={feed.link} className="block px-4 py-[9px] border-b w-[300px] flex transform transition duration-500 hover:scale-[1.01]">
                         <span className={(feed.read == "1") ? "text-gray-500 mr-[4px] text-[20px] -ml-[8px]" : "text-blue-500 mr-[4px] text-[20px] -ml-[8px]"}>
                           #
                         </span>
-                        <span class="text-sm text-gray-900 overflow-hidden text-ellipsis line-clamp-1">
+                        <span className="text-sm text-gray-900 overflow-hidden text-ellipsis line-clamp-1">
                           {feed.content}
                         </span>
                       </Link>
@@ -293,10 +293,10 @@ function DesignNavbar() {
               </div>
               <div
                 onClick={() => (profileDp == 1 ? showPrflDp(0) : showPrflDp(1))}
-                class="flex mr-3 text-sm rounded-full md:mr-0 cursor-pointer"
+                className="flex mr-3 text-sm rounded-full md:mr-0 cursor-pointer"
               >
                 <img
-                  class="w-8 h-8 rounded-full object-cover"
+                  className="w-8 h-8 rounded-full object-cover"
                   src={
                     user.avatar
                       ? user.avatar
@@ -310,18 +310,18 @@ function DesignNavbar() {
               <div ref={refOne}>
                 {profileDp == 1 && (
                   <div
-                    class="z-50 border fixed top-[37px] right-[120px] my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow fos-animate-me fadeIn delay-0_1"
+                    className="z-50 border fixed top-[37px] right-[120px] my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow fos-animate-me fadeIn delay-0_1"
                     id="user-dropdown"
                   >
-                    <div class="px-4 py-3">
-                      <span class="block text-sm text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                    <div className="px-4 py-3">
+                      <span className="block text-sm text-gray-900 w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                         {user.uname
                           ? user.uname
                           : currentUser.name
                           ? currentUser.name
                           : "KonnectEd User"}
                       </span>
-                      <span class="block text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
+                      <span className="block text-sm  text-gray-500 truncate w-[155px] whitespace-nowrap overflow-hidden text-ellipsis">
                         @
                         {user.username
                           ? user.username
@@ -330,7 +330,7 @@ function DesignNavbar() {
                           : "KonnectEd User"}
                       </span>
                     </div>
-                    <ul class="py-2" aria-labelledby="user-menu-button">
+                    <ul className="py-2" aria-labelledby="user-menu-button">
                       <li>
                         <Link
                           to={
@@ -338,7 +338,7 @@ function DesignNavbar() {
                               ? `/user/${user?.username}`
                               : `/user/${currentUser?.username}`
                           }
-                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           View Profile
                         </Link>
@@ -346,7 +346,7 @@ function DesignNavbar() {
                       <li>
                         <div
                           onClick={handleLogout}
-                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                         >
                           Sign out
                         </div>
