@@ -55,7 +55,7 @@ function Book() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`/book/${s_name}/${book_id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/book/${s_name}/${book_id}`);
         setBook(res.data[0]);
         setLevels(res.data);
         setLoading(false);
@@ -83,12 +83,12 @@ function Book() {
   const fetchTopics = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/topics/${book_id}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/topics/${book_id}`);
       res.data.map(async (topic) => {
         // const res = await axios.get(`/subtopics/${topic.tid}?${book_id}`);
-        const res = await axios.get(`/count/subtopic/${topic.tid}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic.tid}`);
         setSubTopicsCount((prev) => [...prev, res.data]);
-        const resNote = await axios.get(`/count/notes/${topic.tid}`);
+        const resNote = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/notes/${topic.tid}`);
         setNotesCount((prev) => [...prev, resNote.data]);
       });
       setTopics(res.data);
@@ -115,7 +115,7 @@ function Book() {
 
   const fetchStNum = async (topic_id) => {
     try {
-      const res = await axios.get(`/count/subtopic/${topic_id}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic_id}`);
       return res.data.count;
     } catch (error) {
       console.log(error);
@@ -125,7 +125,7 @@ function Book() {
   const countQuestions = async (topicsArray) => {
     try {
       topicsArray.map(async (topic) => {
-        const res = await axios.get(`/count/questions/${topic.tid}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/questions/${topic.tid}`);
         setQuesCount((prev) => [...prev, res.data]);
       });
     } catch (error) {

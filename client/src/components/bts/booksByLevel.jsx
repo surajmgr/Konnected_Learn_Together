@@ -61,7 +61,7 @@ function BooksByLevel() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `/books/${sl_name}?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/books/${sl_name}?page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
       setBooks(res.data.result);
