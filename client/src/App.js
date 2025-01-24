@@ -33,6 +33,7 @@ import Search from "./components/search/search";
 import ScrollToTop from "./components/utils/scrollToTop";
 import Question from "./components/questions/question";
 import ExplainGPT from "./components/explaingpt/explainGPT";
+import Levels from "./components/levels/levels";
 
 const Layout = ()=>{
   return (
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/topics",
         element: <Topics />
+      },
+      {
+        path: "/levels",
+        element: <Levels />
       },
       {
         path: "/topic/:name/:id",
