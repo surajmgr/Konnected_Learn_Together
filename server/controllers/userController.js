@@ -71,6 +71,7 @@ const removeFollow = (req, res) => {
     const follower = req.query.follower;
     const following = req.query.following;
     const q = `DELETE FROM follows WHERE follower_id=${follower} AND following_id=${following};`
+    console.log(q);
     db.query(q, (err, data) => {
         if (err) return res.status(500).json(err.message);
         console.log("Deleted!");
