@@ -109,25 +109,25 @@ function BooksByLevel() {
   return (
     <>
       <Breadcrum path="Text Books" />
-      <section class="course-content mb-[25px]">
-        <div class="max-w-[986px] w-full mx-auto px-[4rem] textbooks_title__vCKfs">
+      <section className="course-content mb-[25px]">
+        <div className="max-w-[986px] w-full mx-auto px-[4rem] textbooks_title__vCKfs">
           <div className="list-heading">
             <div className="flex justify-between">
               Text Books{" "}
-              <div class="col-lg-6">
-                <div class="show-filter add-course-info">
+              <div className="col-lg-6">
+                <div className="show-filter add-course-info">
                   <form action="#">
-                    <div class="row gx-2 items-center">
-                      <div class="col-md-6 col-item"></div>
-                      <div class="col-md-6 col-lg-6 col-item">
-                        <div class=" search-group">
+                    <div className="row gx-2 items-center">
+                      <div className="col-md-6 col-item"></div>
+                      <div className="col-md-6 col-lg-6 col-item">
+                        <div className=" search-group">
                           <i
-                            class="fa fa-search feather-search pl-[3px]"
+                            className="fa fa-search feather-search pl-[3px]"
                             aria-hidden="true"
                           ></i>
                           <input
                             type="text"
-                            class="form-control focus:outline-none focus:border-[#2e9efb]"
+                            className="form-control focus:outline-none focus:border-[#2e9efb]"
                             placeholder="Search for books"
                           />
                         </div>
@@ -173,7 +173,7 @@ function BooksByLevel() {
             </div>
           ) : (
             <div className="books-container my-2">
-              <div class="grid grid-cols-5 gap-[40px] py-[15px]">
+              <div className="grid grid-cols-5 gap-[40px] py-[15px]">
                 {getUnique(books, "bid").map((book, index) => (
                   <Link
                     to={`/book/${book.s_name}/${book.bid}`}
@@ -190,9 +190,9 @@ function BooksByLevel() {
                         alt=""
                       />
                       <div>
-                        <div class="book-title">{book.bname}</div>
-                        <div class="book-subtitle">Author: {book.author}</div>
-                        <div class="book-level">
+                        <div className="book-title">{book.bname}</div>
+                        <div className="book-subtitle">Author: {book.author}</div>
+                        <div className="book-level">
                           Level:{" "}
                           {levels.map((level) =>
                             level.bid === book.bid ? (
@@ -222,7 +222,7 @@ function BooksByLevel() {
             <div className="add-banner bg-[#edf7ff] flex h-[80px] my-[15px] px-[15px] py-[12px] w-full">
               <img src={add} alt="" className="mr-[25px]" />
               <div className="add-meta">
-                <div class="">Can't find the textbook?</div>
+                <div className="">Can't find the textbook?</div>
                 <div
                   onClick={() => {
                     if (currentUser) {
@@ -231,7 +231,7 @@ function BooksByLevel() {
                       loginWarning();
                     }
                   }}
-                  class="text-[#249efb] cursor-pointer p-[12px]"
+                  className="text-[#249efb] cursor-pointer p-[12px]"
                 >
                   Add your book
                 </div>
