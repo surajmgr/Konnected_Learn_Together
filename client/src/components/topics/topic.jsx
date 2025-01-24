@@ -79,7 +79,7 @@ function Topic() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/topic/${st_name}/${topic_id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/topic/${st_name}/${topic_id}`);
         setTopic(res.data[0]);
         setBooks(res.data);
       } catch (error) {
@@ -107,14 +107,14 @@ function Topic() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`/subtopics/${topic_id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/subtopics/${topic_id}`);
         res.data.map(async (subtopic) => {
           const resNote = await axios.get(
-            `/count/notes/${topic_id}/${subtopic.stid}`
+            `${process.env.REACT_APP_API_BASE_URL}/count/notes/${topic_id}/${subtopic.stid}`
           );
           setNotesCount((prev) => [...prev, resNote.data]);
           const resContributor = await axios.get(
-            `/count/contributors/${subtopic.stid}`
+            `${process.env.REACT_APP_API_BASE_URL}/count/contributors/${subtopic.stid}`
           );
           setContibutorsCount((prev) => [...prev, resContributor.data]);
         });
@@ -145,7 +145,7 @@ function Topic() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `/dbquestion/${tid}?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/dbquestion/${tid}?page=${currentPage.current}&limit=${limit}`
       );
       console.log(res.data);
       setPageCount(res.data.pageCount);
@@ -181,7 +181,7 @@ function Topic() {
   const countAnswers = async (quesArray) => {
     try {
       quesArray.map(async (question) => {
-        const res = await axios.get(`/count/answers/${question.qid}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/answers/${question.qid}`);
         setAnsCount((prev) => [...prev, res.data]);
       });
     } catch (error) {
@@ -227,7 +227,7 @@ function Topic() {
 
   const handleDelete = async (qid) => {
     try {
-      const res = await axios.delete(`/dbquestion/post/${qid}`);
+      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/post/${qid}`);
       setShowDelWarning({ state: 1, qid: 0 });
       fetchQuestions(topic.tid);
     } catch (error) {

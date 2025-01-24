@@ -18,7 +18,7 @@ function Write() {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await axios.post("/upload", formData);
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/upload`, formData);
       const path = res.data;
       return path;
     } catch (error) {
@@ -28,7 +28,7 @@ function Write() {
 
   const addNotifications = async () => {
     const res = await axios.post(
-      `/profile/notifications/add`,
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications/add`,
       {
         uid: currentUser.id,
         message:`You have contributed a new note.`,
@@ -46,13 +46,13 @@ function Write() {
 
     const fileUrl = async (imgUrl) => {
       state
-        ? await axios.put(`/posts/${state.id}`, {
+        ? await axios.put(`${process.env.REACT_APP_API_BASE_URL}/posts/${state.id}`, {
             title,
             description: value,
             cat,
             img: file ? imgUrl : "",
           })
-        : await axios.post(`/posts/`, {
+        : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/posts/`, {
             title,
             description: value,
             cat,

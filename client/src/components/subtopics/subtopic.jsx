@@ -81,7 +81,7 @@ function Subtopic() {
 
   const updateBalance = async (amount, changereq) => {
     const res = await axios.post(
-      `/profile/update-balance?changereq=${changereq}`,
+      `${process.env.REACT_APP_API_BASE_URL}/profile/update-balance?changereq=${changereq}`,
       {
         uid: displayNote["0"].uid,
         amount,
@@ -94,7 +94,7 @@ function Subtopic() {
 
   const addNotifications = async () => {
     const res = await axios.post(
-      `/profile/notifications/add`,
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications/add`,
       {
         uid: displayNote["0"].uid,
         message: `${currentUser.name} has tipped you Rs. ${amount / 100}.`,
@@ -185,7 +185,7 @@ function Subtopic() {
       try {
         setLoading(true);
         const res = await axios.get(
-          `/subtopic/${st_name}/${sst_name}/${subtopic_id}`
+          `${process.env.REACT_APP_API_BASE_URL}/subtopic/${st_name}/${sst_name}/${subtopic_id}`
         );
         console.log(res.data);
         setSubTopic(res.data[0]);
@@ -217,7 +217,7 @@ function Subtopic() {
   const fetchNotes = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/notes/${subtopic_id}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/notes/${subtopic_id}`);
       setNotes(res.data);
       setLoading(false);
     } catch (error) {
@@ -242,7 +242,7 @@ function Subtopic() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`/subtopics/${topic_id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/subtopics/${topic_id}`);
         console.log(res.data);
         setSubTopics(res.data);
         setLoading(false);
@@ -273,7 +273,7 @@ function Subtopic() {
   const fetchDisplayNotes = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/notes/display/${subtopic_id}${nid}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/notes/display/${subtopic_id}${nid}`);
       console.log(res.data);
       setDisplayNote(res.data);
       setLoading(false);
@@ -299,7 +299,7 @@ function Subtopic() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `/dbquestion/${tid}?page=${currentPage.current}&limit=${limit}`
+        `${process.env.REACT_APP_API_BASE_URL}/dbquestion/${tid}?page=${currentPage.current}&limit=${limit}`
       );
       console.log(res.data);
       setPageCount(res.data.pageCount);
@@ -334,7 +334,7 @@ function Subtopic() {
   const countAnswers = async (quesArray) => {
     try {
       quesArray.map(async (question) => {
-        const res = await axios.get(`/count/answers/${question.qid}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/answers/${question.qid}`);
         setAnsCount((prev) => [...prev, res.data]);
       });
     } catch (error) {
@@ -380,7 +380,7 @@ function Subtopic() {
   const handleDelete = async (qid) => {
     try {
       setLoading(true);
-      const res = await axios.delete(`/dbquestion/post/${qid}`);
+      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/post/${qid}`);
       setShowDelWarning({ state: 1, qid: 0 });
       fetchQuestions(topic_id);
     } catch (error) {
@@ -404,7 +404,7 @@ function Subtopic() {
   const handleNoteDelete = async (nid) => {
     try {
       setLoading(true);
-      const res = await axios.delete(`/cnote/${nid}`);
+      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/cnote/${nid}`);
       setShowNoteDelWarning({ state: 1, nid: 0 });
       fetchDisplayNotes();
       fetchNotes();
