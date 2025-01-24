@@ -140,7 +140,7 @@ function Profile() {
   const removeFollow = async () => {
     try {
       const res = await axios.delete(
-        `/profile/settings/follow/?following=${user.uid}&follower=${currentUser.id}`
+        `${process.env.REACT_APP_API_BASE_URL}/profile/settings/follow/?following=${user.uid}&follower=${currentUser.id}`
       );
       Store.addNotification({
         title: "Successfull!",

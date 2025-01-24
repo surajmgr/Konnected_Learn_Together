@@ -109,6 +109,9 @@ function Topics() {
     }
   };
 
+  console.log("Current Here!");
+  console.log(currentPage.current);
+
   return (
     <>
       <Breadcrum path="All Topics" />

@@ -284,7 +284,7 @@ function Topic() {
             <div className="horizontal-info">
               <div className="flex items-center justify-start flex-wrap fos-animate-me fadeIn delay-0_1">
                 
-                  {books.map((book, index) => index == 0 && <span className=" fos-animate-me fadeIn delay-0_1">{book.bname}</span>)}
+                  {books.map((book, index) => index == 0 && <span className=" fos-animate-me fadeIn delay-0_1"><Link to={`/book/${book.s_name}/${book.bid}`}>{book.bname}</Link></span>)}
                 <div className="point"></div>
 
                 {openTab == 1 && (
@@ -526,39 +526,6 @@ function Topic() {
                         ))}
                       </ul>
                     </div>
-                    {pageCount > 1 && (
-                      <Pagination
-                        count={pageCount}
-                        onChange={handlePageClick}
-                        color="primary"
-                        className="justify-center flex mb-5"
-                      />
-                    )}
-                    <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                      <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
-                        <div className="flex items-center justify-start">
-                          <div className="text-left ml-[10px]">
-                            <div className="text-gray-500">
-                              <div className="text-sm">
-                                Can't find the question...?
-                              </div>
-                              <div
-                                onClick={() => {
-                                  if (currentUser) {
-                                    showState(0);
-                                  } else {
-                                    loginWarning();
-                                  }
-                                }}
-                                className="text-sm add-book-no-res cursor-pointer text-blue-500 flex justify-around"
-                              >
-                                Add a new question
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me bounceInUp delay-0_1">
@@ -587,6 +554,41 @@ function Topic() {
                 )}
               </>
             )}
+            {pageCount > 1 && (
+                <Pagination
+                  count={pageCount}
+                  onChange={handlePageClick}
+                  color="primary"
+                  className="justify-center flex mb-5"
+                />
+              )}
+              {questions.length != 0 && (
+                <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
+                  <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
+                    <div className="flex items-center justify-start">
+                      <div className="text-left ml-[10px]">
+                        <div className="text-gray-500">
+                          <div className="text-sm">
+                            Cant find the question...?
+                          </div>
+                          <div
+                            onClick={() => {
+                              if (currentUser) {
+                                showState(0);
+                              } else {
+                                loginWarning();
+                              }
+                            }}
+                            className="text-sm add-book-no-res cursor-pointer text-blue-500 flex justify-around"
+                          >
+                            Add a new question
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             {showAdd == 0 && <AddQuestion showState={showState} />}
             {showUpdateAdd == 0 && (
               <AddQuestion
