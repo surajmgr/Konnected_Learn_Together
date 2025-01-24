@@ -13,7 +13,7 @@ function Breadcrum(props) {
               <div className="col-md-12 col-12">
                 <div className="breadcrumb-list">
                   <nav aria-label="breadcrumb" className="page-breadcrumb">
-                    <ol class={(props.pred_path == "Book") ? "breadcrumb ml-[20px]" : "breadcrumb"}>
+                    <ol className={(props.pred_path == "Book") ? "breadcrumb ml-[20px]" : "breadcrumb"}>
                       <li className="breadcrumb-item">
                         <Link to={(props.pred_path_link) ? props.pred_path_link : "/"}>
                           {props.pred_path ? props.pred_path : "Home"}
