@@ -36,8 +36,11 @@ function Search() {
   const [subtopics, setSubTopics] = useState([]);
   const [levels, setLevels] = useState([]);
   const [books, setBooks] = useState([]);
+  const [questions, setQuestions] = useState([]);
   const [subtopicsCount, setSubTopicsCount] = useState([]);
   const [notesCount, setNotesCount] = useState([]);
+  const [question_info, setQuestionInfo] = useState({});
+  const [ansCount, setAnsCount] = useState([]);
   const [total, setTotal] = useState([]);
   const [openTab, setOpenTab] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -59,23 +62,6 @@ function Search() {
     "#fd6f6f",
   ];
   const randomColor = "!text-[#fac865]";
-  const bookList = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-  ];
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -93,6 +79,9 @@ function Search() {
         getPaginatedLessons();
       } else if (state.tab == 3) {
         setOpenTab(3);
+        getPaginatedBooks();
+      } else if (state.tab == 4) {
+        setOpenTab(4);
         getPaginatedBooks();
       } else {
         setOpenTab(1);
@@ -121,20 +110,28 @@ function Search() {
     getPaginatedBooks();
   }
 
+  function handlePageClickQuestion(e, page) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    currentPage.current = page;
+    fetchQuestions();
+  }
+
   async function getPaginatedTopics() {
     try {
-      setLoading(true)
+      setLoading(true);
       const res = await axios.get(
         `${process.env.REACT_APP_API_BASE_URL}/dbsearch${tag}&cat=topic&page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
       res.data.result.map(async (topic) => {
-        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic.tid}`);
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_BASE_URL}/count/subtopic/${topic.tid}`
+        );
         setSubTopicsCount((prev) => [...prev, res.data]);
       });
       setTopics(res.data.result);
       setTotal(res.data.total);
-      setLoading(false)
+      setLoading(false);
     } catch (error) {
       Store.addNotification({
         title: "Error!",
@@ -156,18 +153,20 @@ function Search() {
 
   async function getPaginatedLessons() {
     try {
-      setLoading(true)
+      setLoading(true);
       const res = await axios.get(
         `${process.env.REACT_APP_API_BASE_URL}/dbsearch${tag}&cat=subtopic&page=${currentPage.current}&limit=${limit}`
       );
       setPageCount(res.data.pageCount);
       res.data.result.map(async (subtopic) => {
-        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/notes/1/${subtopic.stid}`);
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_BASE_URL}/count/notes/1/${subtopic.stid}`
+        );
         setNotesCount((prev) => [...prev, res.data]);
       });
       setSubTopics(res.data.result);
       setTotal(res.data.total);
-      setLoading(false)
+      setLoading(false);
     } catch (error) {
       Store.addNotification({
         title: "Error!",
@@ -189,7 +188,7 @@ function Search() {
 
   async function getPaginatedBooks() {
     try {
-      setLoading(true)
+      setLoading(true);
       const res = await axios.get(
         `${process.env.REACT_APP_API_BASE_URL}/dbsearch${tag}&cat=book&page=${currentPage.current}&limit=${limit}`
       );
@@ -217,12 +216,67 @@ function Search() {
     }
   }
 
+  const countAnswers = async (quesArray) => {
+    try {
+      quesArray.map(async (question) => {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_BASE_URL}/count/answers/${question.qid}`
+        );
+        setAnsCount((prev) => [...prev, res.data]);
+      });
+    } catch (error) {
+      Store.addNotification({
+        title: "Error!",
+        message: error.response.data,
+        type: "danger",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 3000,
+          onScreen: false,
+        },
+      });
+      setLoading(false);
+    }
+  };
+
+  const fetchQuestions = async (tid) => {
+    try {
+      setLoading(true);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/dbsearch${tag}&cat=question&page=${currentPage.current}&limit=${limit}`
+      );
+      setPageCount(res.data.pageCount);
+      setQuestions(res.data.result);
+      countAnswers(res.data.result);
+      setTotal(res.data.total);
+      setLoading(false);
+    } catch (error) {
+      Store.addNotification({
+        title: "Error!",
+        message: error.response.data,
+        type: "danger",
+        insert: "top",
+        container: "top-right",
+        animationIn: ["animate__animated"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+          duration: 3000,
+          onScreen: false,
+        },
+      });
+      setLoading(false);
+    }
+  };
+
   const showState = (value) => {
     setShowAdd(value);
   };
 
-  console.log("State Here!");
-  console.log(state);
+  console.log("Current Here!");
+  console.log(currentPage.current);
 
   return (
     <>
@@ -243,6 +297,11 @@ function Search() {
               )}
               {openTab === 3 && (
                 <span className="fos-animate-me fadeIn delay-0_1">Books</span>
+              )}
+              {openTab === 4 && (
+                <span className="fos-animate-me fadeIn delay-0_1">
+                  Questions
+                </span>
               )}
             </div>
           </div>
@@ -273,6 +332,20 @@ function Search() {
                 }}
               >
                 Lessons
+              </div>
+            </div>
+            <div className="tabs-item">
+              <div
+                className={"tabs-tab " + (openTab === 4 ? "tabs-active" : "")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setLoading(true);
+                  setOpenTab(4);
+                  currentPage.current = 1;
+                  fetchQuestions();
+                }}
+              >
+                Questions
               </div>
             </div>
             <div className="tabs-item">
@@ -320,7 +393,7 @@ function Search() {
                           >
                             <div className={"ch-index " + randomColor}>
                               {index == 9
-                                ? `${index + 1}`
+                                ? `${currentPage.current + "0"}`
                                 : `${parseInt(currentPage.current) - 1}` +
                                   `${index + 1}`}
                             </div>
@@ -354,14 +427,6 @@ function Search() {
                         ))}
                       </ul>
                     </div>
-                    {pageCount > 1 && (
-                      <Pagination
-                        count={pageCount}
-                        onChange={handlePageClick}
-                        color="primary"
-                        className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
-                      />
-                    )}
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
@@ -377,6 +442,15 @@ function Search() {
                   </div>
                 )}
               </>
+            )}
+
+            {pageCount > 1 && (
+              <Pagination
+                count={pageCount}
+                onChange={handlePageClick}
+                color="primary"
+                className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
+              />
             )}
           </div>
           <div
@@ -408,7 +482,7 @@ function Search() {
                           >
                             <div className={"ch-index " + randomColor}>
                               {index == 9
-                                ? `${index + 1}`
+                                ? `${currentPage.current + "0"}`
                                 : `${parseInt(currentPage.current) - 1}` +
                                   `${index + 1}`}
                             </div>
@@ -444,14 +518,6 @@ function Search() {
                         ))}
                       </ul>
                     </div>
-                    {pageCount > 1 && (
-                      <Pagination
-                        count={pageCount}
-                        onChange={handlePageClickLesson}
-                        color="primary"
-                        className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
-                      />
-                    )}
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
@@ -459,7 +525,9 @@ function Search() {
                       <div className="flex items-center justify-start">
                         <div className="text-left ml-[10px]">
                           <div className="text-gray-500">
-                            <div className="text-sm">No lessons matched...!</div>
+                            <div className="text-sm">
+                              No lessons matched...!
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -467,6 +535,15 @@ function Search() {
                   </div>
                 )}
               </>
+            )}
+
+            {pageCount > 1 && (
+              <Pagination
+                count={pageCount}
+                onChange={handlePageClickLesson}
+                color="primary"
+                className="justify-center flex mb-5 fos-animate-me fadeIn delay-0_10"
+              />
             )}
           </div>
           <div
@@ -567,6 +644,105 @@ function Search() {
             )}
             {showAdd == 0 && <AddBook showState={showState} />}
           </div>
+          <div
+            className={
+              (openTab === 4 ? "block " : "hidden ") +
+              "tp-container min-h-[450px]"
+            }
+          >
+            {loading ? (
+              <div className="mb-[150px] pt-[100px]">
+                <LargeLoading />
+              </div>
+            ) : (
+              <>
+                {questions.length > 0 ? (
+                  <>
+                    <div className="card-body">
+                      <div className="tp-title fos-animate-me fadeIn delay-0_1">
+                        List of Questions
+                      </div>
+                      <ul className="flex flex-wrap">
+                        {getUnique(questions, "qid").map((question, index) => (
+                          <div
+                            className={
+                              "w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" +
+                              (index + 1)
+                            }
+                          >
+                            <div className={"ch-index " + "!text-[#76e199]"}>
+                              {index == 9
+                                ? `${currentPage.current + "0"}`
+                                : `${parseInt(currentPage.current) - 1}` +
+                                  `${index + 1}`}
+                            </div>
+                            <div className="ch-details">
+                              <Link
+                                to={`/question/${question.sq_name}/${question.qid}`}
+                              >
+                                <h2 className="ch-name">{question.qtitle}</h2>
+                              </Link>
+                              <div className="ch-meta justify-between">
+                                <div className="ch-meta-item flex">
+                                  <span>
+                                    {ansCount?.length > 0
+                                      ? getUnique(ansCount, "qid").map(
+                                          (ans) =>
+                                            ans.qid == question.qid &&
+                                            (ans?.count == 1
+                                              ? "1 Answer"
+                                              : ans?.count + " Answers")
+                                        )
+                                      : "__Answers"}
+                                  </span>
+                                </div>
+                                <div
+                                  className={
+                                    "ch-meta-item flex view-info items-center flex text-[14px] leading-[19px] " +
+                                    "!text-[#76e199]"
+                                  }
+                                >
+                                  <Link
+                                    to={`/question/${question.sq_name}/${question.qid}`}
+                                  >
+                                    <span>View Solution</span>
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                ) : (
+                  <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
+                    <div className="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">
+                              No questions found...!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+
+            {pageCount > 1 && (
+              <Pagination
+                count={pageCount}
+                onChange={handlePageClickQuestion}
+                color="primary"
+                className="justify-center flex mb-5"
+              />
+            )}
+          </div>
+          <></>
         </div>
       </section>
     </>

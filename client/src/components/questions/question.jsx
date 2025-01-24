@@ -264,8 +264,8 @@ function Question() {
     }
   };
 
-  console.log("Answers Here!");
-  console.log(answers);
+  console.log("Votes Here!");
+  console.log(votes);
 
   return (
     <>
@@ -281,7 +281,7 @@ function Question() {
           </div>
           <div className="mt-[5px] fos-animate-me fadeIn delay-0_1">
             <div className="flex items-center justify-start flex-wrap text-[18px]">
-              <span>{question?.qtitle}</span>
+              <span className="leading-[21px] py-[8px]">{question?.qtitle}</span>
             </div>
           </div>
           <div className="ques-body border-b rounded-lg pb-[5px] text-[#999] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll fos-animate-me fadeIn delay-0_1">
@@ -335,7 +335,7 @@ function Question() {
                                     </span></Link> 
                                   </div>
                                 </div>
-                                <div className="ques-body rounded-lg pb-[10px] pt-[7px] text-[14px] font-[500] leading-[19.12px] max-h-[300px] overflow-y-scroll">
+                                <div className="ques-body rounded-lg pb-[10px] pt-[7px] text-[14px] font-[500] leading-[19.12px] max-h-[100vh] overflow-y-scroll">
                                   {answer.abody != ""
                                     ? parse("" + answer.abody)
                                     : question.tname}
