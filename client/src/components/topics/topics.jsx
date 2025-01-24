@@ -116,7 +116,7 @@ function Topics() {
         <div className="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
           <div className="title-heading">
             <div className="flex justify-between">
-            <div class="title-heading-name">All Topics</div>
+            <div className="title-heading-name">All Topics</div>
               <div className="col-lg-6">
                 <div className="show-filter add-topic-info">
                   <form action="#">
@@ -146,8 +146,8 @@ function Topics() {
               </div>
             </div>
           </div>
-          <div class="horizontal-info fos-animate-me fadeIn delay-0_1">
-            <div class="flex items-center justify-start flex-wrap">
+          <div className="horizontal-info fos-animate-me fadeIn delay-0_1">
+            <div className="flex items-center justify-start flex-wrap">
               <span>{total} topics are here</span>
             </div>
           </div>
@@ -156,7 +156,7 @@ function Topics() {
               <LargeLoading />
             </div>
           ) : (<div className="tp-container min-h-[450px] mt-[30px]">
-          <div class="card-body p-0">
+          <div className="card-body p-0">
             <ul className="flex flex-wrap">
               {getUnique(topics, "tid").map((topic, index) => (
                   <div className={"w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" + (index+1)}>

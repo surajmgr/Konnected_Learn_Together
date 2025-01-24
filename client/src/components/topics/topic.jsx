@@ -276,7 +276,7 @@ function Topic() {
         path={topic.tname}
       />
       <section className="topicInf ">
-        <div class="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
+        <div className="max-w-[986px] w-full mx-auto px-[4rem] texttopics_title__vCKfs">
           <div className="fos-animate-me fadeIn delay-0_1">
             <div className="title-heading fos-animate-me fadeIn delay-0_1">
               <div className="title-heading-name">{topic.tname} </div>
@@ -360,7 +360,7 @@ function Topic() {
               <>
                 {subTopics.length > 0 ? (
                   <>
-                    <div class="card-body">
+                    <div className="card-body">
                       <div className="tp-title">Lessons</div>
                       <ul className="flex flex-wrap mb-[40px]">
                         {subTopics.map((subTopic, index) => (
@@ -389,7 +389,7 @@ function Topic() {
                                         )
                                       : "__Notes"}
                                   </span>
-                                  <div class="ch-l-point"></div>
+                                  <div className="ch-l-point"></div>
                                 </div>
                                 <div className="ch-meta-item flex">
                                   <span>
@@ -410,7 +410,7 @@ function Topic() {
                                 </div>
                               </div>
                             </div>
-                            <i class="ch-l-right fa fa-chevron-right"></i>
+                            <i className="ch-l-right fa fa-chevron-right"></i>
                           </Link>
                         ))}
                       </ul>
@@ -418,11 +418,11 @@ function Topic() {
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me bounceInUp delay-0_1">
-                    <div class="mt-[200px] pb-[20px] flex justify-around">
-                      <div class="flex items-center justify-start">
-                        <div class="text-left ml-[10px]">
-                          <div class="text-gray-500">
-                            <div class="text-sm">No lessons are here...!</div>
+                    <div className="mt-[200px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">No lessons are here...!</div>
                           </div>
                         </div>
                       </div>
@@ -446,7 +446,7 @@ function Topic() {
               <>
                 {questions.length > 0 ? (
                   <>
-                    <div class="card-body">
+                    <div className="card-body">
                       <div className="tp-title">List of Questions</div>
                       <ul className="flex flex-wrap">
                         {getUnique(questions, "qid").map((question, index) => (
@@ -535,11 +535,11 @@ function Topic() {
                       />
                     )}
                     <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                      <div class="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
-                        <div class="flex items-center justify-start">
-                          <div class="text-left ml-[10px]">
-                            <div class="text-gray-500">
-                              <div class="text-sm">
+                      <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
+                        <div className="flex items-center justify-start">
+                          <div className="text-left ml-[10px]">
+                            <div className="text-gray-500">
+                              <div className="text-sm">
                                 Can't find the question...?
                               </div>
                               <div
@@ -562,11 +562,11 @@ function Topic() {
                   </>
                 ) : (
                   <div className="no-result-info fos-animate-me bounceInUp delay-0_1">
-                    <div class="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
-                      <div class="flex items-center justify-start">
-                        <div class="text-left ml-[10px]">
-                          <div class="text-gray-500">
-                            <div class="text-sm">No questions are here...!</div>
+                    <div className="mt-[200px] mb-[300px] pb-[20px] flex justify-around">
+                      <div className="flex items-center justify-start">
+                        <div className="text-left ml-[10px]">
+                          <div className="text-gray-500">
+                            <div className="text-sm">No questions are here...!</div>
                             <div
                               onClick={() => {
                                 if (currentUser) {
@@ -601,21 +601,21 @@ function Topic() {
                   : "active popup-outer z-10"
               }
             >
-              <div class="popup-box">
+              <div className="popup-box">
                 <i
                   id="close"
-                  class="fa fa-close close"
+                  className="fa fa-close close"
                   onClick={() => setShowDelWarning({ state: 1, qid: 0 })}
                 ></i>
-                <div class="warning-heading-text border-b">Are you sure?</div>
+                <div className="warning-heading-text border-b">Are you sure?</div>
                 <div className="warning-body-text text-sm">
                   Do you really want to delete these records? This process
                   cannot be undone.
                 </div>
-                <div class="button">
+                <div className="button">
                   <button
                     id="close"
-                    class="cancel bg-[#6f93f6] hover:bg-[#275df1]"
+                    className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
                     onClick={(e) => {
                       e.preventDefault();
                       setShowDelWarning({ state: 1, qid: 0 });
@@ -628,7 +628,7 @@ function Topic() {
                       e.preventDefault();
                       handleDelete(showDelWarning.qid);
                     }}
-                    class="send bg-[#f082ac] hover:bg-[#ec5f95]"
+                    className="send bg-[#f082ac] hover:bg-[#ec5f95]"
                   >
                     Delete
                   </button>
