@@ -55,13 +55,13 @@ function AddQuestion(props) {
         });
       } else {
       const res = props.question_info
-        ? await axios.put(`/dbquestion/post/${props.question_info.qid}`, {
+        ? await axios.put(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/post/${props.question_info.qid}`, {
             title,
             content,
             topic: qid,
             uid: currentUser.id,
           })
-        : await axios.post(`/dbquestion/post`, {
+        : await axios.post(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/post`, {
             title,
             content,
             topic: qid,

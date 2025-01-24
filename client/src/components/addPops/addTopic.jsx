@@ -108,7 +108,7 @@ function AddTopic(props) {
         });
       } else {
         const res = await axios.post(
-          "/topics/add-topic",
+          `${process.env.REACT_APP_API_BASE_URL}/topics/add-topic`,
           { objects: [topicInputs, sendingBook, subTopicInputs] },
           {
             withCredentials: true,
