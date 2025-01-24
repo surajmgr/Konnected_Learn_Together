@@ -13,11 +13,16 @@ import "./subtopic.css";
 import { Pagination } from "@mui/material";
 import AddQuestion from "../addPops/addQuestion";
 
+// Video Player
+import { useDispatch } from "react-redux";
+import { startVideoPlayer } from "../youtubePlayer/layout.js";
+
 // React Notification
 import { Store } from "react-notifications-component";
 import Loading from "../utils/loading";
 import LargeLoading from "../utils/largeLoading";
 import ExplainGPT from "../explaingpt/explainGPT";
+import YoutubePlayer from "../youtubePlayer/youtubePlayer";
 
 function getUnique(array, key) {
   if (typeof key !== "function") {
@@ -48,10 +53,15 @@ function Subtopic() {
   const [openTab, setOpenTab] = useState(1);
   const [showDonation, setShowDonation] = useState(1);
   const [showDelWarning, setShowDelWarning] = useState({ state: 1, qid: 0 });
-  const [showNoteDelWarning, setShowNoteDelWarning] = useState({ state: 1, nid: 0 });
+  const [showNoteDelWarning, setShowNoteDelWarning] = useState({
+    state: 1,
+    nid: 0,
+  });
   const [total, setTotal] = useState([]);
   const [showAdd, setShowAdd] = useState(1);
   const [showUpdateAdd, setShowUpdateAdd] = useState(1);
+
+  // const dispatch = useDispatch();
 
   // Donation
   const [amount, setAmount] = useState(1000);
@@ -217,7 +227,9 @@ function Subtopic() {
   const fetchNotes = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/notes/${subtopic_id}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/notes/${subtopic_id}`
+      );
       setNotes(res.data);
       setLoading(false);
     } catch (error) {
@@ -242,7 +254,9 @@ function Subtopic() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/subtopics/${topic_id}`);
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_BASE_URL}/subtopics/${topic_id}`
+        );
         console.log(res.data);
         setSubTopics(res.data);
         setLoading(false);
@@ -273,7 +287,9 @@ function Subtopic() {
   const fetchDisplayNotes = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/notes/display/${subtopic_id}${nid}`);
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/notes/display/${subtopic_id}${nid}`
+      );
       console.log(res.data);
       setDisplayNote(res.data);
       setLoading(false);
@@ -334,7 +350,9 @@ function Subtopic() {
   const countAnswers = async (quesArray) => {
     try {
       quesArray.map(async (question) => {
-        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/count/answers/${question.qid}`);
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_BASE_URL}/count/answers/${question.qid}`
+        );
         setAnsCount((prev) => [...prev, res.data]);
       });
     } catch (error) {
@@ -357,14 +375,14 @@ function Subtopic() {
 
   const showState = (value, state) => {
     setShowAdd(value);
-    if(state){
+    if (state) {
       fetchQuestions(topic_id);
     }
   };
 
-  const showUpdateState = (value,state) => {
+  const showUpdateState = (value, state) => {
     setShowUpdateAdd(value);
-    if(state){
+    if (state) {
       fetchQuestions(topic_id);
     }
   };
@@ -380,7 +398,9 @@ function Subtopic() {
   const handleDelete = async (qid) => {
     try {
       setLoading(true);
-      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/dbquestion/post/${qid}`);
+      const res = await axios.delete(
+        `${process.env.REACT_APP_API_BASE_URL}/dbquestion/post/${qid}`
+      );
       setShowDelWarning({ state: 1, qid: 0 });
       fetchQuestions(topic_id);
     } catch (error) {
@@ -404,7 +424,9 @@ function Subtopic() {
   const handleNoteDelete = async (nid) => {
     try {
       setLoading(true);
-      const res = await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/cnote/${nid}`);
+      const res = await axios.delete(
+        `${process.env.REACT_APP_API_BASE_URL}/cnote/${nid}`
+      );
       setShowNoteDelWarning({ state: 1, nid: 0 });
       fetchDisplayNotes();
       fetchNotes();
@@ -451,47 +473,51 @@ function Subtopic() {
         path={subtopic.stname}
       />
       <section className="subtopicInf ">
+        {/* <YoutubePlayer /> */}
         <div className="max-w-[986px] w-full mx-auto px-[4rem] textsubtopics_title__vCKfs">
           <div className="title-heading fos-animate-me fadeIn delay-0_1">
-            <div className="title-heading-name">{(subtopic.stname) ? subtopic.stname : "Title"} </div>
+            <div className="title-heading-name">
+              {subtopic.stname ? subtopic.stname : "Title"}{" "}
+            </div>
           </div>
           <div className="horizontal-info">
-              {openTab == 1 && (
-                <div className="flex items-center justify-start flex-wrap fos-animate-me fadeIn delay-0_1">
-                  {displayNote["0"] ? (
-                    <>
-                      <span>{displayNote["0"]?.nname}</span>
-                      {currentUser?.id === displayNote["0"]?.uid && (
-                        <>
-                          <Link
-                            to={`/addnote/${subtopic.st_name}/${subtopic.stid}/54/64?edit=2`}
-                            state={displayNote["0"]}
-                            className="img-icon"
-                          >
-                            <img src={editIcon} />
-                          </Link>{" "}
-                          <img
-                            src={deleteIcon}
-                            className="img-icon"
-                            onClick={() =>
-                              setShowNoteDelWarning({
-                                state: 0,
-                                nid: displayNote["0"].nid,
-                              })
-                            }
-                          />
-                        </>
-                      )}
-                    </>
-                  ) : (
-                    <span>Note is not available!</span>
-                  )}
-                </div>
-              )}
-              {openTab == 2 &&
+            {openTab == 1 && (
               <div className="flex items-center justify-start flex-wrap fos-animate-me fadeIn delay-0_1">
-                {(total == 1 ? "1 Question" : total + " Questions")}
-            </div>}
+                {displayNote["0"] ? (
+                  <>
+                    <span>{displayNote["0"]?.nname}</span>
+                    {currentUser?.id === displayNote["0"]?.uid && (
+                      <>
+                        <Link
+                          to={`/addnote/${subtopic.st_name}/${subtopic.stid}/54/64?edit=2`}
+                          state={displayNote["0"]}
+                          className="img-icon"
+                        >
+                          <img src={editIcon} />
+                        </Link>{" "}
+                        <img
+                          src={deleteIcon}
+                          className="img-icon"
+                          onClick={() =>
+                            setShowNoteDelWarning({
+                              state: 0,
+                              nid: displayNote["0"].nid,
+                            })
+                          }
+                        />
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <span>Note is not available!</span>
+                )}
+              </div>
+            )}
+            {openTab == 2 && (
+              <div className="flex items-center justify-start flex-wrap fos-animate-me fadeIn delay-0_1">
+                {total == 1 ? "1 Question" : total + " Questions"}
+              </div>
+            )}
           </div>
         </div>
         <div className="w-full mx-auto">
@@ -528,283 +554,184 @@ function Subtopic() {
                 "tp-container tp-container-active subtopic-subtopics-info-container card content-sec"
               }
             >
-              
-                <div className="content-wrapper flex">
-                  <div className="note-content-main max-w-[100%] w-full">
+              <div className="content-wrapper flex">
+                <div className="note-content-main max-w-[100%] w-full">
                   {loading ? (
-                <div className="mb-[150px] pt-[100px]">
-                  <LargeLoading />
-                </div>
-              ) : (<>
-                    {displayNote["0"] ? (
-                      <>
-                        <div className="note-display-main">
-                          <h1 id="nname-introduction123">
-                            {displayNote["0"]?.nname}
-                          </h1>
-                          {displayNote["0"]?.body != ""
-                            ? parse("" + displayNote["0"]?.body)
-                            : "Loading content..."}
-                        </div>
-                        <div className="author mt-3 mb-5 shadow p-5 rounded-md">
-                          <div
-                            class={
-                              showDonation === 1
-                                ? "popup-outer z-10"
-                                : "active popup-outer z-10"
-                            }
-                          >
-                            <div className="popup-box">
-                              <i
-                                id="close"
-                                className="fa fa-close close"
-                                onClick={() => setShowDonation(1)}
-                              ></i>
-                              <div className="profile-text">
-                                <img
-                                  src={
-                                    displayNote["0"].avatar
-                                      ? displayNote["0"].avatar
-                                      : "/upload/avatar/no-cover-avatar.png"
-                                  }
-                                  alt={displayNote["0"].byname}
+                    <div className="mb-[150px] pt-[100px]">
+                      <LargeLoading />
+                    </div>
+                  ) : (
+                    <>
+                      {displayNote["0"] ? (
+                        <>
+                          <div className="note-display-main">
+                            <h1 id="nname-introduction123">
+                              {displayNote["0"]?.nname}
+                            </h1>
+                            {displayNote["0"]?.body != ""
+                              ? parse("" + displayNote["0"]?.body)
+                              : "Loading content..."}
+                          </div>
+                          <div className="author mt-3 mb-5 shadow p-5 rounded-md">
+                            <div
+                              class={
+                                showDonation === 1
+                                  ? "popup-outer z-10"
+                                  : "active popup-outer z-10"
+                              }
+                            >
+                              <div className="popup-box">
+                                <i
+                                  id="close"
+                                  className="fa fa-close close"
+                                  onClick={() => setShowDonation(1)}
+                                ></i>
+                                <div className="profile-text">
+                                  <img
+                                    src={
+                                      displayNote["0"].avatar
+                                        ? displayNote["0"].avatar
+                                        : "/upload/avatar/no-cover-avatar.png"
+                                    }
+                                    alt={displayNote["0"].byname}
+                                  />
+                                  <div className="text">
+                                    <span className="name">
+                                      {displayNote["0"]?.byname}
+                                    </span>
+                                    <span className="profession">
+                                      Top Contributor
+                                    </span>
+                                  </div>
+                                </div>
+                                <textarea
+                                  placeholder="Enter your message"
+                                  onChange={handleMessage}
+                                ></textarea>
+                                <span className="text-red-600">{err}</span>
+                                <input
+                                  type="text"
+                                  name="amount"
+                                  onChange={handleChange}
+                                  placeholder="Enter the amount"
+                                  className="block px-4 py-2 w-full mt-2 text-purple-700 bg-[#f3f3f3] border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                 />
-                                <div className="text">
-                                  <span className="name">
-                                    {displayNote["0"]?.byname}
-                                  </span>
-                                  <span className="profession">
-                                    Top Contributor
-                                  </span>
+                                <div className="button">
+                                  <button
+                                    id="close"
+                                    className="cancel bg-[#f082ac] hover:bg-[#ec5f95]"
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      setShowDonation(1);
+                                    }}
+                                  >
+                                    Cancel
+                                  </button>
+                                  <button
+                                    onClick={() => {
+                                      checkout.show({ amount: amount });
+                                    }}
+                                    className="send bg-[#6f93f6] hover:bg-[#275df1]"
+                                  >
+                                    Send
+                                  </button>
                                 </div>
                               </div>
-                              <textarea
-                                placeholder="Enter your message"
-                                onChange={handleMessage}
-                              ></textarea>
-                              <span className="text-red-600">{err}</span>
-                              <input
-                                type="text"
-                                name="amount"
-                                onChange={handleChange}
-                                placeholder="Enter the amount"
-                                className="block px-4 py-2 w-full mt-2 text-purple-700 bg-[#f3f3f3] border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                              />
-                              <div className="button">
-                                <button
-                                  id="close"
-                                  className="cancel bg-[#f082ac] hover:bg-[#ec5f95]"
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setShowDonation(1);
-                                  }}
-                                >
-                                  Cancel
-                                </button>
-                                <button
-                                  onClick={() => {
-                                    checkout.show({ amount: amount });
-                                  }}
-                                  className="send bg-[#6f93f6] hover:bg-[#275df1]"
-                                >
-                                  Send
-                                </button>
-                              </div>
                             </div>
-                          </div>
-                          <div
-                            class={
-                              showNoteDelWarning.state === 1
-                                ? "popup-outer z-10"
-                                : "active popup-outer z-10"
-                            }
-                          >
-                            <div className="popup-box">
-                              <i
-                                id="close"
-                                className="fa fa-close close"
-                                onClick={() =>
-                                  setShowNoteDelWarning({ state: 1, nid: 0 })
-                                }
-                              ></i>
-                              <div className="warning-heading-text border-b">
-                                Are you sure?
-                              </div>
-                              <div className="warning-body-text text-sm">
-                                Do you really want to delete these records? This
-                                process cannot be undone.
-                              </div>
-                              <div className="button">
-                                <button
+                            <div
+                              class={
+                                showNoteDelWarning.state === 1
+                                  ? "popup-outer z-10"
+                                  : "active popup-outer z-10"
+                              }
+                            >
+                              <div className="popup-box">
+                                <i
                                   id="close"
-                                  className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setShowNoteDelWarning({ state: 1, nid: 0 });
-                                  }}
-                                >
-                                  Cancel
-                                </button>
-                                <button
-                                  onClick={(e) => {
+                                  className="fa fa-close close"
+                                  onClick={() =>
+                                    setShowNoteDelWarning({ state: 1, nid: 0 })
+                                  }
+                                ></i>
+                                <div className="warning-heading-text border-b">
+                                  Are you sure?
+                                </div>
+                                <div className="warning-body-text text-sm">
+                                  Do you really want to delete these records?
+                                  This process cannot be undone.
+                                </div>
+                                <div className="button">
+                                  <button
+                                    id="close"
+                                    className="cancel bg-[#6f93f6] hover:bg-[#275df1]"
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      setShowNoteDelWarning({
+                                        state: 1,
+                                        nid: 0,
+                                      });
+                                    }}
+                                  >
+                                    Cancel
+                                  </button>
+                                  <button
+                                    onClick={(e) => {
                                       e.preventDefault();
                                       handleNoteDelete(showNoteDelWarning.nid);
-                                    }
-                                  }
-                                  className="send bg-[#f082ac] hover:bg-[#ec5f95]"
-                                >
-                                  Delete
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          {/* {displayNote["0"]?.phone && <button>Donate</button>} */}
-                          <div className="flex items-center justify-between">
-                            <div className="text-left">
-                              <div className="text-gray-500">
-                                <div className="text-sm">
-                                  <Link
-                                    to={`/user/${displayNote["0"]?.username}`}
-                                    className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
+                                    }}
+                                    className="send bg-[#f082ac] hover:bg-[#ec5f95]"
                                   >
-                                    {displayNote["0"]?.byname}{" "}
-                                  </Link>
-                                  {displayNote["0"]?.phone && (
-                                    <span
-                                      onClick={(e) => {
-                                        e.preventDefault();
-                                        setShowDonation(0);
-                                        setDonationMessage("");
-                                      }}
-                                      className="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
-                                    >
-                                      Tip me...!
-                                    </span>
-                                  )}
-                                  <p>Top Contributor</p>
+                                    Delete
+                                  </button>
                                 </div>
                               </div>
                             </div>
-                            <img
-                              className="w-12 h-12 rounded-full"
-                              src={
-                                displayNote["0"].avatar
-                                  ? displayNote["0"].avatar
-                                  : "/upload/avatar/no-cover-avatar.png"
-                              }
-                              alt={displayNote["0"]?.byname}
-                            />
-                          </div>
-                        </div>
-                      </>
-                    ) : (
-                      <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeInUp delay-0_1">
-                        <img src={add} alt="" className="mr-[25px]" />
-                        <div className="add-meta">
-                          <div className="">Note is not available!</div>
-                          <div
-                            className="text-[#249efb] cursor-pointer p-[12px]"
-                            onClick={() => {
-                              currentUser
-                                ? navigate(
-                                    `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
-                                  )
-                                : loginWarning();
-                            }}
-                          >
-                            Add new note
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                    </>)}
-                  </div>
-
-                  <div className="note-content-side">
-                    <section className="side-section">
-                      <div className="side-section-body">
-                        <div className="section-heading">
-                          <h4>Related Lessons</h4>
-                        </div>
-                        <ul>
-                        {loading ? (
-                        <div className="mb-[150px] pt-[100px]">
-                  <LargeLoading />
-                </div>
-              ) : (<>
-                          {subTopics.map((subTopic, index) => (
-                            <li>
-                              <span className="index text-[#ef6862]">
-                              {index < 9 ? "0" + (index + 1) : index + 1}
-                              </span>
-                              <Link
-                                to={`/subtopic/${subTopic.st_name}/${subTopic.sst_name}/${subTopic.stid}/${subtopic.tid}`}
-                              >
-                                {subTopic.stname}
-                              </Link>
-                            </li>
-                          ))}
-                          </>)}
-                        </ul>
-                      </div>
-                    </section>
-                    {displayNote["0"] && (
-                      <section className="side-section">
-                        <div className="side-section-body">
-                          <div className="section-heading">
-                            <h4>Related Notes</h4>
-                          </div>
-                          <ul>
-                          {loading ? (
-                        <div className="mb-[150px] pt-[100px]">
-                  <LargeLoading />
-                </div>
-              ) : (<>
-                            {notes.map((note, index) => (
-                              <li className="max-w-[285px]">
-                                <span className="index text-[#249efb]">
-                                  {index < 10 ? "0" + (index + 1) : index + 1}
-                                </span>
-                                <a
-                                  href={`/subtopic/${subtopic.st_name}/${note.sst_name}/${note.stid}/${subtopic.tid}?nid=${note.nid}`}
-                                >
-                                  {note.nname}
-                                  <span className="text-gray-600 text-sm">
-                                    {note?.byname != "Suraj Pulami"
-                                      ? " - " + note?.byname
-                                      : ""}
-                                  </span>
-                                </a>
-                                {currentUser?.id === note.uid && (
-                                  <>
+                            {/* {displayNote["0"]?.phone && <button>Donate</button>} */}
+                            <div className="flex items-center justify-between">
+                              <div className="text-left">
+                                <div className="text-gray-500">
+                                  <div className="text-sm">
                                     <Link
-                                      to={`/addnote/${subtopic.st_name}/${note.stid}/54/64?edit=2`}
-                                      state={note}
-                                      className="img-icon"
+                                      to={`/user/${displayNote["0"]?.username}`}
+                                      className="font-semibold text-[16px] leading-none text-gray-900 hover:text-indigo-600 transition duration-500 ease-in-out"
                                     >
-                                      <img src={editIcon} />
-                                    </Link>{" "}
-                                    <img
-                                      src={deleteIcon}
-                                      className="img-icon"
-                                      onClick={() =>
-                                        setShowNoteDelWarning({
-                                          state: 0,
-                                          nid: note.nid,
-                                        })
-                                      }
-                                    />
-                                    {/* Are you sure khale warning */}
-                                  </>
-                                )}
-                              </li>
-                            ))}
-                            </>)}
-                          </ul>
-                          <div className="add-note-button">
-                            <button
-                              type="button"
-                              className="border hover:text-blue-600 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 mt-2"
+                                      {displayNote["0"]?.byname}{" "}
+                                    </Link>
+                                    {displayNote["0"]?.phone && (
+                                      <span
+                                        onClick={(e) => {
+                                          e.preventDefault();
+                                          setShowDonation(0);
+                                          setDonationMessage("");
+                                        }}
+                                        className="p-[4px] text-black text-sm bg-yellow-300 rounded-lg font-semibold cursor-pointer"
+                                      >
+                                        Tip me...!
+                                      </span>
+                                    )}
+                                    <p>Top Contributor</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <img
+                                className="w-12 h-12 rounded-full"
+                                src={
+                                  displayNote["0"].avatar
+                                    ? displayNote["0"].avatar
+                                    : "/upload/avatar/no-cover-avatar.png"
+                                }
+                                alt={displayNote["0"]?.byname}
+                              />
+                            </div>
+                          </div>
+                        </>
+                      ) : (
+                        <div className="add-banner bg-[#edf7ff] flex h-[80px] mb-[15px] px-[15px] py-[12px] w-[95%] mx-auto fos-animate-me fadeInUp delay-0_1">
+                          <img src={add} alt="" className="mr-[25px]" />
+                          <div className="add-meta">
+                            <div className="">Note is not available!</div>
+                            <div
+                              className="text-[#249efb] cursor-pointer p-[12px]"
                               onClick={() => {
                                 currentUser
                                   ? navigate(
@@ -814,13 +741,119 @@ function Subtopic() {
                               }}
                             >
                               Add new note
-                            </button>
+                            </div>
                           </div>
                         </div>
-                      </section>
-                    )}
-                  </div>
+                      )}
+                    </>
+                  )}
                 </div>
+
+                <div className="note-content-side">
+                  <section className="side-section">
+                    <div className="side-section-body">
+                      <div className="section-heading">
+                        <h4>Related Lessons</h4>
+                      </div>
+                      <ul>
+                        {loading ? (
+                          <div className="mb-[150px] pt-[100px]">
+                            <LargeLoading />
+                          </div>
+                        ) : (
+                          <>
+                            {subTopics.map((subTopic, index) => (
+                              <li>
+                                <span className="index text-[#ef6862]">
+                                  {index < 9 ? "0" + (index + 1) : index + 1}
+                                </span>
+                                <Link
+                                  to={`/subtopic/${subTopic.st_name}/${subTopic.sst_name}/${subTopic.stid}/${subtopic.tid}`}
+                                >
+                                  {subTopic.stname}
+                                </Link>
+                              </li>
+                            ))}
+                          </>
+                        )}
+                      </ul>
+                    </div>
+                  </section>
+                  {displayNote["0"] && (
+                    <section className="side-section">
+                      <div className="side-section-body">
+                        <div className="section-heading">
+                          <h4>Related Notes</h4>
+                        </div>
+                        <ul>
+                          {loading ? (
+                            <div className="mb-[150px] pt-[100px]">
+                              <LargeLoading />
+                            </div>
+                          ) : (
+                            <>
+                              {notes.map((note, index) => (
+                                <li className="max-w-[285px]">
+                                  <span className="index text-[#249efb]">
+                                    {index < 10 ? "0" + (index + 1) : index + 1}
+                                  </span>
+                                  <a
+                                    href={`/subtopic/${subtopic.st_name}/${note.sst_name}/${note.stid}/${subtopic.tid}?nid=${note.nid}`}
+                                  >
+                                    {note.nname}
+                                    <span className="text-gray-600 text-sm">
+                                      {note?.byname != "Suraj Pulami"
+                                        ? " - " + note?.byname
+                                        : ""}
+                                    </span>
+                                  </a>
+                                  {currentUser?.id === note.uid && (
+                                    <>
+                                      <Link
+                                        to={`/addnote/${subtopic.st_name}/${note.stid}/54/64?edit=2`}
+                                        state={note}
+                                        className="img-icon"
+                                      >
+                                        <img src={editIcon} />
+                                      </Link>{" "}
+                                      <img
+                                        src={deleteIcon}
+                                        className="img-icon"
+                                        onClick={() =>
+                                          setShowNoteDelWarning({
+                                            state: 0,
+                                            nid: note.nid,
+                                          })
+                                        }
+                                      />
+                                      {/* Are you sure khale warning */}
+                                    </>
+                                  )}
+                                </li>
+                              ))}
+                            </>
+                          )}
+                        </ul>
+                        <div className="add-note-button">
+                          <button
+                            type="button"
+                            className="border hover:text-blue-600 font-medium rounded-lg text-sm px-4 py-2 text-center mr-2 mt-2"
+                            onClick={() => {
+                              currentUser
+                                ? navigate(
+                                    `/addnote/${subtopic.sst_name}/${subtopic.stid}/54/64`
+                                  )
+                                : loginWarning();
+                            }}
+                          >
+                            Add new note
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                  )}
+                </div>
+              </div>
             </div>
             <div
               className={
@@ -837,11 +870,18 @@ function Subtopic() {
                   {questions.length > 0 ? (
                     <>
                       <div className="card-body">
-                        <div className="tp-title">List of Questions</div>
+                        <div className="tp-title fos-animate-me fadeIn delay-0_1">
+                          List of Questions
+                        </div>
                         <ul className="flex flex-wrap">
                           {getUnique(questions, "qid").map(
                             (question, index) => (
-                              <div className="w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01]">
+                              <div
+                                className={
+                                  "w-full mb-[16px] pb-[16px] flex ch-list-item transform transition duration-500 hover:scale-[1.01] fos-animate-me fadeIn delay-0_" +
+                                  (index + 1)
+                                }
+                              >
                                 <div
                                   className={"ch-index " + "!text-[#76e199]"}
                                 >
@@ -917,39 +957,6 @@ function Subtopic() {
                           )}
                         </ul>
                       </div>
-                      {pageCount > 1 && (
-                        <Pagination
-                          count={pageCount}
-                          onChange={handlePageClick}
-                          color="primary"
-                          className="justify-center flex mb-5"
-                        />
-                      )}
-                      <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
-                        <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
-                          <div className="flex items-center justify-start">
-                            <div className="text-left ml-[10px]">
-                              <div className="text-gray-500">
-                                <div className="text-sm">
-                                  Cant find the question...?
-                                </div>
-                                <div
-                                  onClick={() => {
-                                    if (currentUser) {
-                                      showState(0);
-                                    } else {
-                                      loginWarning();
-                                    }
-                                  }}
-                                  className="text-sm add-book-no-res cursor-pointer text-blue-500 flex justify-around"
-                                >
-                                  Add a new question
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </>
                   ) : (
                     <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
@@ -980,6 +987,42 @@ function Subtopic() {
                   )}
                 </>
               )}
+
+              {pageCount > 1 && (
+                <Pagination
+                  count={pageCount}
+                  onChange={handlePageClick}
+                  color="primary"
+                  className="justify-center flex mb-5"
+                />
+              )}
+              {questions.length != 0 && (
+                <div className="no-result-info fos-animate-me fadeInUp delay-0_1">
+                  <div className="mt-[10px] mb-[10px] pb-[20px] flex justify-around">
+                    <div className="flex items-center justify-start">
+                      <div className="text-left ml-[10px]">
+                        <div className="text-gray-500">
+                          <div className="text-sm">
+                            Cant find the question...?
+                          </div>
+                          <div
+                            onClick={() => {
+                              if (currentUser) {
+                                showState(0);
+                              } else {
+                                loginWarning();
+                              }
+                            }}
+                            className="text-sm add-book-no-res cursor-pointer text-blue-500 flex justify-around"
+                          >
+                            Add a new question
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
               {showAdd == 0 && <AddQuestion showState={showState} />}
               {showUpdateAdd == 0 && (
                 <AddQuestion
@@ -1000,7 +1043,9 @@ function Subtopic() {
                     className="fa fa-close close"
                     onClick={() => setShowDelWarning({ state: 1, qid: 0 })}
                   ></i>
-                  <div className="warning-heading-text border-b">Are you sure?</div>
+                  <div className="warning-heading-text border-b">
+                    Are you sure?
+                  </div>
                   <div className="warning-body-text text-sm">
                     Do you really want to delete these records? This process
                     cannot be undone.
@@ -1031,7 +1076,9 @@ function Subtopic() {
             </div>
           </div>
         </div>
-        <ExplainGPT topicinfo={{topic: subtopic.tname, subtopic: subtopic.stname}} />
+        <ExplainGPT
+          topicinfo={{ topic: subtopic.tname, subtopic: subtopic.stname }}
+        />
       </section>
     </>
   );
