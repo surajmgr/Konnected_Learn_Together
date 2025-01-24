@@ -34,7 +34,7 @@ function DesignNavbar() {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get(`/profile/${currentUser.username}`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/profile/${currentUser.username}`);
       setUser(res.data);
       fetchFeeds(res.data.uid)
     } catch (error) {
@@ -57,7 +57,7 @@ function DesignNavbar() {
 
   const fetchFeeds = async (uid) => {
     const resFeed = await axios.get(
-      `/profile/notifications/${uid}?limit=10`
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications/${uid}?limit=10`
     );
     setFeeds(resFeed.data.result);
     resFeed.data.result.map((feed)=>{
@@ -69,7 +69,7 @@ function DesignNavbar() {
 
   const updateReadFeed = async (changereq) => {
     const res = await axios.post(
-      `/profile/notifications?changereq=${changereq}`,
+      `${process.env.REACT_APP_API_BASE_URL}/profile/notifications?changereq=${changereq}`,
       {
         uid: currentUser.id
       },

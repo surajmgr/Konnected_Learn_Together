@@ -24,7 +24,7 @@ function ExplainGPT(props) {
       sender: "GPT",
     },
   ]);
-  const API_KEY = (currentUser) ? ((currentUser.gpt !== "" && currentUser.gpt ) ? currentUser.gpt : "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") : "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";
+  const API_KEY = (currentUser) ? ((currentUser.gpt !== "" && currentUser.gpt ) ? currentUser.gpt : process.env.REACT_APP_GPT) : process.env.REACT_APP_GPT;
 
   const [info, setInfo] = useState({});
   const [text, setText] = useState("");

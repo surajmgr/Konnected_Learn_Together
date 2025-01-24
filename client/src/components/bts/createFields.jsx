@@ -12,7 +12,7 @@ const LevelsFetch = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/levels`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/levels`);
         // console.log(res.data);
         setLevels(res.data);
       } catch (error) {
@@ -106,7 +106,7 @@ const BooksFetch = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/books`);
+        const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/books`);
         console.log(res.data);
         setBooks(res.data);
       } catch (error) {
@@ -289,7 +289,7 @@ function CreateFields() {
       console.log(sendingLevel)
       console.log(bookInputs)
       // setBookInputs((prev) => ({ ...prev, blevel:sendingLevel }));
-      const res = await axios.post("/books/add-book", {objects:[bookInputs, sendingLevel]}, {
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/books/add-book`, {objects:[bookInputs, sendingLevel]}, {
         withCredentials: true,
       });
       setSuc(res.data);
@@ -320,7 +320,7 @@ function CreateFields() {
       console.log(sendingBook)
       console.log(subTopicInputs)
       // setBookInputs((prev) => ({ ...prev, blevel:sendingLevel }));
-      const res = await axios.post("/topics/add-topic", {objects:[topicInputs, sendingBook, subTopicInputs]}, {
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/topics/add-topic`, {objects:[topicInputs, sendingBook, subTopicInputs]}, {
         withCredentials: true,
       });
       setSuc(res.data);
