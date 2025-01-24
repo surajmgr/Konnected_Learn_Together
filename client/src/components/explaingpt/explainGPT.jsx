@@ -106,16 +106,17 @@ function ExplainGPT(props) {
         setIndex(0);
         setIsTyping(false);
       }).catch((error,data) => {
+        setPopRes(0);
         Store.addNotification({
           title: "Error!",
-          message: data,
+          message: error.message,
           type: "danger",
           insert: "top",
           container: "top-right",
           animationIn: ["animate__animated"],
           animationOut: ["animate__animated", "animate__fadeOut"],
           dismiss: {
-            duration: 3000,
+            duration: 5000,
             onScreen: true,
             showIcon: true,
           },
