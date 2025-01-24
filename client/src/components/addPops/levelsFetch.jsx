@@ -28,7 +28,7 @@ function LevelsFetch(props) {
 
   async function getLevels() {
     try {
-      const res = await axios.get(`/levels`);
+      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/levels`);
       setLevels(res.data);
     } catch (error) {
       console.log(error);
