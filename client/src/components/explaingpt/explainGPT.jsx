@@ -217,7 +217,7 @@ function ExplainGPT(props) {
         unmarkText="Remove"
       />
       <div
-        class={
+        className={
           popRes == 1
             ? "active popup-outer top-[20px] z-10"
             : "popup-outer z-10"

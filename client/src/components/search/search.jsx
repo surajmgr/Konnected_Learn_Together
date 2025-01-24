@@ -31,7 +31,7 @@ function getUnique(array, key) {
 }
 
 function Search() {
-  const state = useLocation().state;
+  let state = useLocation().state;
   const [topics, setTopics] = useState([]);
   const [subtopics, setSubTopics] = useState([]);
   const [levels, setLevels] = useState([]);
@@ -43,6 +43,7 @@ function Search() {
   const [ansCount, setAnsCount] = useState([]);
   const [total, setTotal] = useState([]);
   const [openTab, setOpenTab] = useState(1);
+  const [tabQ, setTabQ] = useState(1);
   const [loading, setLoading] = useState(true);
   const [showAdd, setShowAdd] = useState(1);
   const { currentUser } = useContext(AuthContext);
@@ -72,25 +73,39 @@ function Search() {
     currentPage.current = 1;
     if (state) {
       if (state.tab == 1) {
-        setOpenTab(1);
-        getPaginatedTopics();
+        setTabQ(1);
       } else if (state.tab == 2) {
-        setOpenTab(2);
-        getPaginatedLessons();
+        setTabQ(2);
       } else if (state.tab == 3) {
-        setOpenTab(3);
-        getPaginatedBooks();
+        setTabQ(3);
       } else if (state.tab == 4) {
-        setOpenTab(4);
-        getPaginatedBooks();
+        setTabQ(4);
       } else {
-        setOpenTab(1);
-        getPaginatedTopics();
+        setTabQ(1);
       }
     } else {
-      getPaginatedTopics();
+      setTabQ(1);
     }
   }, []);
+
+  useEffect(() => {
+    if (tabQ == 1) {
+      setOpenTab(1);
+      getPaginatedTopics();
+    } else if (tabQ == 2) {
+      setOpenTab(2);
+      getPaginatedLessons();
+    } else if (tabQ == 3) {
+      setOpenTab(3);
+      getPaginatedBooks();
+    } else if (tabQ == 4) {
+      setOpenTab(4);
+      fetchQuestions();
+    } else {
+      setOpenTab(1);
+      getPaginatedTopics();
+    }
+  }, [tag, tabQ]);
 
   function handlePageClick(e, page) {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -312,6 +327,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault();
                   setLoading(true);
+                  setTabQ(1);
                   setOpenTab(1);
                   currentPage.current = 1;
                   getPaginatedTopics();
@@ -326,6 +342,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault();
                   setLoading(true);
+                  setTabQ(2);
                   setOpenTab(2);
                   currentPage.current = 1;
                   getPaginatedLessons();
@@ -340,6 +357,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault();
                   setLoading(true);
+                  setTabQ(4);
                   setOpenTab(4);
                   currentPage.current = 1;
                   fetchQuestions();
@@ -354,6 +372,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault();
                   setLoading(true);
+                  setTabQ(3);
                   setOpenTab(3);
                   currentPage.current = 1;
                   getPaginatedBooks();
